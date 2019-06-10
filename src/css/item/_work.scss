@@ -20,3 +20,53 @@
         color: #89949b;
     }
 }
+
+/* Media */
+@media all and (max-width: $desktop){
+    .vacancy{
+        &__title {
+            font-size: 16px;
+            line-height: 20px;
+        }
+        &__salary {
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
+}
+@media all and (max-width: $desktop_m){
+    .vacancy{
+        &__title {
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: 700;
+        }
+        &__salary {
+            font-size: 14px;
+            line-height: 18px;
+        }
+        &__offer {
+            font-size: 12px;
+            line-height: 16px;
+
+            margin-top: 10px;
+        }
+    }
+}
+@media all and (max-width: $tablet){
+    .vacancy{
+        &__title {
+            font-size: 20px;
+            line-height: 22px;
+        }
+        &__salary {
+            font-size: 16px;
+            line-height: 20px;
+        }
+        &__offer {
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
+}
+@media all and (max-width: $mobile_l){}

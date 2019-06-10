@@ -1,291 +1,167 @@
 html(lang="ru")
-    include chunks/head.pug
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Document2
+
+        link(href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:300,400,600,700', rel='stylesheet')
+        link(href='./css/iziModal.min.css', rel='stylesheet')
+        link(href='./css/slick.css', rel='stylesheet')
+        link(href='./css/slick-theme.css', rel='stylesheet')
+        link(href='./css/store.css', rel='stylesheet')
+
     body
         script(src="http://code.jquery.com/jquery-3.3.1.min.js")
         include chunks/header.pug
-        section.real-main
-            div.real-slider
-                div.real-slider__item.first
-                    div.bg
-                    div.title-wrap
-                        div.title.sb36.text-blue.text-center Доверие и профессионализм
-                        div.line
-                        div.subtitle.l24.black.text-center Качественно обученные кадры – на вес золота
-                div.real-slider__item.second
-                    div.bg
-                    div.title-wrap
-                        div.title.sb36.text-blue.text-center Гарантированный результат
-                        div.line
-                        div.subtitle.l24.black.text-center Преимущество профессиональной подготовки
-                div.real-slider__item.third
-                    div.bg
-                    div.title-wrap
-                        div.title.sb36.text-blue.text-center Стимул сложных задач
-                        div.line
-                        div.subtitle.l24.black.text-center Новое понимание инструментов консалтинга
-            div.container
-                div.real-text-wrap
-                    h2.title.sb32.text-gold Квалифицированная реальность
-                    p.r18.black Amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum. Sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolore.
-                    p.r18.black Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        |  Culpa qui officia deserunt mollit nde omnis iste natus error sit voluptatem accusantium dolore.
-        section.plan
-            div.container
-                h2.l32.text-blue2.text-center Наши программы
-                div.plan-wrap.clearfix
-                    div.plan__item
-                        div.name.sb21.text-gold Охрана труда
-                        ul.r14.white
-                            li Охрана труда для руководителей и специалистов
-                            li Охрана труда для работников организаций
-                            li Охрана труда для рабочих профессий
-                        div.line
-                        div.adv-wrap.clearfix
-                            div.adv__item
-                                span.icon.calendar
-                                div.text-wrap
-                                    div.title.l14.white Срок действия документов
-                                    div.desc.l20.text-blue4 3 года
-                                div.clearfix
-                            div.adv__item
-                                span.icon.price
-                                div.text-wrap
-                                    div.title.l14.white Стоимость
-                                    div.desc.l20.text-blue4 2500 р.
-                                div.clearfix
-                        div.button-wrap.clearfix
-                            a(href="#").more.r14.white.text-center Подробнее
-                                span.arrow
-                            a(href="#",data-izimodal-open="#callback1",data-izimodal-transitionin="fadeInDown").sublead.r14.white.text-center Оставить заявку
 
-        
-                    div.plan__item
-                        div.name.sb21.text-gold Охрана труда
-                        ul.r14.white
-                            li Охрана труда для руководителей и специалистов
-                            li Охрана труда для работников организаций
-                            li Охрана труда для рабочих профессий
-                        div.line
-                        div.adv-wrap.clearfix
-                            div.adv__item
-                                span.icon.calendar
-                                div.text-wrap
-                                    div.title.l14.white Срок действия документов
-                                    div.desc.l20.text-blue4 3 года
-                                div.clearfix
-                            div.adv__item
-                                span.icon.price
-                                div.text-wrap
-                                    div.title.l14.white Стоимость
-                                    div.desc.l20.text-blue4 2500 р.
-                                div.clearfix
-                        div.button-wrap.clearfix
-                            a(href="#").more.r14.white.text-center Подробнее
-                                span.arrow
-                            a(href="#",data-izimodal-open="#callback1",data-izimodal-transitionin="fadeInDown").sublead.r14.white.text-center Оставить заявку
-
-                    div.plan__item
-                        div.name.sb21.text-gold Охрана труда
-                        ul.r14.white
-                            li Охрана труда для руководителей и специалистов
-                            li Охрана труда для работников организаций
-                            li Охрана труда для рабочих профессий
-                        div.line
-                        div.adv-wrap.clearfix
-                            div.adv__item
-                                span.icon.calendar
-                                div.text-wrap
-                                    div.title.l14.white Срок действия документов
-                                    div.desc.l20.text-blue4 3 года
-                                div.clearfix
-                            div.adv__item
-                                span.icon.price
-                                div.text-wrap
-                                    div.title.l14.white Стоимость
-                                    div.desc.l20.text-blue4 2500 р.
-                                div.clearfix
-                        div.button-wrap.clearfix
-                            a(href="#").more.r14.white.text-center Подробнее
-                                span.arrow
-                            a(href="#",data-izimodal-open="#callback1",data-izimodal-transitionin="fadeInDown").sublead.r14.white.text-center Оставить заявку
-        
-                    div.plan__item
-                        div.name.sb21.text-gold Охрана труда
-                        ul.r14.white
-                            li Охрана труда для руководителей и специалистов
-                            li Охрана труда для работников организаций
-                            li Охрана труда для рабочих профессий
-                        div.line
-                        div.adv-wrap.clearfix
-                            div.adv__item
-                                span.icon.calendar
-                                div.text-wrap
-                                    div.title.l14.white Срок действия документов
-                                    div.desc.l20.text-blue4 3 года
-                                div.clearfix
-                            div.adv__item
-                                span.icon.price
-                                div.text-wrap
-                                    div.title.l14.white Стоимость
-                                    div.desc.l20.text-blue4 2500 р.
-                                div.clearfix
-                        div.button-wrap.clearfix
-                            a(href="#").more.r14.white.text-center Подробнее
-                                span.arrow
-                            a(href="#",data-izimodal-open="#callback1",data-izimodal-transitionin="fadeInDown").sublead.r14.white.text-center Оставить заявку
-            div.separator
-            button.r18.white.text-center#all_plan Все образовательные программы
-        
-        section.excellence
+        section.content.content_header
             .container
-                h2.title.sb32.text-gold Приемущества
-                .excellence-item
-                    .icon(style="background: url('img/excellence/icon_remote_study.png') no-repeat center;")
-                    .title.sb18.black Без отрыва
-                    .desc.r14.lh20.black Очное и дистанционное обучение без отрыва от рабочего процесса.
-                .excellence-item
-                    .icon(style="background: url('img/excellence/icon_diploma.png') no-repeat center;")
-                    .title.sb18.black Аккредитованный УЦ
-                    .desc.r14.lh20.black Получайте удостоверения и документы в соответствии с Законодательством РФ.
-                .excellence-item
-                    .icon(style="background: url('img/excellence/icon_result.png') no-repeat center;")
-                    .title.sb18.black 100% положительный результат
-                    .desc.r14.lh20.black Гарантия быстрого получения документов, необходимых для ведения деятельности. 
-                .excellence-item
-                    .icon(style="background: url('img/excellence/icon_documents.png') no-repeat center;")
-                    .title.sb18.black Доставка документов
-                    .desc.r14.lh20.black Получайте документы на руки на следующий день.
-                .excellence-item
-                    .icon(style="background: url('img/excellence/icon_jobs.png') no-repeat center;")
-                    .title.sb18.black Работа без штрафов
-                    .desc.r14.lh20.black Сэкономьте в среднем до 250 000 руб. на штрафах и санкциях. 
-                .excellence-item
-                    .icon(style="background: url('img/excellence/icon_student.png') no-repeat center;")
-                    .title.sb18.black > 500 программ
-                    .desc.r14.lh20.black Обучение для руководителей, специалистов и рабочих с разным уровнем подготовки.
-                .excellence-item
-                    .icon(style="background: url('img/excellence/icon_teacers.png') no-repeat center;")
-                    .title.sb18.black Преподаватели практики
-                    .desc.r14.lh20.black Практический подход в решении вопросов, связанных с законностью деятельности.
-                .excellence-item
-                    .icon(style="background: url('img/excellence/icon_consulting.png') no-repeat center;")
-                    .title.sb18.black Консультации
-                    .desc.r14.lh20.black Специалисты-практики помогут разобраться в сложных рабочих ситуациях.
-
-        section.news
-            div.container
-                h2.l32.black.text-center Новости
-
-                div.news__item
-                    div.date.l14.text-gray 23 июня
-                    div.title.r14.black В учебном центре Северный Путь проходит день открытых дверей
-                    a(href="#",data-izimodal-open=".modal-news",data-izimodal-transitionin="fadeInDown").more.r14.white.text-center Подробнее
-                        span.icon
-                div.news__item
-                    div.date.l14.text-gray 22 июня
-                    div.title.r14.black Открывается набор слушателей по программе “Пожарно-технический минимум для электрогазосварщиков”
-                    a(href="#",data-izimodal-open=".modal-news",data-izimodal-transitionin="fadeInDown").more.r14.white.text-center Подробнее
-                        span.icon
-                div.news__item
-                    div.date.l14.text-gray 22 июня
-                    div.title.r14.black Открывается набор слушателей по программе “Пожарно-технический минимум для электрогазосварщиков”
-                    a(href="#",data-izimodal-open=".modal-news",data-izimodal-transitionin="fadeInDown").more.r14.white.text-center Подробнее
-                        span.icon
-                div.news__item
-                    div.date.l14.text-gray 21 июня
-                    div.title.r14.black Объявлена акция “Приведи друга”, с возможностью получения 10% скидки на следующий заказ
-                    a(href="#",data-izimodal-open=".modal-news",data-izimodal-transitionin="fadeInDown").more.r14.white.text-center Подробнее
-                        span.icon
-                div.clearfix
-        section.reviews
-            div.container
-                h3.l32.white.text-center   Отзывы наших клиентов
-                div.reviews-slider
-                    div.reviews-slider__item
-                        div.wrap
-                            div.avatar
-                                img(src="img/icon/icon_person.png", alt="")
-                            div.text-wrap
-                                div.name.l12.text-gray2    Сергей Воробей    
-                                div.date.r12.text-gray2 19 июня 1963
-                                div.clearfix
-                                div.comment.r14.lh22.white О, ну это просто что-то восхитительное!
-                                    |  Купил себе две квартиры после обучения. Спасибо огромное!
-                                
-                    div.reviews-slider__item
-                        div.wrap
-                            div.avatar
-                            div.text-wrap
-                                div.name.l12.text-gray2    Адель Аткинс     
-                                div.date.r12.text-gray2 12 февраля 2017
-                                div.clearfix
-                                div.comment.r14.lh21.white Как только повысила квалификацию
-                                    |  в Северном Пути, сразу написала лучший свой хит и взяла Гремми.
-                                    |  Благодарствую!
-                                
-                    div.reviews-slider__item
-                        div.wrap
-                            div.avatar
-                            div.text-wrap
-                                div.name.l12.text-gray2    Сергей Семак     
-                                div.date.r12.text-gray2 29 мая 2018
-                                div.clearfix
-                                div.comment.r14.lh21.white Судите сами – только за порог учебного класса, и сразу на пост главного тренера. Отличный результат!
-
-                    div.reviews-slider__item
-                        div.wrap
-                            div.avatar
-                            div.text-wrap
-                                div.name.l12.text-gray2    Адель Аткинс     
-                                div.date.r12.text-gray2 12 февраля 2017
-                                div.clearfix
-                                div.comment.r14.lh21.white Как только повысила квалификацию
-                                    |  в Северном Пути, сраз унаписала лучший свой хит и взяла Гремми.
-                                    |  Благодарствую!
-                    
-                    div.reviews-slider__item
-                        div.wrap
-                            div.avatar
-                            div.text-wrap
-                                div.name.l12.text-gray2    Сергей Семак     
-                                div.date.r12.text-gray2 29 мая 2018
-                                div.clearfix
-                                div.comment.r14.lh21.white Судите сами – только за порог учебного класса, и сразу на пост главного тренера. Отличный результат!
-
-        div.modal-news#modal1(data-izimodal-group="news")
-            div.text-wrap
-                div.title.r22.text-gold В учебном центре Северный Путь проходит день открытых дверей
-                div.date.l14.text-gray 23 июня
-                div.desc.l16.lh24 В учебном центре Северный Путь проходит день открытых дверей В учебном центре Северный Путь проходит день открытых дверей В учебном центре Северный Путь проходит день открытых дверей В учебном центре Северный Путь проходит день открытых дверей
-                a(href="",data-izimodal-close)
-                    span.close.l14.text-gold Закрыть
-                //- button(data-izimodal-prev="").prev 
-                //- button(data-izimodal-next="").next 
-        div.modal-news#modal2(data-izimodal-group="news")
-            div.text-wrap
-                div.title.r22.text-gold В учебном центре Северный Путь проходит день открытых дверей
-                div.date.l14.text-gray 23 июня
-                div.desc.l16.lh24 В учебном центре Северный Путь проходит день открытых дверей В учебном центре Северный Путь проходит день открытых дверей В учебном центре Северный Путь проходит день открытых дверей В учебном центре Северный Путь проходит день открытых дверей
-                a(href="",data-izimodal-close)
-                    span.close.l14.text-gold Закрыть
-                //- button(data-izimodal-prev="").prev 
-                //- button(data-izimodal-next="").next 
-        div.modal-news#modal3(data-izimodal-group="news")
-            div.text-wrap
-                div.title.r22.text-gold В учебном центре Северный Путь проходит день открытых дверей
-                div.date.l14.text-gray 23 июня
-                div.desc.l16.lh24 В учебном центре Северный Путь проходит день открытых дверей В учебном центре Северный Путь проходит день открытых дверей В учебном центре Северный Путь проходит день открытых дверей В учебном центре Северный Путь проходит день открытых дверей
-                a(href="",data-izimodal-close)
-                    span.close.l14.text-gold Закрыть
-                //- button(data-izimodal-prev="").prev 
-                //- button(data-izimodal-next="").next 
-        div.modal-news#modal4(data-izimodal-group="news")
-            div.text-wrap
-                div.title.r22.text-gold В учебном центре Северный Путь проходит день открытых дверей
-                div.date.l14.text-gray 23 июня
-                div.desc.l16.lh24 В учебном центре Северный Путь проходит день открытых дверей В учебном центре Северный Путь проходит день открытых дверей В учебном центре Северный Путь проходит день открытых дверей В учебном центре Северный Путь проходит день открытых дверей
-                a(href="",data-izimodal-close)
-                    span.close.l14.text-gold Закрыть
-                //- button(data-izimodal-prev="").prev 
-                //- button(data-izimodal-next="").next 
-        include chunks/footer.pug
+                ul.content__breadcrumbs
+                    li.content__breadcrumbs__item
+                        a.content__breadcrumbs__link(href="#") Главная
+                    li.content__breadcrumbs__item
+                        span.content__breadcrumbs__span Магазин
+                h1.content__title Магазин учебного центра
+                p Центр профессионального обучения «Северный Путь» является аккредитованной организацией, 
+                    | оказывающей услуги в области охраны труда и предоставляет максимально выгодные и надёжные 
+                    | условия взаимодействия в направлении аутсорсинга по охране труда. Работая по принципу 
+                    | единого окна, Вы сможете получить в нашем лице надёжного партнера в направлении охраны труда, 
+                    | обучения персонала, а также помощь в организации процессов медосмотров сотрудников и 
+                    | аттестации рабочих мест.    
+        section.content.content_product
+            .container
+                .content__title Перечень товаров
+                .row
+                    .column
+                        a.product(href="#" style="background-image: url('./img/program/1.jpg');")
+                            .product__title Журналы
+                    .column
+                        a.product(href="#" style="background-image: url('./img/program/2.jpg');")
+                            .product__title Огнетушители
+                    .column
+                        a.product(href="#" style="background-image: url('./img/program/3.jpg');")
+                            .product__title Наглядные пособия
+                    .column
+                        a.product(href="#" style="background-image: url('./img/program/4.jpg');")
+                            .product__title Другое
+        section.content.content_advantage
+            .container
+                .content__title Наши преимущества
+                .row
+                    .column
+                        .item
+                            .item__icon.delivery
+                            .item__title Доставка прямо к&nbsp;Вам в&nbsp;руки
+                    .column
+                        .item
+                            .item__icon.clients
+                            .item__title Индивидуальный подход к&nbsp;каждому клиенту
+                    .column
+                        .item
+                            .item__icon.consultation
+                            .item__title Консультационная поддержка
+                    .column
+                        .item
+                            .item__icon.certificate
+                            .item__title Сертифицированные товары
+                    .column
+                        .item
+                            .item__icon.format
+                            .item__title Работаем в&nbsp;формате единого окна
+                .cta-wrap
+                    .cta-wrap__title.white Оставьте заявку, и наши специалисты оперативно ответят на любые вопросы
+                    form.cta-wrap__form(action="#", method="POST")
+                        input(type="text", placeholder="8 ( ___ ) ___ - __ - __ ")#phone.white.l18
+                        button(type="submit").btn.r14.white.text-center Перезвонить
+        section.content.content_sale
+            .container
+                .content__title Акции учебного центра
+                .row
+                    .column
+                        .item
+                            .item__icon.united
+                            .item__title Приведи друга
+                            .item__line
+                            .item__offer Скидка 10% на&nbsp;следующие&nbsp;заказы
+                    .column
+                        .item
+                            .item__icon.free-delivery
+                            .item__title Бесплатная доставка
+                            .item__line
+                            .item__offer Доставка документов по&nbsp;Санкт-Петербургу
+                    .column
+                        .item
+                            .item__icon.contract
+                            .item__title Договор на год
+                            .item__line
+                            .item__offer При заключении договора на&nbsp;год — скидка&nbsp;10%
+        section.content.content_popular
+            .container
+                .content__title Популярные направления
+                .row
+                    .column
+                        a.product(href="#" style="background-image: url('./img/program/1.jpg');")
+                            .product__title Сосуды, работающие под давлением
+                    .column
+                        a.product(href="#" style="background-image: url('./img/program/2.jpg');")
+                            .product__title Отраслевые правила по охране труда
+                    .column
+                        a.product(href="#" style="background-image: url('./img/program/3.jpg');")
+                            .product__title Курсы повышения квалификации по Реставрационным работам
+        section.content.content_seo
+            .container
+                h2 Заголовок h2
+                p «Северный Путь» является аккредитованной организацией, оказывающей услуги в области охраны труда и предоставляет максимально выгодные и надёжные условия взаимодействия в направлении аутсорсинга по охране труда. Работая по принципу единого окна, Вы сможете получить в нашем лице надёжного партнера в направлении охраны труда, обучения персонала, а также помощь в организации процессов медосмотров сотрудников и аттестации рабочих мест.
+                p Центр профессионального обучения «Северный Путь» является аккредитованной организацией, оказывающей услуги в области охраны труда и предоставляет максимально выгодные и надёжные условия взаимодействия в направлении аутсорсинга по охране труда. Работая по принципу единого окна, Вы сможете получить в нашем лице надёжного партнера в направлении охраны труда, обучения персонала, а также помощь в организации процессов медосмотров сотрудников и аттестации рабочих мест.
+                h3 Заголовок h3
+                p Центр профессионального обучения «Северный Путь» является аккредитованной организацией, оказывающей услуги в области охраны труда и предоставляет максимально выгодные и надёжные условия взаимодействия в направлении аутсорсинга по охране труда. Работая по принципу единого окна, Вы сможете получить в нашем лице надёжного партнера в направлении охраны труда, обучения персонала, а также помощь в организации процессов медосмотров сотрудников и аттестации рабочих мест.
+                ol
+                    li аккредитованной организацией
+                    li аккредитованной организацией
+                    li аккредитованной организацией
+                    li аккредитованной организацией
+                h4 Заголовок h4
+                p Центр профессионального обучения «Северный Путь» является аккредитованной организацией, оказывающей услуги в области охраны труда и предоставляет максимально выгодные и надёжные условия взаимодействия в направлении аутсорсинга по охране труда. Работая по принципу единого окна, Вы сможете получить в нашем лице надёжного партнера в направлении охраны труда, обучения персонала, а также помощь в организации процессов медосмотров сотрудников и аттестации рабочих мест. Центр профессионального обучения «Северный Путь» является аккредитованной организацией, оказывающей услуги в области охраны труда и предоставляет максимально выгодные и надёжные условия взаимодействия в направлении аутсорсинга по охране труда. Работая по принципу единого окна, Вы сможете получить в нашем лице надёжного партнера в направлении охраны труда, обучения персонала, а также помощь в организации процессов медосмотров сотрудников и аттестации рабочих мест.
+                h5 Заголовок h5
+                p Центр профессионального обучения «Северный Путь» является аккредитованной организацией, оказывающей 
+                    | услуги в области охраны труда и предоставляет максимально выгодные и надёжные условия 
+                    | взаимодействия в направлении аутсорсинга по охране труда. Работая по принципу единого окна, 
+                    | Вы сможете получить в нашем лице надёжного партнера в направлении охраны труда, обучения персонала, 
+                    | a также помощь в организации процессов медосмотров сотрудников и аттестации рабочих мест. 
+                h6 Заголовок h6
+                ul 
+                    li Центр профессионального обучения «Северный Путь» является аккредитованной организацией, 
+                    li оказывающей услуги в области охраны труда и предоставляет максимально выгодные 
+                    li и надёжные условия взаимодействия в направлении аутсорсинга по охране труда. 
+                    li Работая по принципу единого окна, Вы сможете получить в нашем лице надёжного партнера 
+        footer.footer
+            .container
+                .row.footer__row
+                    .column.footer__column
+                        ul.footer__list
+                            li.footer__list__item Обучение персонала.
+                            li.footer__list__item Лицензирование.
+                            li.footer__list__item Консалтинг.
+                        a(href="#").policy Версия для слабовидящих
+                        br
+                        a(href="#").policy Политика конфиденциальности
+                    a.column.footer__logo(href="/")
+                    .column.footer__column
+                        ul.footer__list.footer__list_contact
+                            li
+                                a(href="tel:88124696068").footer__link.footer__tel 8 (812) 469-60-68
+                                    span.icon
+                            li
+                                a(href="mailto:info@uc-sp.ru").footer__link.footer__mail info@uc-sp.ru
+                                    span.icon
+                            li
+                                a(href="https://vk.com/ucnorthway" target='_blank').footer__link.footer__vk Присоединяйтесь к группе ВК
+                                    span.icon
+                            li
+                                a(href='' target='_blank').footer__link.footer__link_last.footer__address Санкт-Петербург, ул. Оборонная, 10 лит. А офис 310А
+                                    span.icon
+        script(src="./js/slick.min.js")
+        script(src="./js/jquery.inputmask.js")
+        script(src="./js/app.min.js")
+        script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU")

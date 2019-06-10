@@ -33,3 +33,40 @@
         }
     }
 }
+
+/* Media */
+@media all and (max-width: $desktop){}
+@media all and (max-width: $desktop_m){}
+@media all and (max-width: $tablet){
+    .content_section{
+        .row{
+            .column {
+                &.vacancy{
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                }
+            }
+        }
+        .vacancy + .vacancy{
+            margin-top: 40px;
+        }
+    }
+}
+@media all and (max-width: $mobile_l){
+    .content_section{
+        .content__title {
+            font-size: 24px;
+            text-align: left;
+            margin-bottom: 30px;
+        }
+        .row{
+            .column {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+        .preview-page + .preview-page{
+            margin-top: 50px;
+        }
+    }
+}

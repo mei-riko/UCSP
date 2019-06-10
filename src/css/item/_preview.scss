@@ -54,3 +54,21 @@
         }
     }
 }
+
+/* Media */
+@media all and (max-width: $desktop){}
+@media all and (max-width: $desktop_m){}
+@media all and (max-width: $tablet){
+    .preview-page{
+        &__title {
+            font-size: 16px;
+        }
+    }
+}
+@media all and (max-width: $mobile_l){
+    .preview-page{
+        &__title {
+            font-size: 20px;
+        }
+    }
+}

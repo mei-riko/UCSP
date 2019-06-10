@@ -71,3 +71,21 @@
         list-style: decimal;
     }
 }
+
+/* Media */
+@media all and (max-width: $desktop){}
+@media all and (max-width: $desktop_m){}
+@media all and (max-width: $tablet){
+    .content_seo{
+        .container {
+            padding: 0 15px;
+        }
+    }
+}
+@media all and (max-width: $mobile_l){
+    .content_seo{
+        .container {
+            padding: 0 30px;
+        }
+    }
+}

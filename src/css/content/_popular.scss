@@ -22,3 +22,47 @@
         }
     }
 }
+
+/* Media */
+@media all and (max-width: $desktop){
+    .content_popular{
+        padding-bottom: 30px;
+        .row{
+            justify-content: center;
+            .column {
+                flex: 0 0 50%;
+                max-width: 50%;
+
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+@media all and (max-width: $desktop_m){
+    .content_popular{
+        padding-bottom: 60px;
+        .row{
+            justify-content: center;
+            .column {
+                flex: 0 0 60%;
+                max-width: 60%;
+                margin-bottom: 0px;
+
+                & + .column{
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+}
+@media all and (max-width: $tablet){
+    .content_popular{
+        .row{
+            .column {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+    }
+}
+@media all and (max-width: $mobile_l){}

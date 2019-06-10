@@ -16,7 +16,7 @@
     }
     .item{
         .item__icon{
-            background: #fff;
+            background-color: #fff;
             margin-bottom: 30px;
         }
         .item__title{
@@ -28,6 +28,45 @@
         }
         .item__offer{
             color: #325564;
+        }
+    }
+}
+/* Media */
+@media all and (max-width: $desktop){}
+@media all and (max-width: $desktop_m){
+    .content_sale{
+        .item{
+            .item__title {
+                font-size: 16px;
+            }
+        }
+    }
+}
+@media all and (max-width: $tablet){
+    .content_sale{
+        padding-bottom: 30px;
+        .row{
+            .column {
+                flex: 0 0 50%;
+                max-width: 50%;
+
+                margin-bottom: 30px;
+            }
+        }
+        .item{
+            .item__title {
+                font-size: 20px;
+            }
+        }
+    }
+}
+@media all and (max-width: $mobile_l){
+    .content_sale{
+        .row{
+            .column {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
         }
     }
 }

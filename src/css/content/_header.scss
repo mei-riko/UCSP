@@ -23,3 +23,35 @@
         }
     }
 }
+
+/* Media */
+@media all and (max-width: $desktop){}
+@media all and (max-width: $desktop_m){}
+@media all and (max-width: $tablet){
+    .content_header{
+        .row{
+            justify-content: center;
+            .column{
+                flex: 0 0 100%;
+                max-width: 100%;
+                &_sidebar{
+                    margin-top: 30px;
+                    flex: 0 0 80%;
+                    max-width: 80%;
+                }
+            }
+        }
+    }
+}
+@media all and (max-width: $mobile_l){
+    .content_header{
+        .row{
+            .column{
+                &_sidebar{
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
