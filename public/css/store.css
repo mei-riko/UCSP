@@ -55,7 +55,8 @@ a {
     color: #5797b8;
     -webkit-transition: all .3s;
     -o-transition: all .3s;
-    transition: all .3s; }
+    transition: all .3s;
+    cursor: pointer; }
 
 .clearfix:after {
   content: "";
@@ -137,6 +138,215 @@ body {
   .bg_blue-gradient.content .content__title {
     color: #7dbad8; }
 
+/* Header */
+.header {
+  padding: 30px 0; }
+  .header__row {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .header__logo {
+    width: 260px;
+    height: 170px;
+    background: url(../img/UCSP_logo.svg) no-repeat 6px -15px/236px;
+    padding: 0 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -webkit-transition: 0;
+    -o-transition: 0;
+    transition: 0; }
+  .header__offer {
+    font-family: 'Open Sans Condensed',sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px; }
+  .header__content {
+    width: calc(100% - 310px); }
+  .header__top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0 15px;
+    font-size: 16px;
+    line-height: 18px;
+    margin-top: 15px;
+    margin-bottom: 15px; }
+    .header__top .address {
+      padding: 4px 30px;
+      background: url("../img/icon/maps.svg") no-repeat left center/22px; }
+    .header__top .mail {
+      padding: 4px 30px;
+      background: url("../img/icon/envelope.svg") no-repeat left center/22px; }
+    .header__top .phone {
+      font-weight: 700;
+      padding: 4px 30px;
+      padding-right: 0;
+      background: url("../img/icon/telephone.svg") no-repeat left center/22px; }
+    .header__top .vk {
+      padding: 4px 30px;
+      background: url("../img/icon/vk.svg") no-repeat left center/22px; }
+  .header .separator {
+    width: calc(100% - 30px);
+    height: 40px;
+    background: url(../img/separ.png) no-repeat center;
+    margin: 0 auto; }
+  .header__nav {
+    margin-top: 15px; }
+    .header__nav .header__navbar {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      text-transform: uppercase; }
+    .header__nav .header__item {
+      padding: 0 15px; }
+      .header__nav .header__item .search {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background: url(../img/icon/search.svg) no-repeat center/contain; }
+    .header__nav .header__link {
+      font-size: 18px;
+      line-height: 24px;
+      display: inline-block; }
+
+.sticky-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  padding: 15px 0;
+  z-index: 999;
+  background-image: -webkit-radial-gradient(circle farthest-corner at center 0%, rgba(66, 93, 107, 0.9) 0%, rgba(45, 62, 70, 0.9) 70%);
+  background-image: -o-radial-gradient(circle farthest-corner at center 0%, rgba(66, 93, 107, 0.9) 0%, rgba(45, 62, 70, 0.9) 70%);
+  background-image: radial-gradient(circle farthest-corner at center 0%, rgba(66, 93, 107, 0.9) 0%, rgba(45, 62, 70, 0.9) 70%); }
+  .sticky-menu .header__row {
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+  .sticky-menu .header__logo {
+    width: 270px;
+    height: 90px;
+    background: url(../img/UCSP_logo_compact.svg) no-repeat 3px -6px/250px;
+    padding: 0 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end; }
+  .sticky-menu .header__offer {
+    font-size: 14px;
+    color: #fff;
+    margin-left: 40px; }
+  .sticky-menu .header__content {
+    width: auto; }
+  .sticky-menu .separator {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.2); }
+  .sticky-menu .header__top {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+    .sticky-menu .header__top .header__link {
+      font-size: 14px;
+      line-height: 16px;
+      color: #fff; }
+    .sticky-menu .header__top .address {
+      background: url("../img/icon/maps-light.svg") no-repeat left center/22px; }
+    .sticky-menu .header__top .mail {
+      background: url("../img/icon/envelope-light.svg") no-repeat left center/22px; }
+    .sticky-menu .header__top .phone {
+      background: url("../img/icon/telephone-light.svg") no-repeat left center/22px; }
+    .sticky-menu .header__top .vk {
+      background: url("../img/icon/vk-light.svg") no-repeat left center/22px; }
+  .sticky-menu .header__nav .header__item .search {
+    background: url(../img/icon/search-white.svg) no-repeat center/contain; }
+  .sticky-menu .header__nav .header__link {
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff; }
+
+.content.sticky {
+  margin-top: 230px; }
+
+/* Media */
+/* Footer */
+/* Footer */
+.footer {
+  background: url("../img/footer-wrap-bg.jpg") no-repeat center/cover; }
+  .footer .footer__row {
+    padding: 55px 65px 35px;
+    background: inherit; }
+    .footer .footer__row .footer__logo {
+      width: 220px;
+      height: 120px;
+      background: url(../img/UCSP_logo_footer.svg) no-repeat center -20px;
+      background-size: 200px 160px; }
+    .footer .footer__row .footer__column {
+      width: calc( (100% - 220px)/2); }
+  .footer .footer__list {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    width: 260px;
+    max-width: 100%;
+    /* Footer Column Contact */ }
+    .footer .footer__list__item {
+      display: inline-block;
+      margin-bottom: 6px; }
+    .footer .footer__list .footer__link {
+      margin-bottom: 10px; }
+      .footer .footer__list .footer__link_last {
+        margin-bottom: 0; }
+    .footer .footer__list + .policy {
+      margin-top: 24px; }
+    .footer .footer__list_contact {
+      margin-left: auto; }
+      .footer .footer__list_contact .footer__link {
+        position: relative;
+        font-size: 14px;
+        line-height: 18px; }
+        .footer .footer__list_contact .footer__link .icon {
+          position: absolute;
+          top: 0;
+          left: -30px;
+          width: 18px;
+          height: 18px; }
+      .footer .footer__list_contact .footer__tel {
+        font-size: 20px;
+        line-height: 20px; }
+        .footer .footer__list_contact .footer__tel .icon {
+          background: url(../img/icon/phone_w.png) no-repeat center; }
+      .footer .footer__list_contact .footer__mail .icon {
+        background: url(../img/icon/mail_w.png) no-repeat center; }
+      .footer .footer__list_contact .footer__vk .icon {
+        background: url(../img/icon/vk.png) no-repeat center; }
+      .footer .footer__list_contact .footer__address .icon {
+        background: url(../img/icon/gps_w.png) no-repeat center; }
+  .footer__link {
+    display: inline-block;
+    color: #fff; }
+    .footer__link:hover {
+      color: #d9d9d9; }
+  .footer .policy {
+    display: inline-block;
+    color: #fff;
+    margin-top: 10px;
+    font-size: 12px;
+    border-bottom: 1px solid; }
+    .footer .policy:hover {
+      color: #d9d9d9; }
+
+/* Media */
 /* Main Content*/
 .content {
   padding: 60px 0; }
@@ -283,15 +493,15 @@ body {
     -ms-flex: 0 0 25%;
     flex: 0 0 25%;
     max-width: 25%; }
-  .content_product .content_inside {
+  .content_product.content_inside {
     padding-bottom: 30px; }
-    .content_product .content_inside .row .column {
+    .content_product.content_inside .row .column {
       -webkit-box-flex: 0;
       -ms-flex: 0 0 50%;
       flex: 0 0 50%;
       max-width: 50%;
       margin-bottom: 30px; }
-      .content_product .content_inside .row .column .product {
+      .content_product.content_inside .row .column .product {
         height: 300px; }
 
 /* Media */

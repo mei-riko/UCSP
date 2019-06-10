@@ -44,7 +44,7 @@ gulp.task('scripts', function () {
       }
     }).on('error', notify.onError()))
     .pipe(gulp.dest('./public/js/'))
-    // .pipe(uglify())
+    .pipe(uglify())
     .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest('./public/js/'));
 });

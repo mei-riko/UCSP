@@ -11,77 +11,27 @@
   </head>
   <body>
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <header>
-      <div class="container sm-hd"><a href="#">
-          <div class="logo"><span class="c15 black">Обучение. Консалтинг. Лицензирование.</span></div></a>
-        <div class="center-wrap">
-          <div class="social">
-            <ul>
-              <li class="address black r15"><a href="">Cанкт-Петербург, ул. Оборонная, 10 лит. А<span class="icon"></span></a></li>
-              <li class="mail black r15"><a href="mailto:info@uc-sp.ru">info@uc-sp.ru<span class="icon"></span></a></li>
-              <li class="vk black r15"><a href="https://vk.com/ucnorthway" target="_blank">группа ВК<span class="icon"></span></a></li>
-              <li class="phone black sb16"><a href="tel:88124696068">8 (812) 469-60-68<span class="icon"></span></a></li>
+    <header class="header">
+      <div class="container">
+        <div class="row header__row"><a class="header__logo" href="#"><span class="header__offer">Обучение. Консалтинг. Лицензирование.</span></a>
+          <div class="header__content">
+            <ul class="header__top">
+              <li class="address"><a class="header__link" href="">Cанкт-Петербург, ул. Оборонная, 10 лит. А<span class="icon"></span></a></li>
+              <li class="mail"><a class="header__link" href="mailto:info@uc-sp.ru">info@uc-sp.ru<span class="icon"></span></a></li>
+              <li class="vk"><a class="header__link" href="https://vk.com/ucnorthway" target="_blank">группа ВК<span class="icon"></span></a></li>
+              <li class="phone"><a class="header__link" href="tel:88124696068">8 (812) 469-60-68<span class="icon"></span></a></li>
             </ul>
-          </div>
-          <div class="separator"></div>
-          <div class="navigate">
-            <nav>
-              <ul class="r18 black upper">
-                <li><a href="#">Услуги</a></li>
-                <li><a href="#">Сведения об Образовательной организации</a></li>
-                <li><a href="#">Контакты</a></li>
+            <div class="separator"></div>
+            <nav class="header__nav">
+              <ul class="header__navbar">
+                <li class="header__item"><a class="header__link" href="#">Услуги</a></li>
+                <li class="header__item"><a class="header__link" href="#">Магазин</a></li>
+                <li class="header__item"><a class="header__link" href="#">Вакансии</a></li>
+                <li class="header__item"><a class="header__link" href="#">Сведения о центре</a></li>
+                <li class="header__item"><a class="header__link" href="#">Контакты</a></li>
+                <li class="header__item"><a class="search" href="#"></a></li>
               </ul>
             </nav>
-          </div><a class="search_btn" href="#">
-            <div class="search-icon"></div></a>
-        </div>
-      </div>
-      <div class="small-menu">
-        <div class="container">
-          <div class="logo-sm"></div><a href="#">
-            <div class="search-loop"></div></a>
-          <div class="burger in" id="burger">
-            <div></div>
-          </div>
-          <div class="clearfix"></div>
-          <div class="menu_list" style="display:none">
-            <ul class="clearfix">
-              <li><a class="l16 black" href="#">Услуги     </a></li>
-              <li><a class="l16 black" href="#">Сведения об Образовательной организации     </a></li>
-              <li><a class="l16 black" href="#">Контакты      </a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer">     
-          <div class="container">
-            <div class="phone"><a class="white r14" href="tel:88124696068">8 (812) 469-60-68<span class="icon"></span></a></div>
-            <div class="mail"><a class="white r14" href="mailto:info@uc-sp.ru">info@uc-sp.ru<span class="icon"></span></a></div>
-          </div>
-        </div>
-      </div>
-      <div class="sticky-menu">
-        <div class="container">
-          <div class="logo"><span class="c13 white">Обучение. Консалтинг. Лицензирование.</span></div>
-          <div class="center-wrap">
-            <div class="social">
-              <ul>
-                <li class="address"><a class="white r14" href="#">Санкт-Петербург, ул. Оборонная, 10 лит. А<span class="icon"></span></a></li>
-                <li class="mail"><a class="white r14" href="mailto:info@uc-sp.ru">info@uc-sp.ru<span class="icon"></span></a></li>
-                <li class="vk"><a class="white r14" href="http://vk.com/ucnorthway" target="_blank">группа ВК<span class="icon"></span></a></li>
-                <li class="phone"><a class="white r14" href="tel:88124696068">8 (812) 469-60-68<span class="icon"></span></a></li>
-              </ul>
-            </div>
-            <div class="separator-sm"></div>
-            <div class="navigate">
-              <nav>
-                <ul>
-                  <li><a class="r16 white upper" href="#">Услуги</a></li>
-                  <li><a class="r16 white upper" href="#">Сведения об Образовательной организации</a></li>
-                  <li><a class="r16 white upper" href="#">Контакты</a></li>
-                </ul>
-              </nav>
-            </div><a class="search_btn" href="#">
-              <div class="search-icon"></div></a>
           </div>
         </div>
       </div>
@@ -249,34 +199,5 @@
         </div>
       </div>
     </section>
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-wrapper">
-          <div class="content-wrap">
-            <div class="left">
-              <ul class="l14 white">
-                <li>Обучение персонала.</li>
-                <li>Лицензирование.</li>
-                <li>Консалтинг.</li>
-              </ul><a class="policy l12 under white" href="#">Политика конфиденциальности</a><span class="madeby l12 white">Разработано по технологии<a href="http://adsdesign.ru" target="_blank"> ADS Design</a></span>
-            </div>
-            <div class="logo"></div>
-            <div class="right">
-              <ul>
-                <li><a class="tel r20 white" href="tel:88124696068">8 (812) 469-60-68<span class="icon"></span></a></li>
-                <li><a class="mail r16 white" href="mailto:info@uc-sp.ru">info@uc-sp.ru<span class="icon"></span></a></li>
-                <li><a class="vk r16 white" href="https://vk.com/ucnorthway" target="_blank">Присоединяйтесь<span class="icon"></span></a></li>
-                <li><a class="address l16 white" href="" target="_blank"> Санкт-Петербург, ул. Оборонная, 10 лит. А офис 310А<span class="icon"></span></a></li>
-              </ul>
-            </div>
-            <div class="clearfix"></div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <script src="./js/slick.min.js"></script>
-    <script src="./js/jquery.inputmask.js"></script>
-    <script src="./js/app.min.js"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
   </body>
 </html>

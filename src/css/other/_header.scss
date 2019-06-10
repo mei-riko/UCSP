@@ -1,0 +1,176 @@
+.header{
+    padding: 30px 0;
+
+    &__row{
+        justify-content: space-between;
+    }
+
+    &__logo{
+        width: 260px;
+        height: 170px;
+        background: url(../img/UCSP_logo.svg) no-repeat 6px -15px / 236px;
+
+        padding: 0 15px;
+
+        display: flex;
+        align-items: flex-end;
+
+        transition: 0;
+    }
+    &__offer{
+        font-family: 'Open Sans Condensed',sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    &__content{
+        width: calc(100% - 310px);
+    }
+
+    &__top{
+        display: flex;
+        justify-content: space-between;
+
+        padding: 0 15px;
+
+        font-size: 16px;
+        line-height: 18px;
+
+        margin-top: 15px;
+        margin-bottom: 15px;
+
+        .address{
+            padding: 4px 30px;
+            background: url("../img/icon/maps.svg") no-repeat left center / 22px;
+        }
+        .mail{
+            padding: 4px 30px;
+            background: url("../img/icon/envelope.svg") no-repeat left center / 22px;
+        }
+        .phone{
+            font-weight: 700;
+            padding: 4px 30px;
+            padding-right: 0;
+            background: url("../img/icon/telephone.svg") no-repeat left center / 22px;
+        }
+        .vk{
+            padding: 4px 30px;
+            background: url("../img/icon/vk.svg") no-repeat left center / 22px;
+        }
+    }
+    .separator{
+        width: calc(100% - 30px);
+        height: 40px;
+        background: url(../img/separ.png) no-repeat center;
+        margin: 0 auto;
+    }
+    &__nav{
+        margin-top: 15px;
+        .header__navbar{
+            display: flex;
+            justify-content: space-between;
+
+            text-transform: uppercase;
+        }
+        .header__item{
+            padding: 0 15px;
+            .search{
+                display: inline-block;
+
+                width: 20px;
+                height: 20px;
+                background: url(../img/icon/search.svg) no-repeat center / contain;
+            }
+        }
+        .header__link{
+            font-size: 18px;
+            line-height: 24px;
+
+            display: inline-block;
+        }
+    }
+}
+
+.sticky-menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: none;
+
+    width: 100%;
+
+    padding: 15px 0;
+    z-index: 999;
+
+    background-image: radial-gradient(circle farthest-corner at center 0%,rgba(66, 93, 107, 0.9) 0%,rgba(45, 62, 70, 0.9) 70%);
+
+    .header__row{
+        justify-content: space-around;
+    }
+    .header__logo{
+        width: 270px;
+        height: 90px;
+        background: url(../img/UCSP_logo_compact.svg) no-repeat 3px -6px/250px;
+
+        padding: 0 15px;
+
+        display: flex;
+        align-items: flex-end;
+    }
+    .header__offer{
+        font-size: 14px;
+        color: $white;
+        margin-left: 40px;
+    }
+    .header__content{
+        width: auto;
+    }
+    .separator{
+        height: 1px;
+        background: rgba($color: $white, $alpha: 0.2);
+    }
+    .header__top{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        .header__link{
+            font-size: 14px;
+            line-height: 16px;
+            color: $white;
+        }
+        .address{
+            background: url("../img/icon/maps-light.svg") no-repeat left center / 22px;
+        }
+        .mail{
+            background: url("../img/icon/envelope-light.svg") no-repeat left center / 22px;
+        }
+        .phone{
+            background: url("../img/icon/telephone-light.svg") no-repeat left center / 22px;
+        }
+        .vk{
+            background: url("../img/icon/vk-light.svg") no-repeat left center / 22px;
+        }
+    }
+    .header__nav{
+        .header__item{
+            .search {
+                background: url(../img/icon/search-white.svg) no-repeat center/contain;
+            }
+        }
+        .header__link{
+            font-size: 16px;
+            line-height: 20px;
+            color: $white;   
+        }
+    }
+}
+.content.sticky{
+    margin-top: 230px;
+}
+
+
+/* Media */
+@media all and (max-width: $desktop){}
+@media all and (max-width: $desktop_m){}
+@media all and (max-width: $tablet){}
+@media all and (max-width: $mobile_l){}

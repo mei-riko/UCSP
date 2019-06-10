@@ -1,53 +1,6 @@
 import $ from 'jquery'
 $(document).ready(() =>{
-  $('.real-slider').not(".slick-initialized").slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    dots: true,
-    fade: true,
-    cssEase: "linear",
-    autoplay: true,
-    autoplaySpeed: 2500,
-    pauseOnFocus: false,
-    responsive: [
-      {
-        breakpoint: 1200,
-        settings: {}
-      },
-      {
-        breakpoint: 600,
-        settings: {}
-      }
-    ]
-  });
 
-  $(".reviews-slider")
-    .not(".slick-initialized")
-    .slick({
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      arrows: true,
-      dots: false,
-      prevArrow: '<button class="arrow arrow-left"></button>',
-      nextArrow: '<button class="arrow arrow-right"></button>',
-      responsive: [
-        {
-          breakpoint: 1200,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
-          }
-        },
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
-      ]
-    });
   // Input mask
   if ($('input#phone').length > 0) {
     $("#phone").inputmask({
@@ -56,20 +9,25 @@ $(document).ready(() =>{
       showMaskOnHover: true
     })
   }
+
+  if ($(window).scrollTop() > 300 ) {
+    $(".content_header").addClass("sticky");
+    $(".header").addClass("sticky-menu");
+    $(".header").fadeIn();
+  }
   
-    
-
-
   $(window).scroll(function () {
-    if ($(window).scrollTop() > 500 && $(window).width() >= 1200) {
-      $("header .sticky-menu").fadeIn(500);
-    } else {
-      $("header .sticky-menu").fadeOut(500);
+    if ($(window).scrollTop() > 300 ) {
+      $(".content_header").addClass("sticky");
+      $(".header").addClass("sticky-menu");
+      $(".header").fadeIn();
+    } else if ($(window).scrollTop() < 200 ) {
+      $(".content_header").removeClass("sticky");
+      $(".header").css("display", "");
+      $(".header").removeClass("sticky-menu");
     }
   });
-  $("#burger").on("click", function() {
-      $(".menu_list").toggle();
-  });
+
   // search
   $("#search-global").keyup(function() {
     var search_global = $("#search-global").val();
@@ -98,27 +56,6 @@ $(document).ready(() =>{
       $('#search-global').val('');
     };
   });
-
-  // TABS
-  $('.tab-title').click(function () {
-    $(this).toggleClass('in').next().slideToggle();
-    $(this).parent().toggleClass('down');
-    $('.tab-title').not(this).removeClass('in').next().slideUp();
-    $('.tab-title').not(this).parent().removeClass('down');
-    return false;
-  });
-
-  if ($(".modal-news").length) {
-    $(".modal-news").iziModal({
-      closeOnEscape: true,
-      overlayColor: "rgba(0, 0, 0, 0.7)",
-      group: "news",
-      navigateArrows: true,
-      onClosing: function (modal_close) {
-        modal_use = 0
-      }
-    });
-  }
 
   var modal_use = 0;
 

@@ -69,7 +69,7 @@ a {
 	&:hover {
 		color: #5797b8;
 		transition: all .3s;
-
+		cursor: pointer;
 	}
 }
 .clearfix {
@@ -141,3 +141,8 @@ body {
         }
     }
 }
+
+/* Header */
+@import "other/header.scss";
+/* Footer */
+@import "other/footer.scss";
