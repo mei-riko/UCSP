@@ -1,0 +1,35 @@
+/* Preview Child Page */
+.content_section{
+    .row{
+        .column{
+            flex: 0 0 50%;
+            max-width: 50%;
+            &.vacancy{
+                flex: 0 0 33%;
+                max-width: 33%;
+            }
+        }
+    }
+    .content__title{
+        margin-bottom: 60px;
+    }
+    .row + .row{
+        position: relative;
+        padding-top: 34px;
+        margin-top: 40px;
+
+        &:before{
+            position: absolute;
+            top: 0;
+            left: 15px;
+
+            content: '';
+            display: block;
+            width: calc(100% - 30px);
+            height: 1px;
+            
+            background-color: #1c2c34;
+            border-bottom: 1px solid #49616d;
+        }
+    }
+}

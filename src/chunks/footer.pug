@@ -1,0 +1,60 @@
+div.modal-callback#callback1
+    div.text-wrap
+        div.s-title.l18 Программа обучения
+        div.title.r32.text-gold.lh28 Охрана труда
+
+        form(action="#", method="POST")
+            div.form-title.r16.lh24 Укажите способ связи с Вами, и наши сотрудники оформят заявку на программу обучения.
+            label(for="email").email.r14 Электронная почта
+            input(type="email", name="email", placeholder=" Введите ваш e-mail " ).email.l20.black
+            label(for="phone").phone.r14 Телефон
+            input(type="phone", name="phone", placeholder="8 ( ___ ) ___ - __ - __ ").phone.l20.black
+            div.agree.clearfix
+                input(type="checkbox" name="agree", checked,required).checkbox.l18
+                label(for="agree").checkbox.r14.lh14 Я согласен с 
+                    a(href="#", style="") правилами использования сайта
+            button.r21.white Оставить заявку
+            
+        a(href="",data-izimodal-close)
+            span.close.l14.text-gold Закрыть
+
+
+footer
+    div.container
+        div.cta-wrap
+            div.title.r17.white Оставьте заявку, и наши специалисты оперативно ответят на любые вопросы
+            form(action="#", method="POST")
+                input(type="text", placeholder="8 ( ___ ) ___ - __ - __ ")#phone.white.l18
+                button(type="submit").btn.r14.white.text-center Перезвонить
+                div.clearfix
+        div.footer-wrapper
+            div.content-wrap
+                div.left
+                    ul.l14.white
+                        li Обучение персонала.
+                        li Лицензирование.
+                        li Консалтинг.
+                    a(href="#").policy.l12.under.white Политика конфиденциальности
+                    span.madeby.l12.white Разработано по технологии
+                        a(href="http://adsdesign.ru" target='_blank')  ADS Design
+
+                div.logo
+                div.right
+                    ul
+                        li
+                            a(href="tel:88124696068").tel.r20.white 8 (812) 469-60-68
+                                span.icon
+                        li
+                            a(href="mailto:info@uc-sp.ru").mail.r16.white info@uc-sp.ru
+                                span.icon
+                        li: a(href="https://vk.com/ucnorthway" target='_blank').vk.r16.white Присоединятесь
+                                span.icon
+                        li: a(href='' target='_blank').address.l16.white  Санкт-Петербург, ул. Оборонная, 10 лит. А офис 310А
+                                span.icon
+                div.clearfix
+
+script(src="./js/iziModal.min.js")
+script(src="./js/slick.min.js")
+script(src="./js/jquery.inputmask.js")
+script(src="./js/app.min.js")
+script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU")

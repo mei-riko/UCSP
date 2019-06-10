@@ -1,0 +1,389 @@
+.content{
+    padding: 60px 0;
+    
+    .container_inside{
+        width: 910px;
+    }
+    .content__title{
+        font-size: 32px;
+        line-height: 40px;
+
+        color: #a2926b;
+        margin-bottom: 30px;
+        & + .content__offer{
+            margin-top: -15px;
+        }
+    }
+    .content__offer{
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 300;
+
+        & + .row{
+            margin-top: 60px;
+        }
+    }
+    .btn{
+        position: relative;
+        
+        display: inline-block;
+        
+        max-width: 100%;
+        height: 40px;
+        
+        font-size: 14px;
+        line-height: 38px;
+        
+        border: none;
+        padding: 0 20px;
+    
+        cursor: pointer;
+        transition: all 0.2s;
+        &_gold{
+            background-color: #796e52;
+            color: #fff;
+            &:hover{
+                background-color: #5b523d;
+            }
+        }
+        &_primary{
+            background: #3e83a4;
+            color: #fff;
+            &:hover{
+                background: darken(#3e83a4, 10%);
+            }
+        }
+        &_with-arrow{
+            background-image: url(../img/icon/arrow.png);
+            background-repeat: no-repeat;
+            background-position-x: calc(100% - 20px);
+            background-position-y: center;
+            background-size: 18px;
+    
+            padding-right: 48px;
+        }
+    }
+
+    ul, ol, 
+    p + ul, p + ol, 
+    ul + p, ol + p, 
+    p + p{
+        margin-top: 15px;
+    }
+}
+
+/* Media */
+
+@media all and (max-width: $desktop){
+    .content{
+        &_product{
+            padding-bottom: 30px;
+            .row{
+                .column {
+                    flex: 0 0 40%;
+                    max-width: 40%;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+        &_popular{
+            padding-bottom: 30px;
+            .row{
+                justify-content: center;
+                .column {
+                    flex: 0 0 50%;
+                    max-width: 50%;
+
+                    margin-bottom: 30px;
+                }
+            }
+        }
+        .vacancy{
+            &__title {
+                font-size: 16px;
+                line-height: 20px;
+            }
+            &__salary {
+                font-size: 14px;
+                line-height: 18px;
+            }
+        }
+    }
+}
+@media all and (max-width: $desktop_m){
+    .content{
+        &_product{
+            .row{
+                .column {
+                    flex: 0 0 50%;
+                    max-width: 50%;
+                }
+            }
+        }
+        &_advantage{
+            .row{
+                justify-content: center;
+                .column {
+                    flex: 0 0 33%;
+                    max-width: 33%;
+
+                    margin-bottom: 30px;
+                }
+            }
+            .cta-wrap{
+                flex-wrap: wrap;
+
+                text-align: center;
+                margin-top: 30px;
+                &__title{
+                    margin-bottom: 15px;
+                }
+                &__form{
+                    flex-wrap: wrap;
+                    margin: 0 auto;
+                    input{
+                        margin-left: 0px;
+                        width: 100%;
+                    }
+                    button{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        &_sale{
+            .item{
+                .item__title {
+                    font-size: 16px;
+                }
+            }
+        }
+        &_popular{
+            padding-bottom: 60px;
+            .row{
+                justify-content: center;
+                .column {
+                    flex: 0 0 60%;
+                    max-width: 60%;
+                    margin-bottom: 0px;
+
+                    & + .column{
+                        margin-top: 30px;
+                    }
+                }
+            }
+        }
+        .vacancy{
+            &__title {
+                font-size: 14px;
+                line-height: 18px;
+                font-weight: 700;
+            }
+            &__salary {
+                font-size: 14px;
+                line-height: 18px;
+            }
+            &__offer {
+                font-size: 12px;
+                line-height: 16px;
+
+                margin-top: 10px;
+            }
+        }
+    }
+}
+@media all and (max-width: $tablet){
+    .content{
+        &_header{
+            .row{
+                justify-content: center;
+                .column{
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                    &_sidebar{
+                        margin-top: 30px;
+                        flex: 0 0 80%;
+                        max-width: 80%;
+                    }
+                }
+            }
+        }
+        &_advantage{
+            .row{
+                justify-content: center;
+                .column {
+                    flex: 0 0 40%;
+                    max-width: 40%;
+
+                    margin-bottom: 30px;
+                }
+            }
+        }
+        &_sale{
+            padding-bottom: 30px;
+            .row{
+                .column {
+                    flex: 0 0 50%;
+                    max-width: 50%;
+
+                    margin-bottom: 30px;
+                }
+            }
+            .item{
+                .item__title {
+                    font-size: 20px;
+                }
+            }
+        }
+        &_popular{
+            .row{
+                .column {
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                }
+            }
+        }
+        &_seo{
+            .container {
+                padding: 0 15px;
+            }
+        }
+        &_section{
+            .row{
+                .column {
+                    &.vacancy{
+                        flex: 0 0 100%;
+                        max-width: 100%;
+                    }
+                }
+            }
+            .vacancy + .vacancy{
+                margin-top: 40px;
+            }
+        }
+        .product{
+            .product__title{
+                padding-bottom: 10px;
+            }
+        }
+        .preview-page{
+            &__title {
+                font-size: 16px;
+            }
+        }
+        .vacancy{
+            &__title {
+                font-size: 20px;
+                line-height: 22px;
+            }
+            &__salary {
+                font-size: 16px;
+                line-height: 20px;
+            }
+            &__offer {
+                font-size: 14px;
+                line-height: 18px;
+            }
+        }
+    }
+}
+@media all and (max-width: $mobile_l){
+    .content{
+        .content__offer{
+            & + .row{
+                margin-top: 30px;
+            }
+        }
+        &_header{
+            .row{
+                .column{
+                    &_sidebar{
+                        flex: 0 0 100%;
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+        &_product{
+            .row{
+                .column {
+                    flex: 0 0 100%;
+                    max-width: 100%;
+
+                    & + .column{
+                        margin-top: 30px;
+                    }
+                }
+            }
+            &.content_inside{
+                .row{
+                    .column{
+                        flex: 0 0 100%;
+                        max-width: 100%;
+                        .product{
+                            height: 200px;
+                        }
+                    }
+                }
+            }
+        }
+        &_seo{
+            .container {
+                padding: 0 30px;
+            }
+        }
+        &_sale{
+            .row{
+                .column {
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                }
+            }
+        }
+        &_section{
+            .content__title {
+                font-size: 24px;
+                text-align: left;
+                margin-bottom: 30px;
+            }
+            .row{
+                .column {
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                }
+            }
+            .preview-page + .preview-page{
+                margin-top: 50px;
+            }
+        }
+        &_contact{
+            .form{
+                &.row{
+                    .column{
+                        flex: 0 0 100%;
+                        max-width: 100%;
+                        & + .column{
+                            margin-top: 30px;
+                        }
+                    }
+                }
+                .checkbox{
+                    &__label{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+
+        .item{
+            &__title {
+                font-size: 14px;
+            }
+        }
+        .preview-page{
+            &__title {
+                font-size: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,140 @@
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Document2
+
+        link(href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:300,400,600,700', rel='stylesheet')
+        link(href='./css/style.css', rel='stylesheet')
+        link(href='./css/default.css', rel='stylesheet')
+
+    body
+        script(src="http://code.jquery.com/jquery-3.3.1.min.js")
+        include chunks/header.pug
+
+        section.content.content_header
+            .container
+                ul.content__breadcrumbs
+                    li.content__breadcrumbs__item
+                        a.content__breadcrumbs__link(href="#") Главная
+                    li.content__breadcrumbs__item
+                        span.content__breadcrumbs__span Вакансии
+                .row
+                    .column
+                        h1.content__title Вакансии учебного центра
+                        p Учебный центр «Северный Путь» не только проводит качественное обучение персонала в различных направлениях, но также и помогает с вопросами трудоустройства. Учебный центр «Северный Путь» не только проводит качественное обучение персонала в различных направлениях, но также и помогает с вопросами трудоустройства.
+                    .column.column_sidebar
+                        .info
+                            .info__title Почему мы?
+                            ul.info__list
+                                li.info__item Максимально открытая информация
+                                li.info__item Только проверенные организации
+                                li.info__item Возможность пройти обучение и работать
+        section.content.content_section.bg_blue-gradient
+            .container.container_inside
+                .content__title.text-center Интересующий вид персонала
+                .row.flex-end
+                    .column.preview-page
+                        .preview-page__title Руководители и инженерно-технические работники
+                        .preview-page__list
+                            a.preview-page__item(href="#") Руководители
+                            a.preview-page__item(href="#") Кадровое делопроизводство
+                            a.preview-page__item(href="#") Охрана труда
+                            a.preview-page__item(href="#") Инженерно-технические работники
+                        .preview-page__offer Актуальные вакансии
+                        .preview-page__color-number 42
+                        .btn.btn_gold.btn_with-arrow Подробнее
+                    .column.preview-page
+                        .preview-page__title Работники рабочих профессий
+                        .preview-page__list
+                            a.preview-page__item(href="#") Стропальщики
+                            a.preview-page__item(href="#") Машинисты
+                            a.preview-page__item(href="#") Операторы
+                            a.preview-page__item(href="#") Слесари
+                        .preview-page__offer Актуальные вакансии
+                        .preview-page__color-number 42
+                        .btn.btn_gold.btn_with-arrow Подробнее
+                .row.flex-end             
+                    .column.preview-page
+                        .preview-page__title Работники рабочих профессий
+                        .preview-page__list
+                            a.preview-page__item(href="#") Стропальщики
+                            a.preview-page__item(href="#") Машинисты
+                            a.preview-page__item(href="#") Операторы
+                            a.preview-page__item(href="#") Слесари
+                        .preview-page__offer Актуальные вакансии
+                        .preview-page__color-number 42
+                        .btn.btn_gold.btn_with-arrow Подробнее
+                    .column.preview-page
+                        .preview-page__title Руководители и инженерно-технические работники
+                        .preview-page__list
+                            a.preview-page__item(href="#") Руководители
+                            a.preview-page__item(href="#") Кадровое делопроизводство
+                            a.preview-page__item(href="#") Инженерно-технические работники
+                        .preview-page__offer Актуальные вакансии
+                        .preview-page__color-number 42
+                        .btn.btn_gold.btn_with-arrow Подробнее
+        section.content.content_contact
+            .container.container_inside
+                .content__title Остались вопросы?
+                p.content__offer Оставьте заявку, и наши специалисты оперативно вам ответят
+                form.form.row(action="")
+                    .column
+                        p.form__label Задайте вопрос здесь:
+                        textarea.form__textarea(placeholder="Введите текст сообщения" rows=6)
+                    .column
+                        p.form__label Телефон для связи:
+                        input.form__input.phone(placeholder="8 ( ___ ) ___ - __ - __")
+                        .form__agree.checkbox
+                            input.checkbox__input(type="checkbox" name="agree" checked="checked" required="required")
+                            label.checkbox__label(for="agree") Я согласен с 
+                                a.checkbox__link(href="/assets/files/documents/policy.pdf" target="_blank") правилами использования сайта
+                        button.btn.btn_primary Отправить сообщение
+        section.content.content_section.bg_blue-gradient
+            .container
+                .row
+                    .column.vacancy
+                        .vacancy__title Руководитель направления ВЭД
+                        .vacancy__salary от 57 000 до 92 000 руб.
+                        .vacancy__offer Компания «Мирафокс», Санкт-Петербург
+                    .column.vacancy
+                        .vacancy__title Руководитель отдела исследований (социологические и маркетинговые)
+                        .vacancy__salary от 60 000 руб.
+                        .vacancy__offer Компания «Мирафокс», Санкт-Петербург
+                    .column.vacancy.last
+                        .vacancy__title Руководитель направления ВЭД
+                        .vacancy__salary по результатам собеседования
+                        .vacancy__offer Компания «Мирафокс», Санкт-Петербург
+                .row
+                    .column.vacancy
+                        .vacancy__title Руководитель отдела исследований (социологические и маркетинговые)
+                        .vacancy__salary от 60 000 руб.
+                        .vacancy__offer Компания «Мирафокс», Санкт-Петербург
+                    .column.vacancy
+                        .vacancy__title Руководитель направления ВЭД
+                        .vacancy__salary от 57 000 до 92 000 руб.
+                        .vacancy__offer Компания «Мирафокс», Санкт-Петербург
+        section.content.content_sale
+            .container
+                .content__title Акции учебного центра
+                .row
+                    .column
+                        .item
+                            .item__icon.united
+                            .item__title Приведи друга
+                            .item__line
+                            .item__offer Скидка 10% на&nbsp;следующие&nbsp;заказы
+                    .column
+                        .item
+                            .item__icon.free-delivery
+                            .item__title Бесплатная доставка
+                            .item__line
+                            .item__offer Доставка документов по&nbsp;Санкт-Петербургу
+                    .column
+                        .item
+                            .item__icon.contract
+                            .item__title Договор на год
+                            .item__line
+                            .item__offer При заключении договора на&nbsp;год — скидка&nbsp;10%
+        include chunks/footer_min.pug

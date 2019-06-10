@@ -1,0 +1,22 @@
+/* Contact Form Block */
+.content_contact{
+    background: #ebeeef;
+    .form{
+        &.row{
+            .column{
+                flex: 0 0 50%;
+                max-width: 50%;   
+            }
+            .btn{
+                display: block;
+                width: 100%;
+            }
+        }
+        &__input{
+            background: #fff;
+        }
+        &__textarea{
+            background: #fff;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+/* Title Block */
+.content_header{
+    background: #f2f5f6;
+    padding: 40px 0 60px;
+
+    p{
+        font-size: 16px;
+        line-height: 26px;
+
+        & + p{
+            margin-top: 15px;
+        }
+    }
+
+    .row{
+        .column{
+            flex: 0 0 60%;
+            max-width: 60%;
+            &_sidebar{
+                flex: 0 0 40%;
+                max-width: 40%;
+            }
+        }
+    }
+}

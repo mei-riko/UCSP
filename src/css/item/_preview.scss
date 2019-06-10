@@ -1,0 +1,56 @@
+/* Child Page Preview */
+.preview-page{
+    &__title{
+        font-size: 20px;
+        color: rgb(162, 146, 107);
+        font-weight: bold;
+        line-height: 1.2;
+
+        margin-bottom: 30px;
+    }
+    &__list{
+        margin-bottom: 30px;
+        &.last{
+            margin-bottom: 0px;
+        }
+
+        .preview-page__item + .preview-page__item{
+            margin-top: 15px;
+        }
+    }
+    &__item{
+        position: relative;
+        display: block;
+
+        font-size: 14px;
+        color: #fff;
+
+        padding-left: 20px;
+        background-image: url("../img/icon/arrow-light.svg");
+        background-repeat: no-repeat;
+        background-position: 0px center;
+        background-size: 10px;
+
+        transition: .3s;
+
+        &:hover{
+            background-position: 4px center;
+        }
+    }
+    &__offer{
+        font-size: 12px;
+        color: #fff;
+        & + .preview-page__color-number{
+            margin-top: 6px;
+        }
+    }
+    &__color-number{
+        font-size: 20px;
+        font-weight: 700;
+        color: #a3c6d8;
+
+        & + .btn{
+            margin-top: 30px;
+        }
+    }
+}

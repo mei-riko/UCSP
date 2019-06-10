@@ -1,0 +1,58 @@
+/* Item with Icon */
+.item{
+    text-align: center;
+    &__icon{
+        width: 80px;
+        height: 80px;
+
+        border-radius: 40px;
+        background: #f2f5f6;
+        margin:0 auto 15px;
+        &.delivery{
+            background: #f2f5f6 url("../img/icon/icon_delivery.svg") no-repeat center 20px / 35px;
+        }
+        &.clients{
+            background: #f2f5f6 url("../img/icon/icon_clients.svg") no-repeat center / 35px;
+        }
+        &.consultation{
+            background: #f2f5f6 url("../img/icon/icon_consultation.svg") no-repeat center / 35px;
+        }
+        &.certificate{
+            background: #f2f5f6 url("../img/icon/icon_iso.svg") no-repeat center / 60px;
+        }
+        &.format{
+            background: #f2f5f6 url("../img/icon/icon_format.svg") no-repeat center / 35px;
+        }
+
+        &.united{
+            background: #fff url("../img/icon/united.svg") no-repeat center / 40px;
+        }
+        &.free-delivery{
+            background: #fff url("../img/icon/tracking.svg") no-repeat center 14px / 44px;
+        }
+        &.contract{
+            background: #fff url("../img/icon/contract.svg") no-repeat 25px center / 35px;
+        }
+    }
+    &__title{
+        font-size: 16px;
+        line-height: 22px;
+    }
+    &__offer{
+        font-size: 16px;
+        line-height: 22px;
+
+        width: 200px;
+        max-width: 100%;
+
+        margin: 0 auto;
+    }
+    &__line{
+        background: #a2926b;
+        width: 200px;
+        max-width: 100%;
+        height: 2px;
+
+        margin: 15px auto;
+    }
+}

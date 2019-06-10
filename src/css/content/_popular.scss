@@ -1,0 +1,24 @@
+/* Popular Сourses */
+.content_popular{
+    background: #003f5d;
+    .content__title{
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 40px;
+        color: #ceb780;
+    }
+    .row{
+        justify-content: space-between;
+        .column{
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 33%;
+            flex: 0 0 33%;
+            max-width: 33%;
+        }
+    }
+    .product{
+        .product__title{
+            font-weight: 700;
+        }
+    }
+}

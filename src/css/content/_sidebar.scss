@@ -1,0 +1,25 @@
+.content{
+    /* Block With Information in Sidebar*/
+    .info{
+        background: #ebeeef;
+        border: 8px solid #d1dee4;
+        padding: 40px;
+        &__title{
+            font-size: 22px;
+            color: #33454e;
+            margin-bottom: 20px;
+        }
+        &__list{
+            font-size: 14px;
+            list-style: square;
+            padding-left: 16px;
+            color: #33454e;
+            .info__item + .info__item{
+                margin-top: 10px;
+            }
+        }
+        &__item{
+            position: relative;
+        }
+    }
+}

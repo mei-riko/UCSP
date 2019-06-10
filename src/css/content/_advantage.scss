@@ -1,0 +1,103 @@
+/* Advantage Block */
+.content_advantage{
+    background: #ffffff;
+    .content__title{
+        margin-bottom: 60px;
+        text-align: center;
+    }
+    .row{
+        .column{
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 20%;
+            flex: 0 0 20%;
+            max-width: 20%;
+        }
+    }
+    .cta-wrap {
+        margin: 60px auto 0;
+        width: 100%;
+        max-width: 100%;
+
+        position: relative;
+        background: #3f84af;
+        color: $white;
+        border:  5px solid #b7c4cc;
+        padding: 30px 40px;
+
+        display: flex;
+        flex-wrap: nowrap;
+
+        justify-content: space-between;
+        align-items: center;
+
+        
+        &::after{
+            content: '';
+            display: block;
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            right: -5px;
+            bottom: -5px;
+            background-color: rgba(69, 182, 214, 0.01);
+            background-image: radial-gradient(center -500%, circle farthest-corner,rgb(74, 231, 253) 0%,rgba(63, 132, 175, 0) 85%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff4ae7fd",endColorstr="#003f84af",GradientType=0);
+            z-index: 1;
+        }
+
+        &__title {
+            position: relative;
+            z-index: 5;
+            line-height: 22px;
+        }
+        &__form {
+            position: relative;
+            z-index: 5;
+
+            display: flex;
+            flex-wrap: nowrap;
+
+            input {
+                font-size: 18px;
+                font-weight: 300;
+
+                margin-left: 30px;
+                
+                background: #5baece;
+                border: none;
+                
+                width: 200px;
+                height: 40px;
+
+                padding-left: 15px;
+                padding-top: 0;
+                padding-bottom: 0;
+                &:hover {
+                    color: #fff;
+                }
+                &:focus {
+                    background: #fff;
+                    color: #003f5d;
+                }
+                &::placeholder {
+                    color: #fff;
+                }
+            }
+            .btn {
+                width: 140px;
+                max-width: 100%;
+                height: 40px;
+                background: #003f5d;
+                color: $white;
+                border: none;
+                // padding: 10px 0;
+                cursor: pointer;
+
+                transition: all 0.2s;
+                &:hover {
+                    background: lighten( #003f5d , 5%);
+                }
+            }
+        }
+    }
+}

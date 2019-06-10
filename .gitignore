@@ -1,0 +1,10 @@
+*.lock
+/node_modules
+.vscode
+!/public
+!/public/img
+!/public/js
+/public/js/app.js
+/public/js/app.min.js
+/public/css/style.css
+/public/css/style.min.css

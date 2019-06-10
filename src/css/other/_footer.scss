@@ -1,0 +1,102 @@
+/* Footer */
+.footer{
+    background: url("../img/footer-wrap-bg.jpg") no-repeat center / cover;
+
+    .footer__row{
+        padding: 55px 65px 35px;
+        background: inherit;
+        .footer__logo{
+            width: 220px;
+            height: 120px;
+            background: url(../img/UCSP_logo_footer.svg) no-repeat center -20px;
+            background-size: 200px 160px;
+        }
+        .footer__column{
+            width: calc( (100% - 220px)/2 );
+        }
+    }
+
+    .footer__list{
+        color: $white;
+        
+        font-size: 14px;
+        font-weight: 300;
+        
+        width: 260px;
+        max-width: 100%;
+        
+        &__item{
+            display: inline-block;
+            margin-bottom: 6px;
+        }
+        .footer__link{
+            margin-bottom: 10px;
+            &_last{
+                margin-bottom: 0;
+            }
+        }
+
+        & + .policy{
+            margin-top: 24px;
+        }
+        /* Footer Column Contact */
+        &_contact{
+            margin-left: auto;
+            .footer__link{
+                position: relative;
+                font-size: 14px;
+                line-height: 18px;
+                .icon{
+                    position: absolute;
+                    top: 0;
+                    left: -30px;
+                    width: 18px;
+                    height: 18px;
+                }
+            }
+            .footer__tel{
+                font-size: 20px;
+                line-height: 20px;
+                .icon{
+                    background: url(../img/icon/phone_w.png) no-repeat center;
+                }
+            }
+            .footer__mail{
+                .icon{
+                    background: url(../img/icon/mail_w.png) no-repeat center;
+                }
+            }
+            .footer__vk{
+                .icon{
+                    background: url(../img/icon/vk.png) no-repeat center;
+                }
+            }
+            .footer__address{
+                .icon{
+                    background: url(../img/icon/gps_w.png) no-repeat center;
+                }
+            }
+        }
+    }
+    &__link{
+        display: inline-block;
+        color: $white;
+        &:hover{
+            color: darken($white, 15%);
+        }
+    }
+    
+    .policy{
+        display: inline-block;
+        color: $white;
+
+        margin-top: 10px;
+
+        font-size: 12px;
+        border-bottom: 1px solid;
+
+        &:hover{
+            color: darken($white, 15%);
+        }
+    }
+}
