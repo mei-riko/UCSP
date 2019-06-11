@@ -2,22 +2,22 @@ import $ from 'jquery'
 $(document).ready(() =>{
 
   // Input mask
-  if ($('input#phone').length > 0) {
-    $("#phone").inputmask({
+  if ($('.phone').length > 0) {
+    $(".phone").inputmask({
       mask: "8 999 999 99 99",
       placeholder: " ",
       showMaskOnHover: true
     })
   }
-
-  if ($(window).scrollTop() > 300 ) {
+  // Fixed header
+  if ($(window).scrollTop() > 300 && $(window).width() > 991 ) {
     $(".content_header").addClass("sticky");
     $(".header").addClass("sticky-menu");
     $(".header").fadeIn();
   }
-  
+  // Fixed header on scroll
   $(window).scroll(function () {
-    if ($(window).scrollTop() > 300 ) {
+    if ($(window).scrollTop() > 300 && $(window).width() > 991 ) {
       $(".content_header").addClass("sticky");
       $(".header").addClass("sticky-menu");
       $(".header").fadeIn();
@@ -28,7 +28,33 @@ $(document).ready(() =>{
     }
   });
 
-  // search
+  //IziModal
+  if ($(".modal").length) {
+    $(".modal").iziModal({
+      closeOnEscape: true,
+      overlayColor: "rgba(0, 0, 0, 0.7)",
+      onOpening: function() {
+        $("input.phone").inputmask({
+          mask: "8 999 999 99 99",
+          placeholder: " ",
+          showMaskOnHover: true
+        });
+      }
+    });
+  }
+  
+  // Form in modal
+  $('.modal.modal_info .open-form').on("click",function(){
+    var parent = $(this).closest('.modal_info');
+    parent.find('.callback-form').addClass('active');
+    parent.find('.callback-form').slideToggle();
+  });
+  $(document).on('closing', '.modal.modal_info', function (e) {
+      $(this).find('.callback-form').removeClass('active');
+      $(this).find('.callback-form').slideUp();
+  });
+
+  // Search
   $("#search-global").keyup(function() {
     var search_global = $("#search-global").val();
     if (search_global.length >= 3) {
@@ -55,56 +81,6 @@ $(document).ready(() =>{
       $(".search-form").fadeOut();
       $('#search-global').val('');
     };
-  });
-
-  var modal_use = 0;
-
-  $('a.policy').on("click", function() {
-    modal_use = 0
-  });
-
-  if ($("#callback1").length) {
-    $("#callback1").iziModal({
-      closeOnEscape: true,
-      overlayColor: "rgba(0, 0, 0, 0.7)",
-      onOpening: function(modal) {
-        modal_use = 1;
-        $(".phone").inputmask({
-          mask: "8 999 999 99 99",
-          placeholder: " ",
-          showMaskOnHover: true
-        });
-      }
-    });
-  }
-
-  if ($("#terms_use").length) {
-    $("#terms_use").iziModal({
-      closeOnEscape: true,
-      overlayColor: "rgba(0, 0, 0, 0.7)",
-      onClosing: function(modal_close_term) {
-        if (modal_use == 1) {
-          $("#callback1").iziModal("open");
-        }
-      }
-    });
-  }
-
-  $(document).on('af_complete', function (event, response) {
-    var form = response.form;
-    if (response.success) {
-      form.trigger("reset");
-      $("#callback1").iziModal("close");
-      modal_use = 0;
-    } else {
-    }
-  });
-
-  $('a[data-izimodal-open="#callback1"]').on("click", function() {
-    // console.log("click");
-    var title = $(this).data("title");
-    $(".modal-callback .title").text(title);
-    $(".modal-callback .h-title").attr("value", title);
   });
 
   // SimpleSearch ajax
@@ -140,8 +116,17 @@ $(document).ready(() =>{
     });
   });
 
-  $("section.service-main h1, h2.educational, h2.lic").on('click', function(){
-    $("html, body").animate({ scrollTop: $("#plan_service").offset().top - 100 }, 1500);
+  // Success Response Form
+  $(document).on('af_complete', function (event, response) {
+    var form = response.form;
+    if (response.success) {}
+    else {}
   });
+
+  // Mobile Na
+  $("#header__toggler").on('click', function (){
+    $(".header__content").slideToggle();
+  })
+  
 
 });

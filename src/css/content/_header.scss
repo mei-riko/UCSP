@@ -45,6 +45,10 @@
 }
 @media all and (max-width: $mobile_l){
     .content_header{
+        .content__title {
+            font-size: 28px;
+            line-height: 32px;
+        }
         .row{
             .column{
                 &_sidebar{
@@ -52,6 +56,10 @@
                     max-width: 100%;
                 }
             }
+        }
+        p {
+            font-size: 14px;
+            line-height: 22px;
         }
     }
 }

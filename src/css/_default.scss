@@ -83,8 +83,12 @@ a {
 .text-uppercase {text-transform: uppercase;}
 .text-bold{font-weight: 600;}
 
+.text-gold{color: $text-gold;}
+
 .bb-solid {border-bottom: 1px solid;}
 .bb-dotted {border-bottom: 1px dotted;}
+
+.word-break {white-space: nowrap;}
 
 .d-none,
 .hidden {display: none !important;}
@@ -144,5 +148,15 @@ body {
 
 /* Header */
 @import "other/header.scss";
+/* Form */
+@import "other/form.scss";
 /* Footer */
 @import "other/footer.scss";
+
+/* Media */
+@media all and (max-width: $tablet){
+	.container{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+}

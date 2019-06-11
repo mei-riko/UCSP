@@ -7,8 +7,6 @@ html(lang="ru")
 
         link(href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:300,400,600,700', rel='stylesheet')
         link(href='./css/iziModal.min.css', rel='stylesheet')
-        link(href='./css/slick.css', rel='stylesheet')
-        link(href='./css/slick-theme.css', rel='stylesheet')
         link(href='./css/store.css', rel='stylesheet')
 
     body
@@ -35,16 +33,20 @@ html(lang="ru")
                 .row
                     .column
                         a.product(href="#" style="background-image: url('./img/program/1.jpg');")
-                            .product__title Журналы
+                            .product__title 
+                                .product__name Журналы
                     .column
                         a.product(href="#" style="background-image: url('./img/program/2.jpg');")
-                            .product__title Огнетушители
+                            .product__title 
+                                .product__name Огнетушители
                     .column
                         a.product(href="#" style="background-image: url('./img/program/3.jpg');")
-                            .product__title Наглядные пособия
+                            .product__title 
+                                .product__name Наглядные пособия
                     .column
                         a.product(href="#" style="background-image: url('./img/program/4.jpg');")
-                            .product__title Другое
+                            .product__title 
+                                .product__name Другое
         section.content.content_advantage
             .container
                 .content__title Наши преимущества
@@ -72,24 +74,28 @@ html(lang="ru")
                 .cta-wrap
                     .cta-wrap__title.white Оставьте заявку, и наши специалисты оперативно ответят на любые вопросы
                     form.cta-wrap__form(action="#", method="POST")
-                        input(type="text", placeholder="8 ( ___ ) ___ - __ - __ ")#phone.white.l18
-                        button(type="submit").btn.r14.white.text-center Перезвонить
+                        input.input(type="text", placeholder="8 ( ___ ) ___ - __ - __ ")#phone.white.l18
+                        button.btn(type="submit") Перезвонить
         section.content.content_product.content_inside
             .container
                 .content__title Товары
                 .row
                     .column
-                        a.product(href="#" style="background-image: url('./img/program/1.jpg');")
-                            .product__title Журналы
+                        a.product(data-title="Журнал учёта огнетушителей" href="#info1" data-izimodal-open="#info1" style="background-image: url('./img/program/1.jpg');")
+                            .product__title 
+                                .product__name Журналы
                     .column
-                        a.product(href="#" style="background-image: url('./img/program/2.jpg');")
-                            .product__title Огнетушители
+                        a.product(data-title="Журнал учёта огнетушителей" href="#info1" data-izimodal-open="#info1" style="background-image: url('./img/program/2.jpg');")
+                            .product__title 
+                                .product__name Огнетушители
                     .column
-                        a.product(href="#" style="background-image: url('./img/program/3.jpg');")
-                            .product__title Наглядные пособия
+                        a.product(data-title="Журнал учёта огнетушителей" href="#info1" data-izimodal-open="#info1" style="background-image: url('./img/program/3.jpg');")
+                            .product__title 
+                                .product__name Наглядные пособия
                     .column
-                        a.product(href="#" style="background-image: url('./img/program/4.jpg');")
-                            .product__title Другое
+                        a.product(data-title="Журнал учёта проведения вводного инструктажа по пожарной безопасности" href="#info1" data-izimodal-open="#info1" style="background-image: url('./img/program/4.jpg');")
+                            .product__title 
+                                .product__name Журнал учёта проведения вводного инструктажа по пожарной безопасности
         section.content.content_sale
             .container
                 .content__title Акции учебного центра
@@ -118,13 +124,16 @@ html(lang="ru")
                 .row
                     .column
                         a.product(href="#" style="background-image: url('./img/program/1.jpg');")
-                            .product__title Сосуды, работающие под давлением
+                            .product__title 
+                                .product__name Сосуды, работающие под давлением
                     .column
                         a.product(href="#" style="background-image: url('./img/program/2.jpg');")
-                            .product__title Отраслевые правила по охране труда
+                            .product__title 
+                                .product__name Отраслевые правила по охране труда
                     .column
                         a.product(href="#" style="background-image: url('./img/program/3.jpg');")
-                            .product__title Курсы повышения квалификации по Реставрационным работам
+                            .product__title 
+                                .product__name Курсы повышения квалификации по Реставрационным работам
         section.content.content_seo
             .container
                 h2 Заголовок h2
@@ -177,7 +186,39 @@ html(lang="ru")
                             li
                                 a(href='' target='_blank').footer__link.footer__link_last.footer__address Санкт-Петербург, ул. Оборонная, 10 лит. А офис 310А
                                     span.icon
-        script(src="./js/slick.min.js")
         script(src="./js/jquery.inputmask.js")
-        script(src="./js/iziModal.min.js")
+        script(src="./js/iziModal.js")
         script(src="./js/app.min.js")
+        .modal.modal_info#info1
+            .modal__text
+                .s-title Товар категории "Журналы"
+                .title.text-gold Журнал учёта огнетушителей
+                .s-title Стоимость 300 руб.
+                .offer Журнал учёта огнетушителей с примером заполнения. 
+                a(href="" data-izimodal-close="data-izimodal-close")
+                    span.modal__close.text-gold Закрыть
+            .modal__footer
+                .s-title Выберите способ заказа:
+                .info-block
+                    .info-block__item 
+                        p Отправить заявку&nbsp;на 
+                        p 
+                            a.text-gold.word-break.bb-dotted(href="mailto:info@uc-sp.ru") info@uc-sp.ru
+                    .info-block__item 
+                        p Позвонить по&nbsp;номеру
+                        p 
+                            a(href="tel:8 (812) 468-60-68").phone.text-gold.word-break.bb-dotted 8 (812) 468-60-68
+                a.btn.btn_primary.open-form Заказать обратный звонок
+                .callback-form
+                    form.form(method="post")
+                        input(type="hidden" name="name" value="Журнал учёта огнетушителей" class="hidden h-title")
+                        .callback-form__title Укажите способ связи с Вами, и наши сотрудники оформят заявку на программу обучения.
+                        label.form__label(for="email1") Электронная почта
+                        input.form__input.email(id="email1" type="email" name="email" placeholder=" Введите ваш e-mail " value="")
+                        label.form__label(for="phone1") Телефон
+                        input.form__input.phone(id="phone1" type="phone" name="phone" placeholder="8 ( ___ ) ___ - __ - __"  value="")
+                        .checkbox
+                            input(class="checkbox__input" type="checkbox" name="agree" checked="checked" required="required")
+                            label(class="checkbox__label" for="agree") Я согласен с 
+                                a(class="policy bb-dotted" href="/assets/files/documents/policy.pdf" target="_blank") правилами использования сайта   
+                        button.btn.btn_primary Оставить заявку

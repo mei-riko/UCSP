@@ -1,0 +1,132 @@
+.modal{
+
+    z-index: 999;
+    display: none;
+    .modal__close {
+        position: absolute;
+        top: 25px;
+        right: 65px;
+        &:after {
+            position: absolute;
+            right: -35px;
+            top: -5px;
+            display: block;
+            content: '';
+            width: 25px;
+            height: 25px;
+            background: url(../img/icon/close.png) no-repeat center/cover;
+        }
+    }
+
+    &_info {
+        background: #374c55;
+        
+        .s-title {
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 18px;
+    
+            & + .title{
+                margin-top: 10px;
+            }
+            & + .offer{
+                margin-top: 10px;
+            }
+        }
+        .title {
+            font-size: 18px;
+            line-height: 22px;
+    
+            & + .s-title{
+                margin-top: 20px;
+            }
+        }
+        .offer{
+            font-size: 14px;
+            line-height: 18px;
+        }
+
+        .modal__text {
+            position: relative;
+            background: #fff;
+            margin: 0 auto;
+            padding: 60px 30px 30px;
+        }
+        .modal__footer{
+            padding: 30px;
+            color: $white;
+            .s-title {
+                font-size: 18px;
+                line-height: 24px;
+
+                
+                color: #98d1e9;
+
+                max-width: 100%;
+                width: 400px;
+                margin: 0 auto;
+            }
+            .info-block {
+                display: flex;
+                position: relative;
+
+                max-width: 100%;
+                width: 430px;
+                margin: 20px auto;
+                
+                &__item{
+                    font-size: 16px;
+                    line-height: 20px;
+
+                    padding: 0 15px;
+
+                    flex: 0 0 50%;
+                    max-width: 50%;
+
+                    p + p{
+                        margin-top: 5px;
+                    }
+                }
+            }
+            .btn{
+                display: block;
+                width: 400px;
+                max-width: 100%;
+
+                &.open-form{
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        .callback-form{
+            display: none;
+
+            width: 400px;
+            max-width: 100%;
+            margin: 0 auto;
+
+            padding: 20px;
+            background-color: rgba(236,241,243,.15);
+
+            &__title{
+                font-size: 14px;
+                line-height: 18px;
+                margin-bottom: 20px;
+            }
+
+            .form__input + .form__label{
+                margin-top: 20px;
+            }
+            .checkbox{
+                margin-top: 20px;
+                &__label{
+                    font-size: 12px;
+                }
+                .policy{
+                    color: $white;
+                }
+            }
+        }
+    }
+}

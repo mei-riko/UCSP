@@ -12,7 +12,7 @@
             background-size: 200px 160px;
         }
         .footer__column{
-            width: calc( (100% - 220px)/2 );
+            max-width: calc( (100% - 220px)/2 );
         }
     }
 
@@ -58,22 +58,22 @@
                 font-size: 20px;
                 line-height: 20px;
                 .icon{
-                    background: url(../img/icon/phone_w.png) no-repeat center;
+                    background: url(../img/icon/telephone-light.svg) no-repeat center;
                 }
             }
             .footer__mail{
                 .icon{
-                    background: url(../img/icon/mail_w.png) no-repeat center;
+                    background: url(../img/icon/envelope-light.svg) no-repeat center;
                 }
             }
             .footer__vk{
                 .icon{
-                    background: url(../img/icon/vk.png) no-repeat center;
+                    background: url(../img/icon/vk-light.svg) no-repeat center;
                 }
             }
             .footer__address{
                 .icon{
-                    background: url(../img/icon/gps_w.png) no-repeat center;
+                    background: url(../img/icon/maps-light.svg) no-repeat center;
                 }
             }
         }
@@ -103,6 +103,63 @@
 
 /* Media */
 @media all and (max-width: $desktop){}
-@media all and (max-width: $desktop_m){}
-@media all and (max-width: $tablet){}
-@media all and (max-width: $mobile_l){}
+@media all and (max-width: $desktop_m){
+    .footer{
+        .footer__row{
+            .footer__column {
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+            .footer__logo{
+                display: none;
+            }
+        }
+    }
+}
+@media all and (max-width: $tablet){
+    .footer{
+        .footer__row {
+            padding: 55px 30px 35px;
+        }
+        .footer__list{
+            &_contact{
+                .footer__link{
+                    font-size: 12px;
+                    line-height: 16px;
+                    padding-left: 30px;
+                    margin-bottom: 15px;
+                    .icon{
+                        left:0;
+                    }
+                }
+                .footer__tel {
+                    font-size: 16px;
+                    line-height: 18px;
+                }
+            }
+        }
+    }
+}
+@media all and (max-width: $mobile_l){
+    .footer{
+        .footer__row {
+            flex-direction: column-reverse;
+
+            padding: 55px 0px 35px;
+            
+            .footer__column {
+                flex: unset;
+                max-width: 100%;
+
+                text-align: center;
+            }
+        }
+        .footer__list{
+            margin: 0 auto;
+
+            &.footer__list_contact{
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

@@ -7,8 +7,6 @@
     <title>Document2</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:300,400,600,700" rel="stylesheet"/>
     <link href="./css/iziModal.min.css" rel="stylesheet"/>
-    <link href="./css/slick.css" rel="stylesheet"/>
-    <link href="./css/slick-theme.css" rel="stylesheet"/>
     <link href="./css/store.css" rel="stylesheet"/>
   </head>
   <body>
@@ -16,6 +14,16 @@
     <header class="header">
       <div class="container">
         <div class="row header__row"><a class="header__logo" href="#"><span class="header__offer">Обучение. Консалтинг. Лицензирование.</span></a>
+          <div class="header__mobile">
+            <div class="header__search" id="header__search"></div>
+            <svg class="header__toggler" id="header__toggler" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve">
+              <g>
+                <path class="header__nav__path" d="M491.318,78.439H20.682C9.26,78.439,0,87.699,0,99.121c0,11.422,9.26,20.682,20.682,20.682h470.636    c11.423,0,20.682-9.26,20.682-20.682C512,87.699,502.741,78.439,491.318,78.439z"></path>
+                <path class="header__nav__path" d="M491.318,235.318H20.682C9.26,235.318,0,244.577,0,256s9.26,20.682,20.682,20.682h470.636    c11.423,0,20.682-9.259,20.682-20.682C512,244.578,502.741,235.318,491.318,235.318z"></path>
+                <path class="header__nav__path" d="M491.318,392.197H20.682C9.26,392.197,0,401.456,0,412.879s9.26,20.682,20.682,20.682h470.636    c11.423,0,20.682-9.259,20.682-20.682S502.741,392.197,491.318,392.197z"></path>
+              </g>
+            </svg>
+          </div>
           <div class="header__content">
             <ul class="header__top">
               <li class="address"><a class="header__link" href="">Cанкт-Петербург, ул. Оборонная, 10 лит. А<span class="icon"></span></a></li>
@@ -29,9 +37,9 @@
                 <li class="header__item"><a class="header__link" href="#">Услуги</a></li>
                 <li class="header__item"><a class="header__link" href="#">Магазин</a></li>
                 <li class="header__item"><a class="header__link" href="#">Вакансии</a></li>
-                <li class="header__item"><a class="header__link" href="#">Сведения о центре</a></li>
+                <li class="header__item"><a class="header__link" href="#"> <span class="header__link__desktop">Сведения </span>о центре</a></li>
                 <li class="header__item"><a class="header__link" href="#">Контакты</a></li>
-                <li class="header__item"><a class="search" href="#"></a></li>
+                <li class="header__item header__item_search"><a class="header__search" href="#"></a></li>
               </ul>
             </nav>
           </div>
@@ -76,13 +84,21 @@
         <div class="content__title">Перечень товаров</div>
         <div class="row">
           <div class="column"><a class="product" href="#" style="background-image: url('./img/program/1.jpg');">
-              <div class="product__title">Журналы</div></a></div>
+              <div class="product__title"> 
+                <div class="product__name">Журналы</div>
+              </div></a></div>
           <div class="column"><a class="product" href="#" style="background-image: url('./img/program/2.jpg');">
-              <div class="product__title">Огнетушители</div></a></div>
+              <div class="product__title"> 
+                <div class="product__name">Огнетушители</div>
+              </div></a></div>
           <div class="column"><a class="product" href="#" style="background-image: url('./img/program/3.jpg');">
-              <div class="product__title">Наглядные пособия</div></a></div>
+              <div class="product__title"> 
+                <div class="product__name">Наглядные пособия</div>
+              </div></a></div>
           <div class="column"><a class="product" href="#" style="background-image: url('./img/program/4.jpg');">
-              <div class="product__title">Другое</div></a></div>
+              <div class="product__title"> 
+                <div class="product__name">Другое</div>
+              </div></a></div>
         </div>
       </div>
     </section>
@@ -124,8 +140,8 @@
         <div class="cta-wrap">
           <div class="cta-wrap__title white">Оставьте заявку, и наши специалисты оперативно ответят на любые вопросы</div>
           <form class="cta-wrap__form" action="#" method="POST">
-            <input class="white l18" type="text" placeholder="8 ( ___ ) ___ - __ - __ " id="phone"/>
-            <button class="btn r14 white text-center" type="submit">Перезвонить</button>
+            <input class="input white l18" type="text" placeholder="8 ( ___ ) ___ - __ - __ " id="phone"/>
+            <button class="btn" type="submit">Перезвонить</button>
           </form>
         </div>
       </div>
@@ -134,14 +150,22 @@
       <div class="container">
         <div class="content__title">Товары</div>
         <div class="row">
-          <div class="column"><a class="product" href="#" style="background-image: url('./img/program/1.jpg');">
-              <div class="product__title">Журналы</div></a></div>
-          <div class="column"><a class="product" href="#" style="background-image: url('./img/program/2.jpg');">
-              <div class="product__title">Огнетушители</div></a></div>
-          <div class="column"><a class="product" href="#" style="background-image: url('./img/program/3.jpg');">
-              <div class="product__title">Наглядные пособия</div></a></div>
-          <div class="column"><a class="product" href="#" style="background-image: url('./img/program/4.jpg');">
-              <div class="product__title">Другое</div></a></div>
+          <div class="column"><a class="product" data-title="Журнал учёта огнетушителей" href="#info1" data-izimodal-open="#info1" style="background-image: url('./img/program/1.jpg');">
+              <div class="product__title"> 
+                <div class="product__name">Журналы</div>
+              </div></a></div>
+          <div class="column"><a class="product" data-title="Журнал учёта огнетушителей" href="#info1" data-izimodal-open="#info1" style="background-image: url('./img/program/2.jpg');">
+              <div class="product__title"> 
+                <div class="product__name">Огнетушители</div>
+              </div></a></div>
+          <div class="column"><a class="product" data-title="Журнал учёта огнетушителей" href="#info1" data-izimodal-open="#info1" style="background-image: url('./img/program/3.jpg');">
+              <div class="product__title"> 
+                <div class="product__name">Наглядные пособия</div>
+              </div></a></div>
+          <div class="column"><a class="product" data-title="Журнал учёта проведения вводного инструктажа по пожарной безопасности" href="#info1" data-izimodal-open="#info1" style="background-image: url('./img/program/4.jpg');">
+              <div class="product__title"> 
+                <div class="product__name">Журнал учёта проведения вводного инструктажа по пожарной безопасности</div>
+              </div></a></div>
         </div>
       </div>
     </section>
@@ -181,11 +205,17 @@
         <div class="content__title">Популярные направления</div>
         <div class="row">
           <div class="column"><a class="product" href="#" style="background-image: url('./img/program/1.jpg');">
-              <div class="product__title">Сосуды, работающие под давлением</div></a></div>
+              <div class="product__title"> 
+                <div class="product__name">Сосуды, работающие под давлением</div>
+              </div></a></div>
           <div class="column"><a class="product" href="#" style="background-image: url('./img/program/2.jpg');">
-              <div class="product__title">Отраслевые правила по охране труда</div></a></div>
+              <div class="product__title"> 
+                <div class="product__name">Отраслевые правила по охране труда</div>
+              </div></a></div>
           <div class="column"><a class="product" href="#" style="background-image: url('./img/program/3.jpg');">
-              <div class="product__title">Курсы повышения квалификации по Реставрационным работам</div></a></div>
+              <div class="product__title"> 
+                <div class="product__name">Курсы повышения квалификации по Реставрационным работам</div>
+              </div></a></div>
         </div>
       </div>
     </section>
@@ -241,9 +271,44 @@
         </div>
       </div>
     </footer>
-    <script src="./js/slick.min.js"></script>
     <script src="./js/jquery.inputmask.js"></script>
-    <script src="./js/iziModal.min.js"></script>
+    <script src="./js/iziModal.js"></script>
     <script src="./js/app.min.js"></script>
+    <div class="modal modal_info" id="info1">
+      <div class="modal__text">
+        <div class="s-title">Товар категории "Журналы"</div>
+        <div class="title text-gold">Журнал учёта огнетушителей</div>
+        <div class="s-title">Стоимость 300 руб.</div>
+        <div class="offer">Журнал учёта огнетушителей с примером заполнения. </div><a href="" data-izimodal-close="data-izimodal-close"><span class="modal__close text-gold">Закрыть</span></a>
+      </div>
+      <div class="modal__footer">
+        <div class="s-title">Выберите способ заказа:</div>
+        <div class="info-block">
+          <div class="info-block__item"> 
+            <p>Отправить заявку&nbsp;на </p>
+            <p> <a class="text-gold word-break bb-dotted" href="mailto:info@uc-sp.ru">info@uc-sp.ru</a></p>
+          </div>
+          <div class="info-block__item"> 
+            <p>Позвонить по&nbsp;номеру</p>
+            <p> <a class="phone text-gold word-break bb-dotted" href="tel:8 (812) 468-60-68">8 (812) 468-60-68</a></p>
+          </div>
+        </div><a class="btn btn_primary open-form">Заказать обратный звонок</a>
+        <div class="callback-form">
+          <form class="form" method="post">
+            <input class="hidden h-title" type="hidden" name="name" value="Журнал учёта огнетушителей"/>
+            <div class="callback-form__title">Укажите способ связи с Вами, и наши сотрудники оформят заявку на программу обучения.</div>
+            <label class="form__label" for="email1">Электронная почта</label>
+            <input class="form__input email" id="email1" type="email" name="email" placeholder=" Введите ваш e-mail " value=""/>
+            <label class="form__label" for="phone1">Телефон</label>
+            <input class="form__input phone" id="phone1" type="phone" name="phone" placeholder="8 ( ___ ) ___ - __ - __" value=""/>
+            <div class="checkbox">
+              <input class="checkbox__input" type="checkbox" name="agree" checked="checked" required="required"/>
+              <label class="checkbox__label" for="agree">Я согласен с <a class="policy bb-dotted" href="/assets/files/documents/policy.pdf" target="_blank">правилами использования сайта   </a></label>
+            </div>
+            <button class="btn btn_primary">Оставить заявку</button>
+          </form>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
