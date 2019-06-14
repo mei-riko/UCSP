@@ -26,7 +26,7 @@ $(document).ready(() =>{
       $(".content_header").addClass("sticky");
       $(".header").addClass("sticky-menu");
       $(".header").fadeIn();
-    } else if ($(window).scrollTop() < 200 ) {
+    } else if ($(window).scrollTop() < 50 ) {
       $(".content_header").removeClass("sticky");
       $(".header").css("display", "");
       $(".header").removeClass("sticky-menu");

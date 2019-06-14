@@ -45,6 +45,7 @@ table {
   box-sizing: border-box; }
 
 a {
+  display: inline-block;
   color: #222;
   text-decoration: none;
   -webkit-transition: all .3s;
@@ -801,16 +802,27 @@ img {
 
 .news-contact {
   background: #ebeeef; }
-  .news-contact .row .column {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-    max-width: 50%; }
+  .news-contact .row {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .news-contact .row .column {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 58.333333%;
+      flex: 0 0 58.333333%;
+      max-width: 58.333333%; }
+      .news-contact .row .column_form {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 41.666667%;
+        flex: 0 0 41.666667%;
+        max-width: 41.666667%; }
   .news-contact__title {
     color: #a2926b;
     text-transform: uppercase;
     font-size: 24px;
     line-height: 28px; }
+    .news-contact__title + .form {
+      margin-top: 22px; }
   .news-contact__line {
     display: block;
     height: 1px;
@@ -823,6 +835,11 @@ img {
     color: #959595; }
   .news-contact__item {
     margin-bottom: 30px; }
+    .news-contact__item.row .column {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+      max-width: 50%; }
     .news-contact__item .item {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -840,7 +857,15 @@ img {
         font-size: 14px;
         line-height: 20px;
         margin-left: 15px;
-        width: 100%; }
+        width: 180px; }
+  .news-contact .form__textarea {
+    background: #fff;
+    margin-bottom: 20px; }
+  .news-contact .form__input {
+    background: #fff; }
+  .news-contact .form .btn {
+    display: block;
+    width: 100%; }
 
 /* Media */
 @media all and (max-width: 992px) {
@@ -903,6 +928,96 @@ img {
       flex: unset;
       max-width: 100%; } }
 
+.page {
+  background: #fff; }
+  .page .content {
+    padding: 60px 0 40px; }
+    .page .content.page__content {
+      padding: 0 0 60px; }
+    .page .content__breadcrumbs {
+      margin: 0; }
+    .page .content section.column {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 60%;
+      flex: 0 0 60%;
+      max-width: 60%; }
+    .page .content aside.column {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 40%;
+      flex: 0 0 40%;
+      max-width: 40%; }
+  .page__content {
+    padding: 0 0 60px; }
+    .page__content .content__title,
+    .page__content h1, .page__content h2 {
+      color: #a2926b;
+      font-size: 26px;
+      line-height: 34px; }
+    .page__content h3 {
+      color: #a2926b;
+      font-size: 24px;
+      line-height: 30px; }
+    .page__content h4 {
+      color: #a2926b;
+      font-size: 20px;
+      line-height: 26px; }
+    .page__content h5 {
+      color: #a2926b;
+      font-size: 18px;
+      line-height: 24px; }
+    .page__content h6 {
+      color: #a2926b;
+      font-size: 16px;
+      line-height: 22px; }
+    .page__content p, .page__content ul, .page__content ol {
+      font-size: 16px;
+      line-height: 24px; }
+    .page__content h2 + *, .page__content h3 + *, .page__content h4 + *, .page__content h5 + *, .page__content h6 + * {
+      margin-top: 15px; }
+    .page__content * + h2, .page__content * + h3, .page__content * + h4, .page__content * + h5, .page__content * + h6 {
+      margin-top: 30px; }
+    .page__content ul li {
+      position: relative;
+      padding-left: 15px; }
+      .page__content ul li:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 0;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: #a2926b; }
+    .page__content ol {
+      padding-left: 15px;
+      list-style: decimal; }
+  .page__sidebar {
+    padding: 20px;
+    border: 1px solid #ebeeef;
+    border-top: 10px solid #326988; }
+    .page__sidebar__title {
+      text-transform: uppercase; }
+    .page__sidebar__item {
+      display: block;
+      font-size: 14px;
+      line-height: 18px;
+      padding: 30px 0; }
+      .page__sidebar__item + .page__sidebar__item {
+        border-top: 1px solid #ebeeef; }
+      .page__sidebar__item.last {
+        padding-bottom: 10px; }
+    .page__sidebar__date {
+      color: #959595;
+      padding-right: 10px; }
+    .page__sidebar + .page__link {
+      margin-top: 20px;
+      font-size: 12px;
+      font-weight: 700; }
+  .page__link {
+    color: #3e83a4; }
+
+/* Pagination */
 .pagination {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -63,6 +63,7 @@ table {
 }
 
 a {
+	display: inline-block;
 	color: $text;
 	text-decoration: none;
 	transition: all .3s;

@@ -2,8 +2,6 @@
     padding-bottom: 0;
     .content__title{
         margin-bottom: 0;
-        //padding-bottom: 50px;
-        //border-bottom: 1px solid $text-gold;
     }
 }
 .news{
@@ -67,9 +65,15 @@
 .news-contact{
     background: #ebeeef;
     .row{
+        justify-content: space-between;
         .column {
-            flex: 0 0 50%;
-            max-width: 50%;
+            flex: 0 0 58.333333%;
+            max-width: 58.333333%;
+
+            &_form{
+                flex: 0 0 41.666667%;
+                max-width: 41.666667%;
+            }
         }
     }
 
@@ -79,6 +83,10 @@
 
         font-size: 24px;
         line-height: 28px;
+
+        & + .form{
+            margin-top: 22px;
+        }
     }
     &__line{
         display: block;
@@ -96,6 +104,12 @@
 
     &__item{
         margin-bottom: 30px;
+        &.row{
+            .column{
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+        }
         .item{
             display: flex;
             align-items: center;
@@ -110,8 +124,21 @@
                 line-height: 20px;
                 margin-left: 15px;
 
-                width: 100%;
+                width: 180px;
             }
+        }
+    }
+    .form{
+        &__textarea{
+            background: $white;
+            margin-bottom: 20px;
+        }
+        &__input{
+            background: $white;
+        }
+        .btn {
+            display: block;
+            width: 100%;
         }
     }
 }

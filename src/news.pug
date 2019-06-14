@@ -94,8 +94,18 @@ html(lang="ru")
                                             .item__icon.cv
                                             .item__offer Собственная биржа&nbsp;труда
                                 p.news-contact__offer Постановление Правительства Ленинградской области от 14.05.2019 № 208 "О внесении изменений в постановление Правительства Ленинградской области от 27 мая 2014 года N 192 "О Комите Постановление Правительства Ленинградской области от 14.05.2019 № 208 "О внесении изменений в постановление Правительства Ленинградской области от 27 мая 2014
-                            .column
+                            .column.column_form
                                 .news-contact__title Остались вопросы?
+                                form.form()
+                                    textarea.form__textarea(rows="5" placeholder="")
+                                    p.form__label Телефон для связи
+                                    input.form__input.phone(placeholder="8 ( ___ ) ___ - __ - __")
+                                    .form__agree.checkbox
+                                        input.checkbox__input(type="checkbox" name="agree" checked="checked" required="required")
+                                        label.checkbox__label(for="agree") Я согласен с 
+                                            a.checkbox__link(href="/assets/files/documents/policy.pdf" target="_blank") правилами использования сайта</a></label>
+                                    button.btn.btn_primary Отправить сообщение
+
         footer.footer
             .container
                 .row.footer__row

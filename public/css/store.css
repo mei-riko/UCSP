@@ -46,6 +46,7 @@ table {
   box-sizing: border-box; }
 
 a {
+  display: inline-block;
   color: #222;
   text-decoration: none;
   -webkit-transition: all .3s;
@@ -1137,14 +1138,10 @@ img {
   font-size: 16px;
   line-height: 24px; }
 
-.content_seo h2 + p, .content_seo h3 + p, .content_seo h4 + p, .content_seo h5 + p, .content_seo h6 + p,
-.content_seo h2 + ol, .content_seo h3 + ol, .content_seo h4 + ol, .content_seo h5 + ol, .content_seo h6 + ol,
-.content_seo h2 + ul, .content_seo h3 + ul, .content_seo h4 + ul, .content_seo h5 + ul, .content_seo h6 + ul {
-  margin-top: 30px; }
+.content_seo h2 + *, .content_seo h3 + *, .content_seo h4 + *, .content_seo h5 + *, .content_seo h6 + * {
+  margin-top: 15px; }
 
-.content_seo p + h2, .content_seo p + h3, .content_seo p + h4, .content_seo p + h5, .content_seo p + h6,
-.content_seo ol + h2, .content_seo ol + h3, .content_seo ol + h4, .content_seo ol + h5 ol + h6,
-.content_seo ul + h2, .content_seo ul + h3, .content_seo ul + h4, .content_seo ul + h5, .content_seo ul + h6 {
+.content_seo * + h2, .content_seo * + h3, .content_seo * + h4, .content_seo * + h5, .content_seo * + h6 {
   margin-top: 30px; }
 
 .content_seo ul li {

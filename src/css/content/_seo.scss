@@ -34,14 +34,10 @@
         line-height: 24px;
     }
 
-    h2 + p, h3 + p, h4 + p, h5 + p,  h6 + p,
-    h2 + ol, h3 + ol, h4 + ol, h5 + ol, h6 + ol, 
-    h2 + ul, h3 + ul, h4 + ul, h5 + ul, h6 + ul{
-        margin-top: 30px;
+    h2 + *, h3 + *, h4 + *, h5 + *,  h6 + *{
+        margin-top: 15px;
     }
-    p + h2, p + h3, p + h4, p + h5, p + h6,
-    ol + h2, ol + h3, ol + h4, ol + h5 ol + h6,
-    ul + h2, ul + h3, ul + h4, ul + h5, ul + h6{
+    * + h2, * + h3, * + h4, * + h5, * + h6{
         margin-top: 30px;
     }
 
