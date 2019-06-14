@@ -46,21 +46,19 @@
         </div>
       </div>
       <div class="search-form" style="display:none">
-        <div class="container">
-          <form action="#" method="POST">
-            <input class="white l16 text-center" type="text" focus="focus" id="search-global"/>
-            <button class="sb16" type="submit">Найти<span class="icon"></span></button>
-            <div class="search-block-list" id="search-block-list" style="display:none">
-              <ul class="l14">
-                <li>акинава</li>
-                <li>закинуть невод</li>
-                <li>стакинация</li>
-                <li>милитакия</li>
-              </ul>
-            </div>
-            <div class="close" id="search_close"> <span></span></div>
-          </form>
+        <form class="form sisea-search-form" action="#" method="POST">
+          <input class="form__input" id="search-global" type="text" focus="focus"/>
+          <button class="search-form__btn" type="submit">Найти<span class="icon"></span></button>
+        </form>
+        <div class="search-block-list" id="search-block-list" style="display:none">
+          <ul class="l14">
+            <li class="sisea-result">акинава</li>
+            <li class="sisea-result">закинуть невод</li>
+            <li class="sisea-result">стакинация</li>
+            <li class="sisea-result">милитакия</li>
+          </ul>
         </div>
+        <div class="close" id="search_close"> <span></span></div>
       </div>
     </header>
     <section class="content content_header">

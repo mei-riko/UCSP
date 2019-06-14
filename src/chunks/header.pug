@@ -44,16 +44,15 @@ header.header
     
     
     .search-form(style="display:none")
-        .container
-            form(action="#", method="POST")
-                input(type="text" focus)#search-global.white.l16.text-center
-                button(type="submit").sb16 Найти
-                    span.icon
-                .search-block-list#search-block-list(style="display:none")
-                    ul.l14
-                        li акинава
-                        li закинуть невод
-                        li стакинация
-                        li милитакия
-                .close#search_close 
-                    span
+        form.form.sisea-search-form(action="#", method="POST")
+            input.form__input#search-global(type="text" focus)
+            button.search-form__btn(type="submit") Найти
+                span.icon
+        .search-block-list#search-block-list(style="display:none")
+            ul.l14
+                li.sisea-result акинава
+                li.sisea-result закинуть невод
+                li.sisea-result стакинация
+                li.sisea-result милитакия
+        .close#search_close 
+            span

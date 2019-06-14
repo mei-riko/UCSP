@@ -1,6 +1,11 @@
 import $ from 'jquery'
 $(document).ready(() =>{
 
+  // Masonry
+  $('.news__grid').masonry({
+    // options
+    itemSelector: '.column',
+  });
   // Input mask
   if ($('.phone').length > 0) {
     $(".phone").inputmask({
@@ -63,7 +68,9 @@ $(document).ready(() =>{
       $("#search-block-list").hide();
     }
   });
-  $(".search_btn, .search-loop").on("click", function() {
+  
+  // Open Search
+  $(".header__search").on("click", function() {
     if ($(".search-form").css("display", "none")) {
       $(".search-form").fadeIn();
       $("#search-global").trigger("focus");
@@ -71,6 +78,7 @@ $(document).ready(() =>{
       $("#search-global").val("");
     }
   });
+
   $('#search_close').on('click', function () {
     $(".search-form").fadeOut();
     $('#search-global').val('');

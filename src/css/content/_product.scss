@@ -28,6 +28,18 @@
                 }
             }
         }
+        .product{
+            .product__title{
+                flex-direction: column;
+                .product__name,
+                .product__price{
+                    width: 100%;
+                }
+                .product__name + .product__price{
+                    margin-top: 10px;
+                }
+            }
+        }
     }
 }
 

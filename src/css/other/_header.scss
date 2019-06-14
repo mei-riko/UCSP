@@ -1,5 +1,5 @@
 .header{
-    padding: 30px 0;
+    padding: 20px 0;
 
     &__row{
         justify-content: space-between;
@@ -7,7 +7,7 @@
     // Logo
     &__logo{
         width: 260px;
-        height: 170px;
+        height: 165px;
         background: url(../img/UCSP_logo.svg) no-repeat 6px -15px / 236px;
 
         padding: 0 15px;
@@ -31,12 +31,16 @@
         width: 20px;
         height: 20px;
         background: url(../img/icon/search.svg) no-repeat center / contain;
+
+        cursor: pointer;
     }
     // Open Navbar In Mobile
     &__toggler{
         padding: 15px;
         width: 60px;
         height: 60px;
+
+        cursor: pointer;
     }
     // Navbar Mobile
     &__mobile{
@@ -173,7 +177,7 @@
     }
     .header__nav{
         .header__item{
-            .search {
+            .header__search {
                 background: url(../img/icon/search-white.svg) no-repeat center/contain;
             }
         }

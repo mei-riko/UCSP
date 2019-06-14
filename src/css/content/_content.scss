@@ -24,46 +24,10 @@
         }
     }
     .btn{
-        position: relative;
-        
-        display: inline-block;
-        
-        max-width: 100%;
-        height: 40px;
-        
-        font-size: 14px;
-        line-height: 38px;
-        
-        border: none;
-        padding: 0 20px;
-    
-        cursor: pointer;
-        transition: all 0.2s;
-        &_gold{
-            background-color: #796e52;
-            color: #fff;
-            &:hover{
-                background-color: #5b523d;
-            }
-        }
-        &_primary{
-            background: #3e83a4;
-            color: #fff;
-            &:hover{
-                background: darken(#3e83a4, 10%);
-            }
-        }
-        &_with-arrow{
-            background-image: url(../img/icon/arrow.png);
-            background-repeat: no-repeat;
-            background-position-x: calc(100% - 20px);
-            background-position-y: center;
-            background-size: 18px;
-    
-            padding-right: 48px;
-        }
+        font-size: 16px;
+        line-height: 48px;
+        height: 50px;
     }
-
     ul, ol, 
     p + ul, p + ol, 
     ul + p, ol + p, 

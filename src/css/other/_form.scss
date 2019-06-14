@@ -86,19 +86,24 @@
 
 /* Button */
 .btn{
+    position: relative;
+    
     display: inline-block;
-    padding: 0 15px;
-    cursor: pointer;
-
-    font-size: 16px;
+    
+    max-width: 100%;
+    height: 40px;
+    
+    font-size: 14px;
+    line-height: 38px;
     text-align: center;
-    height: 50px;
-    line-height: 48px;
-
+    
     box-shadow: none;
     border: none;
+    padding: 0 20px;
 
-    transition: all .3s;
+    cursor: pointer;
+    transition: all 0.2s;
+
     &_primary{
         background: #477284;
         color: #fff;
@@ -106,5 +111,21 @@
             background: #5797b8;
             color: #fff;
         }
+    }
+    &_gold{
+        background-color: #796e52;
+        color: #fff;
+        &:hover{
+            background-color: #5b523d;
+        }
+    }
+    &_with-arrow{
+        background-image: url(../img/icon/arrow.png);
+        background-repeat: no-repeat;
+        background-position-x: calc(100% - 20px);
+        background-position-y: center;
+        background-size: 18px;
+
+        padding-right: 48px;
     }
 }

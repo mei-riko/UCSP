@@ -46,21 +46,19 @@
         </div>
       </div>
       <div class="search-form" style="display:none">
-        <div class="container">
-          <form action="#" method="POST">
-            <input class="white l16 text-center" type="text" focus="focus" id="search-global"/>
-            <button class="sb16" type="submit">Найти<span class="icon"></span></button>
-            <div class="search-block-list" id="search-block-list" style="display:none">
-              <ul class="l14">
-                <li>акинава</li>
-                <li>закинуть невод</li>
-                <li>стакинация</li>
-                <li>милитакия</li>
-              </ul>
-            </div>
-            <div class="close" id="search_close"> <span></span></div>
-          </form>
+        <form class="form sisea-search-form" action="#" method="POST">
+          <input class="form__input" id="search-global" type="text" focus="focus"/>
+          <button class="search-form__btn" type="submit">Найти<span class="icon"></span></button>
+        </form>
+        <div class="search-block-list" id="search-block-list" style="display:none">
+          <ul class="l14">
+            <li class="sisea-result">акинава</li>
+            <li class="sisea-result">закинуть невод</li>
+            <li class="sisea-result">стакинация</li>
+            <li class="sisea-result">милитакия</li>
+          </ul>
         </div>
+        <div class="close" id="search_close"> <span></span></div>
       </div>
     </header>
     <section class="content content_header">
@@ -140,7 +138,7 @@
         <div class="cta-wrap">
           <div class="cta-wrap__title white">Оставьте заявку, и наши специалисты оперативно ответят на любые вопросы</div>
           <form class="cta-wrap__form" action="#" method="POST">
-            <input class="input white l18" type="text" placeholder="8 ( ___ ) ___ - __ - __ " id="phone"/>
+            <input class="input phone" type="text" placeholder="8 ( ___ ) ___ - __ - __ "/>
             <button class="btn" type="submit">Перезвонить</button>
           </form>
         </div>
@@ -153,18 +151,22 @@
           <div class="column"><a class="product" data-title="Журнал учёта огнетушителей" href="#info1" data-izimodal-open="#info1" style="background-image: url('./img/program/1.jpg');">
               <div class="product__title"> 
                 <div class="product__name">Журналы</div>
+                <div class="product__price">300 руб.</div>
               </div></a></div>
           <div class="column"><a class="product" data-title="Журнал учёта огнетушителей" href="#info1" data-izimodal-open="#info1" style="background-image: url('./img/program/2.jpg');">
               <div class="product__title"> 
                 <div class="product__name">Огнетушители</div>
+                <div class="product__price">300 руб.</div>
               </div></a></div>
           <div class="column"><a class="product" data-title="Журнал учёта огнетушителей" href="#info1" data-izimodal-open="#info1" style="background-image: url('./img/program/3.jpg');">
               <div class="product__title"> 
                 <div class="product__name">Наглядные пособия</div>
+                <div class="product__price">300 руб.</div>
               </div></a></div>
           <div class="column"><a class="product" data-title="Журнал учёта проведения вводного инструктажа по пожарной безопасности" href="#info1" data-izimodal-open="#info1" style="background-image: url('./img/program/4.jpg');">
               <div class="product__title"> 
                 <div class="product__name">Журнал учёта проведения вводного инструктажа по пожарной безопасности</div>
+                <div class="product__price">300 руб.</div>
               </div></a></div>
         </div>
       </div>

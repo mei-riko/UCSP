@@ -1,0 +1,16 @@
+@import "default.scss";
+
+
+/* Main Content*/
+@import "content/content.scss";
+/* Title Block */
+@import "content/header.scss";
+/* Breadcrumb Block */
+@import "content/breadcrumbs.scss";
+
+/* News Category */
+@import "news/category.scss";
+@import "other/pagination.scss";
+
+/* Item with Icon */
+@import "item/icon.scss";
