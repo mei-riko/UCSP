@@ -1,13 +1,43 @@
 import $ from 'jquery'
 $(document).ready(() =>{
+  function DropdownNav(){
+    $(".dropdown#dropdown").removeClass("active");
+    $(".header .header__main .header__navbar#dropdownNav .header__link.active").removeClass("active");
+    $(".dropdown#dropdown .dropdown__nav.active").removeClass("active");
+  }
+  //Header Nav
+  $(".header .header__main .header__navbar#dropdownNav .header__link").hover(
+    function(){
+      let link = $(this);
+      let href = link.data("href");
+
+      $(".header .header__main .header__navbar#dropdownNav .header__link.active").removeClass("active");
+      $(".dropdown#dropdown .dropdown__nav.active").removeClass("active");
+
+      if( href != undefined ){
+        link.addClass("active");
+        $(".dropdown#dropdown").addClass("active");
+        $(".dropdown#dropdown .dropdown__nav#" + href).addClass("active");
+      }
+    }
+  );
+
+  $(".header .header__top").mousemove(function(){
+    DropdownNav()
+  });
+  $(".dropdown#dropdown").mouseleave(function(){
+    DropdownNav()
+  });
 
   // Masonry
-  $('.news__grid').masonry({
-    // options
-    itemSelector: '.column',
-  });
+  if( $('.news__grid').length > 0 ){
+    $('.news__grid').masonry({
+      // options
+      itemSelector: '.column',
+    });
+  }
   // Input mask
-  if ($('.phone').length > 0) {
+  if( $('.phone').length > 0 ) {
     $(".phone").inputmask({
       mask: "8 999 999 99 99",
       placeholder: " ",

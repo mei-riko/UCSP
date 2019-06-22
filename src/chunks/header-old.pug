@@ -1,0 +1,58 @@
+header.header
+    .container
+        .row.header__row
+            a.header__logo(href="#")
+                span.header__offer Обучение. Консалтинг. Лицензирование.
+            .header__mobile
+                .header__search#header__search
+                svg.header__toggler#header__toggler(x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve")
+                    g
+                        path.header__nav__path(d="M491.318,78.439H20.682C9.26,78.439,0,87.699,0,99.121c0,11.422,9.26,20.682,20.682,20.682h470.636    c11.423,0,20.682-9.26,20.682-20.682C512,87.699,502.741,78.439,491.318,78.439z")
+                        path.header__nav__path(d="M491.318,235.318H20.682C9.26,235.318,0,244.577,0,256s9.26,20.682,20.682,20.682h470.636    c11.423,0,20.682-9.259,20.682-20.682C512,244.578,502.741,235.318,491.318,235.318z")
+                        path.header__nav__path(d="M491.318,392.197H20.682C9.26,392.197,0,401.456,0,412.879s9.26,20.682,20.682,20.682h470.636    c11.423,0,20.682-9.259,20.682-20.682S502.741,392.197,491.318,392.197z")
+            .header__content
+                ul.header__top
+                    li.address
+                        a.header__link(href='') Cанкт-Петербург, ул. Оборонная, 10 лит. А
+                            span.icon
+                    li.mail
+                        a.header__link(href="mailto:info@uc-sp.ru") info@uc-sp.ru
+                            span.icon
+                    li.vk
+                        a.header__link(href="https://vk.com/ucnorthway" target='_blank') группа ВК
+                            span.icon
+                    li.phone
+                        a.header__link(href="tel:88124696068") 8 (812) 469-60-68
+                            span.icon
+                .separator
+                nav.header__nav
+                    ul.header__navbar
+                        li.header__item
+                            a.header__link(href="#") Услуги
+                        li.header__item
+                            a.header__link(href="#") Магазин
+                        li.header__item
+                            a.header__link(href="#") Вакансии
+                        li.header__item
+                            a.header__link(href="#") 
+                                span.header__link__desktop Сведения 
+                                | о центре
+                        li.header__item
+                            a.header__link(href="#") Контакты
+                        li.header__item.header__item_search
+                            a.header__search(href="#")
+    
+    
+    .search-form(style="display:none")
+        form.form.sisea-search-form(action="#", method="POST")
+            input.form__input#search-global(type="text" focus)
+            button.search-form__btn(type="submit") Найти
+                span.icon
+        .search-block-list#search-block-list(style="display:none")
+            ul.l14
+                li.sisea-result акинава
+                li.sisea-result закинуть невод
+                li.sisea-result стакинация
+                li.sisea-result милитакия
+        .close#search_close 
+            span

@@ -67,8 +67,8 @@ gulp.task('css', function(){
     }))
     // .pipe(concat('style.css'))
     .pipe(gulp.dest('./public/css/'))
-    // .pipe(minifyCSS())
-    // .pipe(rename({ suffix: '.min' }))
+    .pipe(minifyCSS())
+    .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest('./public/css/'))
 });
 

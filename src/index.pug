@@ -7,99 +7,113 @@ html(lang="ru")
 
         link(href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:300,400,600,700', rel='stylesheet')
         link(href='./css/iziModal.min.css', rel='stylesheet')
-        link(href='./css/store.css', rel='stylesheet')
+        link(href='./css/job.css', rel='stylesheet')
 
     body
         script(src="http://code.jquery.com/jquery-3.3.1.min.js")
         include chunks/header.pug
-
         section.content.content_header
             .container
                 ul.content__breadcrumbs
                     li.content__breadcrumbs__item
                         a.content__breadcrumbs__link(href="#") Главная
                     li.content__breadcrumbs__item
-                        span.content__breadcrumbs__span Магазин
-                h1.content__title Магазин учебного центра
-                p Центр профессионального обучения «Северный Путь» является аккредитованной организацией, 
-                    | оказывающей услуги в области охраны труда и предоставляет максимально выгодные и надёжные 
-                    | условия взаимодействия в направлении аутсорсинга по охране труда. Работая по принципу 
-                    | единого окна, Вы сможете получить в нашем лице надёжного партнера в направлении охраны труда, 
-                    | обучения персонала, а также помощь в организации процессов медосмотров сотрудников и 
-                    | аттестации рабочих мест.    
-        section.content.content_product
-            .container
-                .content__title Перечень товаров
+                        span.content__breadcrumbs__span Вакансии
                 .row
                     .column
-                        a.product(href="#" style="background-image: url('./img/program/1.jpg');")
-                            .product__title 
-                                .product__name Журналы
+                        h1.content__title Вакансии учебного центра
+                        p Учебный центр «Северный Путь» не только проводит качественное обучение персонала в различных направлениях, но также и помогает с вопросами трудоустройства. Учебный центр «Северный Путь» не только проводит качественное обучение персонала в различных направлениях, но также и помогает с вопросами трудоустройства.
+                    .column.column_sidebar
+                        .info
+                            .info__title Почему мы?
+                            ul.info__list
+                                li.info__item Максимально открытая информация
+                                li.info__item Только проверенные организации
+                                li.info__item Возможность пройти обучение и работать
+        section.content.content_section.bg_blue-gradient
+            .container.container_inside
+                .content__title.text-center Интересующий вид персонала
+                .row.flex-end
+                    .column.preview-page
+                        .preview-page__title Руководители и инженерно-технические работники
+                        .preview-page__list
+                            a.preview-page__item(href="#") Руководители
+                            a.preview-page__item(href="#") Кадровое делопроизводство
+                            a.preview-page__item(href="#") Охрана труда
+                            a.preview-page__item(href="#") Инженерно-технические работники
+                        .preview-page__offer Актуальные вакансии
+                        .preview-page__color-number 42
+                        .btn.btn_gold.btn_with-arrow Подробнее
+                    .column.preview-page
+                        .preview-page__title Работники рабочих профессий
+                        .preview-page__list
+                            a.preview-page__item(href="#") Стропальщики
+                            a.preview-page__item(href="#") Машинисты
+                            a.preview-page__item(href="#") Операторы
+                            a.preview-page__item(href="#") Слесари
+                        .preview-page__offer Актуальные вакансии
+                        .preview-page__color-number 42
+                        .btn.btn_gold.btn_with-arrow Подробнее
+                .row.flex-end             
+                    .column.preview-page
+                        .preview-page__title Работники рабочих профессий
+                        .preview-page__list
+                            a.preview-page__item(href="#") Стропальщики
+                            a.preview-page__item(href="#") Машинисты
+                            a.preview-page__item(href="#") Операторы
+                            a.preview-page__item(href="#") Слесари
+                        .preview-page__offer Актуальные вакансии
+                        .preview-page__color-number 42
+                        .btn.btn_gold.btn_with-arrow Подробнее
+                    .column.preview-page
+                        .preview-page__title Руководители и инженерно-технические работники
+                        .preview-page__list
+                            a.preview-page__item(href="#") Руководители
+                            a.preview-page__item(href="#") Кадровое делопроизводство
+                            a.preview-page__item(href="#") Инженерно-технические работники
+                        .preview-page__offer Актуальные вакансии
+                        .preview-page__color-number 42
+                        .btn.btn_gold.btn_with-arrow Подробнее
+        section.content.content_contact
+            .container.container_inside
+                .content__title Остались вопросы?
+                p.content__offer Оставьте заявку, и наши специалисты оперативно вам ответят
+                form.form.row(action="")
                     .column
-                        a.product(href="#" style="background-image: url('./img/program/2.jpg');")
-                            .product__title 
-                                .product__name Огнетушители
+                        p.form__label Задайте вопрос здесь:
+                        textarea.form__textarea(placeholder="Введите текст сообщения" rows=6)
                     .column
-                        a.product(href="#" style="background-image: url('./img/program/3.jpg');")
-                            .product__title 
-                                .product__name Наглядные пособия
-                    .column
-                        a.product(href="#" style="background-image: url('./img/program/4.jpg');")
-                            .product__title 
-                                .product__name Другое
-        section.content.content_advantage
+                        p.form__label Телефон для связи:
+                        input.form__input.phone(placeholder="8 ( ___ ) ___ - __ - __")
+                        .form__agree.checkbox
+                            input.checkbox__input(type="checkbox" name="agree" checked="checked" required="required")
+                            label.checkbox__label(for="agree") Я согласен с 
+                                a.checkbox__link(href="/assets/files/documents/policy.pdf" target="_blank") правилами использования сайта
+                        button.btn.btn_primary Отправить сообщение
+        section.content.content_section.bg_blue-gradient
             .container
-                .content__title Наши преимущества
                 .row
-                    .column
-                        .item
-                            .item__icon.delivery
-                            .item__title Доставка прямо к&nbsp;Вам в&nbsp;руки
-                    .column
-                        .item
-                            .item__icon.clients
-                            .item__title Индивидуальный подход к&nbsp;каждому клиенту
-                    .column
-                        .item
-                            .item__icon.consultation
-                            .item__title Консультационная поддержка
-                    .column
-                        .item
-                            .item__icon.certificate
-                            .item__title Сертифицированные товары
-                    .column
-                        .item
-                            .item__icon.format
-                            .item__title Работаем в&nbsp;формате единого окна
-                .cta-wrap
-                    .cta-wrap__title.white Оставьте заявку, и наши специалисты оперативно ответят на любые вопросы
-                    form.cta-wrap__form(action="#", method="POST")
-                        input.input.phone(type="text" placeholder="8 ( ___ ) ___ - __ - __ ")
-                        button.btn(type="submit") Перезвонить
-        section.content.content_product.content_inside
-            .container
-                .content__title Товары
+                    .column.vacancy
+                        .vacancy__title Руководитель направления ВЭД
+                        .vacancy__salary от 57 000 до 92 000 руб.
+                        .vacancy__offer Компания «Мирафокс», Санкт-Петербург
+                    .column.vacancy
+                        .vacancy__title Руководитель отдела исследований (социологические и маркетинговые)
+                        .vacancy__salary от 60 000 руб.
+                        .vacancy__offer Компания «Мирафокс», Санкт-Петербург
+                    .column.vacancy.last
+                        .vacancy__title Руководитель направления ВЭД
+                        .vacancy__salary по результатам собеседования
+                        .vacancy__offer Компания «Мирафокс», Санкт-Петербург
                 .row
-                    .column
-                        a.product(data-title="Журнал учёта огнетушителей" href="#info1" data-izimodal-open="#info1" style="background-image: url('./img/program/1.jpg');")
-                            .product__title 
-                                .product__name Журналы
-                                .product__price 300 руб.
-                    .column
-                        a.product(data-title="Журнал учёта огнетушителей" href="#info1" data-izimodal-open="#info1" style="background-image: url('./img/program/2.jpg');")
-                            .product__title 
-                                .product__name Огнетушители
-                                .product__price 300 руб.
-                    .column
-                        a.product(data-title="Журнал учёта огнетушителей" href="#info1" data-izimodal-open="#info1" style="background-image: url('./img/program/3.jpg');")
-                            .product__title 
-                                .product__name Наглядные пособия
-                                .product__price 300 руб.
-                    .column
-                        a.product(data-title="Журнал учёта проведения вводного инструктажа по пожарной безопасности" href="#info1" data-izimodal-open="#info1" style="background-image: url('./img/program/4.jpg');")
-                            .product__title 
-                                .product__name Журнал учёта проведения вводного инструктажа по пожарной безопасности
-                                .product__price 300 руб.
+                    .column.vacancy
+                        .vacancy__title Руководитель отдела исследований (социологические и маркетинговые)
+                        .vacancy__salary от 60 000 руб.
+                        .vacancy__offer Компания «Мирафокс», Санкт-Петербург
+                    .column.vacancy
+                        .vacancy__title Руководитель направления ВЭД
+                        .vacancy__salary от 57 000 до 92 000 руб.
+                        .vacancy__offer Компания «Мирафокс», Санкт-Петербург
         section.content.content_sale
             .container
                 .content__title Акции учебного центра
@@ -122,48 +136,6 @@ html(lang="ru")
                             .item__title Договор на год
                             .item__line
                             .item__offer При заключении договора на&nbsp;год — скидка&nbsp;10%
-        section.content.content_popular
-            .container
-                .content__title Популярные направления
-                .row
-                    .column
-                        a.product(href="#" style="background-image: url('./img/program/1.jpg');")
-                            .product__title 
-                                .product__name Сосуды, работающие под давлением
-                    .column
-                        a.product(href="#" style="background-image: url('./img/program/2.jpg');")
-                            .product__title 
-                                .product__name Отраслевые правила по охране труда
-                    .column
-                        a.product(href="#" style="background-image: url('./img/program/3.jpg');")
-                            .product__title 
-                                .product__name Курсы повышения квалификации по Реставрационным работам
-        section.content.content_seo
-            .container
-                h2 Заголовок h2
-                p «Северный Путь» является аккредитованной организацией, оказывающей услуги в области охраны труда и предоставляет максимально выгодные и надёжные условия взаимодействия в направлении аутсорсинга по охране труда. Работая по принципу единого окна, Вы сможете получить в нашем лице надёжного партнера в направлении охраны труда, обучения персонала, а также помощь в организации процессов медосмотров сотрудников и аттестации рабочих мест.
-                p Центр профессионального обучения «Северный Путь» является аккредитованной организацией, оказывающей услуги в области охраны труда и предоставляет максимально выгодные и надёжные условия взаимодействия в направлении аутсорсинга по охране труда. Работая по принципу единого окна, Вы сможете получить в нашем лице надёжного партнера в направлении охраны труда, обучения персонала, а также помощь в организации процессов медосмотров сотрудников и аттестации рабочих мест.
-                h3 Заголовок h3
-                p Центр профессионального обучения «Северный Путь» является аккредитованной организацией, оказывающей услуги в области охраны труда и предоставляет максимально выгодные и надёжные условия взаимодействия в направлении аутсорсинга по охране труда. Работая по принципу единого окна, Вы сможете получить в нашем лице надёжного партнера в направлении охраны труда, обучения персонала, а также помощь в организации процессов медосмотров сотрудников и аттестации рабочих мест.
-                ol
-                    li аккредитованной организацией
-                    li аккредитованной организацией
-                    li аккредитованной организацией
-                    li аккредитованной организацией
-                h4 Заголовок h4
-                p Центр профессионального обучения «Северный Путь» является аккредитованной организацией, оказывающей услуги в области охраны труда и предоставляет максимально выгодные и надёжные условия взаимодействия в направлении аутсорсинга по охране труда. Работая по принципу единого окна, Вы сможете получить в нашем лице надёжного партнера в направлении охраны труда, обучения персонала, а также помощь в организации процессов медосмотров сотрудников и аттестации рабочих мест. Центр профессионального обучения «Северный Путь» является аккредитованной организацией, оказывающей услуги в области охраны труда и предоставляет максимально выгодные и надёжные условия взаимодействия в направлении аутсорсинга по охране труда. Работая по принципу единого окна, Вы сможете получить в нашем лице надёжного партнера в направлении охраны труда, обучения персонала, а также помощь в организации процессов медосмотров сотрудников и аттестации рабочих мест.
-                h5 Заголовок h5
-                p Центр профессионального обучения «Северный Путь» является аккредитованной организацией, оказывающей 
-                    | услуги в области охраны труда и предоставляет максимально выгодные и надёжные условия 
-                    | взаимодействия в направлении аутсорсинга по охране труда. Работая по принципу единого окна, 
-                    | Вы сможете получить в нашем лице надёжного партнера в направлении охраны труда, обучения персонала, 
-                    | a также помощь в организации процессов медосмотров сотрудников и аттестации рабочих мест. 
-                h6 Заголовок h6
-                ul 
-                    li Центр профессионального обучения «Северный Путь» является аккредитованной организацией, 
-                    li оказывающей услуги в области охраны труда и предоставляет максимально выгодные 
-                    li и надёжные условия взаимодействия в направлении аутсорсинга по охране труда. 
-                    li Работая по принципу единого окна, Вы сможете получить в нашем лице надёжного партнера 
         footer.footer
             .container
                 .row.footer__row
@@ -193,36 +165,3 @@ html(lang="ru")
         script(src="./js/jquery.inputmask.js")
         script(src="./js/iziModal.js")
         script(src="./js/app.min.js")
-        .modal.modal_info#info1
-            .modal__text
-                .s-title Товар категории "Журналы"
-                .title.text-gold Журнал учёта огнетушителей
-                .s-title Стоимость 300 руб.
-                .offer Журнал учёта огнетушителей с примером заполнения. 
-                a(href="" data-izimodal-close="data-izimodal-close")
-                    span.modal__close.text-gold Закрыть
-            .modal__footer
-                .s-title Выберите способ заказа:
-                .info-block
-                    .info-block__item 
-                        p Отправить заявку&nbsp;на 
-                        p 
-                            a.text-gold.word-break.bb-dotted(href="mailto:info@uc-sp.ru") info@uc-sp.ru
-                    .info-block__item 
-                        p Позвонить по&nbsp;номеру
-                        p 
-                            a(href="tel:8 (812) 468-60-68").phone.text-gold.word-break.bb-dotted 8 (812) 468-60-68
-                a.btn.btn_primary.open-form Заказать обратный звонок
-                .callback-form
-                    form.form(method="post")
-                        input(type="hidden" name="name" value="Журнал учёта огнетушителей" class="hidden h-title")
-                        .callback-form__title Укажите способ связи с Вами, и наши сотрудники оформят заявку на программу обучения.
-                        label.form__label(for="email1") Электронная почта
-                        input.form__input.email(id="email1" type="email" name="email" placeholder=" Введите ваш e-mail " value="")
-                        label.form__label(for="phone1") Телефон
-                        input.form__input.phone(id="phone1" type="phone" name="phone" placeholder="8 ( ___ ) ___ - __ - __"  value="")
-                        .checkbox
-                            input(class="checkbox__input" type="checkbox" name="agree" checked="checked" required="required")
-                            label(class="checkbox__label" for="agree") Я согласен с 
-                                a(class="policy bb-dotted" href="/assets/files/documents/policy.pdf" target="_blank") правилами использования сайта   
-                        button.btn.btn_primary Оставить заявку

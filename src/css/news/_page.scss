@@ -123,3 +123,21 @@
         color: $text-blue3;
     }
 }
+
+/* Media */
+@media all and (max-width: $desktop){}
+@media all and (max-width: $desktop_m){}
+@media all and (max-width: $tablet){
+    .page{
+        .content{
+            section.column, aside.column{
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+            aside.column{
+                margin-top: 40px;
+            }
+        }
+    }
+}
+@media all and (max-width: $mobile_l){}
