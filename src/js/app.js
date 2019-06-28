@@ -6,27 +6,51 @@ $(document).ready(() =>{
     $(".dropdown#dropdown .dropdown__nav.active").removeClass("active");
   }
   //Header Nav
-  $(".header .header__main .header__navbar#dropdownNav .header__link").hover(
-    function(){
-      let link = $(this);
-      let href = link.data("href");
-
-      $(".header .header__main .header__navbar#dropdownNav .header__link.active").removeClass("active");
-      $(".dropdown#dropdown .dropdown__nav.active").removeClass("active");
-
-      if( href != undefined ){
-        link.addClass("active");
-        $(".dropdown#dropdown").addClass("active");
-        $(".dropdown#dropdown .dropdown__nav#" + href).addClass("active");
-      }
+  var constantNav = 0;
+  if ( $(window).width() > 991 ){
+    constantNav = 1;
+  }
+  $(window).resize(function(){
+    if ( $(window).width() > 991 ){
+      constantNav = 1;
+      $(".navbar-toggler").removeClass("active");
+      $(".header .header__content").removeClass("active");
+      $("body").attr("style", "");
+    }else{
+      constantNav = 0;
     }
-  );
+  });
 
+  $(".header .header__main .header__navbar#dropdownNav .header__link").hover(function(){
+    let link = $(this);
+    let href = link.data("href");
+
+    $(".header .header__main .header__navbar#dropdownNav .header__link.active").removeClass("active");
+    $(".dropdown#dropdown .dropdown__nav.active").removeClass("active");
+
+    if( href != undefined && constantNav === 1){
+      link.addClass("active");
+      $(".dropdown#dropdown").addClass("active");
+      $(".dropdown#dropdown .dropdown__nav#" + href).addClass("active");
+    }
+  });
   $(".header .header__top").mousemove(function(){
     DropdownNav()
   });
   $(".dropdown#dropdown").mouseleave(function(){
     DropdownNav()
+  });
+
+  $(".navbar-toggler").on("click", function(){
+    $(this).toggleClass("active");
+
+    if( $(".header .header__content").hasClass("active") ){
+      $(".header .header__content").removeClass("active");
+      $("body").attr("style", "");
+    }else{
+      $(".header .header__content").addClass("active");
+      $("body").attr("style", "position: fixed; overflow: hidden;");
+    }
   });
 
   // Masonry

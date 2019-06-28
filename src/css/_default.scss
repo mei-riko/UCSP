@@ -132,7 +132,8 @@ a {
 body {
     background: url('../img/bg-top.png') no-repeat top left / contain, url('../img/footer-bg.png') no-repeat bottom right / contain;
     background-color: #fafafa;
-    font-family: 'Open Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+	width: 100%;
 }
 /* Background Style */
 .bg{

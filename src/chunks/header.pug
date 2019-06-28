@@ -27,19 +27,64 @@ header.header
                         ul.header__navbar#dropdownNav
                             li.header__item
                                 a.header__link(href="#" data-href="study") Обучение
+                                ul.header__navbar.header__navbar_inner
+                                    li.header__item
+                                        a.header__link Охрана труда
+                                    li.header__item
+                                        a.header__link Повышения квалификации
+                                    li.header__item
+                                        a.header__link Целевое обучение
+                                    li.header__item
+                                        a.header__link Пожарно-технический минимум (ПТМ)
+                                    li.header__item
+                                        a.header__link Профессиональные переподготовки
+                                    li.header__item
+                                        a.header__link Рабочие специальности
+                                    li.header__item
+                                        a.header__link Первая помощь
                             li.header__item
                                 a.header__link(href="#" data-href="security") Служба охраны труда
+                                ul.header__navbar.header__navbar_inner
+                                    li.header__item
+                                        a.header__link Аутсорсинг по охране труда
+                                    li.header__item
+                                        a.header__link Разработка документов по охране труда (СУОТ)
+                                    li.header__item
+                                        a.header__link Помощь при расследовании несчастных случаев
+                                    li.header__item
+                                        a.header__link Помощь при проверках надзорных органов
+                                    li.header__item
+                                        a.header__link Специальная оценка условий труда (СОУТ)
                             li.header__item
                                 a.header__link(href="#"  data-href="store") Магазин
+                                ul.header__navbar.header__navbar_inner
+                                    li.header__item
+                                        a.header__link Журналы
                             li.header__item
                                 a.header__link(href="#"  data-href="job") Вакансии
+                                ul.header__navbar.header__navbar_inner
+                                    li.header__item
+                                        a.header__link Руководство и инженерно-технический персонал
+                                    li.header__item
+                                        a.header__link Рабочие рабочих профессий
                     ul.header__contact
                         li.header__item
-                            a.header__link.header__link_search Поиск
+                            a.header__link.header__link_search 
+                                span.header__link-inner Поиск
                         li.header__item
-                            a.header__link.header__link_vk(href="#") Группа ВК
+                            a.header__link.header__link_vk(href="#") 
+                                span.header__link-inner Группа ВК
                         li.header__item
-                            a.header__link.header__link_address(href="#") Адрес центра
+                            a.header__link.header__link_address(href="#") 
+                                span.header__link-inner Адрес центра
+            .navbar-toggler
+                svg(version="1.1" id="navbar" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve")
+                    g
+                        path.navbar-path.first(d="M491.318,235.318H20.682C9.26,235.318,0,244.577,0,256s9.26,20.682,20.682,20.682h470.636c11.423,0,20.682-9.259,20.682-20.682C512,244.578,502.741,235.318,491.318,235.318z")
+                    g
+                        path.navbar-path.second(d="M491.318,78.439H20.682C9.26,78.439,0,87.699,0,99.121c0,11.422,9.26,20.682,20.682,20.682h470.636c11.423,0,20.682-9.26,20.682-20.682C512,87.699,502.741,78.439,491.318,78.439z")
+                    g
+                        path.navbar-path.third(d="M491.318,392.197H20.682C9.26,392.197,0,401.456,0,412.879s9.26,20.682,20.682,20.682h470.636c11.423,0,20.682-9.259,20.682-20.682S502.741,392.197,491.318,392.197z")
     .dropdown#dropdown
         nav.container
             ul.dropdown__nav#study
