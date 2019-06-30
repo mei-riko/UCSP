@@ -307,6 +307,9 @@ img {
     font-size: 14px;
     line-height: 18px; }
 
+.navbar-toggler {
+  display: none; }
+
 /* Media */
 @media all and (max-width: 1200px) {
   .header__top .header__navbar .header__link {
@@ -412,6 +415,7 @@ img {
       .header .header__contact .header__link_phone {
         font-size: 14px; }
   .navbar-toggler {
+    display: block;
     width: 30px;
     height: 60px;
     padding: 15px 0;
@@ -691,10 +695,6 @@ img {
     font-weight: 300; }
     .content .content__offer + .row, .content .content__offer + .dropdown__nav {
       margin-top: 60px; }
-  .content .btn {
-    font-size: 16px;
-    line-height: 48px;
-    height: 48px; }
   .content ul, .content ol,
   .content p + ul, .content p + ol,
   .content ul + p, .content ol + p,
@@ -1236,12 +1236,16 @@ img {
       background: #f2f5f6 url("../img/icon/icon_iso.svg") no-repeat center/60px; }
     .item__icon.format {
       background: #f2f5f6 url("../img/icon/icon_format.svg") no-repeat center/35px; }
+    .item__icon.delivery-car {
+      background: #f2f5f6 url("../img/icon/tracking.svg") no-repeat center 14px/44px; }
     .item__icon.united {
       background: #fff url("../img/icon/united.svg") no-repeat center/40px; }
     .item__icon.free-delivery {
       background: #fff url("../img/icon/tracking.svg") no-repeat center 14px/44px; }
     .item__icon.contract {
       background: #fff url("../img/icon/contract.svg") no-repeat 25px center/35px; }
+    .item__icon.question {
+      background: #f2f5f6 url("../img/icon/question.svg") no-repeat 20px center/40px; }
   .item__title {
     font-size: 16px;
     line-height: 22px; }
@@ -1294,23 +1298,15 @@ img {
     align-items: center;
     width: 100%;
     min-height: 60px;
-    padding: 18px 15px 12px;
+    padding: 30px 15px 18px;
     background: url(../img/program/background.svg) no-repeat right top/cover;
     color: #448aa7;
     -webkit-transition: .3s;
     -o-transition: .3s;
     transition: .3s; }
-    .product .product__title:after {
-      display: block;
-      content: '';
-      width: 100%;
-      height: 30%;
-      background: #fff;
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      z-index: 1; }
   .product .product__name {
+    font-size: 16px;
+    line-height: 20px;
     position: relative;
     z-index: 2; }
   .product .product__price {
@@ -1327,7 +1323,10 @@ img {
 /* Media */
 @media all and (max-width: 768px) {
   .product .product__title {
-    padding-bottom: 10px; } }
+    padding-bottom: 10px; }
+  .product .product__name {
+    font-size: 14px;
+    line-height: 18px; } }
 
 .modal {
   z-index: 999;

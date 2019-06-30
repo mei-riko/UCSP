@@ -36,7 +36,9 @@
         &.format{
             background: #f2f5f6 url("../img/icon/icon_format.svg") no-repeat center / 35px;
         }
-
+        &.delivery-car{
+            background: #f2f5f6 url("../img/icon/tracking.svg") no-repeat center 14px / 44px;
+        }
         &.united{
             background: #fff url("../img/icon/united.svg") no-repeat center / 40px;
         }
@@ -45,6 +47,9 @@
         }
         &.contract{
             background: #fff url("../img/icon/contract.svg") no-repeat 25px center / 35px;
+        }
+        &.question{
+            background: #f2f5f6 url("../img/icon/question.svg") no-repeat 20px center / 40px;
         }
     }
     &__title{

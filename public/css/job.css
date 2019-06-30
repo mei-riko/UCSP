@@ -306,6 +306,9 @@ img {
     font-size: 14px;
     line-height: 18px; }
 
+.navbar-toggler {
+  display: none; }
+
 /* Media */
 @media all and (max-width: 1200px) {
   .header__top .header__navbar .header__link {
@@ -411,6 +414,7 @@ img {
       .header .header__contact .header__link_phone {
         font-size: 14px; }
   .navbar-toggler {
+    display: block;
     width: 30px;
     height: 60px;
     padding: 15px 0;
@@ -690,10 +694,6 @@ img {
     font-weight: 300; }
     .content .content__offer + .row, .content .content__offer + .dropdown__nav {
       margin-top: 60px; }
-  .content .btn {
-    font-size: 16px;
-    line-height: 48px;
-    height: 48px; }
   .content ul, .content ol,
   .content p + ul, .content p + ol,
   .content ul + p, .content ol + p,
@@ -969,12 +969,16 @@ img {
       background: #f2f5f6 url("../img/icon/icon_iso.svg") no-repeat center/60px; }
     .item__icon.format {
       background: #f2f5f6 url("../img/icon/icon_format.svg") no-repeat center/35px; }
+    .item__icon.delivery-car {
+      background: #f2f5f6 url("../img/icon/tracking.svg") no-repeat center 14px/44px; }
     .item__icon.united {
       background: #fff url("../img/icon/united.svg") no-repeat center/40px; }
     .item__icon.free-delivery {
       background: #fff url("../img/icon/tracking.svg") no-repeat center 14px/44px; }
     .item__icon.contract {
       background: #fff url("../img/icon/contract.svg") no-repeat 25px center/35px; }
+    .item__icon.question {
+      background: #f2f5f6 url("../img/icon/question.svg") no-repeat 20px center/40px; }
   .item__title {
     font-size: 16px;
     line-height: 22px; }
@@ -1101,3 +1105,164 @@ img {
   .vacancy__offer {
     font-size: 14px;
     line-height: 18px; } }
+
+.modal {
+  z-index: 999;
+  display: none; }
+  .modal .modal__close {
+    position: absolute;
+    top: 25px;
+    right: 65px; }
+    .modal .modal__close:after {
+      position: absolute;
+      right: -35px;
+      top: -5px;
+      display: block;
+      content: '';
+      width: 25px;
+      height: 25px;
+      background: url(../img/icon/close.png) no-repeat center/cover; }
+  .modal_info {
+    background: #374c55; }
+    .modal_info .s-title {
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 18px; }
+      .modal_info .s-title + .title {
+        margin-top: 10px; }
+      .modal_info .s-title + .offer {
+        margin-top: 10px; }
+    .modal_info .title {
+      font-size: 18px;
+      line-height: 22px; }
+      .modal_info .title + .s-title {
+        margin-top: 20px; }
+    .modal_info .offer {
+      font-size: 14px;
+      line-height: 18px; }
+    .modal_info .modal__text {
+      position: relative;
+      background: #fff;
+      margin: 0 auto;
+      padding: 60px 30px 30px; }
+    .modal_info .modal__footer {
+      padding: 30px;
+      color: #fff; }
+      .modal_info .modal__footer .s-title {
+        font-size: 18px;
+        line-height: 24px;
+        color: #98d1e9;
+        max-width: 100%;
+        width: 400px;
+        margin: 0 auto; }
+      .modal_info .modal__footer .info-block {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        position: relative;
+        max-width: 100%;
+        width: 430px;
+        margin: 20px auto; }
+        .modal_info .modal__footer .info-block__item {
+          font-size: 16px;
+          line-height: 20px;
+          padding: 0 15px;
+          -webkit-box-flex: 0;
+          -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+          max-width: 50%; }
+          .modal_info .modal__footer .info-block__item p + p {
+            margin-top: 5px; }
+      .modal_info .modal__footer .btn {
+        display: block;
+        width: 400px;
+        max-width: 100%; }
+        .modal_info .modal__footer .btn.open-form {
+          margin: 0 auto; }
+    .modal_info .callback-form {
+      display: none;
+      width: 400px;
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: rgba(236, 241, 243, 0.15); }
+      .modal_info .callback-form__title {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 20px; }
+      .modal_info .callback-form .form__input + .form__label {
+        margin-top: 20px; }
+      .modal_info .callback-form .checkbox {
+        margin-top: 20px; }
+        .modal_info .callback-form .checkbox__label {
+          font-size: 12px; }
+        .modal_info .callback-form .checkbox .policy {
+          color: #fff; }
+
+.search-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 999; }
+  .search-form__btn {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    padding: 15px;
+    max-width: 100%;
+    background: 0 0;
+    color: #aed0dc;
+    border: none;
+    cursor: pointer;
+    padding-left: 45px;
+    background: url("../img/icon/search-white.svg") no-repeat 15px center/16px; }
+    .search-form__btn:hover {
+      color: #fff; }
+  .search-form .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .search-form .form .form__input {
+      width: calc(100% - 115px); }
+    .search-form .form .search-form__btn {
+      width: 115px; }
+  .search-form .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.2) url("../img/icon/close.png") no-repeat center/30px; }
+  .search-form .sisea-search-form {
+    width: 450px;
+    max-width: 100%; }
+  .search-form .search-block-list {
+    width: 450px;
+    max-width: 100%;
+    padding: 15px 0;
+    color: #fff; }
+  .search-form .sisea-result + .sisea-result {
+    margin-top: 10px; }
