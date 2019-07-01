@@ -15,40 +15,52 @@ html(lang="ru")
             .container
                 .poll
                     p.poll__title Рассчитай свою скидку
-                    .poll__row#row-1
-                        select.poll__select
-                            option(value="0" selected) Выберите программу
-                            option(value="1" data-programm="ПТМ") ПТМ
-                            option(value="2" data-programm="Охрана труда") Охрана труда
-                            option(value="3" data-programm="Первая помощь") Первая помощь
-                            option(value="4" data-programm="Повышение квалификации") Повышение квалификации
-                            option(value="5" data-programm="Переподготовка специалиста") Переподготовка специалиста
-                            option(value="6" data-programm="Рабочие специальности") Рабочие специальности
-                        .poll__count
-                            p.poll__label Количество обучаемых
-                            input.poll__input(type="number" min="0" max="100" value="1")
-                            span.poll__price x 
-                                span.poll__programm-price 0
-                                span.poll__currency руб.
-                    p.poll__add#addRow Добавить еще программу
-                    .poll__result
-                        .poll__total-cost 
-                            p.poll__subtitle Стоимость обучения 
-                            p.poll__value
-                                span#total-cost 0
-                                span.poll__currency  руб.
-                        .poll__total-sale
-                            p.poll__subtitle Стоимость с учетом скидки 
-                            p.poll__value
-                                span#total-sale 0
-                                span.poll__currency  руб.
-                        .poll__sale
-                            p.poll__subtitle ВАША СКИДКА  
-                            p.poll__value
-                                span#sale 0
-                                span.poll__currency %
-                    .poll__form
-                        button.btn.btn_primary Получить обучение со скидкой
+                    .start-step
+                        .poll__row#row-1
+                            select.poll__select
+                                option(value="0" selected) Выберите программу
+                                option(value="1" data-programm="ПТМ") ПТМ
+                                option(value="2" data-programm="Охрана труда") Охрана труда
+                                option(value="3" data-programm="Первая помощь") Первая помощь
+                                option(value="4" data-programm="Повышение квалификации") Повышение квалификации
+                                option(value="5" data-programm="Переподготовка специалиста") Переподготовка специалиста
+                                option(value="6" data-programm="Рабочие специальности") Рабочие специальности
+                            .poll__count
+                                p.poll__label Количество обучаемых
+                                input.poll__input(type="number" min="0" max="100" value="1")
+                                span.poll__price x 
+                                    span.poll__programm-price 0
+                                    span.poll__currency руб.
+                        p.poll__add#addRow Добавить еще программу
+                        .poll__result
+                            .poll__total-cost 
+                                p.poll__subtitle Стоимость дистанционного обучения 
+                                p.poll__value
+                                    span#total-cost 0
+                                    span.poll__currency  руб.
+                            .poll__total-sale
+                                p.poll__subtitle Стоимость обучения с учетом скидки 
+                                p.poll__value
+                                    span#total-sale 0
+                                    span.poll__currency  руб.
+                            .poll__sale
+                                p.poll__subtitle ЭКОНОМИЯ СОСТАВИЛА  
+                                p.poll__value
+                                    span#sale 0
+                                    span.poll__currency %
+                        .poll__btn
+                            button.btn.btn_primary Сэкономить 
+                                span.hide#saleBtn 10
+                                span.hide % на обучении
+                    .form-step
+                        form.form(action="")
+                            p.form__label Телефон для связи:
+                            input.form__input.phone(placeholder="8 ( ___ ) ___ - __ - __")
+                            .form__agree.checkbox
+                                input.checkbox__input(type="checkbox" name="agree" checked="checked" required="required")
+                                label.checkbox__label(for="agree") Я согласен с 
+                                    a.checkbox__link(href="/assets/files/documents/policy.pdf" target="_blank") правилами использования сайта
+                            button.btn.btn_primary Пройти обучение
         footer.footer
             .container
                 .row.footer__row

@@ -119,38 +119,51 @@
       <div class="container">
         <div class="poll">
           <p class="poll__title">Рассчитай свою скидку</p>
-          <div class="poll__row" id="row-1">
-            <select class="poll__select">
-              <option value="0" selected="selected">Выберите программу</option>
-              <option value="1" data-programm="ПТМ">ПТМ</option>
-              <option value="2" data-programm="Охрана труда">Охрана труда</option>
-              <option value="3" data-programm="Первая помощь">Первая помощь</option>
-              <option value="4" data-programm="Повышение квалификации">Повышение квалификации</option>
-              <option value="5" data-programm="Переподготовка специалиста">Переподготовка специалиста</option>
-              <option value="6" data-programm="Рабочие специальности">Рабочие специальности</option>
-            </select>
-            <div class="poll__count">
-              <p class="poll__label">Количество обучаемых</p>
-              <input class="poll__input" type="number" min="0" max="100" value="1"/><span class="poll__price">x <span class="poll__programm-price">0</span><span class="poll__currency">руб.</span></span>
+          <div class="start-step">
+            <div class="poll__row" id="row-1">
+              <select class="poll__select">
+                <option value="0" selected="selected">Выберите программу</option>
+                <option value="1" data-programm="ПТМ">ПТМ</option>
+                <option value="2" data-programm="Охрана труда">Охрана труда</option>
+                <option value="3" data-programm="Первая помощь">Первая помощь</option>
+                <option value="4" data-programm="Повышение квалификации">Повышение квалификации</option>
+                <option value="5" data-programm="Переподготовка специалиста">Переподготовка специалиста</option>
+                <option value="6" data-programm="Рабочие специальности">Рабочие специальности</option>
+              </select>
+              <div class="poll__count">
+                <p class="poll__label">Количество обучаемых</p>
+                <input class="poll__input" type="number" min="0" max="100" value="1"/><span class="poll__price">x <span class="poll__programm-price">0</span><span class="poll__currency">руб.</span></span>
+              </div>
+            </div>
+            <p class="poll__add" id="addRow">Добавить еще программу</p>
+            <div class="poll__result">
+              <div class="poll__total-cost"> 
+                <p class="poll__subtitle">Стоимость дистанционного обучения </p>
+                <p class="poll__value"><span id="total-cost">0</span><span class="poll__currency"> руб.</span></p>
+              </div>
+              <div class="poll__total-sale">
+                <p class="poll__subtitle">Стоимость обучения с учетом скидки </p>
+                <p class="poll__value"><span id="total-sale">0</span><span class="poll__currency"> руб.</span></p>
+              </div>
+              <div class="poll__sale">
+                <p class="poll__subtitle">ЭКОНОМИЯ СОСТАВИЛА  </p>
+                <p class="poll__value"><span id="sale">0</span><span class="poll__currency">%</span></p>
+              </div>
+            </div>
+            <div class="poll__btn">
+              <button class="btn btn_primary">Сэкономить <span class="hide" id="saleBtn">10</span><span class="hide">% на обучении</span></button>
             </div>
           </div>
-          <p class="poll__add" id="addRow">Добавить еще программу</p>
-          <div class="poll__result">
-            <div class="poll__total-cost"> 
-              <p class="poll__subtitle">Стоимость обучения </p>
-              <p class="poll__value"><span id="total-cost">0</span><span class="poll__currency"> руб.</span></p>
-            </div>
-            <div class="poll__total-sale">
-              <p class="poll__subtitle">Стоимость с учетом скидки </p>
-              <p class="poll__value"><span id="total-sale">0</span><span class="poll__currency"> руб.</span></p>
-            </div>
-            <div class="poll__sale">
-              <p class="poll__subtitle">ВАША СКИДКА  </p>
-              <p class="poll__value"><span id="sale">0</span><span class="poll__currency">%</span></p>
-            </div>
-          </div>
-          <div class="poll__form">
-            <button class="btn btn_primary">Получить обучение со скидкой</button>
+          <div class="form-step">
+            <form class="form" action="">
+              <p class="form__label">Телефон для связи:</p>
+              <input class="form__input phone" placeholder="8 ( ___ ) ___ - __ - __"/>
+              <div class="form__agree checkbox">
+                <input class="checkbox__input" type="checkbox" name="agree" checked="checked" required="required"/>
+                <label class="checkbox__label" for="agree">Я согласен с <a class="checkbox__link" href="/assets/files/documents/policy.pdf" target="_blank">правилами использования сайта</a></label>
+              </div>
+              <button class="btn btn_primary">Пройти обучение</button>
+            </form>
           </div>
         </div>
       </div>

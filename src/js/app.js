@@ -1,6 +1,8 @@
 import $ from 'jquery'
 $(document).ready(() =>{
   var saleRandom = Math.floor( Math.random()*25) + 5;
+  $("#saleBtn").html( saleRandom );
+
   // TotalCost
   function totalResult(priceValue,saleValue){
     let totalCost = $("#total-cost");
@@ -23,6 +25,13 @@ $(document).ready(() =>{
     let count = poll.find(".poll__input").val();
     // remove price
     poll.find(".poll__programm-price").html( price );
+
+    // show button
+    if ( price === "0" ){
+      $(".poll__btn").removeClass("active");
+    }else{
+      $(".poll__btn").addClass("active");
+    }
 
     let priceAll = 0;
     if ( $(".poll__row").length > 1){
@@ -64,6 +73,7 @@ $(document).ready(() =>{
   $("#addRow").on("click", function(){
     $("#row-1").clone().prop("id", "row-" + addRowId).insertBefore( $(this) );
     $("#row-" + addRowId).find(".poll__programm-price").html( "0" );
+    $("<div class='poll__delete' data-id='row-"+ addRowId +"'>x</div>").appendTo("#row-" + addRowId);
     addRowId = addRowId + 1;
     // Poll Select Change
     $(".poll .poll__row .poll__select").on("change", function(){
@@ -73,6 +83,17 @@ $(document).ready(() =>{
     $(".poll .poll__row .poll__input").on("change", function(){
       removeCount( $(this) );
     });
+    // Delete Programm
+    $(".poll__delete").on("click", function(){
+      let rowId = $(this).data("id");
+      $("#"+ rowId ).remove();
+    });
+  });
+  // Show Send Form
+  $(".start-step .poll__btn .btn").on("click", function(){
+    $(".start-step").slideToggle();
+    $(".poll .poll__title").html("Сэкономить " + saleRandom + "% на обучении");
+    $(".form-step").slideToggle();
   });
 
   // Dropdown Navigation
