@@ -1,0 +1,79 @@
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Document2
+
+        link(href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:300,400,600,700', rel='stylesheet')
+        link(href='./css/lid.css', rel='stylesheet')
+
+    body
+        script(src="http://code.jquery.com/jquery-3.3.1.min.js")
+        include chunks/header.pug
+        section.content(style="padding: 100px 0;background:#fff;")
+            .container
+                .poll
+                    p.poll__title Рассчитай свою скидку
+                    .poll__row#row-1
+                        select.poll__select
+                            option(value="0" selected) Выберите программу
+                            option(value="1" data-programm="ПТМ") ПТМ
+                            option(value="2" data-programm="Охрана труда") Охрана труда
+                            option(value="3" data-programm="Первая помощь") Первая помощь
+                            option(value="4" data-programm="Повышение квалификации") Повышение квалификации
+                            option(value="5" data-programm="Переподготовка специалиста") Переподготовка специалиста
+                            option(value="6" data-programm="Рабочие специальности") Рабочие специальности
+                        .poll__count
+                            p.poll__label Количество обучаемых
+                            input.poll__input(type="number" min="0" max="100" value="1")
+                            span.poll__price x 
+                                span.poll__programm-price 0
+                                span.poll__currency руб.
+                    p.poll__add#addRow Добавить еще программу
+                    .poll__result
+                        .poll__total-cost 
+                            p.poll__subtitle Стоимость обучения 
+                            p.poll__value
+                                span#total-cost 0
+                                span.poll__currency  руб.
+                        .poll__total-sale
+                            p.poll__subtitle Стоимость с учетом скидки 
+                            p.poll__value
+                                span#total-sale 0
+                                span.poll__currency  руб.
+                        .poll__sale
+                            p.poll__subtitle ВАША СКИДКА  
+                            p.poll__value
+                                span#sale 0
+                                span.poll__currency %
+                    .poll__form
+                        button.btn.btn_primary Получить обучение со скидкой
+        footer.footer
+            .container
+                .row.footer__row
+                    .column.footer__column
+                        ul.footer__list
+                            li.footer__list__item Обучение персонала.
+                            li.footer__list__item Лицензирование.
+                            li.footer__list__item Консалтинг.
+                        a(href="#").policy Версия для слабовидящих
+                        br
+                        a(href="#").policy Политика конфиденциальности
+                    a.column.footer__logo(href="/")
+                    .column.footer__column
+                        ul.footer__list.footer__list_contact
+                            li
+                                a(href="tel:88124696068").footer__link.footer__tel 8 (812) 469-60-68
+                                    span.icon
+                            li
+                                a(href="mailto:info@uc-sp.ru").footer__link.footer__mail info@uc-sp.ru
+                                    span.icon
+                            li
+                                a(href="https://vk.com/ucnorthway" target='_blank').footer__link.footer__vk Присоединяйтесь к группе ВК
+                                    span.icon
+                            li
+                                a(href='' target='_blank').footer__link.footer__link_last.footer__address Санкт-Петербург, ул. Оборонная, 10 лит. А офис 310А
+                                    span.icon
+        script(src="./js/jquery.inputmask.js")
+        script(src="./js/app.min.js")

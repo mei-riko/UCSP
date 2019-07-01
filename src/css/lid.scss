@@ -1,0 +1,135 @@
+@import "default.scss";
+// @import "variable.scss";
+// @import "other/form.scss";
+// $desktop: 1200px;
+// $desktop_m: 992px;
+// $tablet: 768px;
+// $mobile_l: 576px;
+
+.poll{
+    padding: 40px;
+    width: 640px;
+    max-width: 100%;
+    background: #f3f1ea;
+
+    &__title{
+        color: $text-gold;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+    &__row{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+
+        & + .poll__row{
+            margin-top: 20px;
+        }
+    }
+    &__label{
+        @extend .form__label;
+    }
+    &__select{
+        padding: 10px;
+        margin-right: 20px;
+    }
+    &__input{
+        padding: 10px;
+        margin: 0 10px;
+        width: 80px;
+        max-width: 100%;
+    }
+    &__price{
+        font-weight: 700;
+    }
+    // Link
+    .poll__add{
+        text-decoration: underline;
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 300;
+
+        margin-top: 20px;
+
+        transition: .2s;
+        cursor: pointer;
+
+        &:hover{
+            color: $text-blue;
+        }
+    }
+    // Result Poll
+    &__result{
+        display: inline-block;
+        background: lighten($color: $text-gold, $amount: 32%);
+        padding: 20px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    &__total-cost{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 18px;
+    }
+    &__sale{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 18px;
+        
+        margin-top: 20px;
+        color: $text-blue;
+    }
+    &__total-sale{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 20px;
+    }
+    .poll__subtitle{
+        margin-right: 10px;
+    }
+    .poll__value,
+    .poll__currency{
+        font-weight: 700;
+    }
+}
+
+
+/* Media */
+@media all and (max-width: $tablet){
+    .poll{
+        max-width: 100%;
+
+        &__row{
+            flex-wrap: wrap;
+        }
+        &__select{
+            width: 100%;
+        }
+        &__count{
+            margin-top: 10px;
+        }
+    }
+}
+@media all and (max-width: $mobile_l){
+    .poll{
+        &__label{
+            width: 100%;
+        }
+        &__input{
+            margin-left: 0;
+        }
+    }
+}

@@ -1,15 +1,92 @@
 import $ from 'jquery'
 $(document).ready(() =>{
+  var saleRandom = Math.floor( Math.random()*25) + 5;
+  // TotalCost
+  function totalResult(priceValue,saleValue){
+    let totalCost = $("#total-cost");
+    let sale = $("#sale");
+    let totalCostSale = $("#total-sale");
+
+    totalCost.html( priceValue );
+    sale.html( saleValue );
+    
+    let saleCost = priceValue*(1 - saleValue/100);
+    totalCostSale.html( saleCost.toFixed(2) );
+  }
+  // Remove Price
+  function removePrice( row ){
+    // parent row
+    let poll = row.closest(".poll__row");
+    // select option
+    let price = row.find("option:selected").val() ;
+    // how many courses
+    let count = poll.find(".poll__input").val();
+    // remove price
+    poll.find(".poll__programm-price").html( price );
+
+    let priceAll = 0;
+    if ( $(".poll__row").length > 1){
+      $(".poll__row").each(function(i, element){
+        priceAll = priceAll + $(element).find("option:selected").val()*$(element).find(".poll__input").val();
+      });
+    }else{
+      priceAll = price*count;
+    }
+
+    totalResult(priceAll,saleRandom);
+  }
+  // Remove Count
+  function removeCount( row ){
+    let poll = row.closest(".poll__row");
+    let price = poll.find("option:selected").val() ;
+    let count = poll.find(".poll__input").val();
+
+    let priceAll = 0;
+    if ( $(".poll__row").length > 1){
+      $(".poll__row").each(function(i, element){
+        priceAll = priceAll + $(element).find("option:selected").val()*$(element).find(".poll__input").val();
+      });
+    }else{
+      priceAll = price*count;
+    }
+    totalResult(priceAll,saleRandom);
+  }
+  // Poll Select Change
+  $(".poll .poll__row .poll__select").on("change", function(){
+    removePrice( $(this) );
+  });
+  // Poll Input Change
+  $(".poll .poll__row .poll__input").on("change", function(){
+    removeCount( $(this) );
+  });
+  // Add Programm
+  var addRowId = 2;
+  $("#addRow").on("click", function(){
+    $("#row-1").clone().prop("id", "row-" + addRowId).insertBefore( $(this) );
+    $("#row-" + addRowId).find(".poll__programm-price").html( "0" );
+    addRowId = addRowId + 1;
+    // Poll Select Change
+    $(".poll .poll__row .poll__select").on("change", function(){
+      removePrice( $(this) );
+    });
+    // Poll Input Change
+    $(".poll .poll__row .poll__input").on("change", function(){
+      removeCount( $(this) );
+    });
+  });
+
+  // Dropdown Navigation
   function DropdownNav(){
     $(".dropdown#dropdown").removeClass("active");
     $(".header .header__main .header__navbar#dropdownNav .header__link.active").removeClass("active");
     $(".dropdown#dropdown .dropdown__nav.active").removeClass("active");
   }
-  //Header Nav
+  // Header Nav On Desktop Screen
   var constantNav = 0;
   if ( $(window).width() > 991 ){
     constantNav = 1;
   }
+  // Hide Navigation on Mobile
   $(window).resize(function(){
     if ( $(window).width() > 991 ){
       constantNav = 1;
