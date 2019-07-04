@@ -1,19 +1,53 @@
 import $ from 'jquery'
 $(document).ready(() =>{
-  var saleRandom = Math.floor( Math.random()*25) + 5;
-  $("#saleBtn").html( saleRandom );
-
-  // TotalCost
+  let saleCount = 0;
+  let saleType = 0;
+  let saleAll = 0;
+  let priceAll = 0;
+  
+  // Total Cost
   function totalResult(priceValue,saleValue){
     let totalCost = $("#total-cost");
     let sale = $("#sale");
+    let saleBtn = $("#saleBtn");
     let totalCostSale = $("#total-sale");
 
     totalCost.html( priceValue );
     sale.html( saleValue );
+    saleBtn.html( saleValue );
     
     let saleCost = priceValue*(1 - saleValue/100);
     totalCostSale.html( saleCost.toFixed(2) );
+  }
+  // Total Sale
+  function saleTotal(){
+    saleAll = 0
+
+    let saleCountPoll = 0;
+    // How many programm 
+    if ( $(".poll__row").length > 2){ saleType = 5; }else{ saleType = 0; }
+
+    // How many people
+    $(".poll__row").each( function(i, elem){
+      let count = $(elem).find(".poll__input").val();
+
+      if( count >= 5 && count < 10 ){
+        saleCountPoll = 10;
+      }else{
+        if ( count >= 10) { saleCountPoll = 15; } else{ saleCountPoll = 0; }
+      }
+      if ( saleCountPoll > saleCount ){ saleCount = saleCountPoll; }
+    });
+
+    saleAll = saleCount + saleType;
+    console.log( saleAll );
+  }
+  // Total Price
+  function priceTotal(){
+    priceAll = 0;
+    $(".poll__row").each(function(i, element){
+      priceAll = priceAll + $(element).find("option:selected").val()*$(element).find(".poll__input").val();
+    });
   }
   // Remove Price
   function removePrice( row ){
@@ -33,16 +67,9 @@ $(document).ready(() =>{
       $(".poll__btn").addClass("active");
     }
 
-    let priceAll = 0;
-    if ( $(".poll__row").length > 1){
-      $(".poll__row").each(function(i, element){
-        priceAll = priceAll + $(element).find("option:selected").val()*$(element).find(".poll__input").val();
-      });
-    }else{
-      priceAll = price*count;
-    }
-
-    totalResult(priceAll,saleRandom);
+    priceTotal();
+    saleTotal();
+    totalResult(priceAll, saleAll);
   }
   // Remove Count
   function removeCount( row ){
@@ -51,14 +78,18 @@ $(document).ready(() =>{
     let count = poll.find(".poll__input").val();
 
     let priceAll = 0;
+
     if ( $(".poll__row").length > 1){
       $(".poll__row").each(function(i, element){
         priceAll = priceAll + $(element).find("option:selected").val()*$(element).find(".poll__input").val();
       });
     }else{
       priceAll = price*count;
-    }
-    totalResult(priceAll,saleRandom);
+    }  
+
+    priceTotal();
+    saleTotal();
+    totalResult(priceAll, saleAll);
   }
   // Poll Select Change
   $(".poll .poll__row .poll__select").on("change", function(){
@@ -73,8 +104,14 @@ $(document).ready(() =>{
   $("#addRow").on("click", function(){
     $("#row-1").clone().prop("id", "row-" + addRowId).insertBefore( $(this) );
     $("#row-" + addRowId).find(".poll__programm-price").html( "0" );
+    $("#row-" + addRowId).find(".poll__input").val( 1 );
     $("<div class='poll__delete' data-id='row-"+ addRowId +"'>x</div>").appendTo("#row-" + addRowId);
     addRowId = addRowId + 1;
+    // UpdateSale
+    priceTotal();
+    saleTotal();
+    totalResult(priceAll, saleAll);
+
     // Poll Select Change
     $(".poll .poll__row .poll__select").on("change", function(){
       removePrice( $(this) );
@@ -87,12 +124,15 @@ $(document).ready(() =>{
     $(".poll__delete").on("click", function(){
       let rowId = $(this).data("id");
       $("#"+ rowId ).remove();
+      priceTotal();
+      saleTotal();
+      totalResult(priceAll, saleAll);
     });
   });
   // Show Send Form
   $(".start-step .poll__btn .btn").on("click", function(){
     $(".start-step").slideToggle();
-    $(".poll .poll__title").html("Сэкономить " + saleRandom + "% на обучении");
+    $(".poll .poll__title").html("Сэкономить " + saleAll + "% на обучении");
     $(".form-step").slideToggle();
   });
 

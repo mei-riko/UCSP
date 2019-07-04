@@ -982,10 +982,11 @@ img {
 }
 
 .poll .poll__add {
-  text-decoration: underline;
+  display: inline-block;
   font-size: 12px;
-  line-height: 16px;
   font-weight: 300;
+  line-height: 16px;
+  text-decoration: underline;
   margin-top: 20px;
   -webkit-transition: .2s;
   -o-transition: .2s;
