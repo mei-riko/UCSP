@@ -12,7 +12,7 @@ html(lang="ru")
         script(src="http://code.jquery.com/jquery-3.3.1.min.js")
         include chunks/header.pug
 
-        section.content.content_header.content_column
+        section.content.content_header
             .container
                 ul.content__breadcrumbs
                     li.content__breadcrumbs__item
@@ -20,19 +20,12 @@ html(lang="ru")
                     li.content__breadcrumbs__item
                         a.content__breadcrumbs__link(href="#") Служба охраны труда
                     li.content__breadcrumbs__item
-                        span.content__breadcrumbs__span Специальная оценка условий
-                h1.content__title Специальная оценка условий
-                .row
-                    .column
-                        p Центр профессионального обучения «Северный Путь» является аккредитованной организацией, 
-                            | оказывающей услуги в области охраны труда и предоставляет максимально выгодные и надёжные 
-                            | условия взаимодействия в направлении аутсорсинга по охране труда. Работая по принципу 
-                            | единого окна.
-                    .column
-                        p Вы сможете получить в нашем лице надёжного партнера в направлении охраны труда, 
-                            | обучения персонала, а также помощь в организации процессов медосмотров.
-                        p
-                            a.btn.btn_primary Рассчитать стоимость
+                        span.content__breadcrumbs__span Расследование несчастных случаев на производстве
+                h1.content__title Расследование несчастных случаев на производстве
+                p Центр профессионального обучения «Северный Путь» является аккредитованной организацией, 
+                    | оказывающей услуги в области охраны труда и предоставляет максимально выгодные и надёжные 
+                    | условия взаимодействия в направлении аутсорсинга по охране труда. Работая по принципу 
+                    | единого окна.
         aside.content.content_advantage
             .container
                 .content__title Наши преимущества
@@ -60,33 +53,59 @@ html(lang="ru")
                     section
         section.content.content_column
             .container
+                h2.content__title.text-bold Услуги
                 .row
-                    .column.content_seo
-                        h2.content_column__title Что необходимо для расчёта?
-                        .content_column__line
-                        p Для расчёта стоимости необходимо будет выслать актуальное штатное расписание:
-                        ul
-                            li 
-                                span.text-bold без вакантных мест;
-                            li 
-                                span.text-bold без тех сотрудников, кто работает вне офиса <br>
-                                | (исключительно на дому по трудовому договору);
-                            li 
-                                span.text-bold без декретных мест  <br>
-                                | (если не принят официально  на его место новый сотрудник);
-
-                    .column.column_form
-                        .content_column__title Рассчитайте стоимость
-                        p.content_column__offer Оставьте заявку, и наши специалисты оперативно вам ответят.Можете сразу прикрепить файл с расписанием:
-                        form.form()
-                            input.form__input.phone(placeholder="8 ( ___ ) ___ - __ - __")
-                            input(type="file" name="file" id="file" class="form__input-file")
-                            label.form__file-label(for="file") Прикрепить расписание
-                            .form__agree.checkbox
-                                input.checkbox__input(type="checkbox" name="agree" checked="checked" required="required")
-                                label.checkbox__label(for="agree") Я согласен с 
-                                    a.checkbox__link(href="/assets/files/documents/policy.pdf" target="_blank") правилами использования сайта</a></label>
-                            button.btn.btn_primary Получить расчет
+                    .column.d-flex
+                        a.service
+                            .service__image(style="background-image:url('/img/program/1.jpg');")
+                            .service__title Сопровождение до момента закрытия расследования по несчастному случаю
+                    .column.d-flex
+                        a.service
+                            .service__image(style="background-image:url('/img/program/2.jpg');")
+                            .service__title Консультации по вопросам несчастных случаев
+                    .column.d-flex
+                        a.service
+                            .service__image(style="background-image:url('/img/program/3.jpg');")
+                            .service__title Разработка первичного пакета документов для прохождения проверок
+                    .column.d-flex
+                        a.service
+                            .service__image(style="background-image:url('/img/program/4.jpg');")
+                            .service__title Приведение документации организации в соответствующий законодательству вид
+                    .column.d-flex
+                        a.service
+                            .service__image(style="background-image:url('/img/program/5.jpg');")
+                            .service__title Представление интересов организации в суде
+                    .column.d-flex
+                        a.service
+                            .service__image(style="background-image:url('/img/program/6.jpg');")
+                            .service__title Первичный аудит
+                .cta-wrap
+                    .cta-wrap__title.white Оставьте заявку, и наши специалисты оперативно ответят на любые вопросы
+                    form.cta-wrap__form(action="#", method="POST")
+                        input.input.phone(type="text" placeholder="8 ( ___ ) ___ - __ - __ ")
+                        button.btn(type="submit") Перезвонить
+        aside.content.content_sale
+            .container
+                .content__title Акции учебного центра
+                .row
+                    .column
+                        .item
+                            .item__icon.united
+                            .item__title Приведи друга
+                            .item__line
+                            .item__offer Скидка 10% на&nbsp;следующие&nbsp;заказы
+                    .column
+                        .item
+                            .item__icon.free-delivery
+                            .item__title Бесплатная доставка
+                            .item__line
+                            .item__offer Доставка документов по&nbsp;Санкт-Петербургу
+                    .column
+                        .item
+                            .item__icon.contract
+                            .item__title Договор на год
+                            .item__line
+                            .item__offer При заключении договора на&nbsp;год — скидка&nbsp;10%
         section.content.content_seo
             .container
                 h2 Заголовок h2

@@ -105,6 +105,12 @@ a:hover {
   display: none !important;
 }
 
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1024,6 +1030,8 @@ img {
 .content_header p {
   font-size: 16px;
   line-height: 26px;
+  width: 940px;
+  max-width: 100%;
 }
 
 .content_header p + p {

@@ -1,21 +1,6 @@
-/* Advantage Block */
-.content_advantage{
-    background: #ffffff;
-    .content__title{
-        margin-bottom: 60px;
-        text-align: center;
-    }
-    .row{
-        .column{
-            -webkit-box-flex: 0;
-            -ms-flex: 0 0 20%;
-            flex: 0 0 20%;
-            max-width: 20%;
-        }
-    }
-}
+/* CTA Block */
 .cta-wrap {
-    margin: 60px auto 0;
+    margin: 40px auto 0;
     width: 100%;
     max-width: 100%;
 
@@ -99,17 +84,6 @@
 /* Media */
 @media all and (max-width: $desktop){}
 @media all and (max-width: $desktop_m){
-    .content_advantage{
-        .row{
-            justify-content: center;
-            .column {
-                flex: 0 0 33%;
-                max-width: 33%;
-
-                margin-bottom: 30px;
-            }
-        }
-    }
     .cta-wrap{
         flex-wrap: wrap;
         justify-content: center;
@@ -132,35 +106,8 @@
         }
     }
 }
-@media all and (max-width: $tablet){
-    .content_advantage{
-        .row{
-            justify-content: center;
-            .column {
-                flex: 0 0 40%;
-                max-width: 40%;
-
-                margin-bottom: 30px;
-            }
-        }
-    }
-}
+@media all and (max-width: $tablet){}
 @media all and (max-width: $mobile_l){
-    .content_advantage{
-        .row{
-            justify-content: center;
-            .column {
-                flex: 0 0 50%;
-                max-width: 50%;
-            }
-        }
-        .item{
-            &__title {
-                font-size: 12px;
-                line-height: 16px;
-            }
-        }
-    }
     .cta-wrap{
         padding: 30px 20px;
         &__form{
