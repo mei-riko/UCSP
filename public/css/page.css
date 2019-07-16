@@ -627,6 +627,32 @@ img {
   opacity: 0;
 }
 
+.form__input-file {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.form__file-label {
+  margin: 20px 0 10px;
+  background: #a2926b;
+  color: #fff;
+  padding: 15px 20px;
+  display: inline-block;
+  font-size: 14px;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.form__file-label:hover, .form__file-label:focus {
+  background: #96855e;
+}
+
 .form__textarea {
   font-family: "Open Sans", sans-serif;
   padding: 15px;
@@ -711,6 +737,10 @@ img {
   font-size: 14px;
 }
 
+.form .checkbox__link {
+  text-decoration: underline;
+}
+
 .form .btn {
   margin-top: 10px;
 }
@@ -760,6 +790,13 @@ img {
   background-position-y: center;
   background-size: 18px;
   padding-right: 48px;
+}
+
+@media (max-width: 768px) {
+  .form__file-label {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
 }
 
 /* Footer */
@@ -1475,9 +1512,17 @@ img {
   background-color: #a2926b;
 }
 
+.content_seo ul li + li {
+  margin-top: 6px;
+}
+
 .content_seo ol {
   padding-left: 15px;
   list-style: decimal;
+}
+
+.content_seo ol li + li {
+  margin-top: 6px;
 }
 
 /* Media */
@@ -1490,6 +1535,120 @@ img {
 @media all and (max-width: 576px) {
   .content_seo .container {
     padding: 0 30px;
+  }
+}
+
+/* Column Block */
+.content_column {
+  background: #ebeeef;
+}
+
+.content_column .row, .content_column .dropdown__nav {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.content_column .row .column, .content_column .dropdown__nav .column, .content_column .row .dropdown__item, .content_column .dropdown__nav .dropdown__item {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.content_column .row .column_form, .content_column .dropdown__nav .column_form {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 41.666667%;
+  flex: 0 0 41.666667%;
+  max-width: 41.666667%;
+}
+
+.content_column .content_column__title {
+  color: #a2926b;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.content_column .content_column__title + .form {
+  margin-top: 22px;
+}
+
+.content_column .content_column__title + .content_column__offer {
+  margin-top: 20px;
+}
+
+.content_column .content_column__line {
+  display: block;
+  height: 1px;
+  width: 100%;
+  background: #fff;
+  margin: 20px auto;
+}
+
+.content_column .content_column__offer {
+  font-size: 12px;
+  line-height: 16px;
+  color: #959595;
+}
+
+.content_column .content_column__offer + * {
+  margin-top: 20px;
+}
+
+.content_column .form__textarea {
+  background: #fff;
+  margin-bottom: 20px;
+}
+
+.content_column .form__input {
+  background: #fff;
+}
+
+.content_column .form .btn {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  height: 50px;
+  line-height: 48px;
+}
+
+/* Media */
+@media all and (max-width: 768px) {
+  .content_column .row, .content_column .dropdown__nav {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .content_column .row .column, .content_column .dropdown__nav .column, .content_column .row .dropdown__item, .content_column .dropdown__nav .dropdown__item {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 80%;
+    flex: 0 0 80%;
+    max-width: 80%;
+  }
+  .content_column .row .column_form, .content_column .dropdown__nav .column_form {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 80%;
+    flex: 0 0 80%;
+    max-width: 80%;
+  }
+  .content_column .row .column + .column, .content_column .dropdown__nav .column + .column, .content_column .row .dropdown__item + .column, .content_column .dropdown__nav .dropdown__item + .column, .content_column .row .column + .dropdown__item, .content_column .dropdown__nav .column + .dropdown__item, .content_column .row .dropdown__item + .dropdown__item, .content_column .dropdown__nav .dropdown__item + .dropdown__item {
+    margin-top: 40px;
+  }
+}
+
+@media all and (max-width: 576px) {
+  .content_column .row .column, .content_column .dropdown__nav .column, .content_column .row .dropdown__item, .content_column .dropdown__nav .dropdown__item {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .content_column .row .column_form, .content_column .dropdown__nav .column_form {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 }
 

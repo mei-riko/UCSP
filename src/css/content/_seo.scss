@@ -59,12 +59,21 @@
 
                 background-color: #a2926b;
             }
+
+            & + li{
+                margin-top: 6px;
+            }
         }
     }
 
     ol{
         padding-left: 15px;
         list-style: decimal;
+        li{
+            & + li{
+                margin-top: 6px;
+            }
+        }
     }
 }
 
