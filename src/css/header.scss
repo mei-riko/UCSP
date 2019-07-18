@@ -1,0 +1,69 @@
+@import "variable.scss";
+
+$desktop: 1200px;
+$desktop_m: 992px;
+$tablet: 768px;
+$mobile_l: 576px;
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    
+    &.flex-end{align-items: flex-end;}
+    &.flex-start{align-items: flex-start;}
+
+    .column{
+        position: relative;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+a {
+	display: inline-block;
+	color: $text;
+	text-decoration: none;
+	transition: all .3s;
+	&:hover {
+		color: #5797b8;
+		transition: all .3s;
+		cursor: pointer;
+	}
+}
+.clearfix {
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+.text-uppercase {text-transform: uppercase;}
+.text-bold{font-weight: 600;}
+
+.text-gold{color: $text-gold;}
+
+.bb-solid {border-bottom: 1px solid;}
+.bb-dotted {border-bottom: 1px dotted;}
+
+.word-break {white-space: nowrap;}
+
+.d-none,
+.hidden {display: none !important;}
+.d-flex{display: flex;}
+
+.text-center {text-align: center;}
+.text-left {text-align: left;}
+.text-right{text-align: right;}
+
+img{
+	max-width: 100%;
+}
+/* Header */
+@import "other/header.scss";
+
+/* Footer */
+@import "other/footer.scss";
