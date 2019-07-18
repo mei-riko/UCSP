@@ -41,3 +41,50 @@ a.service{
         }
     }
 }
+
+/* Media */
+@media all and (max-width: $desktop){
+    .service{
+        padding: 16px 30px;
+        padding-left: 200px;
+        &__title {
+            font-size: 14px;
+        }
+    }
+}
+@media all and (max-width: $desktop_m){
+    .service{
+        padding-left: 150px;
+        min-height: 80px;
+        &__image{
+            width: 120px;
+        }
+    }
+}
+@media all and (max-width: $tablet){
+    .content_service.content_column{
+        .row{
+            .column{
+                flex: 0 0 100%;
+                max-width: 100%;
+                & + .column{
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+    .service{
+        &__image{
+            width: 120px;
+        }
+    }
+}
+@media all and (max-width: 490px){
+    .service{
+        padding: 16px 20px;
+        padding-left: 140px;
+        &__title {
+            font-size: 12px;
+        }
+    }
+}
