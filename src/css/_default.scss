@@ -82,14 +82,17 @@ a {
 }
 
 .text-uppercase {text-transform: uppercase;}
-.text-bold{font-weight: 600;}
+b, strong, .text-bold{font-weight: 600;}
 
 .text-gold{color: $text-gold;}
+.text-blue{color: $text-blue3;}
 
 .bb-solid {border-bottom: 1px solid;}
 .bb-dotted {border-bottom: 1px dotted;}
 
 .word-break {white-space: nowrap;}
+
+.lead {font-size: 1.2em;}
 
 .d-none,
 .hidden {display: none !important;}
@@ -138,6 +141,9 @@ body {
 }
 /* Background Style */
 .bg{
+	&-white{
+		background: $white;
+	}
     &_blue-gradient{
         background-color: #345463;
         background-image: radial-gradient(circle farthest-corner at center 0%,#356277 0%,#33454e 30%);

@@ -1,5 +1,8 @@
 .content_column{
     background: #ebeeef;
+    &.bg-white{
+        background: $white;
+    }
     .row{
         justify-content: space-between;
         .column {

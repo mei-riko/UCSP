@@ -329,4 +329,32 @@ $(document).ready(() =>{
   })
   
 
+  if( $(".slider").length ){
+    $('.slider').slick({
+      speed: 300,
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      arrows: true,
+      dots: false, 
+      infinite: false,
+      responsive: [
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          }
+      ]
+    });
+  }
 });

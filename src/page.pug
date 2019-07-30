@@ -1,0 +1,257 @@
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Document2
+
+        link(href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:300,400,600,700', rel='stylesheet')
+        link(href='./css/page.css', rel='stylesheet')
+
+    body
+        script(src="http://code.jquery.com/jquery-3.3.1.min.js")
+        include chunks/header.pug
+
+        section.content.content_header.page
+            .container
+                ul.content__breadcrumbs
+                    li.content__breadcrumbs__item
+                        a.content__breadcrumbs__link(href="#") Главная
+                    li.content__breadcrumbs__item
+                        a.content__breadcrumbs__link(href="#") Каталог услуг
+                    li.content__breadcrumbs__item
+                        span.content__breadcrumbs__span Обучение по охране труда на высоте
+                .row
+                    .column
+                        p.content__subtitle Программа обучения
+                        h1.content__title Обучение по охране труда на высоте
+                        p Центр профессионального обучения "Северный Путь" проводит обучение очно 
+                            | и&nbsp;дистанционно в&nbsp;направлении охраны труда на&nbsp;высоте, 
+                            | по следующим курсам: охрана труда на&nbsp;высоте 1, 2, 3 группа допуска, 
+                            | а&nbsp;также, охрана труда на высоте с&nbsp;применением средств подмащивания.
+                        p По результатам успешного завершения обучения по охране труда на высоте сотруднику выдаются:<br>
+                            | - удостоверение по охране труда на высоте<br>
+                            | - протокол
+                    .column.column_sidebar
+                        .info.info_small
+                            ul.list-info
+                                li.list-item.list-item_time
+                                    span.list-item__name Срок получения документов*
+                                    span.list-item__content от 1 дня
+                                li.list-item.list-item_price
+                                    span.list-item__name Стоимость
+                                    span.list-item__content 3240 руб.
+                            a.btn.btn_primary(href="#") Оставить заявку
+        section.content.page.page_pt-0.content_seo
+            .container
+                .row
+                    .column.page__column
+                        p.text-gold.text-bold.lead Кому необходимо обучение
+                        ul
+                            li Руководителям, организаторам, исполнителям работ на&nbsp;высоте
+                            li Лицам, назначенным ответственными за безопасное проведение работ на&nbsp;высоте, 
+                                | за&nbsp;выдачу нарядов-допусков, за&nbsp;разработку планов спасения работников
+                            li Лицам, инспектирующим СИЗ от&nbsp;падения с&nbsp;высоты
+                            li Членам аттестационных комиссий организации
+                    .column.page__column
+                        p.text-gold.text-bold.lead Периодичность обучения
+                        p от 3 до 5 лет
+        section.content.page
+            .container        
+                p.content__title.text-center Формы обучения
+                .row
+                    .column.page__column
+                        .page__content
+                            .page__icon.img-fluid(style='background-image: url("./img/icon/offline-study.svg");' alt="Очная форма обучения" title="Очная форма обучения")
+                            p.page__title.text-center Очная
+                            p.page__intro Обучение проводится с&nbsp;преподавателями в&nbsp;специально оборудованном 
+                                | классе по фактическому адресу УЦ&nbsp;“Северный Путь”. Занятия включают в&nbsp;себя 
+                                | теоретические обучение и&nbsp;фактическую отработку необходимых практических 
+                                | навыков. Также Вам будет предоставлен круглосуточный доступ к&nbsp;онлайн 
+                                | обучающей платформе с&nbsp;материалами и&nbsp;тестами. Присутствует возможность 
+                                | проведения обучения на&nbsp;территории заказчика.
+                            ul.list-info
+                                li.list-item.list-item_price
+                                    span.list-item__name Стоимость
+                                    span.list-item__content 3240 руб.
+                    .column.page__column
+                        .page__content
+                            .page__icon.img-fluid(style='background-image: url("./img/icon/online-study.svg");' alt="Дистанционная форма обучения" title="Дистанционная форма обучения")
+                            p.page__title.text-center Дистанционная
+                            p.page__intro Вам будет предоставлен круглосуточный доступ к&nbsp;онлайн обучающей платформе 
+                                | с&nbsp;учебными материалами и&nbsp;тестами для&nbsp;самоподготовки. Все материалы 
+                                | соответствуют государственным стандартам. Каждый учащийся может получить 
+                                | онлайн консультацию у&nbsp;преподавателя и&nbsp;уточнить вопросы по&nbsp;курсу. 
+                                | Доставка 
+                                | документов осуществляется штатным курьером в&nbsp;Ваш&nbsp;офис.
+                            ul.list-info
+                                li.list-item.list-item_price
+                                    span.list-item__name Стоимость
+                                    span.list-item__content 3240 руб.
+        section.content.page.page_pt-0
+            .container
+                p.content__title.text-center Более 1000 клиентов выбирают нас
+                .row.page__row
+                    .column.page__column.page__column_3
+                        .page__content
+                            .page__icon.img-fluid(style='background-image: url("./img/icon/insurance.svg");' alt="Очная форма обучения" title="Очная форма обучения")
+                            p.page__intro.text-center 100% гарантия положительного результата
+                    .column.page__column.page__column_3
+                        .page__content
+                            .page__icon.img-fluid(style='background-image: url("./img/icon/law.svg");' alt="Очная форма обучения" title="Очная форма обучения")
+                            p.page__intro.text-center Документы соответствуют законодательству РФ
+                    .column.page__column.page__column_3
+                        .page__content
+                            .page__icon.img-fluid(style='background-image: url("./img/icon/icon_delivery.svg");' alt="Очная форма обучения" title="Очная форма обучения")
+                            p.page__intro.text-center Бесплатная доставка документов курьером и почтой
+        aside.content.license
+            .container
+                p.content__title.text-center Лицензии и аккредитации
+                p.content__offer.text-center Северный Путь является аккредитованным учебным центром 
+                    | и имеет всю необходимую документацию для ведения 
+                    | образовательной деятельности. Здесь вы можете ознакомиться 
+                    | с лицензиями и разрешениями компании:
+                #license.license-slider.slider
+                    .license-slider__item
+                        img(src="./img/lic.png")
+                    .license-slider__item
+                        img(src="./img/lic.png")
+                    .license-slider__item
+                        img(src="./img/lic.png")
+                    .license-slider__item
+                        img(src="./img/lic.png")
+        aside.content.content_sale
+            .container
+                .content__title Акции учебного центра
+                .row
+                    .column
+                        .item
+                            .item__icon.united
+                            .item__title Приведи друга
+                            .item__line
+                            .item__offer Скидка 10% на&nbsp;следующие&nbsp;заказы
+                    .column
+                        .item
+                            .item__icon.free-delivery
+                            .item__title Бесплатная доставка
+                            .item__line
+                            .item__offer Доставка документов по&nbsp;Санкт-Петербургу
+                    .column
+                        .item
+                            .item__icon.contract
+                            .item__title Договор на год
+                            .item__line
+                            .item__offer При заключении договора на&nbsp;год — скидка&nbsp;10%
+        aside.content.content_popular
+            .container
+                .content__title Популярные направления
+                .row
+                    .column
+                        a.product(href="#" style="background-image: url('./img/program/1.jpg');")
+                            .product__title 
+                                .product__name Сосуды, работающие под давлением
+                    .column
+                        a.product(href="#" style="background-image: url('./img/program/2.jpg');")
+                            .product__title 
+                                .product__name Отраслевые правила по охране труда
+                    .column
+                        a.product(href="#" style="background-image: url('./img/program/3.jpg');")
+                            .product__title 
+                                .product__name Курсы повышения квалификации по Реставрационным работам
+        section.content.page
+            .container
+                .page__example
+                    .page__example__title Пример документов
+                    .page__example__blocks
+                        p.page__example__block.doc1
+                            a(href="#" target="_blank") Удостоверение
+                        p.page__example__block.doc2
+                            a(href="#" target="_blank") Протокол
+                .page__work-stage
+                    .page__work-stage__title Порядок работы
+                    .page__work-stage__blocks
+                        .page__work-stage__block.step1
+                            p.number 1
+                            p.name Оставьте заявку
+                        .page__work-stage__block.step2
+                            p.number 2
+                            p.name Выберите удобный формат изучения
+                        .page__work-stage__block.step3
+                            p.number 3
+                            p.name Получите документы и&nbsp;обучающие материалы не&nbsp;выходя из&nbsp;офиса
+                .cta-wrap
+                    .cta-wrap__content
+                        ul.list-info.list-info_inline
+                            li.list-item.list-item_time.list-item_white
+                                span.list-item__name Действие документов
+                                span.list-item__content 3 года / 5 лет
+                            li.list-item.list-item_price.list-item_white
+                                span.list-item__name Стоимость
+                                span.list-item__content 3240 руб.
+                        .cta-wrap__title.white Оставьте заявку, и наши специалисты оперативно ответят на любые вопросы
+                    form.cta-wrap__form(action="#", method="POST")
+                        input.input.phone(type="text" placeholder="8 ( ___ ) ___ - __ - __ ")
+                        button.btn(type="submit") Перезвонить
+                p.content__offer.text-blue *Срок получения документов, после прохождения обучения и успешной сдачи экзаменов
+                p.lead
+                    a.page__link(href="#") 
+                        svg(x="0px" y="0px" viewBox="0 0 30 30" style="width: 12px; transform: rotate(180deg);margin-right: 10px;" xml:space="preserve")
+                            polygon.fill(points="6.53,3.28 8.8,1 20.49,12.69 22.77,14.96 20.49,17.24 8.8,28.93 6.53,26.65 18.22,14.96")
+                        span Вернуться к полному перечню программ обучения
+        section.content.content_seo.bg-white
+            .container
+                h2 Заголовок h2
+                p «Северный Путь» является аккредитованной организацией, оказывающей услуги в области охраны труда и предоставляет максимально выгодные и надёжные условия взаимодействия в направлении аутсорсинга по охране труда. Работая по принципу единого окна, Вы сможете получить в нашем лице надёжного партнера в направлении охраны труда, обучения персонала, а также помощь в организации процессов медосмотров сотрудников и аттестации рабочих мест.
+                h3 Заголовок h3
+                p Центр профессионального обучения «Северный Путь» является аккредитованной организацией, оказывающей услуги в области охраны труда и предоставляет максимально выгодные и надёжные условия взаимодействия в направлении аутсорсинга по охране труда. Работая по принципу единого окна, Вы сможете получить в нашем лице надёжного партнера в направлении охраны труда, обучения персонала, а также помощь в организации процессов медосмотров сотрудников и аттестации рабочих мест.
+                ol
+                    li аккредитованной организацией
+                    li аккредитованной организацией
+                    li аккредитованной организацией
+                    li аккредитованной организацией
+                h4 Заголовок h4
+                p Центр профессионального обучения «Северный Путь» является аккредитованной организацией, оказывающей услуги в области охраны труда и предоставляет максимально выгодные и надёжные условия взаимодействия в направлении аутсорсинга по охране труда. Работая по принципу единого окна, Вы сможете получить в нашем лице надёжного партнера в направлении охраны труда, обучения персонала, а также помощь в организации процессов медосмотров сотрудников и аттестации рабочих мест.
+                h5 Заголовок h5
+                p Центр профессионального обучения «Северный Путь» является аккредитованной организацией, оказывающей 
+                    | услуги в области охраны труда и предоставляет максимально выгодные и надёжные условия 
+                    | взаимодействия в направлении аутсорсинга по охране труда. Работая по принципу единого окна, 
+                h6 Заголовок h6
+                ul 
+                    li Центр профессионального обучения «Северный Путь» является аккредитованной организацией, 
+                    li оказывающей услуги в области охраны труда и предоставляет максимально выгодные 
+                    li и надёжные условия взаимодействия в направлении аутсорсинга по охране труда. 
+                    li Работая по принципу единого окна, Вы сможете получить в нашем лице надёжного партнера 
+        
+        footer.footer
+            .container
+                .row.footer__row
+                    .column.footer__column
+                        ul.footer__list
+                            li.footer__list__item Обучение персонала.
+                            li.footer__list__item Лицензирование.
+                            li.footer__list__item Консалтинг.
+                        a(href="#").policy Версия для слабовидящих
+                        br
+                        a(href="#").policy Политика конфиденциальности
+                    a.column.footer__logo(href="/")
+                    .column.footer__column
+                        ul.footer__list.footer__list_contact
+                            li
+                                a(href="tel:88124696068").footer__link.footer__tel 8 (812) 469-60-68
+                                    span.icon
+                            li
+                                a(href="mailto:info@uc-sp.ru").footer__link.footer__mail info@uc-sp.ru
+                                    span.icon
+                            li
+                                a(href="https://vk.com/ucnorthway" target='_blank').footer__link.footer__vk Присоединяйтесь к группе ВК
+                                    span.icon
+                            li
+                                a(href='' target='_blank').footer__link.footer__link_last.footer__address Санкт-Петербург, ул. Оборонная, 10 лит. А офис 310А
+                                    span.icon
+        script(src="./js/jquery.inputmask.js")
+        
+        script(src="./js/slick.min.js")
+        link(href='./css/slick.css', rel='stylesheet')
+        link(href='./css/slick-theme.css', rel='stylesheet')
+
+        script(src="./js/app.min.js")

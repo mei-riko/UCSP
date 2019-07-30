@@ -80,12 +80,16 @@ a:hover {
   text-transform: uppercase;
 }
 
-.text-bold {
+b, strong, .text-bold {
   font-weight: 600;
 }
 
 .text-gold {
   color: #a2926b;
+}
+
+.text-blue {
+  color: #3e83a4;
 }
 
 .bb-solid {
@@ -98,6 +102,10 @@ a:hover {
 
 .word-break {
   white-space: nowrap;
+}
+
+.lead {
+  font-size: 1.2em;
 }
 
 .d-none,
@@ -177,6 +185,10 @@ body {
 }
 
 /* Background Style */
+.bg-white {
+  background: #fff;
+}
+
 .bg_blue-gradient {
   background-color: #345463;
   background-image: -o-radial-gradient(center 0%, circle farthest-corner, #356277 0%, #33454e 30%);
@@ -1006,6 +1018,10 @@ img {
   margin-top: 60px;
 }
 
+.content .cta-wrap + .content__offer {
+  margin-top: 20px;
+}
+
 .content ul, .content ol,
 .content p + ul, .content p + ol,
 .content ul + p, .content ol + p,
@@ -1144,10 +1160,23 @@ img {
   padding: 40px;
 }
 
+.content .info_small {
+  width: 400px;
+  max-width: 100%;
+}
+
+.content .info_small .btn {
+  width: 100%;
+}
+
 .content .info__title {
   font-size: 22px;
   color: #33454e;
   margin-bottom: 20px;
+}
+
+.content .info__item {
+  position: relative;
 }
 
 .content .info__list {
@@ -1159,10 +1188,6 @@ img {
 
 .content .info__list .info__item + .info__item {
   margin-top: 10px;
-}
-
-.content .info__item {
-  position: relative;
 }
 
 /* Contact Block */

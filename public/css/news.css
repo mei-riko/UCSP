@@ -80,12 +80,16 @@ a:hover {
   text-transform: uppercase;
 }
 
-.text-bold {
+b, strong, .text-bold {
   font-weight: 600;
 }
 
 .text-gold {
   color: #a2926b;
+}
+
+.text-blue {
+  color: #3e83a4;
 }
 
 .bb-solid {
@@ -98,6 +102,10 @@ a:hover {
 
 .word-break {
   white-space: nowrap;
+}
+
+.lead {
+  font-size: 1.2em;
 }
 
 .d-none,
@@ -177,6 +185,10 @@ body {
 }
 
 /* Background Style */
+.bg-white {
+  background: #fff;
+}
+
 .bg_blue-gradient {
   background-color: #345463;
   background-image: -o-radial-gradient(center 0%, circle farthest-corner, #356277 0%, #33454e 30%);
@@ -1004,6 +1016,10 @@ img {
 
 .content .content__offer + .row, .content .content__offer + .dropdown__nav {
   margin-top: 60px;
+}
+
+.content .cta-wrap + .content__offer {
+  margin-top: 20px;
 }
 
 .content ul, .content ol,
