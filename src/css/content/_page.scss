@@ -135,14 +135,18 @@
     }
 
     .page__example{
-        margin-bottom: 30px;
-        width: 100%;
         position: relative;
+        
+        display: flex;
+        flex-wrap: wrap;
+
+        width: 100%;
         height: 235px;
         margin-bottom: 40px;
+
         &__title{
-            float: left;
-            width: 330px;
+            flex: 0 0 330px;
+            max-width: 330px;
             height: 100%;
 
             padding-left: 80px;
@@ -156,19 +160,25 @@
             line-height: 1.3em;
         }
         &__blocks{
-            width: calc(100% - 330px);
-            float: left;
+            flex: 0 0 calc(100% - 330px);
+            max-width: calc(100% - 330px);
+
             position: relative;
             height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+
             background: #b7d5e4;
             text-align: center;
         }
         &__block{
-            width: calc(100%/3);
-            float: left;
+            flex: 0 0 calc(100%/3);
+            max-width: calc(100%/3);
             height: 100%;
-            padding-top: 160px;
             margin: 0;
+
+            padding-top: 160px;
+
             font-weight: bold;
             &.doc1{
                 background: url(../img/doc/1.png) no-repeat center 50px / 150px;;
@@ -180,12 +190,17 @@
     }
     .page__work-stage{
         position: relative;
+
+        display: flex;
+        flex-wrap: wrap;
+
         width: 100%;
         height: 235px;
         margin-bottom: 40px;
+        
         &__title{
-            float: left;
-            width: 330px;
+            flex: 0 0 330px;
+            max-width: 330px;
             height: 100%;
 
             padding-left: 80px;
@@ -200,17 +215,18 @@
         }
         &__blocks{
             position: relative;
-            float: left;
-            width: calc(100% - 330px);
+            flex: 0 0 calc(100% - 330px);
+            max-width: calc(100% - 330px);
+
             height: 100%;
             background: #73acc8 url("../img/doc/back.png") left no-repeat;
 
             display: flex;
-            flex-wrap: nowrap;
+            flex-wrap: wrap;
         }
         &__block{
             width: calc(100%/3);
-            height: 100%;
+            height: auto;
 
             color: $white;
             padding-top: 60px;
@@ -255,7 +271,6 @@
         margin: 0 auto 30px;
     }
 }
-
 .slider{
     .slick-slide{
         height: auto;
@@ -279,21 +294,17 @@
         .page__example{
             height: auto;
             &__title{
-                float: none;
-                width: 100%;
+                flex: 0 0 100%;
+                max-width: 100%;
                 height: auto;
                 padding: 30px;
             }
             &__blocks{
-                float: none;
-                width: 100%;
+                flex: 0 0 100%;
+                max-width: 100%;
                 height: auto;
-
-                display: flex;
-                flex-wrap: wrap;
             }
             &__block{
-                float: none;
                 height: auto;
                 padding: 30px;
                 text-align: left;
@@ -310,15 +321,15 @@
         .page__work-stage{
             height: auto;
             &__title{
-                float: none;
-                width: 100%;
+                flex: 0 0 100%;
+                max-width: 100%;
+
                 height: auto;
                 padding: 30px;
             }
             &__blocks{
-                float: none;
-                flex-wrap: wrap;
-                width: 100%;
+                flex: 0 0 100%;
+                max-width: 100%;
                 height: auto;
             }
             &__block {
@@ -380,7 +391,8 @@
                 font-size: 20px;
             }
             &__block{
-                width: 100%;
+                flex: 0 0 100%;
+                max-width: 100%;
                 &.step2{
                     padding-top: 0;
                 }
