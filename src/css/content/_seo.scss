@@ -95,6 +95,13 @@
         .container {
             padding: 0 60px;
         }
+        &.page .container {
+            padding: 0 30px;
+        }
+        p, ol, ul{
+            font-size: 14px;
+            line-height: 23px;
+        }
     }
 }
 @media all and (max-width: $mobile_l){

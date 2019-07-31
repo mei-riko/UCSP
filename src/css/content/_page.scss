@@ -75,6 +75,7 @@
             }
         }
     }
+
     .page__row{
         justify-content: center;
     }
@@ -186,6 +187,9 @@
             &.doc2{
                 background: url(../img/doc/2.png) no-repeat center 50px / 150px;
             }
+            &.doc3{
+                background: url(../img/doc/3.png) no-repeat center 50px / 150px;
+            }
         }
     }
     .page__work-stage{
@@ -277,7 +281,7 @@
     }
 }
 
-@media all and (max-width: 1170px){
+@media all and (max-width: 1200px){
     .page{
         .page__work-stage{
             &__blocks{
@@ -313,7 +317,8 @@
                     background: inherit;
                     padding-left: 30px;
                 }
-                &.doc2{
+                &.doc2,
+                &.doc3{
                     background: inherit;
                 }
             }
@@ -359,16 +364,23 @@
     
     
 }
-@media all and (max-width: 768px){
+@media all and (max-width: $tablet){
     .page{
+        .page__row{
+            justify-content: center;
+        }
         .page__column{
             .page__intro {
-                font-size: 12px;
+                font-size: 14px;
+            }        
+            &_3{
+                flex: 0 0 50%;
+                max-width: 50%;
             }
-        }
+        }        
     }
 }
-@media all and (max-width: 576px){
+@media all and (max-width: $mobile_l){
     .page{
         .page__column {
             flex: 0 0 100%;
@@ -383,7 +395,8 @@
                 font-size: 20px;
             }
             &__block{
-                width: auto;
+                flex: 0 0 100%;
+                max-width: 100%;
             }
         }
         .page__work-stage{
@@ -393,12 +406,30 @@
             &__block{
                 flex: 0 0 100%;
                 max-width: 100%;
+
+                display: flex;
+                align-items: center;
+                .number {
+                    font-size: 40px;
+                }
+                .name{
+                    margin-top: 0;
+                    margin-left: 15px;
+                }
                 &.step2{
                     padding-top: 0;
                 }
                 &.step3{
                     padding-top: 0;
                 }
+            }
+        }
+
+        &_advantage{
+            .page__intro{
+                width: 200px;
+                max-width: 100%;
+                margin: 0 auto;
             }
         }
     }

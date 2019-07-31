@@ -32,3 +32,13 @@
         }
     }
 }
+
+@media all and (max-width: $tablet){
+    .content{
+        .info{
+            &_small{
+                width: 100%;
+            }
+        }
+    }
+}

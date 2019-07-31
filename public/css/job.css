@@ -997,6 +997,11 @@ img {
   width: 910px;
 }
 
+.content .content__subtitle {
+  font-size: 14px;
+  font-weight: 300;
+}
+
 .content .content__title {
   font-size: 32px;
   line-height: 40px;
@@ -1110,6 +1115,7 @@ img {
 /* Breadcrumb Block */
 /* Breadcrumb Block */
 .content__breadcrumbs {
+  margin-top: 0px !important;
   margin-bottom: 30px;
 }
 
@@ -1188,6 +1194,12 @@ img {
 
 .content .info__list .info__item + .info__item {
   margin-top: 10px;
+}
+
+@media all and (max-width: 768px) {
+  .content .info_small {
+    width: 100%;
+  }
 }
 
 /* Contact Block */

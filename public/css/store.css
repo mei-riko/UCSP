@@ -998,6 +998,11 @@ img {
   width: 910px;
 }
 
+.content .content__subtitle {
+  font-size: 14px;
+  font-weight: 300;
+}
+
 .content .content__title {
   font-size: 32px;
   line-height: 40px;
@@ -1111,6 +1116,7 @@ img {
 /* Breadcrumb Block */
 /* Breadcrumb Block */
 .content__breadcrumbs {
+  margin-top: 0px !important;
   margin-bottom: 30px;
 }
 
@@ -1724,6 +1730,13 @@ img {
 @media all and (max-width: 768px) {
   .content_seo .container {
     padding: 0 60px;
+  }
+  .content_seo.page .container {
+    padding: 0 30px;
+  }
+  .content_seo p, .content_seo ol, .content_seo ul {
+    font-size: 14px;
+    line-height: 23px;
   }
 }
 
