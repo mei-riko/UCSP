@@ -203,9 +203,27 @@ $(document).ready(() =>{
     $(".phone").inputmask({
       mask: "8 999 999 99 99",
       placeholder: " ",
-      showMaskOnHover: true
+      showMaskOnHover: true,
+      onincomplete: function(){ 
+          $(this).closest("form").addClass('error-phone'); 
+          $(this).addClass('error'); 
+          $(this).siblings(".error_phone").addClass('error').html('Укажите корректный номер'); 
+      }, 
+      oncomplete: function(){ 
+          $(this).closest("form").removeClass('error-phone'); 
+          $(this).removeClass('error'); 
+          $(this).siblings(".error_phone").removeClass('error').html(''); 
+      },
     })
   }
+  $('input.phone').on('keydown', function(event) {
+    if (event.keyCode === 13 && !$(this).inputmask("isComplete") ) {
+        event.preventDefault();
+        $(this).blur();
+        return false;
+    }
+  });
+
   // Fixed header
   if ($(window).scrollTop() > 300 && $(window).width() > 991 ) {
     $(".content_header").addClass("sticky");
@@ -234,7 +252,17 @@ $(document).ready(() =>{
         $("input.phone").inputmask({
           mask: "8 999 999 99 99",
           placeholder: " ",
-          showMaskOnHover: true
+          showMaskOnHover: true,
+          onincomplete: function(){ 
+              $(this).closest("form").addClass('error-phone'); 
+              $(this).addClass('error'); 
+              $(this).siblings(".error_phone").addClass('error').html('Укажите корректный номер'); 
+          }, 
+          oncomplete: function(){ 
+              $(this).closest("form").removeClass('error-phone'); 
+              $(this).removeClass('error'); 
+              $(this).siblings(".error_phone").removeClass('error').html(''); 
+          },
         });
       }
     });
@@ -317,11 +345,11 @@ $(document).ready(() =>{
   });
 
   // Success Response Form
-  $(document).on('af_complete', function (event, response) {
-    var form = response.form;
-    if (response.success) {}
-    else {}
-  });
+  // $(document).on('af_complete', function (event, response) {
+  //   var form = response.form;
+  //   if (response.success) {}
+  //   else {}
+  // });
 
   // Mobile Na
   $("#header__toggler").on('click', function (){
