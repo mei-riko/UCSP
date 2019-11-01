@@ -2305,6 +2305,12 @@ img {
     flex: 0 0 50%;
     max-width: 50%;
   }
+  .page_files .page__column_3 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 520px;
+  }
 }
 
 @media all and (max-width: 576px) {

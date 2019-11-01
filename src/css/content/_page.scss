@@ -378,7 +378,15 @@
                 flex: 0 0 50%;
                 max-width: 50%;
             }
-        }        
+        }
+        &_files{
+            .page__column{     
+                &_3{
+                    flex: 0 0 100%;
+                    max-width: 520px;
+                }
+            }   
+        }
     }
 }
 @media all and (max-width: $mobile_l){
