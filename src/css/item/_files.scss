@@ -1,0 +1,12 @@
+.item{
+    &_files{
+        margin-bottom: 30px;
+        border: 1px solid $border-color;
+        .item__title{
+            padding: 18px 30px;
+        }
+    }
+    &_no-image{
+        border-left: 4px solid $text-blue3;
+    }
+}

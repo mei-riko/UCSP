@@ -3,7 +3,7 @@ html(lang="ru")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
-        title Расследование несчастных случаев на производстве
+        title Полезные файлы
 
         link(href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:300,400,600,700', rel='stylesheet')
         link(href='./css/page.css', rel='stylesheet')
@@ -11,7 +11,6 @@ html(lang="ru")
     body
         script(src="http://code.jquery.com/jquery-3.3.1.min.js")
         include chunks/header.pug
-
         section.content.content_header
             .container
                 ul.content__breadcrumbs
@@ -20,65 +19,33 @@ html(lang="ru")
                     li.content__breadcrumbs__item
                         a.content__breadcrumbs__link(href="#") Служба охраны труда
                     li.content__breadcrumbs__item
-                        span.content__breadcrumbs__span Расследование несчастных случаев на производстве
-                h1.content__title Расследование несчастных случаев на производстве
+                        span.content__breadcrumbs__span Полезные файлы
+                h1.content__title Полезные файлы
                 p Центр профессионального обучения «Северный Путь» является аккредитованной организацией, 
                     | оказывающей услуги в области охраны труда и предоставляет максимально выгодные и надёжные 
                     | условия взаимодействия в направлении аутсорсинга по охране труда. Работая по принципу 
                     | единого окна.
-        aside.content.content_advantage
+        section.content.page.page_files.bg-white
             .container
-                .content__title Наши преимущества
-                .row
-                    .column
-                        .item
-                            .item__icon.question
-                            .item__title Огромный опыт решения сложных вопросов
-                    .column
-                        .item
-                            .item__icon.delivery-car
-                            .item__title Выезды специалистов к&nbsp;Вам на&nbsp;место
-                    .column
-                        .item
-                            .item__icon.clients
-                            .item__title Индивидуальный подход к&nbsp;каждому клиенту
-                    .column
-                        .item
-                            .item__icon.consultation
-                            .item__title Консультационная поддержка
-                    .column
-                        .item
-                            .item__icon.format
-                            .item__title Работаем в&nbsp;формате единого окна
-                    section
-        section.content.content_column.content_service
-            .container
-                h2.content__title.text-bold Услуги
-                .row
-                    .column.d-flex
-                        a.service
-                            .service__image(style="background-image:url('/img/program/1.jpg');")
-                            .service__title Сопровождение до момента закрытия расследования по несчастному случаю
-                    .column.d-flex
-                        a.service
-                            .service__image(style="background-image:url('/img/program/2.jpg');")
-                            .service__title Консультации по вопросам несчастных случаев
-                    .column.d-flex
-                        a.service
-                            .service__image(style="background-image:url('/img/program/3.jpg');")
-                            .service__title Разработка первичного пакета документов для прохождения проверок
-                    .column.d-flex
-                        a.service
-                            .service__image(style="background-image:url('/img/program/4.jpg');")
-                            .service__title Приведение документации организации в соответствующий законодательству вид
-                    .column.d-flex
-                        a.service
-                            .service__image(style="background-image:url('/img/program/5.jpg');")
-                            .service__title Представление интересов организации в суде
-                    .column.d-flex
-                        a.service
-                            .service__image(style="background-image:url('/img/program/6.jpg');")
-                            .service__title Первичный аудит
+                .row.page__row
+                    .column.page__column.page__column_3
+                        .item.item_files.item_image
+                            .item__title Обучение персонала
+                            img.item__image(src="../img/2019/image-01.png")
+                    .column.page__column.page__column_3
+                        .item.item_files.item_image
+                            .item__title Кадровое делопроизводство
+                            img.item__image(src="../img/2019/image-02.png")
+                    .column.page__column.page__column_3
+                        .item.item_files.item_image
+                            .item__title Документооборот организации
+                            img.item__image(src="../img/2019/image-03.png")
+                    .column.page__column.page__column_3
+                        .item.item_files.item_no-image
+                            .item__title Законодательство
+                    .column.page__column.page__column_3
+                        .item.item_files.item_no-image
+                            .item__title Другое
                 .cta-wrap
                     .cta-wrap__title.white Оставьте заявку, и наши специалисты оперативно ответят на любые вопросы
                     form.cta-wrap__form(action="#", method="POST")
@@ -128,7 +95,7 @@ html(lang="ru")
                     li Центр профессионального обучения «Северный Путь» является аккредитованной организацией, 
                     li оказывающей услуги в области охраны труда и предоставляет максимально выгодные 
                     li и надёжные условия взаимодействия в направлении аутсорсинга по охране труда. 
-                    li Работая по принципу единого окна, Вы сможете получить в нашем лице надёжного партнера 
+                    li Работая по принципу единого окна, Вы сможете получить в нашем лице надёжного партнера
         footer.footer
             .container
                 .row.footer__row

@@ -2,9 +2,6 @@
     &.content_seo{
         background: #f2f5f6;
     }
-    &.page_pt-0{
-        padding-top: 0;
-    }
 
     .list-info{
         list-style: none;
@@ -84,8 +81,8 @@
         max-width: 50%;
 
         &_3{
-            flex: 0 0 30%;
-            max-width: 30%;
+            flex: 0 0 calc(100%/3);
+            max-width: calc(100%/3);
         }
 
         .page__content{
@@ -265,6 +262,10 @@
             }
             
         }
+    }
+    // Padding
+    &.page_pt-0{
+        padding-top: 0;
     }
 }
 .license{

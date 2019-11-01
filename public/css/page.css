@@ -1916,10 +1916,6 @@ img {
   background: #f2f5f6;
 }
 
-.page.page_pt-0 {
-  padding-top: 0;
-}
-
 .page .list-info {
   list-style: none;
   margin: 0;
@@ -2002,9 +1998,9 @@ img {
 
 .page .page__column_3 {
   -webkit-box-flex: 0;
-  -ms-flex: 0 0 30%;
-  flex: 0 0 30%;
-  max-width: 30%;
+  -ms-flex: 0 0 calc(100%/3);
+  flex: 0 0 calc(100%/3);
+  max-width: calc(100%/3);
 }
 
 .page .page__column .page__content {
@@ -2194,6 +2190,10 @@ img {
 
 .page .page__work-stage__block .name {
   line-height: 1.3em;
+}
+
+.page.page_pt-0 {
+  padding-top: 0;
 }
 
 .license {
@@ -2624,6 +2624,20 @@ a.service:hover .service__title {
   .service__title {
     font-size: 12px;
   }
+}
+
+/* Item service */
+.item_files {
+  margin-bottom: 30px;
+  border: 1px solid #d3e7d1;
+}
+
+.item_files .item__title {
+  padding: 18px 30px;
+}
+
+.item_no-image {
+  border-left: 4px solid #3e83a4;
 }
 
 .modal {
