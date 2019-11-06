@@ -356,7 +356,7 @@ $(document).ready(() =>{
     $(".header__content").slideToggle();
   })
   
-
+  // Slider
   if( $(".slider").length ){
     $('.slider').slick({
       speed: 300,
@@ -382,6 +382,56 @@ $(document).ready(() =>{
               slidesToScroll: 2
             }
           }
+      ]
+    });
+  }
+  // Slider Index Page
+  if( $(".real-slider").length ){
+    $('.real-slider').not(".slick-initialized").slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      dots: true,
+      fade: true,
+      cssEase: "linear",
+      autoplay: true,
+      autoplaySpeed: 2500,
+      pauseOnFocus: false,
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {}
+        },
+        {
+          breakpoint: 600,
+          settings: {}
+        }
+      ]
+    });
+  }
+  if( $(".reviews-slider").length ){
+    $(".reviews-slider").not(".slick-initialized").slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      arrows: true,
+      dots: false,
+      prevArrow: '<button class="arrow arrow-left"></button>',
+      nextArrow: '<button class="arrow arrow-right"></button>',
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
       ]
     });
   }
