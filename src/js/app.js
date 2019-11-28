@@ -355,7 +355,14 @@ $(document).ready(() =>{
   $("#header__toggler").on('click', function (){
     $(".header__content").slideToggle();
   })
-  
+  // TABS
+  $('.tab-title').click(function () {
+    $(this).toggleClass('in').next().slideToggle();
+    $(this).parent().toggleClass('down');
+    $('.tab-title').not(this).removeClass('in').next().slideUp();
+    $('.tab-title').not(this).parent().removeClass('down');
+    return false;
+  });
   // Slider
   if( $(".slider").length ){
     $('.slider').slick({
