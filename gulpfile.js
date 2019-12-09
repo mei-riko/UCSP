@@ -80,7 +80,18 @@ gulp.task('css', function () {
     .pipe(gulp.dest('./public/css/'))
     .on('end', browserSync.reload);
 });
-
+gulp.task('pages', function () {
+  return gulp.src(['./src/css/pages/*.scss'])
+    .pipe(changed('public', { extension: '.css' }))
+    .pipe(plumber())
+    .pipe(sass({ outputStyle: 'expanded' }).on("error", notify.onError()))
+    .pipe(autoprefixer({
+      overrideBrowserslist: ['last 5 versions'],
+      cascade: false
+    }))
+    .pipe(gulp.dest('./public/css/'))
+    .on('end', browserSync.reload);
+});
 
 gulp.task('watch', function () {
   gulp.watch(['./src/*.pug'], ['html']);
@@ -109,4 +120,4 @@ gulp.task("image", function() {
     .pipe(gulp.dest("public/img-shakal"));
 });
 
-gulp.task('default', ['html', 'css', 'scripts', 'watch', 'browser-sync' ]);
+gulp.task('default', ['html', 'css', 'pages', 'scripts', 'watch', 'browser-sync' ]);

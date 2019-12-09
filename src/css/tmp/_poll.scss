@@ -1,0 +1,185 @@
+.poll{
+    padding: 40px;
+    width: 640px;
+    max-width: 100%;
+    background: #f3f1ea;
+
+    &__title{
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 26px;
+        color: $text-gold;
+        margin-bottom: 40px;
+    }
+    &__row{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+
+        position: relative;
+
+        & + .poll__row{
+            margin-top: 20px;
+        }
+    }
+    &__label{
+        @extend .form__label;
+    }
+    &__select{
+        padding: 10px;
+        margin-right: 20px;
+    }
+    &__input{
+        padding: 10px;
+        margin: 0 10px;
+        width: 80px;
+        max-width: 100%;
+    }
+    &__price{
+        font-weight: 700;
+    }
+    // Link
+    .poll__add{
+        display: inline-block;
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 16px;
+        text-decoration: underline;
+
+        margin-top: 20px;
+
+        transition: .2s;
+        cursor: pointer;
+
+        &:hover{
+            color: $text-blue;
+        }
+    }
+    .poll__delete{
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 19px;
+
+        width: 20px;
+        height: 20px;
+
+        text-align: center;
+
+        position: absolute;
+        right: -20px;
+        top: 10px;
+
+        background: #bc2929;
+        color: white;
+        
+        cursor: pointer;
+
+        &:hover{
+            background: #c00000;
+        }
+    }
+    // Result Poll
+    &__result{
+        background: #3f84af;
+        border: 5px solid #b7c4cc;
+        color: #b7c4cc;
+        
+        padding: 20px;
+        margin-top: 20px;
+    }
+    &__total-cost{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 18px;
+    }
+    &__total-sale{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 20px;
+    }
+    &__sale{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 22px;
+        
+        margin-top: 20px;
+        color: #fff;
+    }
+    .poll__subtitle{
+        margin-right: 10px;
+    }
+    .poll__value,
+    .poll__currency{
+        font-weight: 700;
+    }
+    .poll__btn{
+        display: none;
+        margin-top: 30px;
+        &.active{
+            display: block;
+        }
+        .btn{
+            background: #cc0808;
+            span.hide{
+                display: inline-block;
+            }
+        }
+    }
+
+    // Form Style
+    .form-step{
+        display: none;
+    }
+    .form{
+        .form__input{
+            background: $white;
+        }
+    }
+}
+
+
+/* Media */
+@media all and (max-width: $tablet){
+    .poll{
+        max-width: 100%;
+
+        &__row{
+            flex-wrap: wrap;
+        }
+        &__select{
+            width: 100%;
+        }
+        &__count{
+            margin-top: 10px;
+        }
+    }
+}
+@media all and (max-width: $mobile_l){
+    .poll{
+        &__label{
+            width: 100%;
+        }
+        &__input{
+            margin-left: 0;
+        }
+        .poll__btn{
+            .btn{
+                span.hide{
+                    display: none;
+                }
+            }
+        }
+    }
+}
