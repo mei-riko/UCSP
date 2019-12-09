@@ -7,7 +7,6 @@
     position: relative;
     background: #3f84af;
     color: $white;
-    // border:  5px solid #b7c4cc;
     border:  5px solid $red;
     padding: 30px 40px;
 
@@ -80,11 +79,15 @@
             }
         }
     }
-}
 
+    &.mt-0{
+        margin-top: 0;
+    }
+}
 /* Media */
 @media all and (max-width: $desktop){}
 @media all and (max-width: $desktop_m){
+    
     .cta-wrap{
         flex-wrap: wrap;
         justify-content: center;

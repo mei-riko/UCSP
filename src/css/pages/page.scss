@@ -1,36 +1,40 @@
-@import "default.scss";
+
+@import "../default.scss";
 
 /* Main Content*/
-@import "content/content.scss";
+@import "../content/content.scss";
 /* Title Block */
-@import "content/header.scss";
+@import "../content/header.scss";
 /* Breadcrumb Block */
-@import "content/breadcrumbs.scss";
+@import "../content/breadcrumbs.scss";
 /* Sidebar Block */
-@import "content/sidebar.scss";
+@import "../content/sidebar.scss";
 /* Product Block */
-@import "content/product.scss";
+@import "../content/product.scss";
 /* Advantage Block */
-@import "content/advantage.scss";
+@import "../content/advantage.scss";
 /* Sale Block */
-@import "content/sale.scss";
+@import "../content/sale.scss";
 /* Popular Block */
-@import "content/popular.scss";
+@import "../content/popular.scss";
 /* SEO Block */
-@import "content/seo.scss";
+@import "../content/seo.scss";
 /* Column Block */
-@import "content/column.scss";
+@import "../content/column.scss";
 /*Page Template*/
-@import "content/page.scss";
+@import "../content/page.scss";
 
 /* Item with Icon */
-@import "item/icon.scss";
+@import "../item/icon.scss";
 /* Item product */
-@import "item/product.scss";
+@import "../item/product.scss";
 /* Item service */
-@import "item/service.scss";
-/* Item service */
-@import "item/files.scss";
+@import "../item/service.scss";
 
-@import "modal.scss";
-@import "other/cta.scss";
+@import "../item/files.scss";
+@import "../item/license.scss";
+
+@import "../item/slider.scss";
+
+@import "../modal.scss";
+@import "../other/cta.scss";

@@ -84,6 +84,10 @@
             flex: 0 0 calc(100%/3);
             max-width: calc(100%/3);
         }
+        &_4{
+            flex: 0 0 calc(100%/4);
+            max-width: calc(100%/4);
+        }
 
         .page__content{
             width: 500px;
@@ -268,19 +272,6 @@
         padding-top: 0;
     }
 }
-.license{
-    overflow: hidden;
-    .content__offer{
-        width: 640px;
-        max-width: 100%;
-        margin: 0 auto 30px;
-    }
-}
-.slider{
-    .slick-slide{
-        height: auto;
-    }
-}
 
 @media all and (max-width: 1200px){
     .page{
@@ -375,6 +366,10 @@
                 font-size: 14px;
             }        
             &_3{
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+            &_4{
                 flex: 0 0 50%;
                 max-width: 50%;
             }

@@ -80,6 +80,7 @@ gulp.task('css', function () {
     .pipe(gulp.dest('./public/css/'))
     .on('end', browserSync.reload);
 });
+
 gulp.task('pages', function () {
   return gulp.src(['./src/css/pages/*.scss'])
     .pipe(changed('public', { extension: '.css' }))
@@ -96,6 +97,7 @@ gulp.task('pages', function () {
 gulp.task('watch', function () {
   gulp.watch(['./src/*.pug'], ['html']);
   gulp.watch(['./src/chunks/*.pug'], ['html']);
+  gulp.watch(['./src/css/pages/*.scss'], ['pages']);
   gulp.watch(['./src/css/*.scss'], ['css']);
   gulp.watch(['./src/css/*/*.scss'], ['css']);
   gulp.watch(['./src/js/*.js'], ['scripts']);

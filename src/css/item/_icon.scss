@@ -6,7 +6,11 @@
         height: 80px;
 
         border-radius: 40px;
-        background: #f2f5f6;
+        background-color: #f2f5f6;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        background-position: center;
+        
         margin:0 auto 15px;
         
         &.consulting{
