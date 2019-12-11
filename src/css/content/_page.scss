@@ -118,6 +118,10 @@
             line-height: 1.5em;
             margin-top: 20px;
 
+            width: 300px;
+            max-width: 100%;
+            margin: 0 auto;
+
             & + .list-info{
                 margin-top: 30px;
             }

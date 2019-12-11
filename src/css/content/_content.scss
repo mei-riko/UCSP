@@ -3,6 +3,7 @@
     
     .container_inside{
         width: 910px;
+        max-width: 100%;
     }
     .content__subtitle{
         font-size: 14px;
@@ -20,7 +21,7 @@
     }
     .content__offer{
         font-size: 14px;
-        line-height: 18px;
+        line-height: 20px;
         font-weight: 300;
 
         & + .row{
@@ -29,6 +30,10 @@
     }
     .cta-wrap + .content__offer{
         margin-top: 20px;
+    }
+    p{
+        font-size: 1rem;
+        line-height: 1.5;
     }
     ul, ol, 
     p + ul, p + ol, 

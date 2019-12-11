@@ -365,7 +365,7 @@ $(document).ready(() =>{
   });
   // Slider
   if( $(".slider").length ){
-    $('.slider').slick({
+    $('.slider.license-slider').slick({
       speed: 300,
       slidesToShow: 4,
       slidesToScroll: 4,

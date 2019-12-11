@@ -10,7 +10,7 @@
         background-repeat: no-repeat;
         background-size: 30px;
         background-position: center;
-        
+
         margin:0 auto 15px;
         
         &.consulting{
@@ -21,6 +21,9 @@
         }
         &.insurance{
             background: #d9e4e8 url("../img/icon/insurance.svg") no-repeat 26px 22px / 35px;
+        }
+        &.insurance-light{
+            background: #f2f5f6 url("../img/icon/insurance.svg") no-repeat 26px 24px / 32px;
         }
         &.cv{
             background: #d9e4e8 url("../img/icon/cv.svg") no-repeat center 20px / 35px;
@@ -55,6 +58,10 @@
         &.question{
             background: #f2f5f6 url("../img/icon/question.svg") no-repeat 20px center / 40px;
         }
+        &.law{
+            background: #f2f5f6 url("../img/icon/law.svg") no-repeat 25px center / 30px;
+        }
+        
     }
     &__title{
         font-size: 16px;
@@ -62,7 +69,7 @@
     }
     &__offer{
         font-size: 16px;
-        line-height: 22px;
+        line-height: 20px;
 
         width: 200px;
         max-width: 100%;
@@ -71,7 +78,7 @@
     }
     &__line{
         background: #a2926b;
-        width: 200px;
+        width: 180px;
         max-width: 100%;
         height: 2px;
 

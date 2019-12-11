@@ -77,7 +77,8 @@ a {
 }
 
 .text-uppercase {text-transform: uppercase;}
-b, strong, .text-bold{font-weight: 600;}
+.text-semibold{font-weight: 600;}
+b, strong, .text-bold{font-weight: 700;}
 
 .text-gold{color: $text-gold;}
 .text-blue{color: $text-blue3;}

@@ -97,7 +97,8 @@ gulp.task('pages', function () {
 gulp.task('watch', function () {
   gulp.watch(['./src/*.pug'], ['html']);
   gulp.watch(['./src/chunks/*.pug'], ['html']);
-  gulp.watch(['./src/css/pages/*.scss'], ['pages']);
+  gulp.watch(['./src/css/*/*.scss'], ['pages']);
+  gulp.watch(['./src/css/*.scss'], ['pages']);
   gulp.watch(['./src/css/*.scss'], ['css']);
   gulp.watch(['./src/css/*/*.scss'], ['css']);
   gulp.watch(['./src/js/*.js'], ['scripts']);

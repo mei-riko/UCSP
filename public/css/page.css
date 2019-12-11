@@ -81,8 +81,12 @@ a:hover {
   text-transform: uppercase;
 }
 
-b, strong, .text-bold {
+.text-semibold {
   font-weight: 600;
+}
+
+b, strong, .text-bold {
+  font-weight: 700;
 }
 
 .text-gold {
@@ -996,6 +1000,7 @@ img {
 
 .content .container_inside {
   width: 910px;
+  max-width: 100%;
 }
 
 .content .content__subtitle {
@@ -1016,7 +1021,7 @@ img {
 
 .content .content__offer {
   font-size: 14px;
-  line-height: 18px;
+  line-height: 20px;
   font-weight: 300;
 }
 
@@ -1026,6 +1031,11 @@ img {
 
 .content .cta-wrap + .content__offer {
   margin-top: 20px;
+}
+
+.content p {
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 .content ul, .content ol,
@@ -1342,25 +1352,32 @@ img {
   max-width: 25%;
 }
 
-.content_advantage .item.item__with-offer .item__title {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 24px;
-  color: #325564;
-}
-
-.content_advantage .item.item__with-offer .item__offer {
-  font-size: 14px;
-  color: #325564;
-  width: 100%;
-}
-
 .content_advantage-index {
   padding: 60px 0 30px;
 }
 
 .content_advantage-index .item {
   margin-bottom: 30px;
+}
+
+.content_advantage-index .item .item__line {
+  width: 120px;
+  max-width: 100%;
+  height: 1px;
+}
+
+.content_advantage-index .item .item__title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #325564;
+}
+
+.content_advantage-index .item .item__offer {
+  font-size: 14px;
+  line-height: 20px;
+  color: #325564;
+  width: 100%;
 }
 
 /* Media */
@@ -1927,6 +1944,9 @@ img {
   font-size: 16px;
   line-height: 1.5em;
   margin-top: 20px;
+  width: 300px;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .page .page__column .page__intro + .list-info {
@@ -2283,6 +2303,10 @@ img {
   background: #d9e4e8 url("../img/icon/insurance.svg") no-repeat 26px 22px/35px;
 }
 
+.item__icon.insurance-light {
+  background: #f2f5f6 url("../img/icon/insurance.svg") no-repeat 26px 24px/32px;
+}
+
 .item__icon.cv {
   background: #d9e4e8 url("../img/icon/cv.svg") no-repeat center 20px/35px;
 }
@@ -2327,6 +2351,10 @@ img {
   background: #f2f5f6 url("../img/icon/question.svg") no-repeat 20px center/40px;
 }
 
+.item__icon.law {
+  background: #f2f5f6 url("../img/icon/law.svg") no-repeat 25px center/30px;
+}
+
 .item__title {
   font-size: 16px;
   line-height: 22px;
@@ -2334,7 +2362,7 @@ img {
 
 .item__offer {
   font-size: 16px;
-  line-height: 22px;
+  line-height: 20px;
   width: 200px;
   max-width: 100%;
   margin: 0 auto;
@@ -2342,7 +2370,7 @@ img {
 
 .item__line {
   background: #a2926b;
-  width: 200px;
+  width: 180px;
   max-width: 100%;
   height: 2px;
   margin: 15px auto;

@@ -80,8 +80,12 @@ a:hover {
   text-transform: uppercase;
 }
 
-b, strong, .text-bold {
+.text-semibold {
   font-weight: 600;
+}
+
+b, strong, .text-bold {
+  font-weight: 700;
 }
 
 .text-gold {
