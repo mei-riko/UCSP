@@ -129,6 +129,30 @@
             }
         }
     }
+
+    &_default{
+        .modal__content{
+            padding: 60px;
+            
+        }
+        .s-title {
+            font-size: 18px;
+            line-height: 22px;
+            margin-bottom: 10px;
+        }
+        .title{
+            font-size: 32px;
+            line-height: 34px;
+            margin-bottom: 30px;
+        }
+
+        .form{
+            .form__agree,
+            .btn{
+                margin-top: 20px;
+            }
+        }
+    }
 }
 
 .search-form {

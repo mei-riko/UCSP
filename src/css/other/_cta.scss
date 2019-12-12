@@ -100,17 +100,24 @@
         &__form{
             flex-wrap: wrap;
             margin: 0 auto;
-            input{
+            input, .input{
                 margin-left: 0px;
+            }
+        }
+    }
+}
+@media all and (max-width: $tablet){
+    .cta-wrap{
+        &__form{
+            input, .input{
                 width: 100%;
             }
-            button{
+            button, .btn{
                 width: 100%;
             }
         }
     }
 }
-@media all and (max-width: $tablet){}
 @media all and (max-width: $mobile_l){
     .cta-wrap{
         padding: 30px 20px;

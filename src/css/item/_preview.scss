@@ -23,6 +23,8 @@
         display: block;
 
         font-size: 14px;
+        line-height: 20px;
+
         color: #fff;
 
         padding-left: 20px;
@@ -53,6 +55,24 @@
             margin-top: 30px;
         }
     }
+
+    &__programm{
+        border-top: 1px solid $text-gold;
+        .list-info{
+            margin: 10px 0;
+            justify-content: space-between;
+            .list-item{
+                margin: 10px 0;
+                .list-item__name{
+                    font-size: 12px;
+                    line-height: 1;
+                }
+                .list-item__content{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
 }
 
 /* Media */
@@ -63,6 +83,14 @@
         &__title {
             font-size: 16px;
         }
+        .btn-group{
+            .btn{
+                width: 100%;
+                & + .btn{
+                    margin-top: 10px;
+                }
+            }
+        }
     }
 }
 @media all and (max-width: $mobile_l){
@@ -70,5 +98,6 @@
         &__title {
             font-size: 20px;
         }
+        
     }
 }

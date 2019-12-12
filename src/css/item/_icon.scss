@@ -14,61 +14,63 @@
         margin:0 auto 15px;
         
         &.consulting{
-            background: #d9e4e8 url("../img/icon/consulting.svg") no-repeat center 20px / 35px;
+            background: url("../img/icon/consulting.svg") no-repeat center 20px / 35px;
         }
         &.store{
-            background: #d9e4e8 url("../img/icon/online-shop.svg") no-repeat center 22px / 35px;
+            background: url("../img/icon/online-shop.svg") no-repeat center 22px / 35px;
         }
         &.insurance{
-            background: #d9e4e8 url("../img/icon/insurance.svg") no-repeat 26px 22px / 35px;
-        }
-        &.insurance-light{
-            background: #f2f5f6 url("../img/icon/insurance.svg") no-repeat 26px 24px / 32px;
+            background: url("../img/icon/insurance.svg") no-repeat 26px 22px / 35px;
         }
         &.cv{
-            background: #d9e4e8 url("../img/icon/cv.svg") no-repeat center 20px / 35px;
+            background: url("../img/icon/cv.svg") no-repeat center 20px / 35px;
         }
         &.delivery{
-            background: #f2f5f6 url("../img/icon/icon_delivery.svg") no-repeat center 20px / 35px;
+            background: url("../img/icon/icon_delivery.svg") no-repeat center 20px / 35px;
         }
         &.clients{
-            background: #f2f5f6 url("../img/icon/icon_clients.svg") no-repeat center / 35px;
+            background: url("../img/icon/icon_clients.svg") no-repeat center / 35px;
         }
         &.consultation{
-            background: #f2f5f6 url("../img/icon/icon_consultation.svg") no-repeat center / 35px;
+            background: url("../img/icon/icon_consultation.svg") no-repeat center / 35px;
         }
         &.certificate{
-            background: #f2f5f6 url("../img/icon/icon_iso.svg") no-repeat center / 60px;
+            background: url("../img/icon/icon_iso.svg") no-repeat center / 60px;
         }
         &.format{
-            background: #f2f5f6 url("../img/icon/icon_format.svg") no-repeat center / 35px;
+            background: url("../img/icon/icon_format.svg") no-repeat center / 35px;
         }
         &.delivery-car{
-            background: #f2f5f6 url("../img/icon/tracking.svg") no-repeat center 14px / 44px;
-        }
-        &.united{
-            background: #fff url("../img/icon/united.svg") no-repeat center / 40px;
-        }
-        &.free-delivery{
-            background: #fff url("../img/icon/tracking.svg") no-repeat center 14px / 44px;
-        }
-        &.contract{
-            background: #fff url("../img/icon/contract.svg") no-repeat 25px center / 35px;
+            background: url("../img/icon/tracking.svg") no-repeat center 14px / 44px;
         }
         &.question{
-            background: #f2f5f6 url("../img/icon/question.svg") no-repeat 20px center / 40px;
+            background: url("../img/icon/question.svg") no-repeat 20px center / 40px;
         }
         &.law{
-            background: #f2f5f6 url("../img/icon/law.svg") no-repeat 25px center / 30px;
+            background: url("../img/icon/law.svg") no-repeat 25px center / 30px;
         }
-        
+        &.money-light{
+            background: url("../img/icon/icon_bank.svg") no-repeat 20px 16px/42px;
+        }
+        &.lecture{
+            background: url("../img/icon/lecture.svg") no-repeat 22px 20px/36px;
+        }
+        &.united{
+            background: url("../img/icon/united.svg") no-repeat center / 40px;
+        }
+        &.free-delivery{
+            background: url("../img/icon/tracking.svg") no-repeat center 14px / 44px;
+        }
+        &.contract{
+            background: url("../img/icon/contract.svg") no-repeat 25px center / 35px;
+        }
     }
     &__title{
         font-size: 16px;
         line-height: 22px;
     }
     &__offer{
-        font-size: 16px;
+        font-size: 14px;
         line-height: 20px;
 
         width: 200px;

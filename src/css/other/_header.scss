@@ -26,7 +26,7 @@
         font-family: 'Open Sans Condensed',sans-serif;
         font-weight: 300;
         font-size: 12px;
-        line-height: 20px;
+        line-height: 1.6;
         color: $white;
 
         text-align: center;
@@ -40,17 +40,17 @@
         display: flex;
         justify-content: space-between;
 
-        padding: 40px 0 20px;
+        padding: 2*$padding 0 $padding;
 
         border-bottom: 2px solid #f2f5f6;
         .header__navbar{
             .header__item{
                 & + .header__item{
-                    margin-left: 20px;
+                    margin-left: $padding;
                 }
             }
             .header__link{
-                font-size: 14px;
+                font-size: 1rem;
                 font-weight: 300;
                 color: #747779;
 
@@ -62,14 +62,14 @@
         .header__contact{
             .header__item{
                 & + .header__item{
-                    margin-left: 30px;
+                    margin-left: 2*$padding;
                 }
             }
             .header__link{
-                font-size: 14px;
+                font-size: 1rem;
                 font-weight: 400;
                 &_phone{
-                    font-size: 18px;
+                    font-size: 1.25rem;
                     font-weight: 700;
                     color: #384e59;
                 }
@@ -81,17 +81,17 @@
         display: flex;
         justify-content: space-between;
 
-        padding: 20px 0 0;
+        padding: 2*$padding 0 0;
 
         .header__navbar{
             .header__item{
                 & + .header__item{
-                    margin-left: 40px;
+                    margin-left: 2*$padding;
                 }
             }
             .header__link{
                 position: relative;
-                padding-bottom: 40px;
+                padding-bottom: 2*$padding;
 
                 &.active:after{
                     display: block;
@@ -110,10 +110,10 @@
             }
         }
         .header__contact{
-            padding-bottom: 40px;
+            padding-bottom: 2*$padding;
             .header__link{
                 font-size: 12px;
-                line-height: 18px;
+                line-height: 1.5;
                 color: #747779;
 
                 &:hover{
@@ -135,7 +135,7 @@
             }
             .header__item{
                 & + .header__item{
-                    margin-left: 20px;
+                    margin-left: $padding;
                 }
             }
         }
@@ -164,7 +164,7 @@
     background: #f2f5f6;
     box-shadow: 0 7px 15px rgba(10,30,50,.1);
 
-    padding: 40px 0 20px;
+    padding: 2*$padding 0 $padding;
 
     position: absolute;
     top: 150px;
@@ -193,11 +193,11 @@
         max-width: 33.33333333%;  
         
         // width: auto!important;
-        margin-bottom: 20px;
+        margin-bottom: $padding;
     }
     &__link{
-        font-size: 14px;
-        line-height: 18px;
+        font-size: 1rem;
+        line-height: 1.5;
     }
 }
 .navbar{
@@ -216,14 +216,14 @@
                 }
                 .header__item{
                     & + .header__item{
-                        margin-left: 15px;
+                        margin-left: $padding;
                     }
                 }
             }
             .header__contact{
                 .header__item{
                     & + .header__item{
-                        margin-left: 15px;
+                        margin-left: $padding;
                     }
                 }
             }
@@ -232,11 +232,11 @@
         &__main{
             .header__navbar{
                 .header__link{
-                    font-size: 14px;
+                    font-size: 1rem;
                 }
                 .header__item{
                     & + .header__item{
-                        margin-left: 30px;
+                        margin-left: 2*$padding;
                     }
                 }
             }
@@ -309,14 +309,14 @@
                 .header__item{
                     width: 100%;
                     & + .header__item{
-                        margin-top: 20px;
+                        margin-top: $padding;
                         margin-left: 0;
                     }
                 }
             }
             .header__contact{
-                margin-top: 40px;
-                padding-top: 40px;
+                margin-top: 2*$padding;
+                padding-top: 2*$padding;
                 border-top: 1px solid #c7cdcf;
             }
         }
@@ -341,10 +341,10 @@
                     }
                 }
                 .header__link {
-                    font-size: 16px;
+                    font-size: 1.15rem;
                     font-weight: 700;
 
-                    padding-bottom: 20px;
+                    padding-bottom: $padding;
                 }
 
                 // Inside Nav
@@ -354,7 +354,7 @@
                     .header__link {
                         font-size: 13px;
                         font-weight: 300;
-                        line-height: 16px;
+                        line-height: 1.2;
                     }
                 }
             }
@@ -382,12 +382,12 @@
             .header__item{
                 width: 100%;
                 & + .header__item{
-                    margin-top: 20px;
+                    margin-top: $padding;
                     margin-left: 0;
                 }
             }
             .header__link_phone {
-                font-size: 14px;
+                font-size: 1rem;
             }
         }
     }
@@ -396,7 +396,7 @@
             display: block;
             width: 30px;
             height: 60px;
-            padding: 15px 0;
+            padding: $padding 0;
 
             cursor: pointer;
 
@@ -418,5 +418,3 @@
         }
     }
 }
-@media all and (max-width: $tablet){}
-@media all and (max-width: $mobile_l){}

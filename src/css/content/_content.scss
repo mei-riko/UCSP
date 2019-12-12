@@ -11,17 +11,18 @@
     }
     .content__title{
         font-size: 32px;
-        line-height: 40px;
+        line-height: 1.25;
 
         color: $text-gold;
         margin-bottom: 30px;
+        
         & + .content__offer{
             margin-top: -15px;
         }
     }
     .content__offer{
         font-size: 14px;
-        line-height: 20px;
+        line-height: 1.4;
         font-weight: 300;
 
         & + .row{
@@ -33,13 +34,13 @@
     }
     p{
         font-size: 1rem;
-        line-height: 1.5;
+        line-height: 1.6;
     }
     ul, ol, 
     p + ul, p + ol, 
     ul + p, ol + p, 
     p + p{
-        margin-top: 15px;
+        margin-top: 20px;
     }
 }
 
@@ -49,6 +50,9 @@
 @media all and (max-width: $tablet){}
 @media all and (max-width: $mobile_l){
     .content{
+        .content__title{
+            font-size: 24px;
+        }
         .content__offer{
             & + .row{
                 margin-top: 30px;

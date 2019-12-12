@@ -267,6 +267,14 @@ $(document).ready(() =>{
       }
     });
   }
+
+  // Modal Programm Form
+  $('a[data-izimodal-open="#callback1"]').on("click", function() {
+    var title = $(this).data("title");
+    console.log(title)
+    $(".modal-callback .title").text(title);
+    $(".modal-callback .h-title").attr("value", title);
+  });
   
   // Form in modal
   $('.modal.modal_info .open-form').on("click",function(){
@@ -355,7 +363,7 @@ $(document).ready(() =>{
   $("#header__toggler").on('click', function (){
     $(".header__content").slideToggle();
   })
-  // TABS
+  // Toggle Tabs
   $('.tab-title').click(function () {
     $(this).toggleClass('in').next().slideToggle();
     $(this).parent().toggleClass('down');
@@ -365,6 +373,7 @@ $(document).ready(() =>{
   });
   // Slider
   if( $(".slider").length ){
+    // Slider License
     $('.slider.license-slider').slick({
       speed: 300,
       slidesToShow: 4,
@@ -391,55 +400,57 @@ $(document).ready(() =>{
           }
       ]
     });
-  }
-  // Slider Index Page
-  if( $(".real-slider").length ){
-    $('.real-slider').not(".slick-initialized").slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: false,
-      dots: true,
-      fade: true,
-      cssEase: "linear",
-      autoplay: true,
-      autoplaySpeed: 2500,
-      pauseOnFocus: false,
-      responsive: [
-        {
-          breakpoint: 1200,
-          settings: {}
-        },
-        {
-          breakpoint: 600,
-          settings: {}
-        }
-      ]
-    });
-  }
-  if( $(".reviews-slider").length ){
-    $(".reviews-slider").not(".slick-initialized").slick({
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      arrows: true,
-      dots: false,
-      prevArrow: '<button class="arrow arrow-left"></button>',
-      nextArrow: '<button class="arrow arrow-right"></button>',
-      responsive: [
-        {
-          breakpoint: 1200,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
+    // Slider Index Page
+    if( $("#sliderIndex").length ){
+      $('#sliderIndex').not(".slick-initialized").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: true,
+        fade: true,
+        cssEase: "linear",
+        autoplay: true,
+        autoplaySpeed: 2500,
+        pauseOnFocus: false,
+        responsive: [
+          {
+            breakpoint: 1200,
+            settings: {}
+          },
+          {
+            breakpoint: 600,
+            settings: {}
           }
-        },
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
+        ]
+      });
+    }
+    // Slider Review
+    if( $(".reviews-slider").length ){
+      $(".reviews-slider").not(".slick-initialized").slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: false,
+        prevArrow: '<button class="arrow arrow-left"></button>',
+        nextArrow: '<button class="arrow arrow-right"></button>',
+        responsive: [
+          {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
           }
-        }
-      ]
-    });
+        ]
+      });
+    }
   }
+  
 });

@@ -12,29 +12,29 @@ html(lang="ru")
     body
         script(src="./js/jquery.min.js")
         include chunks/header.pug
-        section.slider#sliderIndex
-            .slider__item.slider__item_with-content(style="background: url('../img/slider/slide_1.jpg')")
+        section.slider.slider_new-dots#sliderIndex
+            .slider__item.slider__item_with-content(style="background-image: url('../img/slider/slide_1.jpg')")
                 .slider__content
                     p.slider__title Полная консультационная поддержка
                     .line
                     p.slider__offer Команда экспертов поможет Вам разобраться в сложных ситуациях
-            .slider__item.slider__item_with-content(style="background: url('../img/slider/slide_2.jpg')")
+            .slider__item.slider__item_with-content(style="background-image: url('../img/slider/slide_2.jpg')")
                 .slider__content
                     p.slider__title Вместе выгоднее
                     .line
                     p.slider__offer Приведи друга и получи скидку 10% при следующем заказе
-            .slider__item.slider__item_with-content(style="background: url('../img/slider/slide_3.jpg')")
+            .slider__item.slider__item_with-content(style="background-image: url('../img/slider/slide_3.jpg')")
                 .slider__content
                     p.slider__title Бесплатная доставка
                     .line
                     p.slider__offer Документы на дом или в офис
         section.content.bg-white
-            .container.container_inside
+            .container.container_inside.text-center
                 h1.content__title.text-semibold Центр обучения Северный Путь
-                p Центр обучения «Северный Путь» приветствует Вас!
-                p Что для Вас важно при выборе партнера по обучению? Надёжность? Скорость? Легитимность? Цена? Персональный подход?
-                p Всё это Вы найдёте в нашей компании!
-                p Центр обучения «Северный Путь» – это команда профессионалов, которая решит все задачи в области охраны труда, разрешительной документации, а также лицензирования. В это время Вы сможете сосредоточиться на самом главном – Вашей деятельности!
+                p Центр обучения «Северный Путь» приветствует Вас! Что для Вас важно при выборе партнера по обучению? 
+                    | Надёжность? Скорость? Легитимность? Цена? Персональный подход?
+                    | Всё это Вы найдёте в нашей компании!
+                p Центр обучения «Северный Путь» — это команда профессионалов, которая решит все задачи в области охраны труда, разрешительной документации, а также лицензирования. В это время Вы сможете сосредоточиться на самом главном – Вашей деятельности!
                 p С помощью нашего центра обучения Вы в максимально короткие сроки сможете решить любые вопросы, начиная от обучения по пожарно-техническому минимуму, заканчивая экспертизой с последующей разработкой и внедрением системы охраны труда.
         aside.content.license.license_with-bg
             .container
@@ -43,18 +43,18 @@ html(lang="ru")
                     | и имеет всю необходимую документацию для ведения 
                     | образовательной деятельности. Здесь вы можете ознакомиться 
                     | с лицензиями и разрешениями компании:
-                #license.license-slider.slider
-                    .license-slider__item
+                .slider.slider_with-arrow.license-slider#license
+                    .license-slider__item(data-izimodal-open="#license-1" data-izimodal-transitionin="fadeInUp" data-izimodal-title="Лицензия на осуществление образовательной деятельности(обратная сторона)" data-izimodal-group="license")
                         img(src="./img/lic.png")
-                    .license-slider__item
+                    .license-slider__item(data-izimodal-open="#license-2" data-izimodal-transitionin="fadeInUp" data-izimodal-title="Лицензия на осуществление образовательной деятельности(обратная сторона)" data-izimodal-group="license")
                         img(src="./img/lic.png")
-                    .license-slider__item
+                    .license-slider__item(data-izimodal-open="#license-3" data-izimodal-transitionin="fadeInUp" data-izimodal-title="Лицензия на осуществление образовательной деятельности(обратная сторона)" data-izimodal-group="license")
                         img(src="./img/lic.png")
-                    .license-slider__item
+                    .license-slider__item(data-izimodal-open="#license-4" data-izimodal-transitionin="fadeInUp" data-izimodal-title="Лицензия на осуществление образовательной деятельности(обратная сторона)" data-izimodal-group="license")
                         img(src="./img/lic.png")
-                    .license-slider__item
+                    .license-slider__item(data-izimodal-open="#license-5" data-izimodal-transitionin="fadeInUp" data-izimodal-title="Лицензия на осуществление образовательной деятельности(обратная сторона)" data-izimodal-group="license")
                         img(src="./img/lic.png")
-                    .license-slider__item
+                    .license-slider__item(data-izimodal-open="#license-6" data-izimodal-transitionin="fadeInUp" data-izimodal-title="Лицензия на осуществление образовательной деятельности(обратная сторона)" data-izimodal-group="license")
                         img(src="./img/lic.png")
         section.content.content_advantage.content_advantage-index
             .container
@@ -74,8 +74,8 @@ html(lang="ru")
                             .item__offer Получайте удостоверения и&nbsp;документы в&nbsp;соответствии с&nbsp;Законодательством РФ.
                     .column.column_4
                         .item.item__with-offer
-                            .item__icon.insurance-light
-                            .item__title 100% положительный результат
+                            .item__icon.insurance
+                            .item__title 100% результат
                             .item__line 
                             .item__offer Гарантия быстрого получения документов, необходимых для ведения деятельности.
                     .column.column_4
@@ -86,7 +86,7 @@ html(lang="ru")
                             .item__offer Получайте документы на&nbsp;руки на&nbsp;следующий день. Доставка по&nbsp;СПб бесплатно.
                     .column.column_4
                         .item.item__with-offer
-                            .item__icon(style='background-image: url("./img/icon/icon_cash.svg");')
+                            .item__icon.money-light
                             .item__title Работа без штрафов
                             .item__line
                             .item__offer Сэкономьте в среднем до 250 000 руб. на штрафах и санкциях.
@@ -98,7 +98,7 @@ html(lang="ru")
                             .item__offer Обучение для руководителей, специалистов и рабочих с разным уровнем подготовки.
                     .column.column_4
                         .item.item__with-offer
-                            .item__icon(style='background-image: url("./img/icon/icon_teacher.svg");')
+                            .item__icon.lecture
                             .item__title Преподаватели практики
                             .item__line
                             .item__offer Практический подход в решении вопросов, связанных с законностью деятельности.
@@ -109,7 +109,7 @@ html(lang="ru")
                             .item__line
                             .item__offer Специалисты-практики помогут разобраться в сложных рабочих ситуациях.
         aside.content.content_sale
-            .container
+            .container.container_inside
                 .content__title Акции учебного центра
                 .row
                     .column
@@ -130,6 +130,105 @@ html(lang="ru")
                             .item__title Договор на год
                             .item__line
                             .item__offer При заключении договора на&nbsp;год — скидка&nbsp;10%
+        section.content.bg_blue-gradient
+            .container.container_inside
+                h2.text-center
+                    a.content__title(href="#") Программы центра обучения
+                .row
+                    .column.preview-page
+                        .preview-page__content
+                            .preview-page__title Обучение по электробезопасности
+                            .preview-page__list
+                                a.preview-page__item(href="#") Аттестация персонала по электробезопасности II, III, IV группа допуска, до 1000В
+                                a.preview-page__item(href="#") Аттестация персонала по электробезопасности  III, IV, V группа допуска, до и выше 1000В
+                                a.preview-page__item(href="#") Аттестация персонала по электробезопасности  III, IV, V группа допуска, до и выше 1000В
+                        .preview-page__footer
+                            .preview-page__programm
+                                ul.list-info.list-info_inline
+                                    li.list-item.list-item_time.list-item_white
+                                        span.list-item__name Действие документов
+                                        span.list-item__content 3 года / 5 лет
+                                    li.list-item.list-item_price.list-item_white
+                                        span.list-item__name Стоимость
+                                        span.list-item__content 3240 руб.
+                            .btn-group
+                                a.btn.btn_gold.btn_with-arrow Подробнее
+                                a.btn.btn_primary(href="#" data-izimodal-open="#callback1" data-izimodal-transitionin="fadeInDown" data-title="Обучение по электробезопасности") Оставить заявку
+                    .column.preview-page
+                        .preview-page__content
+                            .preview-page__title Курсы профессиональной переподготовки
+                            .preview-page__list
+                                a.preview-page__item(href="#") Охрана труда
+                                a.preview-page__item(href="#") Проектирование
+                                a.preview-page__item(href="#") Инженерные изыскания
+                        .preview-page__footer
+                            .preview-page__programm
+                                    ul.list-info.list-info_inline
+                                        li.list-item.list-item_time.list-item_white
+                                            span.list-item__name Действие документов
+                                            span.list-item__content 3 года / 5 лет
+                                        li.list-item.list-item_price.list-item_white
+                                            span.list-item__name Стоимость
+                                            span.list-item__content 3240 руб.
+                            .btn-group
+                                a.btn.btn_gold.btn_with-arrow Подробнее
+                                a.btn.btn_primary(href="#" data-izimodal-open="#callback1" data-izimodal-transitionin="fadeInDown" data-title="Курсы профессиональной переподготовки") Оставить заявку
+                .text-center.mt-60
+                    a.btn.btn_primary.btn_large(href="#") Все 
+                        span.d-sm-none образовательные 
+                        | программы
+        section.content.news.bg-white
+            .container
+                p.content__title.text-center Новости
+                .row
+                    .column.news__column
+                        .news__date 14.09.2019
+                        a.news__title(href="#") Минэкономразвития России разработало проект комплексного закона о государственном контроле и муниципальном контроле
+                        a.btn.btn_primary.btn_with-arrow(href="#") Подробнее
+                    .column.news__column
+                        .news__date 14.09.2019
+                        a.news__title(href="#") Минэкономразвития России разработало проект комплексного закона о государственном контроле и муниципальном контроле
+                        a.btn.btn_primary.btn_with-arrow(href="#") Подробнее
+                    .column.news__column
+                        .news__date 14.09.2019
+                        a.news__title(href="#") Минэкономразвития России разработало проект комплексного закона о государственном контроле и муниципальном контроле
+                        a.btn.btn_primary.btn_with-arrow(href="#") Подробнее
+        section.content.review.bg_gold-gradient
+            .container
+                p.text-center.content__title Отзывы об учебном центре
+                .slider.slider_with-arrow.reviews-slider
+                    .review__item
+                        .review__img
+                        .review__content
+                            p.review__info ЗАО "ЛСМУ СЗЭМ"
+                                span.sep |
+                                span 9 июля
+                            p.review__intro ЗАО "ЛСМУ СЗЭМ" выражает свою признательность учебному центру за качественно оказанные услуги в направлении… 
+                            a.review__link(href="#") Полный отзыв
+                    .review__item
+                        .review__img
+                        .review__content
+                            p.review__info ЗАО "ЛСМУ СЗЭМ"
+                                span.sep |
+                                span 10 июля
+                            p.review__intro ЗАО "ЛСМУ СЗЭМ" выражает свою признательность учебному центру за качественно оказанные услуги в направлении… 
+                            a.review__link(href="#") Полный отзыв
+                    .review__item
+                        .review__img
+                        .review__content
+                            p.review__info ЗАО "ЛСМУ СЗЭМ"
+                                span.sep |
+                                span 11 июля
+                            p.review__intro ЗАО "ЛСМУ СЗЭМ" выражает свою признательность учебному центру за качественно оказанные услуги в направлении… 
+                            a.review__link(href="#") Полный отзыв
+                    .review__item
+                        .review__img
+                        .review__content
+                            p.review__info ЗАО "ЛСМУ СЗЭМ"
+                                span.sep |
+                                span 12 июля
+                            p.review__intro ЗАО "ЛСМУ СЗЭМ" выражает свою признательность учебному центру за качественно оказанные услуги в направлении… 
+                            a.review__link(href="#") Полный отзыв
         section.content
             .container
                 .cta-wrap.mt-0
@@ -163,10 +262,36 @@ html(lang="ru")
                             li
                                 a(href='' target='_blank').footer__link.footer__link_last.footer__address Санкт-Петербург, ул. Оборонная, 10 лит. А офис 310А
                                     span.icon
+        .modal.modal_default.modal-callback#callback1(data-iziModal-fullscreen="true")
+            .modal__content
+                p.s-title Программа обучения
+                p.title.text-gold
+                form.form.form-1.ajax_form(method="post" name="callbackService")
+                    input(type="text" name="title" value="" class="hidden h-title")
+                    p Укажите способ связи с Вами, и наши сотрудники оформят заявку на программу обучения.
+                    p.form__label.mt-30 Электронная почта:
+                    input.form__input.email(type="email" name="email" autocomplete="off" placeholder="Введите ваш e-mail")
+                    p.form__label Телефон для связи:
+                    input.form__input.phone(placeholder="8 ( ___ ) ___ - __ - __")
+                    .form__agree.checkbox.mt-30
+                        input.checkbox__input(type="checkbox" name="agree" checked="checked" required="required")
+                        label.checkbox__label(for="agree") Я согласен с 
+                            a.checkbox__link(href="/assets/files/documents/policy.pdf" target="_blank") правилами использования сайта
+                    button.btn.btn_large.btn_modal.btn_primary Оставить заявку
+                a(href="" data-izimodal-close="data-izimodal-close")
+                    span.modal__close Закрыть
+        .modal.modal-license#license-1
+            img(src="https://uc-sp.ru/assets/cache_image/license/Лицензия1_1200x600_61c.png")
+            p Лицензия на осуществление образовательной деятельности(обратная сторона)
+            p 
+                a(href="assets/images/license/Лицензия2.png" target="_blank") Полная версия
         script(src="./js/jquery.inputmask.js")
 
         script(src="./js/slick.min.js")
         link(href='./css/slick.css', rel='stylesheet')
         link(href='./css/slick-theme.css', rel='stylesheet')
+
+        script(src="./js/iziModal.min.js")
+        link(href='./css/iziModal.min.css', rel='stylesheet')
 
         script(src="./js/app.min.js")

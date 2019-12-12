@@ -9,6 +9,8 @@
 @import "../content/advantage.scss";
 /* Sale Block */
 @import "../content/sale.scss";
+/* Section|Child Block */
+@import "../content/child.scss";
 
 /* License */
 @import "../item/license.scss";
@@ -16,4 +18,57 @@
 @import "../item/slider.scss";
 /* Item with Icon */
 @import "../item/icon.scss";
+/* Preview Item */
+@import "../item/preview.scss";
+/* List Info about Programm */
+@import "../item/list.scss";
+/* Review  */
+@import "../item/reviews.scss";
 
+
+
+/* News Preview */
+@import "../news/preview.scss";
+
+.content{
+    .row{
+        justify-content: space-between;
+        .column{
+            &.preview-page{
+                display: flex;
+                flex-direction: column;
+
+                justify-content: space-between;
+                flex: 0 0 380px;
+                max-width: 50%;
+            }
+        }
+    }
+    &.content_advantage{
+        .row{
+            justify-content: center;
+        }
+    }
+}
+@media all and (max-width: $tablet){
+    .content{
+        .row{
+            justify-content: center;
+        }
+    }
+}
+@media all and (max-width: $mobile_l){
+    .content{
+        .row{
+            .column{
+                &.preview-page{
+                    max-width: 100%;
+
+                    & + .preview-page{
+                        margin-top: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
