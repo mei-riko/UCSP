@@ -157,10 +157,10 @@ html(lang="ru")
                     .column.preview-page
                         .preview-page__content
                             .preview-page__title Курсы профессиональной переподготовки
-                            .preview-page__list
-                                a.preview-page__item(href="#") Охрана труда
-                                a.preview-page__item(href="#") Проектирование
-                                a.preview-page__item(href="#") Инженерные изыскания
+                            ul
+                                li Охрана труда
+                                li Охрана труда
+                                li Охрана труда
                         .preview-page__footer
                             .preview-page__programm
                                     ul.list-info.list-info_inline
@@ -193,7 +193,7 @@ html(lang="ru")
                         .news__date 14.09.2019
                         a.news__title(href="#") Минэкономразвития России разработало проект комплексного закона о государственном контроле и муниципальном контроле
                         a.btn.btn_primary.btn_with-arrow(href="#") Подробнее
-        section.content.review.bg_gold-gradient
+        section.content.review
             .container
                 p.text-center.content__title Отзывы об учебном центре
                 .slider.slider_with-arrow.reviews-slider
@@ -280,11 +280,12 @@ html(lang="ru")
                     button.btn.btn_large.btn_modal.btn_primary Оставить заявку
                 a(href="" data-izimodal-close="data-izimodal-close")
                     span.modal__close Закрыть
-        .modal.modal-license#license-1
-            img(src="https://uc-sp.ru/assets/cache_image/license/Лицензия1_1200x600_61c.png")
-            p Лицензия на осуществление образовательной деятельности(обратная сторона)
-            p 
-                a(href="assets/images/license/Лицензия2.png" target="_blank") Полная версия
+        .modal.modal_default.modal-license#license-1
+            .modal__content.text-center
+                .modal__img(style="background: url('https://uc-sp.ru/assets/cache_image/license/Лицензия1_1200x600_61c.png') no-repeat center / cover;")
+                p Лицензия на осуществление образовательной деятельности(обратная сторона)
+                p 
+                    a(href="assets/images/license/Лицензия2.png" target="_blank") Полная версия
         script(src="./js/jquery.inputmask.js")
 
         script(src="./js/slick.min.js")

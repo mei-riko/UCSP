@@ -181,6 +181,10 @@ b, strong, .text-bold {
 }
 
 /* Main Style */
+html {
+  font-size: 14px;
+}
+
 body {
   background: url("../img/bg-top.png") no-repeat top left/contain, url("../img/footer-bg.png") no-repeat bottom right/contain;
   background-color: #fafafa;

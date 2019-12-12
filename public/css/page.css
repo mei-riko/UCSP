@@ -182,6 +182,10 @@ b, strong, .text-bold {
 }
 
 /* Main Style */
+html {
+  font-size: 14px;
+}
+
 body {
   background: url("../img/bg-top.png") no-repeat top left/contain, url("../img/footer-bg.png") no-repeat bottom right/contain;
   background-color: #fafafa;
@@ -2887,6 +2891,18 @@ a.service:hover .service__title {
   background: url(../img/icon/close.png) no-repeat center/cover;
 }
 
+.modal .modal__img {
+  margin-bottom: 30px;
+}
+
+.modal p {
+  margin-bottom: 1.25rem;
+}
+
+.modal p:last-child {
+  margin-bottom: 0;
+}
+
 .modal_info {
   background: #374c55;
 }
@@ -3026,6 +3042,11 @@ a.service:hover .service__title {
   margin-top: 20px;
 }
 
+.modal.modal-license .modal__img {
+  width: 100%;
+  height: 650px;
+}
+
 .search-form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3111,6 +3132,12 @@ a.service:hover .service__title {
 
 .search-form .sisea-result + .sisea-result {
   margin-top: 10px;
+}
+
+@media all and (max-width: 768px) {
+  .modal.modal-license .modal__img {
+    height: 320px;
+  }
 }
 
 /* CTA Block */

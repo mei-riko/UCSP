@@ -17,6 +17,15 @@
             background: url(../img/icon/close.png) no-repeat center/cover;
         }
     }
+    .modal__img{
+        margin-bottom: 2*$padding;
+    }
+    p{
+        margin-bottom: 1.25rem;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
 
     &_info {
         background: #374c55;
@@ -129,7 +138,6 @@
             }
         }
     }
-
     &_default{
         .modal__content{
             padding: 60px;
@@ -151,6 +159,12 @@
             .btn{
                 margin-top: 20px;
             }
+        }
+    }
+    &.modal-license{
+        .modal__img{
+            width: 100%;
+            height: 650px;
         }
     }
 }
@@ -233,5 +247,15 @@
     }
     .sisea-result + .sisea-result{
         margin-top: 10px;
+    }
+}
+
+@media all and (max-width: $tablet){
+    .modal{
+        &.modal-license{
+            .modal__img{
+                height: 320px;
+            }
+        }
     }
 }

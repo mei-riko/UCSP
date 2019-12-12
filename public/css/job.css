@@ -181,6 +181,10 @@ b, strong, .text-bold {
 }
 
 /* Main Style */
+html {
+  font-size: 14px;
+}
+
 body {
   background: url("../img/bg-top.png") no-repeat top left/contain, url("../img/footer-bg.png") no-repeat bottom right/contain;
   background-color: #fafafa;
@@ -1591,19 +1595,19 @@ img {
   margin-bottom: 30px;
 }
 
-.preview-page__list {
+.preview-page__list, .preview-page__content ul {
   margin-bottom: 30px;
 }
 
-.preview-page__list.last {
+.preview-page__list.last, .preview-page__content ul.last {
   margin-bottom: 0px;
 }
 
-.preview-page__list .preview-page__item + .preview-page__item {
+.preview-page__list .preview-page__item + .preview-page__item, .preview-page__content ul .preview-page__item + .preview-page__item, .preview-page__list .preview-page__content ul li + .preview-page__item, .preview-page__content ul .preview-page__list li + .preview-page__item, .preview-page__content ul li + .preview-page__item, .preview-page__list .preview-page__content ul .preview-page__item + li, .preview-page__content ul .preview-page__list .preview-page__item + li, .preview-page__content ul .preview-page__item + li, .preview-page__list .preview-page__content ul li + li, .preview-page__content ul .preview-page__list li + li, .preview-page__content ul li + li {
   margin-top: 15px;
 }
 
-.preview-page__item {
+.preview-page__item, .preview-page__content ul li {
   position: relative;
   display: block;
   font-size: 14px;
@@ -1619,7 +1623,7 @@ img {
   transition: .3s;
 }
 
-.preview-page__item:hover {
+.preview-page__item:hover, .preview-page__content ul li:hover {
   background-position: 4px center;
 }
 
@@ -1773,6 +1777,18 @@ img {
   background: url(../img/icon/close.png) no-repeat center/cover;
 }
 
+.modal .modal__img {
+  margin-bottom: 30px;
+}
+
+.modal p {
+  margin-bottom: 1.25rem;
+}
+
+.modal p:last-child {
+  margin-bottom: 0;
+}
+
 .modal_info {
   background: #374c55;
 }
@@ -1912,6 +1928,11 @@ img {
   margin-top: 20px;
 }
 
+.modal.modal-license .modal__img {
+  width: 100%;
+  height: 650px;
+}
+
 .search-form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1997,4 +2018,10 @@ img {
 
 .search-form .sisea-result + .sisea-result {
   margin-top: 10px;
+}
+
+@media all and (max-width: 768px) {
+  .modal.modal-license .modal__img {
+    height: 320px;
+  }
 }

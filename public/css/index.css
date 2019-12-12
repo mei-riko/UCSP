@@ -1037,19 +1037,19 @@
   margin-bottom: 30px;
 }
 
-.preview-page__list {
+.preview-page__list, .preview-page__content ul {
   margin-bottom: 30px;
 }
 
-.preview-page__list.last {
+.preview-page__list.last, .preview-page__content ul.last {
   margin-bottom: 0px;
 }
 
-.preview-page__list .preview-page__item + .preview-page__item {
+.preview-page__list .preview-page__item + .preview-page__item, .preview-page__content ul .preview-page__item + .preview-page__item, .preview-page__list .preview-page__content ul li + .preview-page__item, .preview-page__content ul .preview-page__list li + .preview-page__item, .preview-page__content ul li + .preview-page__item, .preview-page__list .preview-page__content ul .preview-page__item + li, .preview-page__content ul .preview-page__list .preview-page__item + li, .preview-page__content ul .preview-page__item + li, .preview-page__list .preview-page__content ul li + li, .preview-page__content ul .preview-page__list li + li, .preview-page__content ul li + li {
   margin-top: 15px;
 }
 
-.preview-page__item {
+.preview-page__item, .preview-page__content ul li {
   position: relative;
   display: block;
   font-size: 14px;
@@ -1065,7 +1065,7 @@
   transition: .3s;
 }
 
-.preview-page__item:hover {
+.preview-page__item:hover, .preview-page__content ul li:hover {
   background-position: 4px center;
 }
 
