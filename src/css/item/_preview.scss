@@ -75,9 +75,29 @@
                     line-height: 1;
                 }
                 .list-item__content{
-                    font-size: 1rem;
+                    font-size: 1.25rem;
                 }
             }
+        }
+    }
+
+    /* Inline */
+    &_inline{
+        justify-content: center;
+        .preview-page__list{
+            margin-bottom: 0;
+        }
+        .preview-page__programm{
+            border-top: 0;
+        }
+        .list-info,
+        .list-info .list-item{
+            margin-top:0;
+        }
+        & + .preview-page_inline{
+            margin-top: 2*$padding;
+            padding-top: 2*$padding;
+            border-top: 1px solid $text-gold;
         }
     }
 }

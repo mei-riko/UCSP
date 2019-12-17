@@ -111,44 +111,140 @@
   color: #7c7c7c;
 }
 
-/* Toggle Item*/
-.tab-toggle {
-  border-bottom: 1px solid #97d7f6;
-  -webkit-transition: all .4s;
-  -o-transition: all .4s;
-  transition: all .4s;
-  padding-bottom: 15px;
+/* Preview Item */
+/* Child Page Preview */
+.preview-page {
+  /* Inline */
 }
 
-.tab-toggle + .tab-toggle {
+.preview-page__title {
+  font-size: 20px;
+  color: #a2926b;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+
+.preview-page__list, .preview-page__content ul {
+  margin-bottom: 30px;
+}
+
+.preview-page__list.last, .preview-page__content ul.last {
+  margin-bottom: 0px;
+}
+
+.preview-page__list .preview-page__item + .preview-page__item, .preview-page__content ul .preview-page__item + .preview-page__item, .preview-page__list .preview-page__content ul li + .preview-page__item, .preview-page__content ul .preview-page__list li + .preview-page__item, .preview-page__content ul li + .preview-page__item, .preview-page__list .preview-page__content ul .preview-page__item + li, .preview-page__content ul .preview-page__list .preview-page__item + li, .preview-page__content ul .preview-page__item + li, .preview-page__list .preview-page__content ul li + li, .preview-page__content ul .preview-page__list li + li, .preview-page__content ul li + li {
   margin-top: 15px;
 }
 
-.tab-title {
-  font-size: 1.15rem;
-  font-weight: 600;
-  color: #36677f;
-  text-transform: uppercase;
-  cursor: pointer;
+.preview-page__item, .preview-page__content ul li {
+  position: relative;
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+  padding-left: 20px;
+  background-image: url("../img/icon/arrow-light.svg");
+  background-repeat: no-repeat;
+  background-position: 0px center;
+  background-size: 10px;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
 }
 
-.tab-content {
-  display: none;
-  padding-top: 15px;
-  width: 740px;
-  max-width: 100%;
+.preview-page__item:hover, .preview-page__content ul li:hover {
+  background-position: 4px center;
 }
 
-.tab-content a {
-  color: #36677f;
-  text-decoration: underline;
+.preview-page__offer {
+  font-size: 12px;
+  color: #fff;
 }
 
-.tab-content a:hover {
-  color: #3e83a4;
+.preview-page__offer + .preview-page__color-number {
+  margin-top: 6px;
 }
 
-/* List */
+.preview-page__color-number {
+  font-size: 20px;
+  font-weight: 700;
+  color: #a3c6d8;
+}
+
+.preview-page__color-number + .btn {
+  margin-top: 30px;
+}
+
+.preview-page__programm {
+  border-top: 1px solid #a2926b;
+}
+
+.preview-page__programm .list-info {
+  margin: 10px 0;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.preview-page__programm .list-info .list-item {
+  margin: 10px 0;
+}
+
+.preview-page__programm .list-info .list-item .list-item__name {
+  font-size: 12px;
+  line-height: 1;
+}
+
+.preview-page__programm .list-info .list-item .list-item__content {
+  font-size: 1.25rem;
+}
+
+.preview-page_inline {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.preview-page_inline .preview-page__list, .preview-page_inline .preview-page__content ul, .preview-page__content .preview-page_inline ul {
+  margin-bottom: 0;
+}
+
+.preview-page_inline .preview-page__programm {
+  border-top: 0;
+}
+
+.preview-page_inline .list-info,
+.preview-page_inline .list-info .list-item {
+  margin-top: 0;
+}
+
+.preview-page_inline + .preview-page_inline {
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 1px solid #a2926b;
+}
+
+/* Media */
+@media all and (max-width: 768px) {
+  .preview-page__title {
+    font-size: 16px;
+  }
+  .preview-page .btn-group .btn {
+    width: 100%;
+  }
+  .preview-page .btn-group .btn + .btn {
+    margin-top: 10px;
+  }
+}
+
+@media all and (max-width: 576px) {
+  .preview-page__title {
+    font-size: 20px;
+  }
+}
+
+/* List Info about Programm */
 .list-info {
   list-style: none;
   margin: 0;
@@ -269,39 +365,4 @@
 
 .list-contact .list-item + .list-item {
   margin-top: 15px;
-}
-
-.map {
-  width: 100%;
-  min-height: 400px;
-}
-
-.map-info {
-  display: none;
-}
-
-.map-logo {
-  width: 150px;
-  max-width: 100%;
-  position: absolute;
-  left: 0;
-}
-
-.map-content {
-  position: relative;
-  padding-left: 160px;
-  width: 100%;
-  max-width: 100%;
-  height: 100%;
-  min-height: 120px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
 }

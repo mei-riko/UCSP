@@ -1649,15 +1649,6 @@ img {
   padding: 40px 0 60px;
 }
 
-.content_header p {
-  width: 940px;
-  max-width: 100%;
-}
-
-.content_header p + p {
-  margin-top: 15px;
-}
-
 /* Media */
 @media all and (max-width: 576px) {
   .content_header .content__title {
