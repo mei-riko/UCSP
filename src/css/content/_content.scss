@@ -22,9 +22,6 @@
     }
     .content__offer{
         font-size: 14px;
-        line-height: 1.4;
-        font-weight: 300;
-
         & + .row{
             margin-top: 60px;
         }
@@ -32,11 +29,8 @@
     .cta-wrap + .content__offer{
         margin-top: 20px;
     }
-    p{
-        font-size: 1rem;
-        line-height: 1.6;
-    }
-    ul, ol, 
+
+    * + ul, * + ol, 
     p + ul, p + ol, 
     ul + p, ol + p, 
     p + p{

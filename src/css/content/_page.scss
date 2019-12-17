@@ -9,19 +9,19 @@
         flex: 0 0 50%;
         max-width: 50%;
 
-        &_3{
-            flex: 0 0 calc(100%/3);
-            max-width: calc(100%/3);
-        }
-        &_4{
-            flex: 0 0 calc(100%/4);
-            max-width: calc(100%/4);
+        .list-info{
+            width: 420px;
+            max-width: 100%;
+            margin: 0 auto;
         }
 
         .page__content{
-            width: 500px;
+            width: 420px;
             max-width: 100%;
             margin: 0 auto;
+            & + .list-info{
+                margin-top: 30px;
+            }
         }
         .page__icon{
             display: block;
@@ -41,19 +41,35 @@
         .page__title{
             font-size: 24px;
             font-weight: 600;
+
+            & + .page__intro{
+                margin-top: 30px;
+            }
         }
         .page__intro{
             font-size: 16px;
             line-height: 1.5em;
             margin-top: 20px;
 
-            width: 300px;
+            // width: 300px;
             max-width: 100%;
             margin: 0 auto;
+        }
 
-            & + .list-info{
-                margin-top: 30px;
-            }
+        // Size 
+        &_3{
+            flex: 0 0 calc(100%/3);
+            max-width: calc(100%/3);
+        }
+        &_4{
+            flex: 0 0 calc(100%/4);
+            max-width: calc(100%/4);
+        }
+        // Type
+        &_education{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
     
     }

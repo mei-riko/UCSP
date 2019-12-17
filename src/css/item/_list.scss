@@ -4,6 +4,7 @@
     padding: 0;
     font-size: 16px;
     line-height: 1.5em;
+    
     .list-item{
         position: relative;
         padding-left: 50px;
@@ -65,6 +66,71 @@
         flex-wrap: wrap;
         .list-item{
             margin-right: 30px;
+        }
+    }
+}
+
+.list{
+    li{
+        position: relative;
+        padding-left: $padding;
+
+        &:before{
+            content: '';
+            display: block;
+
+            width: 6px;
+            height: 6px;
+
+            background-color: $text-blue4;
+
+            position: absolute;
+            left: 0;
+            top: 8px;
+        }
+    }
+}
+
+.list-contact{
+    .list-item{
+        position: relative;
+        padding-left: 2*$padding;
+
+        &:before{
+            content: '';
+            display: block;
+
+            width: 18px;
+            height: 18px;
+
+            position: absolute;
+            top: 2px;
+            left: 0;
+        }
+
+        &_address{
+            &:before{
+                background: url(../img/icon/maps.svg) no-repeat center;
+            }
+        }
+        &_phone{
+            &:before{
+                background: url(../img/icon/telephone.svg) no-repeat center;
+            }
+        }
+        &_vk{
+            &:before{
+                background: url(../img/icon/vk.svg) no-repeat center;
+            }
+        }
+        &_email{
+            &:before{
+                background: url(../img/icon/envelope.svg) no-repeat center;
+            }
+        }
+
+        & + .list-item{
+            margin-top: $padding;
         }
     }
 }

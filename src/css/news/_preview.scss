@@ -1,8 +1,4 @@
 .news{
-    .news__column{
-        flex: 0 0 calc(100%/3);
-        max-width: calc(100%/3);
-    }
     .news__date{
         color: #959595;
         text-transform: uppercase;
@@ -23,8 +19,6 @@
 @media all and (max-width: $mobile-l){
     .news{
         .news__column{
-            flex: 0 0 100%;
-            max-width: 100%;
             & + .news__column{
                 margin-top: 30px;
             }

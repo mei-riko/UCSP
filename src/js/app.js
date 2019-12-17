@@ -380,5 +380,27 @@ $(document).ready(() =>{
       });
     }
   }
-  
+  // MAP
+  if ($("#map").length > 0) {
+    ymaps.ready(init);
+    function init() {
+        var myMap = new ymaps.Map("map", {
+            center: [ 59.893611, 30.267126 ],
+            zoom: 17,
+            controls: ["zoomControl"]
+        });
+        var glyphIcon = new ymaps.Placemark([ 59.893611, 30.267126 ], {
+            balloonContentBody: [$("#map_info").html()].join(""),
+            iconContent: ''
+        }, {
+            // Красная иконка, растягивающаяся под содержимое.
+            preset: 'islands#redEducationIcon'
+        });
+
+        if ($(window).width() <= 799) myMap.behaviors.disable("drag");
+        if ($(window).width() <= 799) myMap.setCenter([ 59.893611, 30.267126 ]);
+        myMap.behaviors.disable("scrollZoom");
+        myMap.geoObjects.add(glyphIcon); 
+    }
+  }
 });

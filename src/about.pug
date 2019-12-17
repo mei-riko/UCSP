@@ -1,0 +1,59 @@
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Сведения об Образовательной организации
+
+        link(href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:300,400,600,700', rel='stylesheet')
+        link(href='./css/style.css', rel='stylesheet')
+        link(href='./css/ancillary-page.css', rel='stylesheet')
+    body
+        script(src="./js/jquery.min.js")
+        include chunks/header.pug
+        main.inside
+            section.content.content_header
+                .container
+                    ul.content__breadcrumbs
+                        li.content__breadcrumbs__item
+                            a.content__breadcrumbs__link(href="#") Главная
+                        li.content__breadcrumbs__item
+                            a.content__breadcrumbs__link(href="#") Сведения
+                    h1.content__title Сведения об Образовательной организации
+                    .row
+                        .col-6.col-md-12
+                            p.content__offer Полное наименование организации: <br/>
+                                | Общество с ограниченной ответственностью «Северный Путь» <br/>
+                                | Сокращенное название: ООО «Северный Путь» <br/>
+                                | Дата создания: 18.05.2018
+                        .col-6.col-md-12
+                            p.content__offer Местонахождение организации (юридический, фактический адрес): <br/>
+                                | 198095, Россия, г. Cанкт-Петербург, ул. Оборонная, 10 лит. А, офис 310А
+            section.content
+                .container
+                    .tab-toggle
+                        .tab-title РЕЖИМ РАБОТЫ
+                        .tab-content
+                            ul
+                                li 
+                                    span.text-bold Учебные занятия: 
+                                    | Понедельник - Пятница
+                                li Количество, распределение по дням недели и последовательность занятий определяются расписанием, но не более 8 академических часов в день.
+                                li 
+                                    span.text-bold График работы образовательной организации: 
+                                    | Понедельник - Пятница. с 10:00 до 18:00
+                                li График работы отдельных специалистов определяется индивидуально.
+                            ul.list
+                                li Контактные телефоны: 
+                                    a(href="#") 8 (812) 468-60-68 
+                                li Адрес электронной почты: 
+                                    a(href="#") info@uc-sp.ru
+                    .tab-toggle
+                        .tab-title ВАКАНТНЫЕ МЕСТА ДЛЯ ПРИЕМА (ПЕРЕВОДА)
+                        .tab-content 
+                            p Количество вакантных мест для приема на обучение за счет бюджетных ассигнований федерального бюджета, бюджетов субъектов Российской Федерации, местных бюджетов – не предусмотрено.
+        include chunks/footer.pug
+        script(src="./js/jquery.inputmask.js")
+        link(href='./css/iziModal.min.css', rel='stylesheet')
+        script(src="./js/iziModal.min.js")
+        script(src="./js/app.min.js")

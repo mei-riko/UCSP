@@ -1,4 +1,5 @@
 .header{
+
     &__row{
         margin: 0;
         justify-content: space-between;
@@ -50,7 +51,7 @@
                 }
             }
             .header__link{
-                font-size: 1rem;
+                font-size: 14px;
                 font-weight: 300;
                 color: #747779;
 
@@ -196,7 +197,7 @@
         margin-bottom: $padding;
     }
     &__link{
-        font-size: 1rem;
+        font-size: 14px;
         line-height: 1.5;
     }
 }

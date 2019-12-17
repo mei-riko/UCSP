@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Document2</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:300,400,600,700" rel="stylesheet"/>
-    <link href="./css/page.css" rel="stylesheet"/>
+    <link href="./css/iziModal.min.css" rel="stylesheet"/>
+    <link href="./css/store.css" rel="stylesheet"/>
   </head>
   <body>
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -115,139 +116,117 @@
         </nav>
       </div>
     </header>
-    <section class="content content_header page">
+    <section class="content content_header">
       <div class="container">
         <ul class="content__breadcrumbs">
           <li class="content__breadcrumbs__item"><a class="content__breadcrumbs__link" href="#">Главная</a></li>
-          <li class="content__breadcrumbs__item"><a class="content__breadcrumbs__link" href="#">Каталог услуг</a></li>
-          <li class="content__breadcrumbs__item"><span class="content__breadcrumbs__span">Обучение по охране труда на высоте</span></li>
+          <li class="content__breadcrumbs__item"><span class="content__breadcrumbs__span">Магазин</span></li>
         </ul>
+        <h1 class="content__title">Магазин учебного центра</h1>
+        <p>
+          Центр профессионального обучения «Северный Путь» является аккредитованной организацией, оказывающей услуги в области охраны труда и предоставляет максимально выгодные и надёжные 
+          условия взаимодействия в направлении аутсорсинга по охране труда. Работая по принципу 
+          единого окна, Вы сможете получить в нашем лице надёжного партнера в направлении охраны труда, 
+          обучения персонала, а также помощь в организации процессов медосмотров сотрудников и 
+          аттестации рабочих мест.    
+        </p>
+      </div>
+    </section>
+    <section class="content content_product">
+      <div class="container">
+        <div class="content__title">Перечень товаров</div>
+        <div class="row">
+          <div class="column"><a class="product" href="#" style="background-image: url('./img/program/1.jpg');">
+              <div class="product__title"> 
+                <div class="product__name">Журналы</div>
+              </div></a></div>
+          <div class="column"><a class="product" href="#" style="background-image: url('./img/program/2.jpg');">
+              <div class="product__title"> 
+                <div class="product__name">Огнетушители</div>
+              </div></a></div>
+          <div class="column"><a class="product" href="#" style="background-image: url('./img/program/3.jpg');">
+              <div class="product__title"> 
+                <div class="product__name">Наглядные пособия</div>
+              </div></a></div>
+          <div class="column"><a class="product" href="#" style="background-image: url('./img/program/4.jpg');">
+              <div class="product__title"> 
+                <div class="product__name">Другое</div>
+              </div></a></div>
+        </div>
+      </div>
+    </section>
+    <section class="content content_advantage">
+      <div class="container">
+        <div class="content__title">Наши преимущества</div>
         <div class="row">
           <div class="column">
-            <p class="content__subtitle">Программа обучения</p>
-            <h1 class="content__title">Обучение по охране труда на высоте</h1>
-            <p>
-              Центр профессионального обучения "Северный Путь" проводит обучение очно и&nbsp;дистанционно в&nbsp;направлении охраны труда на&nbsp;высоте, 
-              по следующим курсам: охрана труда на&nbsp;высоте 1, 2, 3 группа допуска, 
-              а&nbsp;также, охрана труда на высоте с&nbsp;применением средств подмащивания.
-            </p>
-            <p>
-              По результатам успешного завершения обучения по охране труда на высоте сотруднику выдаются:<br>- удостоверение по охране труда на высоте<br>
-              - протокол
-            </p>
+            <div class="item">
+              <div class="item__icon question"></div>
+              <div class="item__title">Доставка прямо к&nbsp;Вам в&nbsp;руки</div>
+            </div>
           </div>
-          <div class="column column_sidebar">
-            <div class="info info_small">
-              <ul class="list-info">
-                <li class="list-item list-item_time"><span class="list-item__name">Срок получения документов*</span><span class="list-item__content">от 1 дня</span></li>
-                <li class="list-item list-item_price"><span class="list-item__name">Стоимость</span><span class="list-item__content">3240 руб.</span></li>
-              </ul><a class="btn btn_primary" href="#">Оставить заявку</a>
+          <div class="column">
+            <div class="item">
+              <div class="item__icon clients"></div>
+              <div class="item__title">Индивидуальный подход к&nbsp;каждому клиенту</div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="item">
+              <div class="item__icon consultation"></div>
+              <div class="item__title">Консультационная поддержка</div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="item">
+              <div class="item__icon certificate"></div>
+              <div class="item__title">Сертифицированные товары</div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="item">
+              <div class="item__icon format"></div>
+              <div class="item__title">Работаем в&nbsp;формате единого окна</div>
             </div>
           </div>
         </div>
+        <div class="cta-wrap">
+          <div class="cta-wrap__title white">Оставьте заявку, и наши специалисты оперативно ответят на любые вопросы</div>
+          <form class="cta-wrap__form" action="#" method="POST">
+            <input class="input phone" type="text" placeholder="8 ( ___ ) ___ - __ - __ "/>
+            <button class="btn" type="submit">Перезвонить</button>
+          </form>
+        </div>
       </div>
     </section>
-    <section class="content page page_pt-0 content_seo">
+    <section class="content content_product content_inside">
       <div class="container">
+        <div class="content__title">Товары</div>
         <div class="row">
-          <div class="column page__column">
-            <p class="text-gold text-bold lead">Кому необходимо обучение</p>
-            <ul>
-              <li>Руководителям, организаторам, исполнителям работ на&nbsp;высоте</li>
-              <li>
-                Лицам, назначенным ответственными за безопасное проведение работ на&nbsp;высоте, за&nbsp;выдачу нарядов-допусков, за&nbsp;разработку планов спасения работников</li>
-              <li>Лицам, инспектирующим СИЗ от&nbsp;падения с&nbsp;высоты</li>
-              <li>Членам аттестационных комиссий организации</li>
-            </ul>
-          </div>
-          <div class="column page__column">
-            <p class="text-gold text-bold lead">Периодичность обучения</p>
-            <p>от 3 до 5 лет</p>
-          </div>
+          <div class="column"><a class="product" data-title="Журнал учёта огнетушителей" href="#info1" data-izimodal-open="#info1" style="background-image: url('./img/program/1.jpg');">
+              <div class="product__title"> 
+                <div class="product__name">Журналы</div>
+                <div class="product__price">300 руб.</div>
+              </div></a></div>
+          <div class="column"><a class="product" data-title="Журнал учёта огнетушителей" href="#info1" data-izimodal-open="#info1" style="background-image: url('./img/program/2.jpg');">
+              <div class="product__title"> 
+                <div class="product__name">Огнетушители</div>
+                <div class="product__price">300 руб.</div>
+              </div></a></div>
+          <div class="column"><a class="product" data-title="Журнал учёта огнетушителей" href="#info1" data-izimodal-open="#info1" style="background-image: url('./img/program/3.jpg');">
+              <div class="product__title"> 
+                <div class="product__name">Наглядные пособия</div>
+                <div class="product__price">300 руб.</div>
+              </div></a></div>
+          <div class="column"><a class="product" data-title="Журнал учёта проведения вводного инструктажа по пожарной безопасности" href="#info1" data-izimodal-open="#info1" style="background-image: url('./img/program/4.jpg');">
+              <div class="product__title"> 
+                <div class="product__name">Журнал учёта проведения вводного инструктажа по пожарной безопасности</div>
+                <div class="product__price">300 руб.</div>
+              </div></a></div>
         </div>
       </div>
     </section>
-    <section class="content page">
-      <div class="container">       
-        <p class="content__title text-center">Формы обучения</p>
-        <div class="row">
-          <div class="column page__column page__column_education">
-            <div class="page__content">
-              <div class="page__icon img-fluid" style="background-image: url(&quot;./img/icon/offline-study.svg&quot;);" alt="Очная форма обучения" title="Очная форма обучения"></div>
-              <p class="page__title text-center">Очная</p>
-              <p class="page__intro">
-                Обучение проводится с&nbsp;преподавателями в&nbsp;специально оборудованном классе по фактическому адресу УЦ&nbsp;“Северный Путь”. Занятия включают в&nbsp;себя 
-                теоретические обучение и&nbsp;фактическую отработку необходимых практических 
-                навыков. Также Вам будет предоставлен круглосуточный доступ к&nbsp;онлайн 
-                обучающей платформе с&nbsp;материалами и&nbsp;тестами. Присутствует возможность 
-                проведения обучения на&nbsp;территории заказчика.
-              </p>
-            </div>
-            <ul class="list-info">
-              <li class="list-item list-item_price"><span class="list-item__name">Стоимость</span><span class="list-item__content">3240 руб.</span></li>
-            </ul>
-          </div>
-          <div class="column page__column page__column_education">
-            <div class="page__content">
-              <div class="page__icon img-fluid" style="background-image: url(&quot;./img/icon/online-study.svg&quot;);" alt="Дистанционная форма обучения" title="Дистанционная форма обучения"></div>
-              <p class="page__title text-center">Дистанционная</p>
-              <p class="page__intro">
-                Вам будет предоставлен круглосуточный доступ к&nbsp;онлайн обучающей платформе с&nbsp;учебными материалами и&nbsp;тестами для&nbsp;самоподготовки. Все материалы 
-                соответствуют государственным стандартам. Каждый учащийся может получить 
-                онлайн консультацию у&nbsp;преподавателя и&nbsp;уточнить вопросы по&nbsp;курсу. 
-                Доставка 
-                документов осуществляется штатным курьером в&nbsp;Ваш&nbsp;офис.
-              </p>
-            </div>
-            <ul class="list-info">
-              <li class="list-item list-item_price"><span class="list-item__name">Стоимость</span><span class="list-item__content">3240 руб.</span></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="content page page_advantage page_pt-0">
-      <div class="container">
-        <p class="content__title text-center">Более 1000 клиентов выбирают нас</p>
-        <div class="row page__row">
-          <div class="column page__column page__column_3">
-            <div class="page__content">
-              <div class="page__icon img-fluid" style="background-image: url(&quot;./img/icon/insurance.svg&quot;);" alt="Очная форма обучения" title="Очная форма обучения"></div>
-              <p class="page__intro text-center">100% гарантия положительного результата</p>
-            </div>
-          </div>
-          <div class="column page__column page__column_3">
-            <div class="page__content">
-              <div class="page__icon img-fluid" style="background-image: url(&quot;./img/icon/law.svg&quot;);" alt="Очная форма обучения" title="Очная форма обучения"></div>
-              <p class="page__intro text-center">Документы соответствуют законодательству РФ</p>
-            </div>
-          </div>
-          <div class="column page__column page__column_3">
-            <div class="page__content">
-              <div class="page__icon img-fluid" style="background-image: url(&quot;./img/icon/icon_delivery.svg&quot;);" alt="Очная форма обучения" title="Очная форма обучения"></div>
-              <p class="page__intro text-center">Бесплатная доставка документов курьером и почтой</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <aside class="content license">
-      <div class="container">
-        <p class="content__title text-center">Лицензии и аккредитации</p>
-        <p class="content__offer text-center">
-          Северный Путь является аккредитованным учебным центром и имеет всю необходимую документацию для ведения 
-          образовательной деятельности. Здесь вы можете ознакомиться 
-          с лицензиями и разрешениями компании:
-        </p>
-        <div class="license-slider slider" id="license">
-          <div class="license-slider__item"><img src="./img/lic.png"/></div>
-          <div class="license-slider__item"><img src="./img/lic.png"/></div>
-          <div class="license-slider__item"><img src="./img/lic.png"/></div>
-          <div class="license-slider__item"><img src="./img/lic.png"/></div>
-        </div>
-      </div>
-    </aside>
-    <aside class="content content_sale">
+    <section class="content content_sale">
       <div class="container">
         <div class="content__title">Акции учебного центра</div>
         <div class="row">
@@ -277,8 +256,8 @@
           </div>
         </div>
       </div>
-    </aside>
-    <aside class="content content_popular">
+    </section>
+    <section class="content content_popular">
       <div class="container">
         <div class="content__title">Популярные направления</div>
         <div class="row">
@@ -296,58 +275,12 @@
               </div></a></div>
         </div>
       </div>
-    </aside>
-    <section class="content page">
-      <div class="container">
-        <div class="page__example">
-          <div class="page__example__title">Пример документов</div>
-          <div class="page__example__blocks">
-            <p class="page__example__block doc1"><a href="#" target="_blank">Удостоверение</a></p>
-            <p class="page__example__block doc2"><a href="#" target="_blank">Протокол</a></p>
-            <p class="page__example__block doc3"><a href="#" target="_blank">Диплом</a></p>
-          </div>
-        </div>
-        <div class="page__work-stage">
-          <div class="page__work-stage__title">Порядок работы</div>
-          <div class="page__work-stage__blocks">
-            <div class="page__work-stage__block step1">
-              <p class="number">1</p>
-              <p class="name">Оставьте заявку</p>
-            </div>
-            <div class="page__work-stage__block step2">
-              <p class="number">2</p>
-              <p class="name">Выберите удобный формат изучения</p>
-            </div>
-            <div class="page__work-stage__block step3">
-              <p class="number">3</p>
-              <p class="name">Получите документы и&nbsp;обучающие материалы не&nbsp;выходя из&nbsp;офиса</p>
-            </div>
-          </div>
-        </div>
-        <div class="cta-wrap">
-          <div class="cta-wrap__content">
-            <ul class="list-info list-info_inline">
-              <li class="list-item list-item_time list-item_white"><span class="list-item__name">Действие документов</span><span class="list-item__content">3 года / 5 лет</span></li>
-              <li class="list-item list-item_price list-item_white"><span class="list-item__name">Стоимость</span><span class="list-item__content">3240 руб.</span></li>
-            </ul>
-            <div class="cta-wrap__title white">Оставьте заявку, и наши специалисты оперативно ответят на любые вопросы</div>
-          </div>
-          <form class="cta-wrap__form" action="#" method="POST">
-            <input class="input phone" type="text" placeholder="8 ( ___ ) ___ - __ - __ "/>
-            <button class="btn" type="submit">Перезвонить</button>
-          </form>
-        </div>
-        <p class="content__offer text-blue">*Срок получения документов, после прохождения обучения и успешной сдачи экзаменов</p>
-        <p class="lead"><a class="page__link" href="#"> 
-            <svg x="0px" y="0px" viewBox="0 0 30 30" style="width: 12px; transform: rotate(180deg);margin-right: 10px;" xml:space="preserve">
-              <polygon class="fill" points="6.53,3.28 8.8,1 20.49,12.69 22.77,14.96 20.49,17.24 8.8,28.93 6.53,26.65 18.22,14.96"></polygon>
-            </svg><span>Вернуться к полному перечню программ обучения</span></a></p>
-      </div>
     </section>
-    <section class="content content_seo bg-white">
+    <section class="content content_seo">
       <div class="container">
         <h2>Заголовок h2</h2>
         <p>«Северный Путь» является аккредитованной организацией, оказывающей услуги в области охраны труда и предоставляет максимально выгодные и надёжные условия взаимодействия в направлении аутсорсинга по охране труда. Работая по принципу единого окна, Вы сможете получить в нашем лице надёжного партнера в направлении охраны труда, обучения персонала, а также помощь в организации процессов медосмотров сотрудников и аттестации рабочих мест.</p>
+        <p>Центр профессионального обучения «Северный Путь» является аккредитованной организацией, оказывающей услуги в области охраны труда и предоставляет максимально выгодные и надёжные условия взаимодействия в направлении аутсорсинга по охране труда. Работая по принципу единого окна, Вы сможете получить в нашем лице надёжного партнера в направлении охраны труда, обучения персонала, а также помощь в организации процессов медосмотров сотрудников и аттестации рабочих мест.</p>
         <h3>Заголовок h3</h3>
         <p>Центр профессионального обучения «Северный Путь» является аккредитованной организацией, оказывающей услуги в области охраны труда и предоставляет максимально выгодные и надёжные условия взаимодействия в направлении аутсорсинга по охране труда. Работая по принципу единого окна, Вы сможете получить в нашем лице надёжного партнера в направлении охраны труда, обучения персонала, а также помощь в организации процессов медосмотров сотрудников и аттестации рабочих мест.</p>
         <ol>
@@ -357,11 +290,13 @@
           <li>аккредитованной организацией</li>
         </ol>
         <h4>Заголовок h4</h4>
-        <p>Центр профессионального обучения «Северный Путь» является аккредитованной организацией, оказывающей услуги в области охраны труда и предоставляет максимально выгодные и надёжные условия взаимодействия в направлении аутсорсинга по охране труда. Работая по принципу единого окна, Вы сможете получить в нашем лице надёжного партнера в направлении охраны труда, обучения персонала, а также помощь в организации процессов медосмотров сотрудников и аттестации рабочих мест.</p>
+        <p>Центр профессионального обучения «Северный Путь» является аккредитованной организацией, оказывающей услуги в области охраны труда и предоставляет максимально выгодные и надёжные условия взаимодействия в направлении аутсорсинга по охране труда. Работая по принципу единого окна, Вы сможете получить в нашем лице надёжного партнера в направлении охраны труда, обучения персонала, а также помощь в организации процессов медосмотров сотрудников и аттестации рабочих мест. Центр профессионального обучения «Северный Путь» является аккредитованной организацией, оказывающей услуги в области охраны труда и предоставляет максимально выгодные и надёжные условия взаимодействия в направлении аутсорсинга по охране труда. Работая по принципу единого окна, Вы сможете получить в нашем лице надёжного партнера в направлении охраны труда, обучения персонала, а также помощь в организации процессов медосмотров сотрудников и аттестации рабочих мест.</p>
         <h5>Заголовок h5</h5>
         <p>
           Центр профессионального обучения «Северный Путь» является аккредитованной организацией, оказывающей услуги в области охраны труда и предоставляет максимально выгодные и надёжные условия 
           взаимодействия в направлении аутсорсинга по охране труда. Работая по принципу единого окна, 
+          Вы сможете получить в нашем лице надёжного партнера в направлении охраны труда, обучения персонала, 
+          a также помощь в организации процессов медосмотров сотрудников и аттестации рабочих мест. 
         </p>
         <h6>Заголовок h6</h6>
         <ul> 
@@ -394,9 +329,8 @@
       </div>
     </footer>
     <script src="./js/jquery.inputmask.js"></script>
-    <script src="./js/slick.min.js"></script>
-    <link href="./css/slick.css" rel="stylesheet"/>
-    <link href="./css/slick-theme.css" rel="stylesheet"/>
+    <script src="./js/iziModal.js"></script>
     <script src="./js/app.min.js"></script>
+    <div class="modal modal_info" id="info1"></div>
   </body>
 </html>

@@ -36,3 +36,11 @@ $desktop_m: 992px;
 $tablet: 768px;
 $mobile_l: 576px;
 $mobile: 420px;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;

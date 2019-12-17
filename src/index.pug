@@ -60,49 +60,49 @@ html(lang="ru")
             .container
                 p.content__title.text-center Преимущества
                 .row
-                    .column.column_4
+                    .col-sm-12.col-md-6.col-lg-4.col-3
                         .item.item__with-offer
                             .item__icon.format
                             .item__title Без отрыва
                             .item__line 
                             .item__offer Очное и дистанционное обучение без отрыва от рабочего процесса.
-                    .column.column_4
+                    .col-sm-12.col-md-6.col-lg-4.col-3
                         .item.item__with-offer
                             .item__icon.law
                             .item__title Аккредитованный УЦ
                             .item__line
                             .item__offer Получайте удостоверения и&nbsp;документы в&nbsp;соответствии с&nbsp;Законодательством РФ.
-                    .column.column_4
+                    .col-sm-12.col-md-6.col-lg-4.col-3
                         .item.item__with-offer
                             .item__icon.insurance
                             .item__title 100% результат
                             .item__line 
                             .item__offer Гарантия быстрого получения документов, необходимых для ведения деятельности.
-                    .column.column_4
+                    .col-sm-12.col-md-6.col-lg-4.col-3
                         .item.item__with-offer
                             .item__icon(style='background-image: url("./img/icon/icon_delivery.svg");')
                             .item__title Доставка документов
                             .item__line
                             .item__offer Получайте документы на&nbsp;руки на&nbsp;следующий день. Доставка по&nbsp;СПб бесплатно.
-                    .column.column_4
+                    .col-sm-12.col-md-6.col-lg-4.col-3
                         .item.item__with-offer
                             .item__icon.money-light
                             .item__title Работа без штрафов
                             .item__line
                             .item__offer Сэкономьте в среднем до 250 000 руб. на штрафах и санкциях.
-                    .column.column_4
+                    .col-sm-12.col-md-6.col-lg-4.col-3
                         .item.item__with-offer
                             .item__icon.clients
                             .item__title > 500 программ
                             .item__line
                             .item__offer Обучение для руководителей, специалистов и рабочих с разным уровнем подготовки.
-                    .column.column_4
+                    .col-sm-12.col-md-6.col-lg-4.col-3
                         .item.item__with-offer
                             .item__icon.lecture
                             .item__title Преподаватели практики
                             .item__line
                             .item__offer Практический подход в решении вопросов, связанных с законностью деятельности.
-                    .column.column_4
+                    .col-sm-12.col-md-6.col-lg-4.col-3
                         .item.item__with-offer
                             .item__icon.question
                             .item__title Консультации
@@ -112,19 +112,19 @@ html(lang="ru")
             .container.container_inside
                 .content__title Акции учебного центра
                 .row
-                    .column
+                    .col
                         .item
                             .item__icon.united
                             .item__title Приведи друга
                             .item__line
                             .item__offer Скидка 10% на&nbsp;следующие&nbsp;заказы
-                    .column
+                    .col
                         .item
                             .item__icon.free-delivery
                             .item__title Бесплатная доставка
                             .item__line
                             .item__offer Доставка документов по&nbsp;Санкт-Петербургу
-                    .column
+                    .col
                         .item
                             .item__icon.contract
                             .item__title Договор на год
@@ -135,7 +135,7 @@ html(lang="ru")
                 h2.text-center
                     a.content__title(href="#") Программы центра обучения
                 .row
-                    .column.preview-page
+                    .col-6.col-md-12.preview-page
                         .preview-page__content
                             .preview-page__title Обучение по электробезопасности
                             .preview-page__list
@@ -154,7 +154,7 @@ html(lang="ru")
                             .btn-group
                                 a.btn.btn_gold.btn_with-arrow Подробнее
                                 a.btn.btn_primary(href="#" data-izimodal-open="#callback1" data-izimodal-transitionin="fadeInDown" data-title="Обучение по электробезопасности") Оставить заявку
-                    .column.preview-page
+                    .col-6.col-md-12.preview-page
                         .preview-page__content
                             .preview-page__title Курсы профессиональной переподготовки
                             ul
@@ -181,15 +181,15 @@ html(lang="ru")
             .container
                 p.content__title.text-center Новости
                 .row
-                    .column.news__column
+                    .col-4.col-sm-12.news__column
                         .news__date 14.09.2019
                         a.news__title(href="#") Минэкономразвития России разработало проект комплексного закона о государственном контроле и муниципальном контроле
                         a.btn.btn_primary.btn_with-arrow(href="#") Подробнее
-                    .column.news__column
+                    .col-4.col-sm-12.news__column
                         .news__date 14.09.2019
                         a.news__title(href="#") Минэкономразвития России разработало проект комплексного закона о государственном контроле и муниципальном контроле
                         a.btn.btn_primary.btn_with-arrow(href="#") Подробнее
-                    .column.news__column
+                    .col-4.col-sm-12.news__column
                         .news__date 14.09.2019
                         a.news__title(href="#") Минэкономразвития России разработало проект комплексного закона о государственном контроле и муниципальном контроле
                         a.btn.btn_primary.btn_with-arrow(href="#") Подробнее
@@ -236,32 +236,7 @@ html(lang="ru")
                     form.cta-wrap__form(action="#", method="POST")
                         input.input.phone(type="text" placeholder="8 ( ___ ) ___ - __ - __ ")
                         button.btn(type="submit") Перезвонить
-        footer.footer
-            .container
-                .row.footer__row
-                    .column.footer__column
-                        ul.footer__list
-                            li.footer__list__item Обучение персонала.
-                            li.footer__list__item Лицензирование.
-                            li.footer__list__item Консалтинг.
-                        a(href="#").policy Версия для слабовидящих
-                        br
-                        a(href="#").policy Политика конфиденциальности
-                    a.column.footer__logo(href="/")
-                    .column.footer__column
-                        ul.footer__list.footer__list_contact
-                            li
-                                a(href="tel:88124696068").footer__link.footer__tel 8 (812) 469-60-68
-                                    span.icon
-                            li
-                                a(href="mailto:info@uc-sp.ru").footer__link.footer__mail info@uc-sp.ru
-                                    span.icon
-                            li
-                                a(href="https://vk.com/ucnorthway" target='_blank').footer__link.footer__vk Присоединяйтесь к группе ВК
-                                    span.icon
-                            li
-                                a(href='' target='_blank').footer__link.footer__link_last.footer__address Санкт-Петербург, ул. Оборонная, 10 лит. А офис 310А
-                                    span.icon
+        include chunks/footer.pug
         .modal.modal_default.modal-callback#callback1(data-iziModal-fullscreen="true")
             .modal__content
                 p.s-title Программа обучения

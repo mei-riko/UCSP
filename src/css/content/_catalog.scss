@@ -8,8 +8,7 @@
     }
     .row{
         .column{
-            flex: 0 0 25%;
-            max-width: 25%;
+            @extend .col-4;
         }
     }
     &.content_inside{

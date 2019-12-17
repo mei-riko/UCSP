@@ -11,7 +11,6 @@ html(lang="ru")
     body
         script(src="http://code.jquery.com/jquery-3.3.1.min.js")
         include chunks/header.pug
-
         section.content.content_header.page
             .container
                 ul.content__breadcrumbs
@@ -60,7 +59,7 @@ html(lang="ru")
             .container        
                 p.content__title.text-center Формы обучения
                 .row
-                    .column.page__column
+                    .column.page__column.page__column_education
                         .page__content
                             .page__icon.img-fluid(style='background-image: url("./img/icon/offline-study.svg");' alt="Очная форма обучения" title="Очная форма обучения")
                             p.page__title.text-center Очная
@@ -70,11 +69,11 @@ html(lang="ru")
                                 | навыков. Также Вам будет предоставлен круглосуточный доступ к&nbsp;онлайн 
                                 | обучающей платформе с&nbsp;материалами и&nbsp;тестами. Присутствует возможность 
                                 | проведения обучения на&nbsp;территории заказчика.
-                            ul.list-info
-                                li.list-item.list-item_price
-                                    span.list-item__name Стоимость
-                                    span.list-item__content 3240 руб.
-                    .column.page__column
+                        ul.list-info
+                            li.list-item.list-item_price
+                                span.list-item__name Стоимость
+                                span.list-item__content 3240 руб.
+                    .column.page__column.page__column_education
                         .page__content
                             .page__icon.img-fluid(style='background-image: url("./img/icon/online-study.svg");' alt="Дистанционная форма обучения" title="Дистанционная форма обучения")
                             p.page__title.text-center Дистанционная
@@ -84,10 +83,10 @@ html(lang="ru")
                                 | онлайн консультацию у&nbsp;преподавателя и&nbsp;уточнить вопросы по&nbsp;курсу. 
                                 | Доставка 
                                 | документов осуществляется штатным курьером в&nbsp;Ваш&nbsp;офис.
-                            ul.list-info
-                                li.list-item.list-item_price
-                                    span.list-item__name Стоимость
-                                    span.list-item__content 3240 руб.
+                        ul.list-info
+                            li.list-item.list-item_price
+                                span.list-item__name Стоимость
+                                span.list-item__content 3240 руб.
         section.content.page.page_advantage.page_pt-0
             .container
                 p.content__title.text-center Более 1000 клиентов выбирают нас
@@ -223,33 +222,7 @@ html(lang="ru")
                     li оказывающей услуги в области охраны труда и предоставляет максимально выгодные 
                     li и надёжные условия взаимодействия в направлении аутсорсинга по охране труда. 
                     li Работая по принципу единого окна, Вы сможете получить в нашем лице надёжного партнера 
-        
-        footer.footer
-            .container
-                .row.footer__row
-                    .column.footer__column
-                        ul.footer__list
-                            li.footer__list__item Обучение персонала.
-                            li.footer__list__item Лицензирование.
-                            li.footer__list__item Консалтинг.
-                        a(href="#").policy Версия для слабовидящих
-                        br
-                        a(href="#").policy Политика конфиденциальности
-                    a.column.footer__logo(href="/")
-                    .column.footer__column
-                        ul.footer__list.footer__list_contact
-                            li
-                                a(href="tel:88124696068").footer__link.footer__tel 8 (812) 469-60-68
-                                    span.icon
-                            li
-                                a(href="mailto:info@uc-sp.ru").footer__link.footer__mail info@uc-sp.ru
-                                    span.icon
-                            li
-                                a(href="https://vk.com/ucnorthway" target='_blank').footer__link.footer__vk Присоединяйтесь к группе ВК
-                                    span.icon
-                            li
-                                a(href='' target='_blank').footer__link.footer__link_last.footer__address Санкт-Петербург, ул. Оборонная, 10 лит. А офис 310А
-                                    span.icon
+        include chunks/footer.pug
         script(src="./js/jquery.inputmask.js")
         
         script(src="./js/slick.min.js")

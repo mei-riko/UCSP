@@ -7,12 +7,6 @@
     }
     .row{
         justify-content: center;
-        .column{
-            -webkit-box-flex: 0;
-            -ms-flex: 0 0 30%;
-            flex: 0 0 30%;
-            max-width: 30%;
-        }
     }
     .item{
         .item__icon{
@@ -32,7 +26,6 @@
     }
 }
 /* Media */
-@media all and (max-width: $desktop){}
 @media all and (max-width: $desktop_m){
     .content_sale{
         .item{
@@ -47,25 +40,12 @@
         padding-bottom: 30px;
         .row{
             .column {
-                flex: 0 0 50%;
-                max-width: 50%;
-
                 margin-bottom: 30px;
             }
         }
         .item{
             .item__title {
                 font-size: 20px;
-            }
-        }
-    }
-}
-@media all and (max-width: $mobile_l){
-    .content_sale{
-        .row{
-            .column {
-                flex: 0 0 100%;
-                max-width: 100%;
             }
         }
     }
