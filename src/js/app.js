@@ -192,10 +192,10 @@ $(document).ready(() =>{
   });
 
   // Masonry
-  if( $('.news__grid').length > 0 ){
-    $('.news__grid').masonry({
+  if( $('.news .news__grid').length > 0 ){
+    $('.news .news__grid').masonry({
       // options
-      itemSelector: '.column',
+      itemSelector: '.col',
     });
   }
   // Input mask

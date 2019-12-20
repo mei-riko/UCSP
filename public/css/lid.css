@@ -37,6 +37,12 @@
   align-items: flex-start;
 }
 
+.row.justify-content-center {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 .no-gutters {
   margin-right: 0;
   margin-left: 0;
@@ -552,6 +558,10 @@ a:hover {
 
 .word-break {
   white-space: nowrap;
+}
+
+.small, .text-small {
+  font-size: .9rem;
 }
 
 .lead {

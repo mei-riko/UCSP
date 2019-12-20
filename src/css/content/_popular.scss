@@ -9,12 +9,6 @@
     }
     .row{
         justify-content: space-between;
-        .column{
-            -webkit-box-flex: 0;
-            -ms-flex: 0 0 33%;
-            flex: 0 0 33%;
-            max-width: 33%;
-        }
     }
     .product{
         .product__title{

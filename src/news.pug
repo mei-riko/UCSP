@@ -1,0 +1,110 @@
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Новости УЦ СП
+
+        link(href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:300,400,600,700', rel='stylesheet')
+        link(href='./css/iziModal.min.css', rel='stylesheet')
+        link(href='./css/style.css', rel='stylesheet')
+        link(href='./css/news.css', rel='stylesheet')
+
+    body
+        script(src="http://code.jquery.com/jquery-3.3.1.min.js")
+        include chunks/header.pug
+        main
+            header.content.content_header.pb-0
+                .container
+                    ul.content__breadcrumbs
+                        li.content__breadcrumbs__item
+                            a.content__breadcrumbs__link(href="#") Главная
+                        li.content__breadcrumbs__item
+                            span.content__breadcrumbs__span Новости
+                    h1.content__title.mb-0 Актуальные новости
+            section.content.news
+                .container
+                    .row.news__grid
+                        .col.col-6.col-md-12
+                            article.news__item
+                                .news__item__info
+                                    .news__item__theme Проект постановления
+                                    .news__item__date  — 14.06.2019
+                                .news__item__offer
+                                    p Интеллект естественно понимает под собой интеллигибельный закон внешнего мира, открывая новые горизонты. Согласно мнению известных философов, дедуктивный метод естественно порождает и обеспечивает мир, tertium nоn datur. Сомнение рефле...
+                                        a.news__item__link читать дальше
+                        .col.col-6.col-md-12
+                            article.news__item
+                                .news__item__info
+                                    .news__item__theme Проект постановления
+                                    .news__item__date  — 14.06.2019
+                                a(href="#").news__item__title Интеллект естественно понимает под собой интеллигибельный закон
+                                .news__item__offer
+                                    p Интеллект естественно понимает под собой интеллигибельный закон внешнего мира, открывая новые горизонты. Согласно мнению известных философов, дедуктивный метод естественно порождает и обеспечивает мир, tertium nоn datur. Сомнение рефле...
+                                        a(href="#").news__item__link читать дальше
+                        .col.col-6.col-md-12
+                            article.news__item.news__item_image
+                                .news__item__info
+                                    .news__item__date 14.06.2019
+                                img.news__item__img(src="../img/program/2.jpg" alt="" title="")
+                                a(href="#").news__item__title Интеллект естественно понимает под собой интеллигибельный закон
+                                .news__item__offer
+                                    p Интеллект естественно понимает под собой интеллигибельный закон внешнего мира, открывая новые горизонты. Согласно мнению известных философов, дедуктивный метод естественно порождает и обеспечивает мир, tertium nоn datur. Сомнение рефле...
+                                        a.news__item__link читать дальше
+                        .col.col-6.col-md-12
+                            article.news__item
+                                .news__item__info
+                                    .news__item__theme Проект постановления
+                                    .news__item__date  — 14.06.2019
+                                .news__item__offer
+                                    p Интеллект естественно понимает под собой интеллигибельный закон внешнего мира, открывая новые горизонты. Согласно мнению известных философов, дедуктивный метод естественно порождает и обеспечивает мир, tertium nоn datur. Сомнение рефле...
+                                        a.news__item__link читать дальше
+                    ul.pagination
+                        li.pagination__item
+                            span.active 1
+                        li.pagination__item
+                            a(href="#").pagination__link 2
+                        li.pagination__item
+                            a(href="#").pagination__link 3
+                        li.pagination__item
+                            a(href="#").pagination__link 4
+            section.content.news-contact
+                .container
+                    .row
+                        .col-7.col-lg-6.col-md-12
+                            h2.news-contact__title Аккредитованный учебный Центр
+                            .news-contact__line
+                            .row.news-contact__item
+                                .col-6.col-lg-12.col-md-6.col-sm-12
+                                    .item
+                                        .item__icon.consulting
+                                        .item__offer Аутсорсинг по&nbsp;охране&nbsp;труда
+                                .col-6.col-lg-12.col-md-6.col-sm-12
+                                    .item
+                                        .item__icon.store
+                                        .item__offer Онлайн-магазин сопутствующих товаров
+                                .col-6.col-lg-12.col-md-6.col-sm-12
+                                    .item
+                                        .item__icon.insurance
+                                        .item__offer Служба охраны труда
+                                .col-6.col-lg-12.col-md-6.col-sm-12
+                                    .item
+                                        .item__icon.cv
+                                        .item__offer Собственная биржа&nbsp;труда
+                            p.news-contact__offer Постановление Правительства Ленинградской области от 14.05.2019 № 208 "О внесении изменений в постановление Правительства Ленинградской области от 27 мая 2014 года N 192 "О Комите Постановление Правительства Ленинградской области от 14.05.2019 № 208 "О внесении изменений в постановление Правительства Ленинградской области от 27 мая 2014
+                        .col-5.col-lg-6.col-md-12
+                            .news-contact__title Остались вопросы?
+                            form.form()
+                                textarea.form__textarea(rows="5" placeholder="")
+                                p.form__label Телефон для связи
+                                input.form__input.phone(placeholder="8 ( ___ ) ___ - __ - __")
+                                .form__agree.checkbox
+                                    input.checkbox__input(type="checkbox" name="agree" checked="checked" required="required")
+                                    label.checkbox__label(for="agree") Я согласен с 
+                                        a.checkbox__link(href="/assets/files/documents/policy.pdf" target="_blank") правилами использования сайта</a></label>
+                                button.btn.btn_primary Отправить сообщение
+        include chunks/footer.pug
+        script(src="./js/jquery.inputmask.js")
+        script(src="./js/iziModal.js")
+        script(src="./js/masonry.pkgd.min.js")
+        script(src="./js/app.min.js")

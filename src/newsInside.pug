@@ -1,0 +1,126 @@
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Новости УЦ СП
+
+        link(href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:300,400,600,700', rel='stylesheet')
+        link(href='./css/iziModal.min.css', rel='stylesheet')
+        link(href='./css/style.css', rel='stylesheet')
+        link(href='./css/news.css', rel='stylesheet')
+
+    body
+        script(src="http://code.jquery.com/jquery-3.3.1.min.js")
+        include chunks/header.pug
+        main
+            article.content.content_header
+                .container
+                    ul.content__breadcrumbs
+                        li.content__breadcrumbs__item
+                            a.content__breadcrumbs__link(href="#") Главная
+                        li.content__breadcrumbs__item
+                            a.content__breadcrumbs__link(href="#") Новости
+                        li.content__breadcrumbs__item
+                            span.content__breadcrumbs__span О внесении изменений в Постановление Правительства Российской Федерации от 13 сентября 2016 г. N 93
+                    .row
+                        section.col-8.col-lg-12.news-content
+                            h1.content__title Проект Постановления Правительства РФ "О внесении изменений в Постановление Правительства Российской Федерации от 13 сентября 2016 г. N 913"
+                            p «Северный Путь» является аккредитованной организацией, оказывающей услуги в области охраны труда и предоставляет максимально выгодные и надёжные условия взаимодействия в направлении аутсорсинга по охране труда. Работая по принципу единого окна, Вы сможете получить в нашем лице надёжного партнера в направлении охраны труда, обучения персонала, а также помощь в организации процессов медосмотров сотрудников и аттестации рабочих мест.
+                            h2 Заголовок h2
+                            p Центр профессионального обучения «Северный Путь» является аккредитованной организацией, оказывающей услуги в области охраны труда и предоставляет максимально выгодные и надёжные условия взаимодействия в направлении аутсорсинга по охране труда. Работая по принципу единого окна, Вы сможете получить в нашем лице надёжного партнера в направлении охраны труда, обучения персонала, а также помощь в организации процессов медосмотров сотрудников и аттестации рабочих мест.
+                            h3 Заголовок h3
+                            p Центр профессионального обучения «Северный Путь» является аккредитованной организацией, оказывающей услуги в области охраны труда и предоставляет максимально выгодные и надёжные условия взаимодействия в направлении аутсорсинга по охране труда. Работая по принципу единого окна, Вы сможете получить в нашем лице надёжного партнера в направлении охраны труда, обучения персонала, а также помощь в организации процессов медосмотров сотрудников и аттестации рабочих мест.
+                            ul
+                                li аккредитованной организацией
+                                li аккредитованной организацией
+                                li аккредитованной организацией
+                                li аккредитованной организацией
+                            h4 Заголовок h4
+                            p Центр профессионального обучения «Северный Путь» является аккредитованной организацией, оказывающей услуги в области охраны труда и предоставляет максимально выгодные и надёжные условия взаимодействия в направлении аутсорсинга по охране труда. Работая по принципу единого окна, Вы сможете получить в нашем лице надёжного партнера в направлении охраны труда, обучения персонала, а также помощь в организации процессов медосмотров сотрудников и аттестации рабочих мест. Центр профессионального обучения «Северный Путь» является аккредитованной организацией, оказывающей услуги в области охраны труда и предоставляет максимально выгодные и надёжные условия взаимодействия в направлении аутсорсинга по охране труда. Работая по принципу единого окна, Вы сможете получить в нашем лице надёжного партнера в направлении охраны труда, обучения персонала, а также помощь в организации процессов медосмотров сотрудников и аттестации рабочих мест.
+                            h5 Заголовок h5
+                            p Центр профессионального обучения «Северный Путь» является аккредитованной организацией, оказывающей 
+                                | услуги в области охраны труда и предоставляет максимально выгодные и надёжные условия 
+                                | взаимодействия в направлении аутсорсинга по охране труда. Работая по принципу единого окна, 
+                                | Вы сможете получить в нашем лице надёжного партнера в направлении охраны труда, обучения персонала, 
+                                | a также помощь в организации процессов медосмотров сотрудников и аттестации рабочих мест. 
+                        aside.col-4.col-lg-12.mt-lg-60
+                            .news-sidebar.bg-white
+                                .news-sidebar__title Недавно опубликованное
+                                .row
+                                    .col-12.col-lg-6.col-sm-12
+                                        a.news-sidebar__item.first(href="#") 
+                                            .news-sidebar__offer
+                                                span.news-sidebar__date 16.05.2019
+                                                | Проект Постановления Правительства РФ "О внесении изменений в Постановление Правительства Российской Федераци...
+                                    .col-12.col-lg-6.col-sm-12
+                                        a.news-sidebar__item.last(href="#") 
+                                            .news-sidebar__offer
+                                                span.news-sidebar__date 16.05.2019
+                                                | Проект Постановления Правительства РФ "О внесении изменений в Постановление Правительства Российской Федераци...
+                            a.news-link.text-small(href="#") Все новости и публикации
+            section.content.news-contact
+                .container
+                    .row
+                        .col-7.col-lg-6.col-md-12
+                            h2.news-contact__title Аккредитованный учебный Центр
+                            .news-contact__line
+                            .row.news-contact__item
+                                .col-6.col-lg-12.col-md-6.col-sm-12
+                                    .item
+                                        .item__icon.consulting
+                                        .item__offer Аутсорсинг по&nbsp;охране&nbsp;труда
+                                .col-6.col-lg-12.col-md-6.col-sm-12
+                                    .item
+                                        .item__icon.store
+                                        .item__offer Онлайн-магазин сопутствующих товаров
+                                .col-6.col-lg-12.col-md-6.col-sm-12
+                                    .item
+                                        .item__icon.insurance
+                                        .item__offer Служба охраны труда
+                                .col-6.col-lg-12.col-md-6.col-sm-12
+                                    .item
+                                        .item__icon.cv
+                                        .item__offer Собственная биржа&nbsp;труда
+                            p.news-contact__offer Постановление Правительства Ленинградской области от 14.05.2019 № 208 "О внесении изменений в постановление Правительства Ленинградской области от 27 мая 2014 года N 192 "О Комите Постановление Правительства Ленинградской области от 14.05.2019 № 208 "О внесении изменений в постановление Правительства Ленинградской области от 27 мая 2014
+                        .col-5.col-lg-6.col-md-12
+                            .news-contact__title Остались вопросы?
+                            form.form()
+                                textarea.form__textarea(rows="5" placeholder="")
+                                p.form__label Телефон для связи
+                                input.form__input.phone(placeholder="8 ( ___ ) ___ - __ - __")
+                                .form__agree.checkbox
+                                    input.checkbox__input(type="checkbox" name="agree" checked="checked" required="required")
+                                    label.checkbox__label(for="agree") Я согласен с 
+                                        a.checkbox__link(href="/assets/files/documents/policy.pdf" target="_blank") правилами использования сайта</a></label>
+                                button.btn.btn_primary Отправить сообщение
+        footer.footer
+            .container
+                .row.footer__row
+                    .column.footer__column
+                        ul.footer__list
+                            li.footer__list__item Обучение персонала.
+                            li.footer__list__item Лицензирование.
+                            li.footer__list__item Консалтинг.
+                        a(href="#").policy Версия для слабовидящих
+                        br
+                        a(href="#").policy Политика конфиденциальности
+                    a.column.footer__logo(href="/")
+                    .column.footer__column
+                        ul.footer__list.footer__list_contact
+                            li
+                                a(href="tel:88124696068").footer__link.footer__tel 8 (812) 469-60-68
+                                    span.icon
+                            li
+                                a(href="mailto:info@uc-sp.ru").footer__link.footer__mail info@uc-sp.ru
+                                    span.icon
+                            li
+                                a(href="https://vk.com/ucnorthway" target='_blank').footer__link.footer__vk Присоединяйтесь к группе ВК
+                                    span.icon
+                            li
+                                a(href='' target='_blank').footer__link.footer__link_last.footer__address Санкт-Петербург, ул. Оборонная, 10 лит. А офис 310А
+                                    span.icon
+        script(src="./js/jquery.inputmask.js")
+        script(src="./js/iziModal.js")
+        script(src="./js/masonry.pkgd.min.js")
+        script(src="./js/app.min.js")

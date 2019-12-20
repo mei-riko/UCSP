@@ -1,36 +1,31 @@
-.news-title{
-    padding-bottom: 0;
-    .content__title{
-        margin-bottom: 0;
-    }
-}
 .news{
     padding-top: 0;
     background: #f2f5f6;
 
     &__item{
-        padding: 50px 0;
+        padding: 2*$padding 0;
         border-bottom: 1px solid $text-gold;
         &__info{
             display: flex;
             flex-wrap: nowrap;
 
-            margin-bottom: 15px;
+            margin-bottom: $padding;
         }
         &__theme{
+            font-size: 14px;
+
             color: $text-gold;
             text-transform: uppercase;
-            font-size: 14px;
 
             margin-right: 5px;
         }
         &__date{
+            font-size: 14px;
             color: #959595;
             text-transform: uppercase;
-            font-size: 14px;
         }
         &__img{
-            margin-bottom: 15px;
+            margin-bottom: $padding;
         }
         &__title{
             font-size: 22px;
@@ -51,7 +46,6 @@
             }
         }
     }
-
     .pagination{
         margin-top: 2*$padding;
     }
@@ -60,15 +54,6 @@
     background: #ebeeef;
     .row{
         justify-content: space-between;
-        .column {
-            flex: 0 0 58.333333%;
-            max-width: 58.333333%;
-
-            &_form{
-                flex: 0 0 41.666667%;
-                max-width: 41.666667%;
-            }
-        }
     }
 
     &__title{
@@ -98,12 +83,6 @@
 
     &__item{
         margin-bottom: 30px;
-        &.row{
-            .column{
-                flex: 0 0 50%;
-                max-width: 50%;
-            }
-        }
         .item{
             display: flex;
             align-items: center;
@@ -146,12 +125,6 @@
 @media all and (max-width: $desktop_m){
     .news-contact{
         &__item{
-            &.row{
-                .column{
-                    flex: unset;
-                    max-width: 100%;
-                }
-            }
             .item{
                 &__icon{
                     width: 50px;
@@ -189,40 +162,15 @@
         }
     }
     .news-contact{
-        .row{
-            .column {
-                flex: unset;
-                max-width: 100%;
-            }
-        }
-        &__item{
-            &.row{
-                .column{
-                    flex: 0 0 50%;
-                    max-width: 50%;
-                }
-            }
-        }
         &__offer{
             margin-bottom: 50px;
         }
     }
 }
 @media all and (max-width: $mobile_l){
-    .news{
-        .pagination{
-            margin-top: 30px;
-        }
-    }
     .news-contact{
         &__item{
             margin-bottom: 10px;
-            &.row{
-                .column{
-                    flex: unset;
-                    max-width: 100%;
-                }
-            }
         }
     }
 }
