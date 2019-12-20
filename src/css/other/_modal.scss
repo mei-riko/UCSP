@@ -20,15 +20,9 @@
     .modal__img{
         margin-bottom: 2*$padding;
     }
-    p{
-        margin-bottom: 1.25rem;
-        &:last-child{
-            margin-bottom: 0;
-        }
-    }
 
     &_info {
-        background: #374c55;
+        background: #374c55!important;
         
         .s-title {
             font-size: 14px;
@@ -133,6 +127,9 @@
                     font-size: 12px;
                 }
                 .policy{
+                    color: $white;
+                }
+                .checkbox__link{
                     color: $white;
                 }
             }

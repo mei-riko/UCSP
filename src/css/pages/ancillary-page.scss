@@ -24,6 +24,8 @@
 @import "../item/file.scss";
 /* Item Study Direction */
 @import "../item/product.scss";
+/* Item Service Direction */
+@import "../item/service.scss";
 
 .map{
     width: 100%;
@@ -51,5 +53,75 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
+    }
+}
+
+.content{
+    .content__column-title{
+        color: $text-gold;
+        text-transform: uppercase;
+
+        font-size: 24px;
+        line-height: 28px;
+
+        & + .form{
+            margin-top: 22px;
+        }
+
+        & + .content__column-offer{
+            margin-top: 20px;
+        }
+    }
+    .content__column-line{
+        display: block;
+        height: 1px;
+        width: 100%;
+        background: $white;
+
+        margin: 20px auto;
+    }
+    .content__column-offer{
+        font-size: 12px;
+        line-height: 16px;
+        color: #959595;
+
+        & + * {
+            margin-top: 20px;
+        }
+    }
+    .content__form{
+        &__textarea{
+            background: $white;
+            margin-bottom: 20px;
+        }
+        &__input{
+            background: $white;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            font-size: 16px;
+            height: 50px;
+            line-height: 48px;
+        }
+    }
+
+    &_catalog{
+        background: #ebeeef;
+        .content__title{
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 32px;
+        }
+        .product{
+            height: 300px;
+        }
+    }
+    &_advantage{
+        .item{
+            .item__icon{
+                background-color: #f2f5f6;
+            }
+        }
     }
 }

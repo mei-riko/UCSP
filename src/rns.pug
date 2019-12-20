@@ -5,8 +5,8 @@ html(lang="ru")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Расследование несчастных случаев на производстве
 
-        link(href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:300,400,600,700', rel='stylesheet')
-        link(href='./css/page.css', rel='stylesheet')
+        link(href='./css/style.css', rel='stylesheet')
+        link(href='./css/ancillary-page.css', rel='stylesheet')
 
     body
         script(src="http://code.jquery.com/jquery-3.3.1.min.js")
@@ -22,61 +22,60 @@ html(lang="ru")
                     li.content__breadcrumbs__item
                         span.content__breadcrumbs__span Расследование несчастных случаев на производстве
                 h1.content__title Расследование несчастных случаев на производстве
-                p Центр профессионального обучения «Северный Путь» является аккредитованной организацией, 
+                p.lead Центр профессионального обучения «Северный Путь» является аккредитованной организацией, 
                     | оказывающей услуги в области охраны труда и предоставляет максимально выгодные и надёжные 
                     | условия взаимодействия в направлении аутсорсинга по охране труда. Работая по принципу 
                     | единого окна.
-        aside.content.content_advantage
+        aside.content.content_advantage.bg-white
             .container
-                .content__title Наши преимущества
-                .row
-                    .column
+                .content__title.text-center.mb-60.mb-md-30 Наши преимущества
+                .row.justify-content-center
+                    .col.col-sm-6.col-md-5.col-lg-4.mb-lg-30
                         .item
                             .item__icon.question
                             .item__title Огромный опыт решения сложных вопросов
-                    .column
+                    .col.col-sm-6.col-md-5.col-lg-4.mb-lg-30
                         .item
                             .item__icon.delivery-car
                             .item__title Выезды специалистов к&nbsp;Вам на&nbsp;место
-                    .column
+                    .col.col-sm-6.col-md-5.col-lg-4.mb-lg-30
                         .item
                             .item__icon.clients
                             .item__title Индивидуальный подход к&nbsp;каждому клиенту
-                    .column
+                    .col.col-sm-6.col-md-5.col-lg-4.mb-md-30
                         .item
                             .item__icon.consultation
                             .item__title Консультационная поддержка
-                    .column
+                    .col.col-sm-6.col-md-5.col-lg-4
                         .item
                             .item__icon.format
                             .item__title Работаем в&nbsp;формате единого окна
-                    section
-        section.content.content_column.content_service
+        section.content
             .container
-                h2.content__title.text-bold Услуги
-                .row
-                    .column.d-flex
-                        a.service
+                h2.content__title.text-bold.text-lg-center Услуги
+                .row.justify-content-center
+                    .col-6.col-lg-7.col-md-12.mb-lg-30.d-flex
+                        a.service.bg-white
                             .service__image(style="background-image:url('/img/program/1.jpg');")
                             .service__title Сопровождение до момента закрытия расследования по несчастному случаю
-                    .column.d-flex
-                        a.service
+                    .col-6.col-lg-7.col-md-12.mb-lg-30.d-flex
+                        a.service.bg-white
                             .service__image(style="background-image:url('/img/program/2.jpg');")
                             .service__title Консультации по вопросам несчастных случаев
-                    .column.d-flex
-                        a.service
+                    .col-6.col-lg-7.col-md-12.mb-lg-30.d-flex
+                        a.service.bg-white
                             .service__image(style="background-image:url('/img/program/3.jpg');")
                             .service__title Разработка первичного пакета документов для прохождения проверок
-                    .column.d-flex
-                        a.service
+                    .col-6.col-lg-7.col-md-12.mb-lg-30.d-flex
+                        a.service.bg-white
                             .service__image(style="background-image:url('/img/program/4.jpg');")
                             .service__title Приведение документации организации в соответствующий законодательству вид
-                    .column.d-flex
-                        a.service
+                    .col-6.col-lg-7.col-md-12.mb-lg-30.d-flex
+                        a.service.bg-white
                             .service__image(style="background-image:url('/img/program/5.jpg');")
                             .service__title Представление интересов организации в суде
-                    .column.d-flex
-                        a.service
+                    .col-6.col-lg-7.col-md-12.d-flex
+                        a.service.bg-white
                             .service__image(style="background-image:url('/img/program/6.jpg');")
                             .service__title Первичный аудит
                 .cta-wrap
@@ -85,22 +84,22 @@ html(lang="ru")
                         input.input.phone(type="text" placeholder="8 ( ___ ) ___ - __ - __ ")
                         button.btn(type="submit") Перезвонить
         aside.content.content_sale
-            .container
+            .container.container_inside
                 .content__title Акции учебного центра
                 .row
-                    .column
+                    .col
                         .item
                             .item__icon.united
                             .item__title Приведи друга
                             .item__line
                             .item__offer Скидка 10% на&nbsp;следующие&nbsp;заказы
-                    .column
+                    .col
                         .item
                             .item__icon.free-delivery
                             .item__title Бесплатная доставка
                             .item__line
                             .item__offer Доставка документов по&nbsp;Санкт-Петербургу
-                    .column
+                    .col
                         .item
                             .item__icon.contract
                             .item__title Договор на год
@@ -129,31 +128,6 @@ html(lang="ru")
                     li оказывающей услуги в области охраны труда и предоставляет максимально выгодные 
                     li и надёжные условия взаимодействия в направлении аутсорсинга по охране труда. 
                     li Работая по принципу единого окна, Вы сможете получить в нашем лице надёжного партнера 
-        footer.footer
-            .container
-                .row.footer__row
-                    .column.footer__column
-                        ul.footer__list
-                            li.footer__list__item Обучение персонала.
-                            li.footer__list__item Лицензирование.
-                            li.footer__list__item Консалтинг.
-                        a(href="#").policy Версия для слабовидящих
-                        br
-                        a(href="#").policy Политика конфиденциальности
-                    a.column.footer__logo(href="/")
-                    .column.footer__column
-                        ul.footer__list.footer__list_contact
-                            li
-                                a(href="tel:88124696068").footer__link.footer__tel 8 (812) 469-60-68
-                                    span.icon
-                            li
-                                a(href="mailto:info@uc-sp.ru").footer__link.footer__mail info@uc-sp.ru
-                                    span.icon
-                            li
-                                a(href="https://vk.com/ucnorthway" target='_blank').footer__link.footer__vk Присоединяйтесь к группе ВК
-                                    span.icon
-                            li
-                                a(href='' target='_blank').footer__link.footer__link_last.footer__address Санкт-Петербург, ул. Оборонная, 10 лит. А офис 310А
-                                    span.icon
+        include chunks/footer.pug
         script(src="./js/jquery.inputmask.js")
         script(src="./js/app.min.js")

@@ -4,9 +4,9 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>Document2</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:300,400,600,700" rel="stylesheet"/>
-    <link href="./css/page.css" rel="stylesheet"/>
+    <title>Courses</title>
+    <link href="./css/style.css" rel="stylesheet"/>
+    <link href="./css/courses.css" rel="stylesheet"/>
   </head>
   <body>
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -115,7 +115,7 @@
         </nav>
       </div>
     </header>
-    <section class="content content_header page">
+    <section class="content content_header">
       <div class="container">
         <ul class="content__breadcrumbs">
           <li class="content__breadcrumbs__item"><a class="content__breadcrumbs__link" href="#">Главная</a></li>
@@ -123,7 +123,7 @@
           <li class="content__breadcrumbs__item"><span class="content__breadcrumbs__span">Обучение по охране труда на высоте</span></li>
         </ul>
         <div class="row">
-          <div class="column">
+          <div class="col-7 col-md-12">
             <p class="content__subtitle">Программа обучения</p>
             <h1 class="content__title">Обучение по охране труда на высоте</h1>
             <p>
@@ -136,8 +136,8 @@
               - протокол
             </p>
           </div>
-          <div class="column column_sidebar">
-            <div class="info info_small">
+          <div class="col-5 col-md-12 mt-md-30">
+            <div class="sidebar-info sidebar-info_small">
               <ul class="list-info">
                 <li class="list-item list-item_time"><span class="list-item__name">Срок получения документов*</span><span class="list-item__content">от 1 дня</span></li>
                 <li class="list-item list-item_price"><span class="list-item__name">Стоимость</span><span class="list-item__content">3240 руб.</span></li>
@@ -147,10 +147,33 @@
         </div>
       </div>
     </section>
-    <section class="content page page_pt-0 content_seo">
+    <section class="content content_catalog">
+      <div class="container">
+        <div class="content__title text-center">Программы обучения</div>
+        <div class="row justify-content-center">
+          <div class="col-6 col-md-9 col-sm-12"><a class="product" href="#" style="background-image: url('./img/program/1.jpg');">
+              <div class="product__title"> 
+                <div class="product__name">Сосуды, работающие под давлением</div>
+              </div></a></div>
+          <div class="col-6 col-md-9 col-sm-12"><a class="product" href="#" style="background-image: url('./img/program/2.jpg');">
+              <div class="product__title"> 
+                <div class="product__name">Пожарно-технический минимум для руководителей сельскохозяйственных организаций и ответственных за пожарную безопасность</div>
+              </div></a></div>
+          <div class="col-6 col-md-9 col-sm-12 mt-30"><a class="product" href="#" style="background-image: url('./img/program/3.jpg');">
+              <div class="product__title"> 
+                <div class="product__name">Курсы повышения квалификации по Реставрационным работам</div>
+              </div></a></div>
+          <div class="col-6 col-md-9 col-sm-12 mt-30"><a class="product" href="#" style="background-image: url('./img/program/1.jpg');">
+              <div class="product__title"> 
+                <div class="product__name">Сосуды, работающие под давлением               </div>
+              </div></a></div>
+        </div>
+      </div>
+    </section>
+    <section class="content page">
       <div class="container">
         <div class="row">
-          <div class="column page__column">
+          <div class="col-6 col-md-12 page__column">
             <p class="text-gold text-bold lead">Кому необходимо обучение</p>
             <ul>
               <li>Руководителям, организаторам, исполнителям работ на&nbsp;высоте</li>
@@ -160,22 +183,24 @@
               <li>Членам аттестационных комиссий организации</li>
             </ul>
           </div>
-          <div class="column page__column">
+          <div class="col-4 col-md-12 page__column">
             <p class="text-gold text-bold lead">Периодичность обучения</p>
-            <p>от 3 до 5 лет</p>
+            <ul>
+              <li>от 3 до 5 лет</li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
-    <section class="content page">
+    <section class="content page bg-light">
       <div class="container">       
         <p class="content__title text-center">Формы обучения</p>
         <div class="row">
-          <div class="column page__column page__column_education">
+          <div class="col-6 col-md-12 page__column page__column_education">
             <div class="page__content">
-              <div class="page__icon img-fluid" style="background-image: url(&quot;./img/icon/offline-study.svg&quot;);" alt="Очная форма обучения" title="Очная форма обучения"></div>
+              <div class="page__icon img-fluid" style="background-image: url(&quot;./img/icon/offline-study.svg&quot;);"></div>
               <p class="page__title text-center">Очная</p>
-              <p class="page__intro">
+              <p>
                 Обучение проводится с&nbsp;преподавателями в&nbsp;специально оборудованном классе по фактическому адресу УЦ&nbsp;“Северный Путь”. Занятия включают в&nbsp;себя 
                 теоретические обучение и&nbsp;фактическую отработку необходимых практических 
                 навыков. Также Вам будет предоставлен круглосуточный доступ к&nbsp;онлайн 
@@ -187,11 +212,11 @@
               <li class="list-item list-item_price"><span class="list-item__name">Стоимость</span><span class="list-item__content">3240 руб.</span></li>
             </ul>
           </div>
-          <div class="column page__column page__column_education">
+          <div class="col-6 col-md-12 page__column page__column_education">
             <div class="page__content">
               <div class="page__icon img-fluid" style="background-image: url(&quot;./img/icon/online-study.svg&quot;);" alt="Дистанционная форма обучения" title="Дистанционная форма обучения"></div>
               <p class="page__title text-center">Дистанционная</p>
-              <p class="page__intro">
+              <p>
                 Вам будет предоставлен круглосуточный доступ к&nbsp;онлайн обучающей платформе с&nbsp;учебными материалами и&nbsp;тестами для&nbsp;самоподготовки. Все материалы 
                 соответствуют государственным стандартам. Каждый учащийся может получить 
                 онлайн консультацию у&nbsp;преподавателя и&nbsp;уточнить вопросы по&nbsp;курсу. 
@@ -206,25 +231,25 @@
         </div>
       </div>
     </section>
-    <section class="content page page_advantage page_pt-0">
+    <section class="content page page_advantage bg-white">
       <div class="container">
-        <p class="content__title text-center">Более 1000 клиентов выбирают нас</p>
-        <div class="row page__row">
-          <div class="column page__column page__column_3">
+        <p class="content__title mb-60 mb-md-30 text-center">Более 1000 клиентов выбирают нас</p>
+        <div class="row justify-content-center">
+          <div class="col-3 col-md-6 col-sm-12 page__column">
             <div class="page__content">
-              <div class="page__icon img-fluid" style="background-image: url(&quot;./img/icon/insurance.svg&quot;);" alt="Очная форма обучения" title="Очная форма обучения"></div>
+              <div class="page__icon img-fluid" style="background-image: url(&quot;./img/icon/insurance.svg&quot;);"></div>
               <p class="page__intro text-center">100% гарантия положительного результата</p>
             </div>
           </div>
-          <div class="column page__column page__column_3">
+          <div class="col-3 col-md-6 col-sm-12 page__column">
             <div class="page__content">
-              <div class="page__icon img-fluid" style="background-image: url(&quot;./img/icon/law.svg&quot;);" alt="Очная форма обучения" title="Очная форма обучения"></div>
+              <div class="page__icon img-fluid" style="background-image: url(&quot;./img/icon/law.svg&quot;);"></div>
               <p class="page__intro text-center">Документы соответствуют законодательству РФ</p>
             </div>
           </div>
-          <div class="column page__column page__column_3">
+          <div class="col-3 col-md-6 col-sm-12 page__column">
             <div class="page__content">
-              <div class="page__icon img-fluid" style="background-image: url(&quot;./img/icon/icon_delivery.svg&quot;);" alt="Очная форма обучения" title="Очная форма обучения"></div>
+              <div class="page__icon img-fluid" style="background-image: url(&quot;./img/icon/icon_delivery.svg&quot;);"></div>
               <p class="page__intro text-center">Бесплатная доставка документов курьером и почтой</p>
             </div>
           </div>
@@ -239,19 +264,50 @@
           образовательной деятельности. Здесь вы можете ознакомиться 
           с лицензиями и разрешениями компании:
         </p>
-        <div class="license-slider slider" id="license">
-          <div class="license-slider__item"><img src="./img/lic.png"/></div>
-          <div class="license-slider__item"><img src="./img/lic.png"/></div>
-          <div class="license-slider__item"><img src="./img/lic.png"/></div>
-          <div class="license-slider__item"><img src="./img/lic.png"/></div>
+        <div class="slider slider_with-arrow license-slider" id="license">
+          <div class="license-slider__item" data-izimodal-open="#license-1" data-izimodal-transitionin="fadeInUp" data-izimodal-title="Лицензия на осуществление образовательной деятельности(обратная сторона)" data-izimodal-group="license"><img src="./img/lic.png"/></div>
+          <div class="license-slider__item" data-izimodal-open="#license-2" data-izimodal-transitionin="fadeInUp" data-izimodal-title="Лицензия на осуществление образовательной деятельности(обратная сторона)" data-izimodal-group="license"><img src="./img/lic.png"/></div>
+          <div class="license-slider__item" data-izimodal-open="#license-3" data-izimodal-transitionin="fadeInUp" data-izimodal-title="Лицензия на осуществление образовательной деятельности(обратная сторона)" data-izimodal-group="license"><img src="./img/lic.png"/></div>
+          <div class="license-slider__item" data-izimodal-open="#license-4" data-izimodal-transitionin="fadeInUp" data-izimodal-title="Лицензия на осуществление образовательной деятельности(обратная сторона)" data-izimodal-group="license"><img src="./img/lic.png"/></div>
+          <div class="license-slider__item" data-izimodal-open="#license-5" data-izimodal-transitionin="fadeInUp" data-izimodal-title="Лицензия на осуществление образовательной деятельности(обратная сторона)" data-izimodal-group="license"><img src="./img/lic.png"/></div>
+          <div class="license-slider__item" data-izimodal-open="#license-6" data-izimodal-transitionin="fadeInUp" data-izimodal-title="Лицензия на осуществление образовательной деятельности(обратная сторона)" data-izimodal-group="license"><img src="./img/lic.png"/></div>
         </div>
       </div>
     </aside>
-    <aside class="content content_sale">
+    <section class="content page">
       <div class="container">
+        <div class="page__example">
+          <div class="page__example__title">Пример документов</div>
+          <div class="page__example__block">
+            <p class="page__example__block-item doc1"><a href="#" target="_blank">Удостоверение</a></p>
+            <p class="page__example__block-item doc2"><a href="#" target="_blank">Протокол</a></p>
+            <p class="page__example__block-item doc3"><a href="#" target="_blank">Диплом</a></p>
+          </div>
+        </div>
+        <div class="page__work-stage">
+          <div class="page__work-stage__title">Порядок работы</div>
+          <div class="page__work-stage__block">
+            <div class="page__work-stage__block-item step1">
+              <p class="number">1</p>
+              <p class="name">Оставьте заявку</p>
+            </div>
+            <div class="page__work-stage__block-item step2">
+              <p class="number">2</p>
+              <p class="name">Выберите удобный формат изучения</p>
+            </div>
+            <div class="page__work-stage__block-item step3">
+              <p class="number">3</p>
+              <p class="name">Получите документы и&nbsp;обучающие материалы не&nbsp;выходя из&nbsp;офиса</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <aside class="content content_sale">
+      <div class="container container_inside">
         <div class="content__title">Акции учебного центра</div>
         <div class="row">
-          <div class="column">
+          <div class="col">
             <div class="item">
               <div class="item__icon united"></div>
               <div class="item__title">Приведи друга</div>
@@ -259,7 +315,7 @@
               <div class="item__offer">Скидка 10% на&nbsp;следующие&nbsp;заказы</div>
             </div>
           </div>
-          <div class="column">
+          <div class="col">
             <div class="item">
               <div class="item__icon free-delivery"></div>
               <div class="item__title">Бесплатная доставка</div>
@@ -267,7 +323,7 @@
               <div class="item__offer">Доставка документов по&nbsp;Санкт-Петербургу</div>
             </div>
           </div>
-          <div class="column">
+          <div class="col">
             <div class="item">
               <div class="item__icon contract"></div>
               <div class="item__title">Договор на год</div>
@@ -280,51 +336,26 @@
     </aside>
     <aside class="content content_popular">
       <div class="container">
-        <div class="content__title">Популярные направления</div>
-        <div class="row">
-          <div class="column"><a class="product" href="#" style="background-image: url('./img/program/1.jpg');">
+        <div class="content__title text-center">Популярные направления</div>
+        <div class="row justify-content-center">
+          <div class="col-4 col-lg-6 col-md-9 col-sm-12 mb-lg-30"><a class="product" href="#" style="background-image: url('./img/program/1.jpg');">
               <div class="product__title"> 
                 <div class="product__name">Сосуды, работающие под давлением</div>
               </div></a></div>
-          <div class="column"><a class="product" href="#" style="background-image: url('./img/program/2.jpg');">
+          <div class="col-4 col-lg-6 col-md-9 col-sm-12 mb-lg-30"><a class="product" href="#" style="background-image: url('./img/program/2.jpg');">
               <div class="product__title"> 
-                <div class="product__name">Отраслевые правила по охране труда</div>
+                <div class="product__name">Пожарно-технический минимум для руководителей сельскохозяйственных организаций и ответственных за пожарную безопасность</div>
               </div></a></div>
-          <div class="column"><a class="product" href="#" style="background-image: url('./img/program/3.jpg');">
+          <div class="col-4 col-lg-6 col-md-9 col-sm-12"><a class="product" href="#" style="background-image: url('./img/program/3.jpg');">
               <div class="product__title"> 
                 <div class="product__name">Курсы повышения квалификации по Реставрационным работам</div>
               </div></a></div>
         </div>
       </div>
     </aside>
-    <section class="content page">
+    <section class="content">
       <div class="container">
-        <div class="page__example">
-          <div class="page__example__title">Пример документов</div>
-          <div class="page__example__blocks">
-            <p class="page__example__block doc1"><a href="#" target="_blank">Удостоверение</a></p>
-            <p class="page__example__block doc2"><a href="#" target="_blank">Протокол</a></p>
-            <p class="page__example__block doc3"><a href="#" target="_blank">Диплом</a></p>
-          </div>
-        </div>
-        <div class="page__work-stage">
-          <div class="page__work-stage__title">Порядок работы</div>
-          <div class="page__work-stage__blocks">
-            <div class="page__work-stage__block step1">
-              <p class="number">1</p>
-              <p class="name">Оставьте заявку</p>
-            </div>
-            <div class="page__work-stage__block step2">
-              <p class="number">2</p>
-              <p class="name">Выберите удобный формат изучения</p>
-            </div>
-            <div class="page__work-stage__block step3">
-              <p class="number">3</p>
-              <p class="name">Получите документы и&nbsp;обучающие материалы не&nbsp;выходя из&nbsp;офиса</p>
-            </div>
-          </div>
-        </div>
-        <div class="cta-wrap">
+        <div class="cta-wrap mt-0">
           <div class="cta-wrap__content">
             <ul class="list-info list-info_inline">
               <li class="list-item list-item_time list-item_white"><span class="list-item__name">Действие документов</span><span class="list-item__content">3 года / 5 лет</span></li>
@@ -375,14 +406,14 @@
     <footer class="footer">
       <div class="container">
         <div class="row footer__row">
-          <div class="column footer__column">
+          <div class="col footer__column">
             <ul class="footer__list">
               <li class="footer__list__item">Обучение персонала.</li>
               <li class="footer__list__item">Лицензирование.</li>
               <li class="footer__list__item">Консалтинг.</li>
             </ul><a class="policy" href="#">Версия для слабовидящих</a><br/><a class="policy" href="#">Политика конфиденциальности</a>
-          </div><a class="column footer__logo" href="/"></a>
-          <div class="column footer__column">
+          </div><a class="col footer__logo" href="/"></a>
+          <div class="col footer__column">
             <ul class="footer__list footer__list_contact">
               <li><a class="footer__link footer__tel" href="tel:88124696068">8 (812) 469-60-68<span class="icon"></span></a></li>
               <li><a class="footer__link footer__mail" href="mailto:info@uc-sp.ru">info@uc-sp.ru<span class="icon"></span></a></li>
@@ -393,10 +424,50 @@
         </div>
       </div>
     </footer>
+    <div class="modal modal_info" id="programm" data-iziModal-fullscreen="true">
+      <div class="modal__text">
+        <p class="s-title">Программа обучения</p>
+        <p class="title text-gold">Правила по охране труда в строительстве</p>
+        <p class="s-title">Программа рассчитана на</p>
+        <p class="offer">20 часов</p>
+        <p class="s-title">Для обучения необходимо</p>
+        <p class="offer">Заполненная заявка</p><a href="" data-izimodal-close="data-izimodal-close"><span class="modal__close">Закрыть</span></a>
+      </div>
+      <div class="modal__footer">
+        <p class="s-title">Выберите способ заказа:</p>
+        <div class="info-block">
+          <div class="info-block__item">
+            <p>Отправить заявку&nbsp;на </p>
+            <p> <a class="text-gold word-break bb-dotted" href="mailto:info@uc-sp.ru">info@uc-sp.ru</a></p>
+          </div>
+          <div class="info-block__item">
+            <p>Позвонить по&nbsp;номеру</p>
+            <p><a class="phone text-gold word-break bb-dotted" href="tel:8 (812) 469-60-68">8 (812) 469-60-68</a></p>
+          </div>
+        </div><a class="btn btn_primary open-form">Заказать обратный звонок</a>
+        <div class="callback-form">
+          <form class="form form-1 ajax_form" method="post" name="callbackService">
+            <input class="hidden h-title" type="text" name="title" value=""/>
+            <p>Укажите способ связи с Вами, и наши сотрудники оформят заявку на программу обучения.</p>
+            <p class="form__label mt-30">Электронная почта:</p>
+            <input class="form__input email" type="email" name="email" autocomplete="off" placeholder="Введите ваш e-mail"/>
+            <p class="form__label">Телефон для связи:</p>
+            <input class="form__input phone" placeholder="8 ( ___ ) ___ - __ - __"/>
+            <div class="form__agree checkbox mt-30">
+              <input class="checkbox__input" type="checkbox" name="agree" checked="checked" required="required"/>
+              <label class="checkbox__label" for="agree">Я согласен с <a class="checkbox__link" href="/assets/files/documents/policy.pdf" target="_blank">правилами использования сайта</a></label>
+            </div>
+            <button class="btn btn_large btn_modal btn_primary">Оставить заявку</button>
+          </form>
+        </div>
+      </div>
+    </div>
     <script src="./js/jquery.inputmask.js"></script>
     <script src="./js/slick.min.js"></script>
     <link href="./css/slick.css" rel="stylesheet"/>
     <link href="./css/slick-theme.css" rel="stylesheet"/>
+    <script src="./js/iziModal.min.js"></script>
+    <link href="./css/iziModal.min.css" rel="stylesheet"/>
     <script src="./js/app.min.js"></script>
   </body>
 </html>

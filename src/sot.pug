@@ -3,10 +3,10 @@ html(lang="ru")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
-        title Document2
+        title Служба охраны труда
 
-        link(href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:300,400,600,700', rel='stylesheet')
-        link(href='./css/page.css', rel='stylesheet')
+        link(href='./css/style.css', rel='stylesheet')
+        link(href='./css/ancillary-page.css', rel='stylesheet')
 
     body
         script(src="http://code.jquery.com/jquery-3.3.1.min.js")
@@ -26,47 +26,47 @@ html(lang="ru")
                     | единого окна, Вы сможете получить в нашем лице надёжного партнера в направлении охраны труда, 
                     | обучения персонала, а также помощь в организации процессов медосмотров сотрудников и 
                     | аттестации рабочих мест.    
-        .content.content_product.content_inside
+        .content.content_catalog
             .container
                 .content__title Перечень услуг
                 .row
-                    article.column
+                    article.col-6.col-md-12
                         a.product(href="#" style="background-image: url('./img/program/1.jpg');")
                             .product__title.product__title_without-price
                                 .product__name Аутсорсинг по охране труда
-                    article.column
+                    article.col-6.col-md-12.mt-md-30
                         a.product(href="#" style="background-image: url('./img/program/2.jpg');")
                             .product__title.product__title_without-price
                                 .product__name Разработка пакета документов по охране труда (СУОТ)
-                    article.column
+                    article.col-6.col-md-12.mt-30
                         a.product(href="#" style="background-image: url('./img/program/3.jpg');")
                             .product__title.product__title_without-price
                                 .product__name Расследование несчастных случаев на производстве
-                    article.column
+                    article.col-6.col-md-12.mt-30
                         a.product(href="#" style="background-image: url('./img/program/4.jpg');")
                             .product__title.product__title_without-price
                                 .product__name Помощь при проверках надзорных органов
-        aside.content.content_advantage
+        aside.content.content_advantage.bg-white
             .container
-                .content__title Наши преимущества
-                .row
-                    .column
+                .content__title.text-center.mb-60.mb-md-30 Наши преимущества
+                .row.justify-content-center
+                    .col.col-sm-6.col-md-5.col-lg-4.mb-lg-30
                         .item
                             .item__icon.question
                             .item__title Огромный опыт решения сложных вопросов
-                    .column
+                    .col.col-sm-6.col-md-5.col-lg-4.mb-lg-30
                         .item
                             .item__icon.delivery-car
                             .item__title Выезды специалистов к&nbsp;Вам на&nbsp;место
-                    .column
+                    .col.col-sm-6.col-md-5.col-lg-4.mb-lg-30
                         .item
                             .item__icon.clients
                             .item__title Индивидуальный подход к&nbsp;каждому клиенту
-                    .column
+                    .col.col-sm-6.col-md-5.col-lg-4.mb-md-30
                         .item
                             .item__icon.consultation
                             .item__title Консультационная поддержка
-                    .column
+                    .col.col-sm-6.col-md-5.col-lg-4
                         .item
                             .item__icon.format
                             .item__title Работаем в&nbsp;формате единого окна
@@ -101,32 +101,6 @@ html(lang="ru")
                     li оказывающей услуги в области охраны труда и предоставляет максимально выгодные 
                     li и надёжные условия взаимодействия в направлении аутсорсинга по охране труда. 
                     li Работая по принципу единого окна, Вы сможете получить в нашем лице надёжного партнера 
-        
-        footer.footer
-            .container
-                .row.footer__row
-                    .column.footer__column
-                        ul.footer__list
-                            li.footer__list__item Обучение персонала.
-                            li.footer__list__item Лицензирование.
-                            li.footer__list__item Консалтинг.
-                        a(href="#").policy Версия для слабовидящих
-                        br
-                        a(href="#").policy Политика конфиденциальности
-                    a.column.footer__logo(href="/")
-                    .column.footer__column
-                        ul.footer__list.footer__list_contact
-                            li
-                                a(href="tel:88124696068").footer__link.footer__tel 8 (812) 469-60-68
-                                    span.icon
-                            li
-                                a(href="mailto:info@uc-sp.ru").footer__link.footer__mail info@uc-sp.ru
-                                    span.icon
-                            li
-                                a(href="https://vk.com/ucnorthway" target='_blank').footer__link.footer__vk Присоединяйтесь к группе ВК
-                                    span.icon
-                            li
-                                a(href='' target='_blank').footer__link.footer__link_last.footer__address Санкт-Петербург, ул. Оборонная, 10 лит. А офис 310А
-                                    span.icon
+        include chunks/footer.pug
         script(src="./js/jquery.inputmask.js")
         script(src="./js/app.min.js")

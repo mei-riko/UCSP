@@ -261,6 +261,10 @@
   top: 9px;
 }
 
+.list li + li {
+  margin-top: 5px;
+}
+
 .list-info {
   list-style: none;
   margin: 0;

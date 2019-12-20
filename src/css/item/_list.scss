@@ -16,6 +16,10 @@
             left: 0;
             top: 9px;
         }
+
+        & + li{
+            margin-top: 5px;
+        }
     }
 }
 

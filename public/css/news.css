@@ -372,6 +372,10 @@
   top: 9px;
 }
 
+.news-content ul li + li {
+  margin-top: 5px;
+}
+
 .news-sidebar {
   padding: 20px;
   border: 1px solid #ebeeef;

@@ -195,6 +195,10 @@ img{
 	.pb-xl-0{padding-bottom: 0!important;}
 	.pb-xl-30{padding-bottom: 2*$padding!important;}
 	.pb-xl-60{padding-bottom: 4*$padding!important;}
+	/* Text Align */
+	.text-xl-center {text-align: center;}
+	.text-xl-left {text-align: left;}
+	.text-xl-right{text-align: right;}
 }
 @media all and (max-width: $desktop_m){
 	.d-lg-none{display: none;}
@@ -211,6 +215,10 @@ img{
 	.pb-lg-0{padding-bottom: 0!important;}
 	.pb-lg-30{padding-bottom: 2*$padding!important;}
 	.pb-lg-60{padding-bottom: 4*$padding!important;}
+	/* Text Align */
+	.text-lg-center {text-align: center;}
+	.text-lg-left {text-align: left;}
+	.text-lg-right{text-align: right;}
 }
 @media all and (max-width: $tablet){
 	.container{
@@ -231,7 +239,10 @@ img{
 	.pb-md-0{padding-bottom: 0!important;}
 	.pb-md-30{padding-bottom: 2*$padding!important;}
 	.pb-md-60{padding-bottom: 4*$padding!important;}
-	
+	/* Text Align */
+	.text-md-center {text-align: center;}
+	.text-md-left {text-align: left;}
+	.text-md-right{text-align: right;}
 }
 @media all and (max-width: $mobile-l){
 	.d-sm-none{display: none;}
@@ -248,4 +259,8 @@ img{
 	.pb-sm-0{padding-bottom: 0!important;}
 	.pb-sm-30{padding-bottom: 2*$padding!important;}
 	.pb-sm-60{padding-bottom: 4*$padding!important;}
+	/* Text Align */
+	.text-sm-center {text-align: center;}
+	.text-sm-left {text-align: left;}
+	.text-sm-right{text-align: right;}
 }

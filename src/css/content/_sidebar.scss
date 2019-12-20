@@ -1,44 +1,42 @@
-.content{
-    /* Block With Information in Sidebar*/
-    .info{
-        background: #ebeeef;
-        border: 8px solid #d1dee4;
-        padding: 40px;
-        
-        &_small{
-            width: 400px;
-            max-width: 100%;
-            .btn{
-                width: 100%;
-            }
+/* Block With Information in Sidebar*/
+.sidebar-info{
+    background: #ebeeef;
+    border: 8px solid #d1dee4;
+    padding: 40px;
+    
+    &_small{
+        width: 400px;
+        max-width: 100%;
+        margin-left: auto;
+        .btn{
+            width: 100%;
         }
-        
-        &__title{
-            font-size: 22px;
-            color: #33454e;
-            margin-bottom: 20px;
-        }
-        &__item{
-            position: relative;
-        }
-        &__list{
-            font-size: 14px;
-            list-style: square;
-            padding-left: 16px;
-            color: #33454e;
-            .info__item + .info__item{
-                margin-top: 10px;
-            }
+    }
+    
+    &__title{
+        font-size: 22px;
+        color: #33454e;
+        margin-bottom: 20px;
+    }
+    &__item{
+        position: relative;
+    }
+    &__list{
+        font-size: 14px;
+        list-style: square;
+        padding-left: 16px;
+        color: #33454e;
+
+        .info__item + .info__item{
+            margin-top: 10px;
         }
     }
 }
 
 @media all and (max-width: $tablet){
-    .content{
-        .info{
-            &_small{
-                width: 100%;
-            }
+    .sidebar-info{
+        &_small{
+            width: 100%;
         }
     }
 }
