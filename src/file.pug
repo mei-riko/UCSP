@@ -4,10 +4,8 @@ html(lang="ru")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Полезные файлы
-
-        link(href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:300,400,600,700', rel='stylesheet')
-        link(href='./css/page.css', rel='stylesheet')
-
+        link(href='./css/style.css', rel='stylesheet')
+        link(href='./css/ancillary-page.css', rel='stylesheet')
     body
         script(src="http://code.jquery.com/jquery-3.3.1.min.js")
         include chunks/header.pug
@@ -21,29 +19,29 @@ html(lang="ru")
                     li.content__breadcrumbs__item
                         span.content__breadcrumbs__span Полезные файлы
                 h1.content__title Полезные файлы
-                p Центр профессионального обучения «Северный Путь» является аккредитованной организацией, 
+                p.lead Центр профессионального обучения «Северный Путь» является аккредитованной организацией, 
                     | оказывающей услуги в области охраны труда и предоставляет максимально выгодные и надёжные 
                     | условия взаимодействия в направлении аутсорсинга по охране труда. Работая по принципу 
                     | единого окна.
-        section.content.page.page_files.bg-white
+        section.content.bg-white
             .container
-                .row.page__row
-                    .column.page__column.page__column_3
+                .row
+                    .col-4.col-lg-6.col-sm-12
                         .item.item_files.item_image
                             .item__title Обучение персонала
                             img.item__image(src="../img/2019/image-01.png")
-                    .column.page__column.page__column_3
+                    .col-4.col-lg-6.col-sm-12
                         .item.item_files.item_image
                             .item__title Кадровое делопроизводство
                             img.item__image(src="../img/2019/image-02.png")
-                    .column.page__column.page__column_3
+                    .col-4.col-lg-6.col-sm-12
                         .item.item_files.item_image
                             .item__title Документооборот организации
                             img.item__image(src="../img/2019/image-03.png")
-                    .column.page__column.page__column_3
+                    .col-4.col-lg-6.col-sm-12
                         .item.item_files.item_no-image
                             .item__title Законодательство
-                    .column.page__column.page__column_3
+                    .col-4.col-lg-6.col-sm-12
                         .item.item_files.item_no-image
                             .item__title Другое
                 .cta-wrap
@@ -52,27 +50,44 @@ html(lang="ru")
                         input.input.phone(type="text" placeholder="8 ( ___ ) ___ - __ - __ ")
                         button.btn(type="submit") Перезвонить
         aside.content.content_sale
-            .container
+            .container.container_inside
                 .content__title Акции учебного центра
                 .row
-                    .column
+                    .col
                         .item
                             .item__icon.united
                             .item__title Приведи друга
                             .item__line
                             .item__offer Скидка 10% на&nbsp;следующие&nbsp;заказы
-                    .column
+                    .col
                         .item
                             .item__icon.free-delivery
                             .item__title Бесплатная доставка
                             .item__line
                             .item__offer Доставка документов по&nbsp;Санкт-Петербургу
-                    .column
+                    .col
                         .item
                             .item__icon.contract
                             .item__title Договор на год
                             .item__line
                             .item__offer При заключении договора на&nbsp;год — скидка&nbsp;10%
+        aside.content.content_popular
+            .container
+                .content__title Популярные направления
+                .row.justify-content-center
+                    .col-4
+                        a.product(href="#" style="background-image: url('./img/program/1.jpg');")
+                            .product__title 
+                                .product__name Сосуды, работающие под давлением
+                    .column
+                        a.product(href="#" style="background-image: url('./img/program/2.jpg');")
+                            .product__title 
+                                .product__name Отраслевые правила по охране труда
+                    .column
+                        a.product(href="#" style="background-image: url('./img/program/3.jpg');")
+                            .product__title 
+                                .product__name Курсы повышения квалификации по Реставрационным работам
+        
         section.content.content_seo
             .container
                 h2 Заголовок h2

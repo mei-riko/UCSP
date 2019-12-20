@@ -156,9 +156,11 @@
         }
         .footer__list{
             margin: 0 auto;
-
             &.footer__list_contact{
-                margin-bottom: 2*$padding;
+                margin-bottom: $padding;
+            }
+            .footer__list__item{
+                line-height: 1;
             }
         }
     }

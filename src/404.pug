@@ -19,12 +19,16 @@ html(lang="ru")
                             li.content__breadcrumbs__item
                                 a.content__breadcrumbs__link(href="#") Главная
                             li.content__breadcrumbs__item
-                                a.content__breadcrumbs__link(href="#") 404
+                                span.content__breadcrumbs__span 404
                         h1.content__title.text-bold Ошибка 404
-                        p Страница удалена или не существует. Возможно произошла ошибка: вы можете перейти в нужный раздел, воспользовавшись меню 
-                            | или вернитесь на главную страницу сайта
-                        p
-                            a.btn.btn_primary(href="/") Каталог курсов
+                        .row
+                            .col-7.col-md-12
+                                p.lead Страница удалена или не существует. Вы можете перейти в нужный раздел, воспользовавшись меню 
+                                    | вернитесь 
+                                    a(href="/") на главную страницу
+                                    | сайта или ознакомиться со&nbsp;всеми курсами учебного центра
+                                p
+                                    a.btn.btn_primary(href="/") Каталог курсов
                 section.content
                     .container
                         .cta-wrap.mt-0

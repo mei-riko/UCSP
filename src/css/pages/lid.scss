@@ -25,7 +25,11 @@
         }
     }
     &__label{
-        @extend .form__label;
+        font-size: 12px;
+        line-height: 14px;
+
+        display: inline-block;
+        margin-bottom: 10px;
     }
     &__select{
         padding: 10px;

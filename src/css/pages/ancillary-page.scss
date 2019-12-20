@@ -6,12 +6,20 @@
 @import "../content/header.scss";
 /* Breadcrumb Block */
 @import "../content/breadcrumbs.scss";
+/* SEO Block */
+@import "../content/seo.scss";
+/* Sale Block */
+@import "../content/sale.scss";
 
 
 /* Toggle Item*/
 @import "../item/toggle.scss";
 /* List */
 @import "../item/list.scss";
+/* Item with Icon */
+@import "../item/icon.scss";
+/* Item File with Image */
+@import "../item/file.scss";
 
 .map{
     width: 100%;

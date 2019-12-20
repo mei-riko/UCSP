@@ -9,25 +9,25 @@
 @import "../content/advantage.scss";
 /* Sale Block */
 @import "../content/sale.scss";
-/* Section|Child Block */
+/* Section Child Block */
 @import "../content/child.scss";
 
-/* License */
-@import "../item/license.scss";
 /* Slider */
 @import "../item/slider.scss";
-/* Item with Icon */
-@import "../item/icon.scss";
-/* Preview Item */
-@import "../item/preview.scss";
+
+/* Section License */
+@import "../section/license.scss";
+/* Section Review  */
+@import "../section/reviews.scss";
+
 /* List Info about Programm */
 @import "../item/list.scss";
-/* Review  */
-@import "../item/reviews.scss";
+/* Item with Icon */
+@import "../item/icon.scss";
 
-
-
-/* News Preview */
+/* Preview Item */
+@import "../item/preview.scss";
+/* News Preview Item */
 @import "../news/preview.scss";
 
 .content{
@@ -60,7 +60,6 @@
         .row{
             .preview-page{
                 max-width: 100%;
-
                 & + .preview-page{
                     margin-top: 40px;
                 }

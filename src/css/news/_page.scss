@@ -1,5 +1,4 @@
 .page{
-    background: $white;
     .content{
         padding: 60px 0 40px;
         &.page__content{
@@ -8,14 +7,14 @@
         &__breadcrumbs{
             margin:0;
         }
-        section.column{
-            flex: 0 0 60%;
-            max-width: 60%;
-        }
-        aside.column{
-            flex: 0 0 40%;
-            max-width: 40%;
-        }
+        // section.column{
+        //     flex: 0 0 60%;
+        //     max-width: 60%;
+        // }
+        // aside.column{
+        //     flex: 0 0 40%;
+        //     max-width: 40%;
+        // }
     }
     &__content{
         padding: 0 0 60px;

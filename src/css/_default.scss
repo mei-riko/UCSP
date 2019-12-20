@@ -8,6 +8,9 @@
 	- OUTLINE FIX
 */
 
+/* GRID ROWS */
+@import "grid.scss";
+
 /*RESET*/
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	margin: 0;
@@ -79,7 +82,7 @@ a {
 .text-uppercase {text-transform: uppercase;}
 .text-light{font-weight: 300;}
 .text-semibold{font-weight: 600;}
-b, strong, .text-bold{font-weight: 700;}
+.text-bold, b, strong{font-weight: 700;}
 
 .text-gold{color: $text-gold;}
 .text-blue{color: $text-blue3;}
@@ -89,7 +92,7 @@ b, strong, .text-bold{font-weight: 700;}
 
 .word-break {white-space: nowrap;}
 
-.lead {font-size: 1.2rem;}
+.lead {font-size: 1.15rem;}
 
 .d-none,
 .hidden {display: none !important;}
@@ -131,7 +134,10 @@ body {
 	&-white{
 		background: $white;
 	}
-    &_blue-gradient{
+    &-light{
+        background: #f2f5f6;
+    }
+    &-blue-gradient{
         background-color: #345463;
         background-image: radial-gradient(circle farthest-corner at center 0%,#356277 0%,#33454e 30%);
         &.content{
@@ -147,50 +153,63 @@ body {
 p{
 	font-size: 1rem;
 	&.lead{
-		font-size: 1.25rem;
+		font-size: 1.15rem;
 	}
 }
 img{
 	max-width: 100%;
 }
 
-/* Padding and Margin*/
+/* Offset */
+
 .mt-0{margin-top: 0!important;}
 .mt-30{margin-top: 2*$padding!important;}
 .mt-60{margin-top: 4*$padding!important;}
+
 .mb-0{margin-bottom: 0!important;}
 .mb-30{margin-bottom: 2*$padding!important;}
 .mb-60{margin-bottom: 4*$padding!important;}
 
-/* Grid */
-@import "grid.scss";
-/* Header */
-@import "other/header.scss";
-/* Form */
-@import "other/form.scss";
-/* Footer */
-@import "other/footer.scss";
+.pt-0{padding-top: 0!important;}
+.pt-30{padding-top: 2*$padding!important;}
+.pt-60{padding-top: 4*$padding!important;}
+
+.pb-0{padding-bottom: 0!important;}
+.pb-30{padding-bottom: 2*$padding!important;}
+.pb-60{padding-bottom: 4*$padding!important;}
 
 /* Media */
 @media all and (max-width: $desktop){
 	.d-xl-none{display: none;}
-	/* Padding and Margin*/
+	/* Offset */
 	.mt-xl-0{margin-top: 0!important;}
 	.mt-xl-30{margin-top: 2*$padding!important;}
 	.mt-xl-60{margin-top: 4*$padding!important;}
 	.mb-xl-0{margin-bottom: 0!important;}
 	.mb-xl-30{margin-bottom: 2*$padding!important;}
 	.mb-xl-60{margin-bottom: 4*$padding!important;}
+	.pt-xl-0{padding-top: 0!important;}
+	.pt-xl-30{padding-top: 2*$padding!important;}
+	.pt-xl-60{padding-top: 4*$padding!important;}
+	.pb-xl-0{padding-bottom: 0!important;}
+	.pb-xl-30{padding-bottom: 2*$padding!important;}
+	.pb-xl-60{padding-bottom: 4*$padding!important;}
 }
 @media all and (max-width: $desktop_m){
 	.d-lg-none{display: none;}
-	/* Padding and Margin*/
+	/* Offset */
 	.mt-lg-0{margin-top: 0!important;}
 	.mt-lg-30{margin-top: 2*$padding!important;}
 	.mt-lg-60{margin-top: 4*$padding!important;}
 	.mb-lg-0{margin-bottom: 0!important;}
 	.mb-lg-30{margin-bottom: 2*$padding!important;}
 	.mb-lg-60{margin-bottom: 4*$padding!important;}
+	.pt-lg-0{padding-top: 0!important;}
+	.pt-lg-30{padding-top: 2*$padding!important;}
+	.pt-lg-60{padding-top: 4*$padding!important;}
+	.pb-lg-0{padding-bottom: 0!important;}
+	.pb-lg-30{padding-bottom: 2*$padding!important;}
+	.pb-lg-60{padding-bottom: 4*$padding!important;}
 }
 @media all and (max-width: $tablet){
 	.container{
@@ -198,21 +217,34 @@ img{
 		padding-right: 2*$padding;
 	}
 	.d-md-none{display: none;}
-	/* Padding and Margin*/
+	/* Offset */
 	.mt-md-0{margin-top: 0!important;}
 	.mt-md-30{margin-top: 2*$padding!important;}
 	.mt-md-60{margin-top: 4*$padding!important;}
 	.mb-md-0{margin-bottom: 0!important;}
 	.mb-md-30{margin-bottom: 2*$padding!important;}
 	.mb-md-60{margin-bottom: 4*$padding!important;}
+	.pt-md-0{padding-top: 0!important;}
+	.pt-md-30{padding-top: 2*$padding!important;}
+	.pt-md-60{padding-top: 4*$padding!important;}
+	.pb-md-0{padding-bottom: 0!important;}
+	.pb-md-30{padding-bottom: 2*$padding!important;}
+	.pb-md-60{padding-bottom: 4*$padding!important;}
+	
 }
 @media all and (max-width: $mobile-l){
 	.d-sm-none{display: none;}
-	/* Padding and Margin*/
+	/* Offset */
 	.mt-sm-0{margin-top: 0!important;}
 	.mt-sm-30{margin-top: 2*$padding!important;}
 	.mt-sm-60{margin-top: 4*$padding!important;}
 	.mb-sm-0{margin-bottom: 0!important;}
 	.mb-sm-30{margin-bottom: 2*$padding!important;}
 	.mb-sm-60{margin-bottom: 4*$padding!important;}
+	.pt-sm-0{padding-top: 0!important;}
+	.pt-sm-30{padding-top: 2*$padding!important;}
+	.pt-sm-60{padding-top: 4*$padding!important;}
+	.pb-sm-0{padding-bottom: 0!important;}
+	.pb-sm-30{padding-bottom: 2*$padding!important;}
+	.pb-sm-60{padding-bottom: 4*$padding!important;}
 }

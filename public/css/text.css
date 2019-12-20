@@ -33,14 +33,14 @@
 }
 
 .content .cta-wrap + .content__offer {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .content * + ul, .content * + ol,
 .content p + ul, .content p + ol,
 .content ul + p, .content ol + p,
 .content p + p {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 /* Media */
@@ -81,7 +81,7 @@
 }
 
 .content__breadcrumbs__item + .content__breadcrumbs__item {
-  padding-left: 10px;
+  padding-left: 15px;
 }
 
 .content__breadcrumbs__item + .content__breadcrumbs__item:before {

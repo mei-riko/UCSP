@@ -1,13 +1,14 @@
 /* Breadcrumb Block */
 .content__breadcrumbs{
     margin-top: 0px!important;
-    margin-bottom: 30px;
+    margin-bottom: 2*$padding;
+    
     &__item{
         position: relative;
         display: inline-block;
     
         & + .content__breadcrumbs__item{
-            padding-left: 10px;
+            padding-left: $padding;
             &:before{
                 content: "";
                 display: block;

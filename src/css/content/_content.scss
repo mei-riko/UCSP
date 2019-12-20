@@ -23,25 +23,22 @@
     .content__offer{
         font-size: 14px;
         & + .row{
-            margin-top: 60px;
+            margin-top: 4*$padding;
         }
     }
     .cta-wrap + .content__offer{
-        margin-top: 20px;
+        margin-top: $padding;
     }
 
     * + ul, * + ol, 
     p + ul, p + ol, 
     ul + p, ol + p, 
     p + p{
-        margin-top: 20px;
+        margin-top: $padding;
     }
 }
 
 /* Media */
-@media all and (max-width: $desktop){}
-@media all and (max-width: $desktop_m){}
-@media all and (max-width: $tablet){}
 @media all and (max-width: $mobile_l){
     .content{
         .content__title{
@@ -49,7 +46,7 @@
         }
         .content__offer{
             & + .row{
-                margin-top: 30px;
+                margin-top: 2*$padding;
             }
         }
     }

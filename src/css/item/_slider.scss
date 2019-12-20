@@ -75,6 +75,8 @@
             background: url("../img/icon/arrow-next-gold.svg") no-repeat right center / contain;
         }
     }
+
+    // Type
     &_new-dots{
         &.slick-dotted.slick-slider{
             margin-bottom: 0;
@@ -96,6 +98,8 @@
     &_with-arrow{
         padding: 0 44px;
     }
+
+    // Slick
     &.slick-initialized{
         .slick-slide{
             height: auto;
@@ -153,6 +157,7 @@
             padding: 30px 20px 20px;
         }
 
+        // Type
         &_new-dots{
             .slick-dots{
                 li{

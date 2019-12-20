@@ -65,6 +65,7 @@
             background: url("../img/icon/contract.svg") no-repeat 25px center / 35px;
         }
     }
+
     &__title{
         font-size: 16px;
         line-height: 22px;
@@ -89,9 +90,6 @@
 }
 
 /* Media */
-@media all and (max-width: $desktop){}
-@media all and (max-width: $desktop_m){}
-@media all and (max-width: $tablet){}
 @media all and (max-width: $mobile_l){
     .item{
         &__title {

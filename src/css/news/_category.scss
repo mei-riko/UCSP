@@ -7,12 +7,6 @@
 .news{
     padding-top: 0;
     background: #f2f5f6;
-    .row{
-        .column {
-            flex: 0 0 50%;
-            max-width: 50%;
-        }
-    }
 
     &__item{
         padding: 50px 0;
@@ -59,7 +53,7 @@
     }
 
     .pagination{
-        margin-top: 60px;
+        margin-top: 2*$padding;
     }
 }
 .news-contact{
@@ -149,7 +143,6 @@
 }
 
 /* Media */
-@media all and (max-width: $desktop){}
 @media all and (max-width: $desktop_m){
     .news-contact{
         &__item{
@@ -217,12 +210,6 @@
 }
 @media all and (max-width: $mobile_l){
     .news{
-        .row{
-            .column {
-                flex: 0 0 100%;
-                max-width: 100%;
-            }
-        }
         .pagination{
             margin-top: 30px;
         }

@@ -2,7 +2,7 @@
 .content_sale{
     background: #f2f5f6;
     .content__title{
-        margin-bottom: 60px;
+        margin-bottom: 4*$padding;
         text-align: center;
     }
     .row{
@@ -11,7 +11,7 @@
     .item{
         .item__icon{
             background-color: #fff;
-            margin-bottom: 30px;
+            margin-bottom: 2*$padding;
         }
         .item__title{
             font-size: 20px;
@@ -37,16 +37,22 @@
 }
 @media all and (max-width: $tablet){
     .content_sale{
-        padding-bottom: 30px;
-        .row{
-            .column {
-                margin-bottom: 30px;
+        padding-bottom: 2*$padding;
+        .item{
+            margin-bottom: 2*$padding;
+            .item__icon {
+                margin-bottom: $padding;
+            }
+            .item__line {
+                width: 80px;
             }
         }
-        .item{
-            .item__title {
-                font-size: 20px;
-            }
+    }
+}
+@media all and (max-width: $mobile_l){
+    .content_sale{
+        .content__title{
+            margin-bottom: 2*$padding;
         }
     }
 }

@@ -33,14 +33,14 @@
 }
 
 .content .cta-wrap + .content__offer {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .content * + ul, .content * + ol,
 .content p + ul, .content p + ol,
 .content ul + p, .content ol + p,
 .content p + p {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 /* Media */
@@ -81,7 +81,7 @@
 }
 
 .content__breadcrumbs__item + .content__breadcrumbs__item {
-  padding-left: 10px;
+  padding-left: 15px;
 }
 
 .content__breadcrumbs__item + .content__breadcrumbs__item:before {
@@ -114,7 +114,7 @@
 /* Preview Item */
 /* Child Page Preview */
 .preview-page {
-  /* Inline */
+  /* Inline Style */
 }
 
 .preview-page__title {
@@ -245,6 +245,22 @@
 }
 
 /* List Info about Programm */
+.list li {
+  position: relative;
+  padding-left: 15px;
+}
+
+.list li:before {
+  content: '';
+  display: block;
+  width: 6px;
+  height: 6px;
+  background-color: #8cd1f2;
+  position: absolute;
+  left: 0;
+  top: 8px;
+}
+
 .list-info {
   list-style: none;
   margin: 0;
@@ -314,22 +330,6 @@
 
 .list-info_inline .list-item {
   margin-right: 30px;
-}
-
-.list li {
-  position: relative;
-  padding-left: 15px;
-}
-
-.list li:before {
-  content: '';
-  display: block;
-  width: 6px;
-  height: 6px;
-  background-color: #8cd1f2;
-  position: absolute;
-  left: 0;
-  top: 8px;
 }
 
 .list-contact .list-item {

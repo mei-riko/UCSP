@@ -4,7 +4,7 @@
         .content__title{
             color: $white;
             font-weight: 300;
-            margin-bottom: 60px;
+            margin-bottom: 4*$padding;
         }
     }
     .review__item{
@@ -46,8 +46,14 @@
     }
 }
 
+/* Media */
 @media all and (max-width: $mobile-l){
     .review{
+        &.content{
+            .content__title{
+                margin-bottom: 2*$padding;
+            }
+        }
         .review__item{
             padding: 0;
             flex-wrap: wrap;
