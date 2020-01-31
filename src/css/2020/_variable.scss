@@ -1,0 +1,30 @@
+// COLOR
+$white:             #fff;
+$black:             #080808;
+$lightblue:         #f2f5f6;
+$text-blue:         #3e83a4;
+$text-grey:         #747779;
+$text-darkblue:     #384e59;
+$text-heading:      #172f3b;
+
+// LINK
+$link-color:        #4a8baa;
+$link-hover:        #3e83a4;
+
+// SIZE OF MAIN SCTRUCTURE
+$container: 1180px;
+$padding: 20px;
+
+$desktop: 1200px;
+$desktop_m: 992px;
+$tablet: 768px;
+$mobile_l: 576px;
+$mobile: 420px;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;

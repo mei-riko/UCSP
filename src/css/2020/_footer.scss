@@ -1,0 +1,168 @@
+/* Footer */
+.footer{
+    background: url("../img/footer-wrap-bg.jpg") no-repeat center / cover;
+
+    .footer__row{
+        padding: 55px 65px 35px;
+        background: inherit;
+        .footer__logo{
+            width: 220px;
+            height: 120px;
+            background: url(../img/UCSP_logo_footer.svg) no-repeat center -20px;
+            background-size: 200px 160px;
+        }
+        .footer__column{
+            max-width: calc( (100% - 220px)/2 );
+        }
+    }
+
+    .footer__list{
+        color: $white;
+        
+        font-size: 1rem;
+        font-weight: 300;
+        
+        width: 260px;
+        max-width: 100%;
+        
+        &__item{
+            display: inline-block;
+            margin-bottom: 6px;
+        }
+        .footer__link{
+            margin-bottom: $padding;
+            &_last{
+                margin-bottom: 0;
+            }
+        }
+
+        & + .policy{
+            margin-top: 24px;
+        }
+        /* Footer Column Contact */
+        &_contact{
+            margin-left: auto;
+            .footer__link{
+                position: relative;
+                font-size: 1rem;
+                line-height: 1.15;
+                .icon{
+                    position: absolute;
+                    top: 0;
+                    left: -30px;
+                    width: 18px;
+                    height: 18px;
+                }
+            }
+            .footer__tel{
+                font-size: 1.4rem;
+                line-height: 1;
+                .icon{
+                    background: url(../img/icon/telephone-light.svg) no-repeat center;
+                }
+            }
+            .footer__mail{
+                .icon{
+                    background: url(../img/icon/envelope-light.svg) no-repeat center;
+                }
+            }
+            .footer__vk{
+                .icon{
+                    background: url(../img/icon/vk-light.svg) no-repeat center;
+                }
+            }
+            .footer__address{
+                .icon{
+                    background: url(../img/icon/maps-light.svg) no-repeat center;
+                }
+            }
+        }
+    }
+    &__link{
+        display: inline-block;
+        color: $white;
+        &:hover{
+            color: darken($white, 15%);
+        }
+    }
+    
+    .policy{
+        display: inline-block;
+        color: $white;
+
+        margin-top: 4px;
+
+        font-size: 12px;
+        line-height: 16px;
+        border-bottom: 1px solid;
+
+        &:hover{
+            color: darken($white, 15%);
+        }
+    }
+}
+
+/* Media */
+@media all and (max-width: $desktop){}
+@media all and (max-width: $desktop_m){
+    .footer{
+        .footer__row{
+            .footer__column {
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+            .footer__logo{
+                display: none;
+            }
+        }
+    }
+}
+@media all and (max-width: $tablet){
+    .footer{
+        .footer__row {
+            padding: 55px 30px 35px;
+        }
+        .footer__list{
+            &_contact{
+                .footer__link{
+                    font-size: 12px;
+                    line-height: 16px;
+                    padding-left: 2*$padding;
+                    margin-bottom: $padding;
+                    .icon{
+                        left:0;
+                    }
+                }
+                .footer__tel {
+                    font-size: 1.25rem;
+                    line-height: 1.2;
+                }
+            }
+        }
+    }
+}
+@media all and (max-width: $mobile_l){
+    .footer{
+        .footer__row {
+            flex-direction: column-reverse;
+
+            padding: 55px 0px 35px;
+            
+            .footer__column {
+                flex: unset;
+                max-width: 100%;
+
+                text-align: center;
+            }
+        }
+        .footer__list{
+            margin: 0 auto;
+            &.footer__list_contact{
+                margin-bottom: $padding;
+            }
+            .footer__list__item{
+                line-height: 1;
+            }
+        }
+    }
+}

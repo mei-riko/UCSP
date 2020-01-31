@@ -40,29 +40,29 @@
         display: flex;
         justify-content: space-between;
 
-        padding: 2*$padding 0 $padding;
+        padding: 30px 0 15px;
 
         border-bottom: 2px solid #f2f5f6;
         .header__navbar{
             .header__item{
                 & + .header__item{
-                    margin-left: $padding;
+                    margin-left: 15px;
                 }
             }
             .header__link{
                 font-size: 14px;
                 font-weight: 300;
-                color: #747779;
+                color: $text-grey;
 
                 &:hover{
-                    color: $text-blue3;
+                    color: $text-blue;
                 }
             }
         }
         .header__contact{
             .header__item{
                 & + .header__item{
-                    margin-left: 2*$padding;
+                    margin-left: 30px;
                 }
             }
             .header__link{
@@ -71,7 +71,10 @@
                 &_phone{
                     font-size: 1.25rem;
                     font-weight: 700;
-                    color: #384e59;
+                    color: $text-darkblue;
+                    &:hover{
+                        color: $text-blue;
+                    }
                 }
             }
         }   
@@ -81,17 +84,17 @@
         display: flex;
         justify-content: space-between;
 
-        padding: 2*$padding 0 0;
+        padding: 30px 0 0;
 
         .header__navbar{
             .header__item{
                 & + .header__item{
-                    margin-left: 2*$padding;
+                    margin-left: 30px;
                 }
             }
             .header__link{
                 position: relative;
-                padding-bottom: 2*$padding;
+                padding-bottom: 30px;
 
                 &.active:after{
                     display: block;
@@ -110,14 +113,14 @@
             }
         }
         .header__contact{
-            padding-bottom: 2*$padding;
+            padding-bottom: 30px;
             .header__link{
                 font-size: 12px;
                 line-height: 1.5;
-                color: #747779;
+                color: $text-grey;
 
                 &:hover{
-                    color: $text-blue3;
+                    color: $text-blue;
                 }
 
                 &_search{
@@ -135,7 +138,7 @@
             }
             .header__item{
                 & + .header__item{
-                    margin-left: $padding;
+                    margin-left: 15px;
                 }
             }
         }
@@ -164,7 +167,7 @@
     background: #f2f5f6;
     box-shadow: 0 7px 15px rgba(10,30,50,.1);
 
-    padding: 2*$padding 0 $padding;
+    padding: 30px 0 15px;
 
     position: absolute;
     top: 150px;
@@ -193,7 +196,7 @@
         max-width: 33.33333333%;  
         
         // width: auto!important;
-        margin-bottom: $padding;
+        margin-bottom: 15px;
     }
     &__link{
         font-size: 14px;
@@ -216,14 +219,14 @@
                 }
                 .header__item{
                     & + .header__item{
-                        margin-left: $padding;
+                        margin-left: 15px;
                     }
                 }
             }
             .header__contact{
                 .header__item{
                     & + .header__item{
-                        margin-left: $padding;
+                        margin-left: 15px;
                     }
                 }
             }
@@ -236,7 +239,7 @@
                 }
                 .header__item{
                     & + .header__item{
-                        margin-left: 2*$padding;
+                        margin-left: 30px;
                     }
                 }
             }
@@ -309,14 +312,14 @@
                 .header__item{
                     width: 100%;
                     & + .header__item{
-                        margin-top: $padding;
+                        margin-top: 15px;
                         margin-left: 0;
                     }
                 }
             }
             .header__contact{
-                margin-top: 2*$padding;
-                padding-top: 2*$padding;
+                margin-top: 30px;
+                padding-top: 30px;
                 border-top: 1px solid #c7cdcf;
             }
         }
@@ -344,7 +347,7 @@
                     font-size: 1.15rem;
                     font-weight: 700;
 
-                    padding-bottom: $padding;
+                    padding-bottom: 15px;
                 }
 
                 // Inside Nav
@@ -382,7 +385,7 @@
             .header__item{
                 width: 100%;
                 & + .header__item{
-                    margin-top: $padding;
+                    margin-top: 15px;
                     margin-left: 0;
                 }
             }
@@ -396,7 +399,7 @@
             display: block;
             width: 30px;
             height: 60px;
-            padding: $padding 0;
+            padding: 15px 0;
 
             cursor: pointer;
 

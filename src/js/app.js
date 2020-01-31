@@ -302,23 +302,13 @@ $(document).ready(() =>{
   // Slider
   if( $(".slider").length ){
     // Slider License
-    $('.slider.license-slider').slick({
-      speed: 300,
-      slidesToShow: 4,
-      slidesToScroll: 4,
+    $('.slider.slider_license').slick({
+      slidesToShow: 3,
+      slidesToScroll: 3,
       arrows: true,
       dots: false, 
       infinite: false,
       responsive: [
-          {
-            breakpoint: 992,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 3,
-              infinite: true,
-              dots: true
-            }
-          },
           {
             breakpoint: 768,
             settings: {
@@ -336,20 +326,9 @@ $(document).ready(() =>{
         arrows: false,
         dots: true,
         fade: true,
-        cssEase: "linear",
         autoplay: true,
         autoplaySpeed: 2500,
-        pauseOnFocus: false,
-        responsive: [
-          {
-            breakpoint: 1200,
-            settings: {}
-          },
-          {
-            breakpoint: 600,
-            settings: {}
-          }
-        ]
+        pauseOnFocus: true
       });
     }
     // Slider Review
