@@ -1,0 +1,38 @@
+.cta-block{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    padding: 30px 40px;
+    background: $orange;
+    border: 10px solid $border-orange;
+    border-radius: 20px;
+
+    color: $white;
+
+    .cta-block__title{
+        font-size: 2.5rem;
+        font-weight: bold;
+        line-height: 1.2;
+        margin-bottom: $padding/2;
+    }
+
+    .cta-block__content{
+        flex: 0 0 420px;
+        max-width: 100%;
+        padding-right: 20px;
+    }
+    .cta-block__form{
+        flex: 0 0 calc(100% - 420px);
+        max-width: 100%;
+    }
+
+    .form{
+        .form__agree{
+            margin-top: $padding/2;
+            .checkbox__link{
+                color: $white;
+            }
+        }
+    }
+}

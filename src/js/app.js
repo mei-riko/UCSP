@@ -60,7 +60,7 @@ $(document).ready(() =>{
     // remove price
     poll.find(".poll__programm-price").html( price );
 
-    // show button
+    // show a
     if ( price === "0" ){
       $(".poll__btn").removeClass("active");
     }else{
@@ -306,6 +306,8 @@ $(document).ready(() =>{
       slidesToShow: 3,
       slidesToScroll: 3,
       arrows: true,
+      prevArrow: '<a class="arrow arrow_left"></a>',
+      nextArrow: '<a class="arrow arrow_right"></a>',
       dots: false, 
       infinite: false,
       responsive: [
@@ -332,14 +334,14 @@ $(document).ready(() =>{
       });
     }
     // Slider Review
-    if( $(".reviews-slider").length ){
-      $(".reviews-slider").not(".slick-initialized").slick({
+    if( $(".slider.slider_reviews").length ){
+      $(".slider_reviews").not(".slick-initialized").slick({
         slidesToShow: 3,
         slidesToScroll: 1,
         arrows: true,
         dots: false,
-        prevArrow: '<button class="arrow arrow-left"></button>',
-        nextArrow: '<button class="arrow arrow-right"></button>',
+        prevArrow: '<a class="arrow arrow_left"></a>',
+        nextArrow: '<a class="arrow arrow_right"></a>',
         responsive: [
           {
             breakpoint: 1200,

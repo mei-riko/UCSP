@@ -1,0 +1,28 @@
+.info{
+    .info__label{
+        font-size: 12px;
+        line-height: 1;
+        color: $text-grey;
+    }
+    .info__content{
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: $grey;
+        &_rub{
+            display: inline-block;
+            padding-right: 16px;
+            background: url("../img/2020/rub.svg") no-repeat center right / 12px;
+        }
+    }
+}
+.info-group{
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-left: -20px;
+    margin-right: -20px;
+
+    .info{
+        padding: 0 20px;
+    }
+}

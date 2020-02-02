@@ -139,9 +139,10 @@ img{
 
 /* Background */
 .bg{
-    &_light-blue{
-        background-color: $lightblue;
-    }
+    &_light-blue{background-color: $lightblue;}
+    &_blue1{background-color: $darkblue; color: $white;}
+    &_blue2{background-color: $blue; color: $white;}
+    &_blue3{background-color: $lighterblue; color: $white;}
 }
 
 /* Heading */
@@ -155,8 +156,8 @@ h6, .h6{font-size: 1rem;}
 
 h1, .h1, h2, .h2, h3, .h3,
 h4, .h4, h5, .h5, h6, .h6{
-    line-height: 1.2;
     color: $text-darkblue;
+    line-height: 1.2;
 
     & + *{
         margin-top: 1.5*$padding;
@@ -182,11 +183,13 @@ h4, .h4, h5, .h5, h6, .h6{
 .pt-0{padding-top: 0!important;}
 .pt-20{padding-top: $padding!important;}
 .pt-40{padding-top: 2*$padding!important;}
+.pt-60{padding-top: 3*$padding!important;}
 .pt-80{padding-top: 4*$padding!important;}
 
 .pb-0{padding-bottom: 0!important;}
 .pb-20{padding-bottom: $padding!important;}
 .pb-40{padding-bottom: 2*$padding!important;}
+.pb-60{padding-bottom: 3*$padding!important;}
 .pb-80{padding-bottom: 4*$padding!important;}
 
 /* Media */
