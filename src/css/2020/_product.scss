@@ -1,0 +1,18 @@
+.product{
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    min-height: 200px;
+    border-radius: 20px;
+    overflow: hidden;
+    
+    .product__title{
+        padding: 20px 30px;
+        flex: 0 0 100%;
+        max-width: 100%;
+
+        background: rgba(56,78,89,0.7);
+        color: $white;
+        font-weight: bold;
+    }
+}
