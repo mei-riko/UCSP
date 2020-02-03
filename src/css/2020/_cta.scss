@@ -35,4 +35,16 @@
             }
         }
     }
+
+    .info{
+        .info__label{
+            color: $text-lightgrey;
+        }
+        .info__content{
+            color: $white;
+            &_rub{
+                background: url("../img/2020/rub-white.svg") no-repeat center right / 12px;
+            }
+        }
+    }
 }

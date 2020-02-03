@@ -1,0 +1,32 @@
+.content{
+    .content__title{
+        font-size: 2.5rem;
+        font-weight: bold;
+        line-height: 1.2;
+    }
+    // block behind video on index page
+    .content__information{}
+}
+
+.content-seo{
+    ul{
+        @extend .list;
+        @extend .list_square;
+        li{
+            @extend .list__item;
+        }
+    }
+    * + ul{
+        margin-top: $padding;
+    }
+
+    ol{
+        padding-left: $padding;
+        list-style: decimal;
+        li{
+            & + li{
+                margin-top: 6px;
+            }
+        }
+    }
+}

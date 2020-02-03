@@ -25,31 +25,31 @@
   margin-left: -20px;
 }
 
-.row.flex-end, .flex-end.dropdown__nav {
+.flex-end {
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
 }
 
-.row.flex-start, .flex-start.dropdown__nav {
+.flex-start {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
 }
 
-.row.align-items-center, .align-items-center.dropdown__nav {
+.align-items-center {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
 }
 
-.row.justify-content-center, .justify-content-center.dropdown__nav {
+.justify-content-center {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
 }
 
-.row.justify-content-between, .justify-content-between.dropdown__nav {
+.justify-content-between {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -586,6 +586,14 @@ a:hover {
   font-size: 1.15rem;
 }
 
+.text-gold {
+  color: #bf9a70 !important;
+}
+
+.text-blue {
+  color: #3e83a4 !important;
+}
+
 /* Main Style */
 html {
   font-size: 14px;
@@ -646,6 +654,24 @@ img {
   max-width: 100%;
 }
 
+.icon {
+  background-color: #f2f5f6;
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  padding: 22px;
+  margin: 0 auto 10px;
+}
+
+.link {
+  color: #3e83a4;
+  text-decoration: underline;
+}
+
+.link:hover {
+  color: #384e59;
+}
+
 /* Background */
 .bg_light-blue {
   background-color: #f2f5f6;
@@ -699,7 +725,7 @@ h4, .h4, h5, .h5, h6, .h6 {
 
 h1 + *, .h1 + *, h2 + *, .h2 + *, h3 + *, .h3 + *,
 h4 + *, .h4 + *, h5 + *, .h5 + *, h6 + *, .h6 + * {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 * + h1, * + .h1, * + h2, * + .h2, * + h3, * + .h3,
@@ -1626,6 +1652,28 @@ h4 + *, .h4 + *, h5 + *, .h5 + *, h6 + *, .h6 + * {
   flex-wrap: wrap;
 }
 
+.form_courses .form__group .form__agree {
+  padding-right: 20px;
+}
+
+.form_courses .form__group_col {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.form_courses .form__group_col .form-input {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 calc(50% - 10px);
+  flex: 0 0 calc(50% - 10px);
+  max-width: calc(50% - 10px);
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.form_courses .form__group_col + .form__group {
+  margin-top: 10px;
+}
+
 .form_cta .btn {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 180px;
@@ -1645,7 +1693,7 @@ h4 + *, .h4 + *, h5 + *, .h5 + *, h6 + *, .h6 + * {
   outline: none;
   border: none;
   border-radius: 12px;
-  padding: 12px 20px;
+  padding: 14px 20px;
 }
 
 .checkbox {
@@ -1839,6 +1887,36 @@ h4 + *, .h4 + *, h5 + *, .h5 + *, h6 + *, .h6 + * {
   margin-top: 10px;
 }
 
+.item_learning {
+  position: relative;
+  padding: 30px 40px 30px 120px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(41, 41, 41, 0.1);
+  box-shadow: 0px 10px 20px 0px rgba(41, 41, 41, 0.1);
+}
+
+.item_learning .item__icon {
+  position: absolute;
+  width: auto;
+  height: 40px;
+  left: 34px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.item_learning .item__icon-xl {
+  position: absolute;
+  width: auto;
+  height: 60px;
+  left: 34px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
 .info .info__label {
   font-size: 12px;
   line-height: 1;
@@ -1848,7 +1926,9 @@ h4 + *, .h4 + *, h5 + *, .h5 + *, h6 + *, .h6 + * {
 .info .info__content {
   font-size: 1.5rem;
   font-weight: bold;
+  line-height: 1;
   color: #333333;
+  margin-top: 6px;
 }
 
 .info .info__content_rub {
@@ -1871,25 +1951,25 @@ h4 + *, .h4 + *, h5 + *, .h5 + *, h6 + *, .h6 + * {
   padding: 0 20px;
 }
 
-.list {
+.list, .list-square ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.list .list__item {
+.list .list__item, .list-square ul .list__item, .list .list-square ul li, .list-square ul .list li, .list-square ul li {
   position: relative;
 }
 
-.list .list__item + .list__item {
+.list .list__item + .list__item, .list-square ul .list__item + .list__item, .list .list-square ul li + .list__item, .list-square ul .list li + .list__item, .list-square ul li + .list__item, .list .list-square ul .list__item + li, .list-square ul .list .list__item + li, .list-square ul .list__item + li, .list .list-square ul li + li, .list-square ul .list li + li, .list-square ul li + li {
   margin-top: 6px;
 }
 
-.list_square .list__item {
+.list_square .list__item, .list-square ul .list__item, .list_square .list-square ul li, .list-square ul .list_square li, .list-square ul li {
   padding-left: 20px;
 }
 
-.list_square .list__item:before {
+.list_square .list__item:before, .list-square ul .list__item:before, .list_square .list-square ul li:before, .list-square ul .list_square li:before, .list-square ul li:before {
   content: '';
   display: block;
   width: 8px;
@@ -1904,12 +1984,12 @@ h4 + *, .h4 + *, h5 + *, .h5 + *, h6 + *, .h6 + * {
   counter-reset: list;
 }
 
-.list_work .list__item {
+.list_work .list__item, .list_work .list-square ul li, .list-square ul .list_work li {
   padding-left: 60px;
   min-height: 40px;
 }
 
-.list_work .list__item:before {
+.list_work .list__item:before, .list_work .list-square ul li:before, .list-square ul .list_work li:before {
   display: block;
   position: absolute;
   left: 0;
@@ -1929,7 +2009,7 @@ h4 + *, .h4 + *, h5 + *, .h5 + *, h6 + *, .h6 + * {
   height: 40px;
 }
 
-.list_work .list__item + .list__item {
+.list_work .list__item + .list__item, .list_work .list-square ul li + .list__item, .list-square ul .list_work li + .list__item, .list_work .list-square ul .list__item + li, .list-square ul .list_work .list__item + li, .list_work .list-square ul li + li, .list-square ul .list_work li + li {
   margin-top: 20px;
 }
 
@@ -1993,6 +2073,18 @@ h4 + *, .h4 + *, h5 + *, .h5 + *, h6 + *, .h6 + * {
 
 .cta-block .form .form__agree .checkbox__link {
   color: #fff;
+}
+
+.cta-block .info .info__label {
+  color: #fefefe;
+}
+
+.cta-block .info .info__content {
+  color: #fff;
+}
+
+.cta-block .info .info__content_rub {
+  background: url("../img/2020/rub-white.svg") no-repeat center right/12px;
 }
 
 .slider .slider__title {
@@ -2112,4 +2204,12 @@ h4 + *, .h4 + *, h5 + *, .h5 + *, h6 + *, .h6 + * {
 
 .slider_reviews .arrow_right {
   right: -10px;
+}
+
+.slider_document {
+  padding: 0 60px;
+}
+
+.slider_document .slider__item {
+  padding: 0 20px;
 }

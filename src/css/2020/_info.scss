@@ -7,7 +7,11 @@
     .info__content{
         font-size: 1.5rem;
         font-weight: bold;
+        line-height: 1;
         color: $grey;
+
+        margin-top: 6px;
+        
         &_rub{
             display: inline-block;
             padding-right: 16px;

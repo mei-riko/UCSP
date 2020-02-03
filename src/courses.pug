@@ -1,0 +1,269 @@
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Курс обучения
+
+        link(href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:300,400,600,700', rel='stylesheet')
+        link(href='./css/courses_update.css', rel='stylesheet')
+
+    body
+        script(src="./js/jquery.min.js")
+        include chunks/header.pug
+        main
+            section.bg_light-blue.breadcrumbs-section
+                .container
+                    ul.breadcrumbs
+                        li.breadcrumbs__item
+                            a.breadcrumbs__link(href="#") Главная
+                        li.breadcrumbs__item
+                            a.breadcrumbs__link(href="#") Каталог услуг
+                        li.breadcrumbs__item
+                            span.breadcrumbs__span Обучение по охране труда на высоте
+            section.content.pt-60.pb-60
+                .container
+                    .row.justify-content-between
+                        .col-7.col-md-12
+                            h1.content__title Обучение по охране труда на высоте
+                            p Центр профессионального обучения "Северный Путь" проводит обучение очно 
+                                | и&nbsp;дистанционно в&nbsp;направлении охраны труда на&nbsp;высоте, 
+                                | по следующим курсам: охрана труда на&nbsp;высоте 1, 2, 3 группа допуска, 
+                                | а&nbsp;также, охрана труда на высоте с&nbsp;применением средств подмащивания.
+                            p По результатам успешного завершения обучения по охране труда на высоте сотруднику выдаются:<br>
+                                | - удостоверение по охране труда на высоте<br>
+                                | - протокол
+                        .col-4.col-md-12.mt-md-40
+                            .sidebar.sidebar_small
+                                .info
+                                    p.info__label Срок получения документов*
+                                    p.info__content от 1 дня
+                                .info
+                                    p.info__label Стоимость
+                                    p.info__content.info__content_rub 3240
+                                a.btn.btn_primary(href="#") Оставить заявку
+            aside.pb-60
+                .container
+                    p.h4.text-bold Программы обучения
+                    .row.justify-content-center
+                        .col-4.col-md-9.col-sm-12
+                            a.product(href="#" style="background-image: url('./img/program/1.jpg');")
+                                .product__title 
+                                    .product__name Пожарно-технический минимум для руководителей, лиц, ответственных за пожарную безопасность пожароопасных производств
+                        .col-4.col-md-9.col-sm-12
+                            a.product(href="#" style="background-image: url('./img/program/2.jpg');")
+                                .product__title 
+                                    .product__name Пожарно-технический минимум для руководителей сельскохозяйственных организаций и ответственных за пожарную безопасность
+                        .col-4.col-md-9.col-sm-12.mt-30
+                            a.product(href="#" style="background-image: url('./img/program/3.jpg');")
+                                .product__title 
+                                    .product__name Пожарно-технический минимум для киномехаников
+                        .col-12.mt-40
+                            a.link.text-bold(href="#") Полный перечень программ (все направления)
+            section.bg_light-blue.pt-40.pb-40
+                .container
+                    .row
+                        .col-3
+                            p.text-bold Кому необходимо обучение:
+                        .col-6.list-square
+                            ul
+                                li Руководители организации
+                                li Лица, назначенные приказом руководителя ответственными за пожарную безопасность в организации, в подразделении, на объекте
+                                li Работники, выполняющие пожароопасные работы
+                                li Члены аттестационных комиссий по проверке знаний пожарно-технического минимума работников организации
+                    .row.mt-40
+                        .col-3
+                            p.text-bold Периодичность обучения:
+                        .col-6
+                            p 1 раз в три года
+            section.pt-60.pb-60
+                .container
+                    .row
+                        .col-6.col-md-12
+                            .item.item_learning
+                                img.item__icon(src="../img/2020/learning.svg")
+                                .info-group
+                                    .info
+                                        .info__label Формат обучения
+                                        .info__content Очно
+                                    .info
+                                        .info__label Стоимость обучения
+                                        .info__content.info__content_rub 2 990
+                        .col-6.col-md-12
+                            .item.item_learning
+                                img.item__icon(src="../img/2020/elearning.svg")
+                                .info-group
+                                    .info
+                                        .info__label Формат обучения
+                                        .info__content Дистанционно
+                                    .info
+                                        .info__label Стоимость обучения
+                                        .info__content.info__content_rub 1 500
+                    p.h3.text-gold.text-bold.text-center Более 1000 клиентов выбирают нас
+                    .row.justify-content-center.text-center.mt-40
+                        .col-3
+                            .icon
+                                img.icon__img(src="../img/icon/tracking.svg")
+                            p Программы согласованы с&nbsp;ГУ&nbsp;МЧС  России по&nbsp;г.&nbsp;Санкт-Петербургу
+                        .col-3
+                            .icon
+                                img.icon__img(src="../img/icon/icon_clients.svg")
+                            p Документы соответствуют законодательству РФ
+                        .col-3
+                            .icon
+                                img.icon__img(src="../img/icon/icon_consultation.svg")
+                            p Бесплатная доставка документов курьером и&nbsp;почтой
+            section.bg_light-blue.pt-40.pb-40
+                .container
+                    .row.align-items-center
+                        .col-5
+                            p.h2.text-bold Лицензии и&nbsp;аккредитации
+                            p Северный Путь является аккредитованным учебным центром и&nbsp;имеет всю&nbsp;необходимую 
+                                | документацию для&nbsp;ведения образовательной деятельности. Здесь вы можете ознакомиться 
+                                | с&nbsp;лицензиями и&nbsp;разрешениями компании.
+                        .col-7
+                            .slider.slider_license
+                                .slider__item
+                                    img.img-fluid(src="../img/2020/license-demo.png")
+                                .slider__item
+                                    img.img-fluid(src="../img/2020/license-demo.png")
+                                .slider__item
+                                    img.img-fluid(src="../img/2020/license-demo.png")
+                                .slider__item
+                                    img.img-fluid(src="../img/2020/license-demo.png")
+                                .slider__item
+                                    img.img-fluid(src="../img/2020/license-demo.png")
+                                .slider__item
+                                    img.img-fluid(src="../img/2020/license-demo.png")
+            section.pt-60.pb-60
+                .container
+                    p.h5.text-center.text-bold Программы согласованные с ГУ МЧС России по Санкт-Петербургу
+                    .slider.slider_document
+                        .slider__item
+                            img.img-fluid(src="../img/2020/license-demo.png")
+                        .slider__item
+                            img.img-fluid(src="../img/2020/license-demo.png")
+                        .slider__item
+                            img.img-fluid(src="../img/2020/license-demo.png")
+                        .slider__item
+                            img.img-fluid(src="../img/2020/license-demo.png")
+                        .slider__item
+                            img.img-fluid(src="../img/2020/license-demo.png")
+                        .slider__item
+                            img.img-fluid(src="../img/2020/license-demo.png")
+            section.bg_light-blue.pt-40.pb-40
+                .container
+                    .row.Justify-content-center
+                        .col-4.col-md-12
+                            .item.item_learning
+                                img.item__icon-xl(src="../img/2020/passport.svg")
+                                .info
+                                    .info__label Пример документов
+                                    .info__content 
+                                        a(href="#") Удостоверение
+                        .col-4.col-md-12
+                            .item.item_learning
+                                img.item__icon-xl(src="../img/2020/passport.svg")
+                                .info
+                                    .info__label Пример документов
+                                    .info__content 
+                                        a(href="#") Протокол
+                        .col-4.col-md-12
+                            .item.item_learning
+                                img.item__icon-xl(src="../img/2020/passport.svg")
+                                .info
+                                    .info__label Пример документов
+                                    .info__content 
+                                        a(href="#") Диплом
+            section.pt-60.pb-60
+                .container
+                    .row
+                        .col-4
+                            .item.item_work
+                                p.h3.text-bold.item__title Порядок работы
+                                ul.list.list_work
+                                    li.list__item Оставьте заявку
+                                    li.list__item Выберите удобный формат изучения
+                                    li.list__item Получите документы и&nbsp;обучающие материалы не&nbsp;выходя из&nbsp;офиса
+                        .col-8
+                            .row
+                                .col-6.mb-40
+                                    .item.item_sale.item_sale-1.bg_blue1
+                                        p.item__title Акция «Приведи&nbsp;друга»
+                                        p.item__offer Скидка 10% на следующие заказы
+                                .col-6.mb-40
+                                    .item.item_sale.item_sale-2.bg_blue2
+                                        p.item__title Бесплатная доставка
+                                        p.item__offer Доставка документов по СПб
+                                .col-12
+                                    .item.item_sale.item_sale-3.bg_blue3
+                                        p.item__title.item__title_lead Акция «Договор на год»
+                                        p.item__offer Скидка 10% при заключении договора на год
+            aside.container
+                p.h5.text-bold.mb-0 Популярные направления
+                .row.mt-0
+                    .col-4.mt-40
+                        a.item.item_link(href="#") Аутсорсинг по охране труда
+                    .col-4.mt-40
+                        a.item.item_link(href="#") Расследование несчастных случаев
+                    .col-4.mt-40
+                        a.item.item_link(href="#") Лицензирование и сертификация
+            section.pt-60.pb-60
+                .container
+                    .cta-block
+                        .cta-block__content
+                            .info-group
+                                .info
+                                    .info__label Действие документов
+                                    .info__content 1 год / 3 года
+                                .info
+                                    .info__label Стоимость обучения
+                                    .info__content.info__content_rub от 1 500
+                            p.cta-block__offer.mt-20.text-bold Специалисты учебного центра оперативно ответят на&nbsp;любые ваши вопросы
+                        .cta-block__form
+                            form.form.form_courses(action="")
+                                .form__group.form__group_col
+                                    input.form-input(type="text" placeholder="Мобильный телефон *")
+                                    input.form-input(type="text" placeholder="Фамилия, имя")
+                                .form__group.justify-content-between
+                                    .form__agree.checkbox
+                                        input.checkbox__input(type="checkbox" name="agree" checked="checked" required="required")
+                                        label.checkbox__label(for="agree") Я согласен с 
+                                            a.checkbox__link(href="/assets/files/documents/policy.pdf" target="_blank") правилами использования сайта
+                                    button.btn.btn_primary Оставить заявку
+                    .mt-20
+                        a.link.text-bold(href="#") < Вернуться к полному перечню программ обучения
+                    .content-seo.pt-60
+                        h2 Заголовок h2
+                        p «Северный Путь» является аккредитованной организацией, оказывающей услуги в области охраны труда и предоставляет максимально выгодные и надёжные условия взаимодействия в направлении аутсорсинга по охране труда. Работая по принципу единого окна, Вы сможете получить в нашем лице надёжного партнера в направлении охраны труда, обучения персонала, а также помощь в организации процессов медосмотров сотрудников и аттестации рабочих мест.
+                        h3 Заголовок h3
+                        p Центр профессионального обучения «Северный Путь» является аккредитованной организацией, оказывающей услуги в области охраны труда и предоставляет максимально выгодные и надёжные условия взаимодействия в направлении аутсорсинга по охране труда. Работая по принципу единого окна, Вы сможете получить в нашем лице надёжного партнера в направлении охраны труда, обучения персонала, а также помощь в организации процессов медосмотров сотрудников и аттестации рабочих мест.
+                        ol
+                            li аккредитованной организацией
+                            li аккредитованной организацией
+                            li аккредитованной организацией
+                            li аккредитованной организацией
+                        h4 Заголовок h4
+                        p Центр профессионального обучения «Северный Путь» является аккредитованной организацией, оказывающей услуги в области охраны труда и предоставляет максимально выгодные и надёжные условия взаимодействия в направлении аутсорсинга по охране труда. Работая по принципу единого окна, Вы сможете получить в нашем лице надёжного партнера в направлении охраны труда, обучения персонала, а также помощь в организации процессов медосмотров сотрудников и аттестации рабочих мест.
+                        h5 Заголовок h5
+                        p Центр профессионального обучения «Северный Путь» является аккредитованной организацией, оказывающей 
+                            | услуги в области охраны труда и предоставляет максимально выгодные и надёжные условия 
+                            | взаимодействия в направлении аутсорсинга по охране труда. Работая по принципу единого окна, 
+                        h6 Заголовок h6
+                        ul 
+                            li Центр профессионального обучения «Северный Путь» является аккредитованной организацией, 
+                            li оказывающей услуги в области охраны труда и предоставляет максимально выгодные 
+                            li и надёжные условия взаимодействия в направлении аутсорсинга по охране труда. 
+                            li Работая по принципу единого окна, Вы сможете получить в нашем лице надёжного партнера 
+        include chunks/footer.pug
+        script(src="./js/jquery.inputmask.js")
+
+        
+        script(src="./js/slick.min.js")
+        link(href='./css/slick.css', rel='stylesheet')
+        link(href='./css/slick-theme.css', rel='stylesheet')
+
+        script(src="./js/iziModal.min.js")
+        link(href='./css/iziModal.min.css', rel='stylesheet')
+
+        script(src="./js/app.min.js")

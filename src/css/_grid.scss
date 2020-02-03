@@ -11,13 +11,12 @@
     flex-wrap: wrap;
     margin-right: -$padding;
     margin-left: -$padding;
-
-    &.flex-end{align-items: flex-end;}
-    &.flex-start{align-items: flex-start;}
-    &.align-items-center{align-items: center;}
-    &.justify-content-center{justify-content: center;}
-    &.justify-content-between{justify-content: space-between;}
 }
+.flex-end{align-items: flex-end;}
+.flex-start{align-items: flex-start;}
+.align-items-center{align-items: center;}
+.justify-content-center{justify-content: center;}
+.justify-content-between{justify-content: space-between;}
 .no-gutters {
     margin-right: 0;
     margin-left: 0

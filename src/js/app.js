@@ -360,6 +360,25 @@ $(document).ready(() =>{
         ]
       });
     }
+    // Slider Document
+    $('.slider.slider_document').slick({
+      slidesToShow: 4,
+      slidesToScroll: 2,
+      arrows: true,
+      prevArrow: '<a class="arrow arrow_left"></a>',
+      nextArrow: '<a class="arrow arrow_right"></a>',
+      dots: false, 
+      infinite: false,
+      responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          }
+      ]
+    });
   }
   // MAP
   if ($("#map").length > 0) {

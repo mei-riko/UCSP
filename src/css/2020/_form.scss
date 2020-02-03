@@ -3,7 +3,28 @@
         display: flex;
         flex-wrap: wrap;
     }
+    &_courses{
+        .form__group{
+            .form__agree{
+                padding-right: 20px;
+            }
+        }
+        .form__group_col{
+            margin-left: -5px;
+            margin-right: -5px;
+            .form-input{
+                flex: 0 0 calc(50% - 10px);
+                max-width: calc(50% - 10px);
+                margin-left: 5px;
+                margin-right: 5px;
+            }
 
+            & + .form__group{
+                margin-top: 10px;
+            }
+        }
+        
+    }
     &_cta{
         .btn{
             flex: 0 0 180px;
@@ -16,14 +37,12 @@
         }
     }
 }
-
 .form-input{
     outline: none;
     border: none;
     border-radius: 12px;
-    padding: 12px 20px;
+    padding: 14px 20px;
 }
-
 .checkbox{
     display: flex;
     flex-wrap: nowrap;

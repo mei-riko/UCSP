@@ -1,0 +1,35 @@
+/* Breadcrumb Block */
+.breadcrumbs{
+    font-size: 12px;
+    
+    &__item{
+        position: relative;
+        display: inline-block;
+    
+        & + .breadcrumbs__item{
+            padding-left: $padding;
+            &:before{
+                content: "";
+                display: block;
+                width: 10px;
+                height: 18px;
+
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                background: url('../img/icon/arrow-next.svg') no-repeat 3px 5px / 9px;
+            }
+        }
+    }
+    &__span{
+        color: $text-grey;
+    }
+}
+
+.breadcrumbs-section{
+    .breadcrumbs{
+        padding: 8px 0;
+        padding-left: 245px;
+    }
+}
