@@ -48,3 +48,29 @@
         }
     }
 }
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .cta-block{
+        .cta-block__title{
+            font-size: 1.75rem;
+        }
+        .cta-block__content,
+        .cta-block__form{
+            flex: 0 0 50%;
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .cta-block{
+        padding: 20px 30px;
+        .cta-block__title{
+            font-size: 1.5rem;
+        }
+        .cta-block__content{
+            flex: 0 0 100%;
+        }
+        .cta-block__form{
+            margin-top: $padding;
+            flex: 0 0 100%;
+        }
+    }
+}

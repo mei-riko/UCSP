@@ -1,7 +1,4 @@
 .slider{
-    .slider__item{
-
-    }
     .slider__title{
         font-size: 44px;
         color: $text-heading;
@@ -48,7 +45,6 @@
             cursor: not-allowed;
         }
     }
-
     // Slick
     &.slick-initialized{
         .slick-slide{
@@ -113,6 +109,74 @@
         padding: 0 60px;
         .slider__item{
             padding: 0 20px;
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'xl')){
+    .slider{
+        .slider__title{
+            font-size: 34px;
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .slider{
+        .slider__title{
+            font-size: 30px;
+        }
+        .slider__subtitle{
+            font-size: 16px;
+        }
+        // Style
+        &_info{
+            padding: 30px 0 40px;
+            .slick-dotted.slick-slider{
+                margin-bottom: 30px;
+                .slick-dots{
+                    bottom: -30px;
+                }
+            }
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .slider{
+        .slider__title{
+            & + .slider__subtitle {
+                margin-top: 20px;
+            }
+        }
+        // Style
+        &_info{
+            padding: 30px 0 40px;
+            .slick-dotted.slick-slider{
+                margin-bottom: 60px;
+                .slick-dots{
+                    bottom: -30px;
+                }
+            }
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .slider{
+        .slider__title{
+            font-size: 24px;
+            & + .slider__subtitle {
+                margin-top: 10px;
+            }
+        }
+        .slider__subtitle{
+            font-size: 14px;
+        }
+        // Style
+        &_info{
+            .slick-dotted.slick-slider{
+                margin-bottom: 40px;
+                .slick-dots{
+                    bottom: -20px;
+                }
+            }
         }
     }
 }

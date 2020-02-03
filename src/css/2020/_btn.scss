@@ -39,3 +39,14 @@
         margin: 0 5px;
     }
 }
+
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .btn-group{
+        .btn{
+            width: 100%;
+            & + .btn{
+                margin-top: 10px;
+            }
+        }
+    }
+}

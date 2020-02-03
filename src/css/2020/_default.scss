@@ -139,7 +139,7 @@ p{
 img{
 	max-width: 100%;
 }
-.icon{
+.icon-item{
     background-color: $lightblue;
     width: 80px;
     height: 80px;
@@ -165,7 +165,6 @@ img{
 }
 
 /* Heading */
-
 h1, .h1{font-size: 3rem;}
 h2, .h2{font-size: 2.5rem;}
 h3, .h3{font-size: 2rem;}
@@ -212,7 +211,7 @@ h4, .h4, h5, .h5, h6, .h6{
 .pb-80{padding-bottom: 4*$padding!important;}
 
 /* Media */
-@media all and (max-width: $desktop){
+@media all and (max-width: map-get($grid-breakpoints, 'xl')){
 	.d-xl-none{display: none;}
 	/* Offset */
 	.mt-xl-0{margin-top: 0!important;}
@@ -232,7 +231,7 @@ h4, .h4, h5, .h5, h6, .h6{
 	.text-xl-left {text-align: left;}
 	.text-xl-right{text-align: right;}
 }
-@media all and (max-width: $desktop_m){
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
 	.d-lg-none{display: none;}
 	/* Offset */
 	.mt-lg-0{margin-top: 0!important;}
@@ -252,12 +251,18 @@ h4, .h4, h5, .h5, h6, .h6{
 	.text-lg-left {text-align: left;}
 	.text-lg-right{text-align: right;}
 }
-@media all and (max-width: $tablet){
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
 	.container{
 		padding-left: 2*$padding;
 		padding-right: 2*$padding;
 	}
 	.d-md-none{display: none;}
+	/* Heading */
+	h1, .h1{font-size: 2rem;}
+	h2, .h2,
+	h3, .h3{font-size: 1.5rem;}
+	h4, .h4,
+	h5, .h5{font-size: 1.25rem;}
 	/* Offset */
 	.mt-md-0{margin-top: 0!important;}
 	.mt-md-40{margin-top: 2*$padding!important;}
@@ -276,13 +281,15 @@ h4, .h4, h5, .h5, h6, .h6{
 	.text-md-left {text-align: left;}
 	.text-md-right{text-align: right;}
 }
-@media all and (max-width: $mobile-l){
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
 	.d-sm-none{display: none;}
 	/* Offset */
 	.mt-sm-0{margin-top: 0!important;}
+	.mt-sm-20{margin-top: $padding!important;}
 	.mt-sm-40{margin-top: 2*$padding!important;}
 	.mt-sm-80{margin-top: 4*$padding!important;}
 	.mb-sm-0{margin-bottom: 0!important;}
+	.mb-sm-20{margin-bottom: $padding!important;}
 	.mb-sm-40{margin-bottom: 2*$padding!important;}
 	.mb-sm-80{margin-bottom: 4*$padding!important;}
 	.pt-sm-0{padding-top: 0!important;}

@@ -61,3 +61,47 @@
         text-decoration: underline;
     }
 }
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .form{
+        &_cta{
+            .form-input{
+                flex: 0 0 100%;
+                margin-bottom: 10px;
+                margin-right: 0;
+            }
+            .btn{
+                flex: 0 0 100%;
+            }
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .form{
+        &_cta{
+            .form-input{
+                flex: 0 0 calc(100% - 190px);
+                margin-bottom: 0;
+                margin-right: 10px;
+            }
+            .btn{
+                flex: 0 0 180px;
+            }
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .form{
+        &_cta{
+            .btn{
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+            .form-input{
+                margin-bottom: 10px;
+                margin-right: 0;
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+    }
+}
