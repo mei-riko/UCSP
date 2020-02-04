@@ -43,6 +43,13 @@
         .item_programm__content{
             flex: 0 0 100%;
             max-width: 100%;
+            ul{
+                @extend .list;
+                @extend .list_square;
+                li{
+                    @extend .list__item;
+                }
+            }
         }
         .item_programm__footer{
             border-top: 1px solid $border-color;
@@ -196,6 +203,13 @@
                 background-size: 200px;
             }
         }
+        &_learning{
+            padding: 30px 40px 30px 100px;
+            .item__icon-xl{
+                height: 50px;
+                left: 24px;
+            }
+        }
     }
 }
 @media all and (max-width: map-get($grid-breakpoints, 'lg')){
@@ -203,6 +217,18 @@
         &_sale{
             &-3{
                 background-size: 200px;
+            }
+        }
+        &_learning{
+            padding: 30px;
+            .item__icon,
+            .item__icon-xl{
+                display: none;
+            }            
+            .info-group{
+                .info{
+                    padding: 0;
+                }
             }
         }
     }
@@ -219,6 +245,16 @@
                 &_lead{
                     font-size: 1.5rem;
                 }
+            }
+            &-3{
+                padding-right: 230px;
+            }
+        }
+        &_learning{
+            padding: 30px 40px 30px 120px;
+            .item__icon,
+            .item__icon-xl{
+                display: block;
             }
         }
         &_logo{
@@ -268,6 +304,21 @@
             .item__image {
                 width: 50%;
                 height: 80px;
+            }
+        }
+        &_learning{
+            .item__icon-xl,
+            .item__icon{
+                display: none;
+            }
+            .info-group{
+                justify-content: flex-start;
+                .info{
+                    // flex: 0 0 100%;
+                    // max-width: 100%;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
             }
         }
     }

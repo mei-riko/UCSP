@@ -67,6 +67,16 @@
         }
         .cta-block__content{
             flex: 0 0 100%;
+            padding: 0;
+            .info-group{
+                .info{
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                    & + .info{
+                        margin-top: 20px;
+                    }
+                }
+            }
         }
         .cta-block__form{
             margin-top: $padding;

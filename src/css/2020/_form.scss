@@ -3,6 +3,41 @@
         display: flex;
         flex-wrap: wrap;
     }
+    .form__label{
+        font-size: 12px;
+        line-height: 14px;
+
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+    .form__input{
+        padding: 15px;
+
+        width: 100%;
+        max-width: 100%;
+        
+        font-size: 18px;
+        line-height: 20px;
+
+        background: #f2f3f4;
+        border: none;
+        border-bottom: 1px solid #796e52;
+
+        &::placeholder{
+            opacity: .5;
+        }
+        &:focus{
+            outline: none;
+
+            &::placeholder{
+                opacity: 0;
+            }
+        }
+
+        & + .form__label{
+            margin-top: 20px;
+        }
+    }
     &_courses{
         .form__group{
             .form__agree{
@@ -85,6 +120,17 @@
             }
             .btn{
                 flex: 0 0 180px;
+            }
+        }
+        &_courses{
+            .form__group_col{
+                .form-input{
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                    & + .form-input{
+                        margin-top: 10px;
+                    }
+                }
             }
         }
     }

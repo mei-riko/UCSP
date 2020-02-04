@@ -189,6 +189,9 @@
     }
 }
 @media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .justify-content-md-center{
+        justify-content: center;
+    }
     .col-md-1{
         flex: 0 0 8.33333%;
         max-width: 8.33333%
