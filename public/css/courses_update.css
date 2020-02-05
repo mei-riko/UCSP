@@ -2191,11 +2191,20 @@ h4 + *, .h4 + *, h5 + *, .h5 + *, h6 + *, .h6 + * {
     padding-right: 230px;
   }
   .item_learning {
-    padding: 30px 40px 30px 120px;
+    padding: 30px 40px 30px 100px;
   }
   .item_learning .item__icon,
   .item_learning .item__icon-xl {
     display: block;
+    left: 24px;
+  }
+  .item_learning .info-group {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .item_learning .info-group .info {
+    padding: 0 20px;
   }
   .item_logo .item__image {
     width: 30%;
@@ -2236,6 +2245,9 @@ h4 + *, .h4 + *, h5 + *, .h5 + *, h6 + *, .h6 + * {
   .item_logo .item__image {
     width: 50%;
     height: 80px;
+  }
+  .item_learning {
+    padding: 20px 30px;
   }
   .item_learning .item__icon-xl,
   .item_learning .item__icon {

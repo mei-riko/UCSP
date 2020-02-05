@@ -251,10 +251,17 @@
             }
         }
         &_learning{
-            padding: 30px 40px 30px 120px;
+            padding: 30px 40px 30px 100px;
             .item__icon,
             .item__icon-xl{
                 display: block;
+                left: 24px;
+            }
+            .info-group{
+                justify-content: space-between;
+                .info{
+                    padding: 0 20px;
+                }
             }
         }
         &_logo{
@@ -307,6 +314,7 @@
             }
         }
         &_learning{
+            padding: 20px 30px;
             .item__icon-xl,
             .item__icon{
                 display: none;
