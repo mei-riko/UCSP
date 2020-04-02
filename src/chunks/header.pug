@@ -68,15 +68,18 @@ header.header
                                     li.header__item
                                         a.header__link Рабочие рабочих профессий
                     ul.header__contact
-                        li.header__item
-                            a.header__link.header__link_search 
-                                span.header__link-inner Поиск
-                        li.header__item
-                            a.header__link.header__link_vk(href="#") 
-                                span.header__link-inner Группа ВК
+                        //- li.header__item
+                        //-     a.header__link.header__link_search 
+                        //-         span.header__link-inner Поиск
+                        //- li.header__item
+                        //-     a.header__link.header__link_vk(href="#") 
+                        //-         span.header__link-inner Группа ВК
                         li.header__item
                             a.header__link.header__link_address(href="#") 
                                 span.header__link-inner Адрес центра
+                        li.header__item.header__item_stock
+                            span.header__item-inner Обучайся сейчас, плати потом
+                            span.header__item-icon
             .navbar-toggler
                 svg(version="1.1" id="navbar" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve")
                     g
@@ -121,3 +124,6 @@ header.header
                     a.dropdown__link Руководство и инженерно-технический персонал
                 li.dropdown__item
                     a.dropdown__link Рабочие рабочих профессий
+    .header-stock
+        span.header-stock__inner Обучайся сейчас, плати потом
+        span.header-stock__icon

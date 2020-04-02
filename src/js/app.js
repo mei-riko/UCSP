@@ -410,4 +410,11 @@ $(document).ready(() =>{
         myMap.geoObjects.add(glyphIcon); 
     }
   }
+  // Action
+  $(".header__item.header__item_stock .header__item-icon").on("click", function(){
+    $(this).parent().toggleClass("header__item_stock--hidden");
+  })
+  $(".header-stock .header-stock__icon").on("click", function(){
+    $(this).parent().toggleClass("header-stock--hidden");
+  })
 });
