@@ -490,6 +490,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
     ymaps.ready(init);
   }
+  // Action
+  (0, _jquery2.default)(".header__item.header__item_stock .header__item-icon").on("click", function () {
+    (0, _jquery2.default)(this).parent().toggleClass("header__item_stock--hidden");
+  });
+  (0, _jquery2.default)(".header-stock .header-stock__icon").on("click", function () {
+    (0, _jquery2.default)(this).parent().toggleClass("header-stock--hidden");
+  });
 });
 
 /***/ }),

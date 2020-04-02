@@ -589,7 +589,17 @@
         max-width: calc(100% - 80px);
         right: 40px;
     }
-
+}
+@media all and (max-width: $mobile_l){
+    .header-stock{
+        width: 100%;
+        &--hidden{
+            width: 36px;
+        }
+    }
+    .slider.slider_info {
+        padding: 60px 0 40px;
+    }
 }
 
 @keyframes shake {

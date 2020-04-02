@@ -1611,6 +1611,18 @@ h4 + *, .h4 + *, h5 + *, .h5 + *, h6 + *, .h6 + * {
   }
 }
 
+@media all and (max-width: 576px) {
+  .header-stock {
+    width: 100%;
+  }
+  .header-stock--hidden {
+    width: 36px;
+  }
+  .slider.slider_info {
+    padding: 60px 0 40px;
+  }
+}
+
 @-webkit-keyframes shake {
   10%, 90% {
     -webkit-transform: translateY(3px) translate3d(-1px, 0, 0);

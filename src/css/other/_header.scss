@@ -573,8 +573,19 @@
 }
 @media all and (max-width: $tablet){
     .header-stock{
-        max-width: calc(100% - 80px);
-        right: 40px;
+        max-width: calc(100% - 60px);
+        right: 30px;
+    }
+}
+@media all and (max-width: $mobile_l){
+    .header-stock{
+        width: 100%;
+        &--hidden{
+            width: 36px;
+        }
+    }
+    .content.content_header{
+        padding-top: 60px;
     }
 }
 
