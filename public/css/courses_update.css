@@ -1948,11 +1948,11 @@ h4 + *, .h4 + *, h5 + *, .h5 + *, h6 + *, .h6 + * {
   content: "";
   display: block;
   width: 10px;
-  height: 18px;
+  height: 16px;
   position: absolute;
   top: 0;
   left: 0;
-  background: url("../img/icon/arrow-next.svg") no-repeat 3px 5px/9px;
+  background: url("../img/icon/arrow-next.svg") no-repeat 3px 4px/8px;
 }
 
 .breadcrumbs__span {

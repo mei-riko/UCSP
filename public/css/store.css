@@ -2770,11 +2770,11 @@ img {
   content: "";
   display: block;
   width: 10px;
-  height: 18px;
+  height: 16px;
   position: absolute;
   top: 0;
   left: 0;
-  background: url("../img/icon/arrow-next.svg") no-repeat center/8px;
+  background: url("../img/icon/arrow-next.svg") no-repeat 3px 4px/8px;
 }
 
 .content__breadcrumbs__link {

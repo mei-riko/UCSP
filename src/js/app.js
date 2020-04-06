@@ -232,19 +232,21 @@ $(document).ready(() =>{
   }
   // Fixed header on scroll
   $(window).scroll(function () {
-    if ($(window).scrollTop() > 300 && $(window).width() > 991 ) {
-      $(".content_header").addClass("sticky");
-      $(".header").addClass("sticky-menu");
-      $(".header").fadeIn();
-    } else if ($(window).scrollTop() < 50 ) {
-      $(".content_header").removeClass("sticky");
-      $(".header").css("display", "");
-      $(".header").removeClass("sticky-menu");
+    if ( $(".header").length > 0 && $(".content_header").length > 0){
+      if ($(window).scrollTop() > 300 && $(window).width() > 991 ) {
+        $(".content_header").addClass("sticky");
+        $(".header").addClass("sticky-menu");
+        $(".header").fadeIn();
+      } else if ($(window).scrollTop() < 50 ) {
+        $(".content_header").removeClass("sticky");
+        $(".header").css("display", "");
+        $(".header").removeClass("sticky-menu");
+      }
     }
   });
 
   //IziModal
-  if ($(".modal").length) {
+  if ($(".modal").length > 0) {
     $(".modal").iziModal({
       closeOnEscape: true,
       overlayColor: "rgba(0, 0, 0, 0.7)",
@@ -271,7 +273,7 @@ $(document).ready(() =>{
   // Modal Programm Form
   $('a[data-izimodal-open="#callback1"]').on("click", function() {
     var title = $(this).data("title");
-    console.log(title)
+    // console.log(title)
     $(".modal-callback .title").text(title);
     $(".modal-callback .h-title").attr("value", title);
   });
@@ -300,7 +302,7 @@ $(document).ready(() =>{
     return false;
   });
   // Slider
-  if( $(".slider").length ){
+  if( $(".slider").length > 0){
     // Slider License
     $('.slider.slider_license').slick({
       slidesToShow: 3,
