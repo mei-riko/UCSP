@@ -5,6 +5,10 @@
     min-height: 200px;
     border-radius: 20px;
     overflow: hidden;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     
     .product__title{
         padding: 20px 30px;

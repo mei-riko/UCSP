@@ -2325,6 +2325,10 @@ h4 + *, .h4 + *, h5 + *, .h5 + *, h6 + *, .h6 + * {
   padding: 20px 40px;
 }
 
+.item__title {
+  line-height: 1.2;
+}
+
 .item_link {
   display: block;
   width: 100%;
@@ -2364,7 +2368,11 @@ h4 + *, .h4 + *, h5 + *, .h5 + *, h6 + *, .h6 + * {
 .item_programm .item__title {
   font-size: 1.25rem;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.item_programm .item__title_lead {
+  font-size: 1.5rem;
 }
 
 .item_programm .item_programm__content {
@@ -2620,6 +2628,9 @@ h4 + *, .h4 + *, h5 + *, .h5 + *, h6 + *, .h6 + * {
     font-size: 1rem;
     line-height: 1.4;
   }
+  .item_programm .item__title_lead {
+    font-size: 1.25rem;
+  }
   .item_programm .info-group .info {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 100%;
@@ -2785,6 +2796,9 @@ h4 + *, .h4 + *, h5 + *, .h5 + *, h6 + *, .h6 + * {
   min-height: 200px;
   border-radius: 20px;
   overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .product .product__title {
@@ -3096,6 +3110,15 @@ h4 + *, .h4 + *, h5 + *, .h5 + *, h6 + *, .h6 + * {
   font-size: 1.75rem;
 }
 
+@media all and (max-width: 576px) {
+  .content__title {
+    font-size: 1.25rem;
+  }
+  .content__title_small {
+    font-size: 1.25rem;
+  }
+}
+
 .content-seo * + ul {
   margin-top: 20px;
 }
@@ -3107,15 +3130,6 @@ h4 + *, .h4 + *, h5 + *, .h5 + *, h6 + *, .h6 + * {
 
 .content-seo ol li + li {
   margin-top: 6px;
-}
-
-@media all and (max-width: 576px) {
-  .content__title {
-    font-size: 1.25rem;
-  }
-  .content__title_small {
-    font-size: 1.25rem;
-  }
 }
 
 .review {

@@ -11,29 +11,6 @@
     &__information{}
 }
 
-.content-seo{
-    ul{
-        @extend .list;
-        @extend .list_square;
-        li{
-            @extend .list__item;
-        }
-    }
-    * + ul{
-        margin-top: $padding;
-    }
-
-    ol{
-        padding-left: $padding;
-        list-style: decimal;
-        li{
-            & + li{
-                margin-top: 6px;
-            }
-        }
-    }
-}
-
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){
     .content{
         &__title{

@@ -1,0 +1,80 @@
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Услуги учебного центра
+
+
+        link(href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:300,400,600,700', rel='stylesheet')
+        link(href='./css/style.css', rel='stylesheet')
+        link(href='./css/catalog.css', rel='stylesheet')
+    body
+        script(src="./js/jquery.min.js")
+        include chunks/header.pug
+        main.inside
+            section.content.content_header
+                .container
+                    ul.content__breadcrumbs
+                        li.content__breadcrumbs__item
+                            a.content__breadcrumbs__link(href="#") Главная
+                        li.content__breadcrumbs__item
+                            span.content__breadcrumbs__span Каталог услуг
+                    h1.content__title Услуги учебного центра
+                    p.lead Профессиональный учебный центр "Северный Путь" гарантирует 100% положительный результат 
+                        | при&nbsp;минимальных финансовых и&nbsp;временных затратах. Качественное обучение с&nbsp;нами — это 
+                        | актуальная материально-техническая база, индивидуальный подход и&nbsp;более 500 учебных программ. 
+                        | Выбирая услуги учебного центра "Северный Путь" вы получаете гарантию безопасной деятельности без&nbsp;opштрафов.
+            section.content.bg-blue-gradient
+                .container.container_inside
+                    h2.content__title.text-center.mb-60 Программы центра обучения
+                    .preview-page.preview-page_inline.row
+                        .preview-page__content.col-7.col-lg-6.col-md-10.col-sm-12
+                            .preview-page__title Обучение по электробезопасности
+                            .preview-page__list
+                                a.preview-page__item(href="#") Аттестация персонала по электробезопасности II, III, IV группа допуска, до 1000В
+                                a.preview-page__item(href="#") Аттестация персонала по электробезопасности  III, IV, V группа допуска, до и выше 1000В
+                                a.preview-page__item(href="#") Аттестация персонала по электробезопасности  III, IV, V группа допуска, до и выше 1000В
+                        .preview-page__footer.col-5.col-lg-6.col-md-10.col-sm-12.mt-md-30
+                            .preview-page__programm
+                                ul.list-info.list-info_inline
+                                    li.list-item.list-item_time.list-item_white
+                                        span.list-item__name Действие документов
+                                        span.list-item__content 3 года / 5 лет
+                                    li.list-item.list-item_price.list-item_white
+                                        span.list-item__name Стоимость
+                                        span.list-item__content 3240 руб.
+                            .btn-group
+                                a.btn.btn_gold.btn_with-arrow Подробнее
+                                a.btn.btn_primary(href="#" data-izimodal-open="#callback1" data-izimodal-transitionin="fadeInDown" data-title="Обучение по электробезопасности") Оставить заявку
+                    .preview-page.preview-page_inline.row
+                        .preview-page__content.col-7.col-lg-6.col-md-10.col-sm-12
+                            .preview-page__title Обучение по электробезопасности
+                            .preview-page__list
+                                a.preview-page__item(href="#") Аттестация персонала по электробезопасности II, III, IV группа допуска, до 1000В
+                                a.preview-page__item(href="#") Аттестация персонала по электробезопасности  III, IV, V группа допуска, до и выше 1000В
+                                a.preview-page__item(href="#") Аттестация персонала по электробезопасности  III, IV, V группа допуска, до и выше 1000В
+                        .preview-page__footer.col-5.col-lg-6.col-md-10.col-sm-12.mt-md-30
+                            .preview-page__programm
+                                ul.list-info.list-info_inline
+                                    li.list-item.list-item_time.list-item_white
+                                        span.list-item__name Действие документов
+                                        span.list-item__content 3 года / 5 лет
+                                    li.list-item.list-item_price.list-item_white
+                                        span.list-item__name Стоимость
+                                        span.list-item__content 3240 руб.
+                            .btn-group
+                                a.btn.btn_gold.btn_with-arrow Подробнее
+                                a.btn.btn_primary(href="#" data-izimodal-open="#callback1" data-izimodal-transitionin="fadeInDown" data-title="Обучение по электробезопасности") Оставить заявку
+            section.content
+                .container
+                    .cta-wrap.mt-0
+                        .cta-wrap__title.white Оставьте заявку, и наши специалисты оперативно ответят на любые вопросы
+                        form.cta-wrap__form(action="#", method="POST")
+                            input.input.phone(type="text" placeholder="8 ( ___ ) ___ - __ - __ ")
+                            button.btn(type="submit") Перезвонить
+        include chunks/footer.pug
+        script(src="./js/jquery.inputmask.js")
+        link(href='./css/iziModal.min.css', rel='stylesheet')
+        script(src="./js/iziModal.min.js")
+        script(src="./js/app.min.js")
