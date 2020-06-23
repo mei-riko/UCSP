@@ -1,0 +1,136 @@
+// блок отзывов
+.review{
+    position:relative;
+
+    height:660px;
+
+    width:560px;
+    max-width:100%;
+
+    margin-left: auto;
+    margin-right: auto;
+    
+    overflow:hidden;
+
+    // шапка блока
+    &__header{
+        border-bottom: 1px solid #eee;
+    }
+    // ссылка на ресурс
+    &__more-review{
+        position: absolute;
+        left:0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        padding: 20px 16px;
+        background-color: $white;
+
+        &:after {
+            position: absolute;
+            content: "";
+            left: 0;
+            right: 0;
+            top: 0;
+            -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+            height: 40px;
+            width: 100%;
+
+            background: linear-gradient(180deg,hsla(0,0%,100%,0),#fff);
+        }
+    }
+    // один отзыв
+    &__item{
+        margin-top: 1.5*$padding;
+
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }   
+    // колонка с текстомч
+    &__content-col{
+        max-width: calc(100% - 45px);
+        flex: 0 0 calc(100% - 45px);
+    }
+    // колонка с фото
+    &__image-col{
+        max-width: 40px;
+        flex: 0 0 40px;
+    }
+
+    // автор
+    &__author{
+        @extend .text-small;
+        @extend .text-bold;
+    }
+    &__status{
+        @extend .text-small;
+    }
+    // рейтинг-звездочки
+    &__rating{
+        padding: $padding 0;
+    }
+    &__item-rating{
+        padding: $padding/2 0 0;
+    }
+    // текст отзыва
+    &__text{
+        font-size: 13px;
+        line-height: 18px;
+        margin-bottom: $padding/2;
+    }
+    
+    &_yandex{}
+    // Google отзывы
+    &_google{
+        padding: 20px 20px 32px;
+
+        border-radius: 8px;
+        border: 1px solid #e6e6e6;
+        
+        &__title{
+            color: #333;
+            font-size: 28px;
+            margin-bottom: 0;
+            line-height: 1.2;
+        }
+        &__subtitle{
+            color: #999;
+            font-size: 13px;
+            margin-bottom: 0;
+        }
+        &__grade{
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 1;
+            margin-right: 11px;
+            color: #70757A;
+            white-space: nowrap;
+        }
+        &__count{
+            color: #878787;
+            white-space: nowrap;
+            display: inline;
+            font-size: 15px;
+            margin-left: 11px;
+        }
+        &__stars{
+            display: inline-block;
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAWCAYAAAA1vze2AAAAqUlEQVR4AWLwySwkGv/YzgworgwwAIphGHqJXWgX6nl6q55o/GHxCX4bUx9hMK9JYwucFSmAubW2ZifED8Q7IXEgcmRqVNDsgBhBrAMSBJEiqwAGAaBRhiDvBk1A3mkRyb2CXSYLlmWFnbArffoMIrjS6qy3Sm/Z/068CPEbyKpKhfCDyA0yNE95MKtRGe9LiSz9O3hKclv6Y76ictQzqbmjyhIkyVi+8wCta5MKDP5AeAAAAABJRU5ErkJggg==);
+            background-size: 25px 22px;
+            height: 22px;
+            top: 1px;
+            width: 125px;
+        }
+        &__item-stars{
+            display: inline-block;
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAWCAYAAAA1vze2AAAAqUlEQVR4AWLwySwkGv/YzgworgwwAIphGHqJXWgX6nl6q55o/GHxCX4bUx9hMK9JYwucFSmAubW2ZifED8Q7IXEgcmRqVNDsgBhBrAMSBJEiqwAGAaBRhiDvBk1A3mkRyb2CXSYLlmWFnbArffoMIrjS6qy3Sm/Z/068CPEbyKpKhfCDyA0yNE95MKtRGe9LiSz9O3hKclv6Y76ictQzqbmjyhIkyVi+8wCta5MKDP5AeAAAAABJRU5ErkJggg==);
+            background-size: 14px 13px;
+            height: 13px;
+            top: 1px;
+            width: 70px;
+            margin-right: 7px;
+        }
+    }
+}
