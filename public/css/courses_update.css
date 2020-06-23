@@ -1530,7 +1530,7 @@ h4 + *, .h4 + *, h5 + *, .h5 + *, h6 + *, .h6 + * {
     background: #ebeeef;
     padding: 20px 15px;
     display: block;
-    min-width: 150px;
+    min-width: 160px;
     width: 25%;
     height: calc(100vh - 60px);
     overflow-y: auto;
