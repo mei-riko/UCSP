@@ -1,13 +1,5 @@
 .advantage{
-    &__title{
-        color: $text-darkblue;
-        font-size: 1.15rem;
-        font-weight: bold;
 
-        & + .advantage__content{
-            margin-top: $padding/2;
-        }
-    }
     &__icon{
         background-color: $white;
         box-shadow: 0px 10px 20px 0px rgba(41, 41, 41, 0.1);
@@ -21,5 +13,33 @@
         background-position: center;
         background-size: 30px;
         background-repeat: no-repeat;
+    }
+    &__title{
+        color: $text-darkblue;
+        font-size: 1.15rem;
+        font-weight: bold;
+
+        & + .advantage__content{
+            margin-top: $padding/2;
+        }
+    }
+}
+
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .advantage{
+        &__item{
+            position: relative;
+            padding-left: 60px;
+        }
+        &__icon{
+            height: 40px;
+            width: 40px;
+
+            position: absolute;
+            left: 0;
+            top: 0;
+
+            background-size: 20px;
+        }
     }
 }

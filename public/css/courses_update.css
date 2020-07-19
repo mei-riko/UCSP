@@ -1997,16 +1997,6 @@ h4 + *, .h4 + *, h5 + *, .h5 + *, h6 + *, .h6 + * {
 }
 
 /* Component */
-.advantage__title {
-  color: #384e59;
-  font-size: 1.15rem;
-  font-weight: bold;
-}
-
-.advantage__title + .advantage__content {
-  margin-top: 10px;
-}
-
 .advantage__icon {
   background-color: #fff;
   -webkit-box-shadow: 0px 10px 20px 0px rgba(41, 41, 41, 0.1);
@@ -2019,6 +2009,31 @@ h4 + *, .h4 + *, h5 + *, .h5 + *, h6 + *, .h6 + * {
   background-position: center;
   background-size: 30px;
   background-repeat: no-repeat;
+}
+
+.advantage__title {
+  color: #384e59;
+  font-size: 1.15rem;
+  font-weight: bold;
+}
+
+.advantage__title + .advantage__content {
+  margin-top: 10px;
+}
+
+@media all and (max-width: 576px) {
+  .advantage__item {
+    position: relative;
+    padding-left: 60px;
+  }
+  .advantage__icon {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-size: 20px;
+  }
 }
 
 /* Breadcrumb Block */
