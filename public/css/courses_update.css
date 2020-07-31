@@ -779,6 +779,11 @@ h4 + *, .h4 + *, h5 + *, .h5 + *, h6 + *, .h6 + * {
   margin-bottom: 80px !important;
 }
 
+.m-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .pt-0 {
   padding-top: 0px;
 }
@@ -2484,7 +2489,7 @@ h4 + *, .h4 + *, h5 + *, .h5 + *, h6 + *, .h6 + * {
 .item_logo .item__image {
   width: 180px;
   height: 100px;
-  background-size: contain;
+  background-size: 80px;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -3045,6 +3050,14 @@ h4 + *, .h4 + *, h5 + *, .h5 + *, h6 + *, .h6 + * {
 
 .slider_reviews .arrow_right {
   right: -10px;
+}
+
+.slider_logo .arrow_left {
+  left: -20px;
+}
+
+.slider_logo .arrow_right {
+  right: -20px;
 }
 
 .slider_document {

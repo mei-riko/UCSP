@@ -388,6 +388,16 @@ $(document).ready(() =>{
           }
       ]
     });
+    // Slider Partners
+    $('.slider.slider_logo').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: true,
+      prevArrow: '<a class="arrow arrow_left"></a>',
+      nextArrow: '<a class="arrow arrow_right"></a>',
+      dots: false, 
+      infinite: false
+    });
   }
   // MAP
   if ($("#map").length > 0) {

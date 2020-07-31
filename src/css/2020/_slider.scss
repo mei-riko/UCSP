@@ -105,6 +105,14 @@
             right: -10px;
         }
     }
+    &_logo{
+        .arrow_left {
+            left: -20px;
+        }
+        .arrow_right {
+            right: -20px;
+        }
+    }
     &_document{
         padding: 0 60px;
         .slider__item{
