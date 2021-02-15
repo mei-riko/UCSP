@@ -2044,15 +2044,17 @@ h4 + *, .h4 + *, h5 + *, .h5 + *, h6 + *, .h6 + * {
 .btn {
   outline: none;
   border: none;
-  border-radius: 12px;
+  border-radius: 8px;
   padding: 16px 20px;
   text-transform: uppercase;
   text-align: center;
+  font-size: 12px;
   line-height: 1;
   font-weight: bold;
   -webkit-transition: .4s;
   -o-transition: .4s;
   transition: .4s;
+  cursor: pointer;
 }
 
 .btn_default {
@@ -2211,7 +2213,7 @@ h4 + *, .h4 + *, h5 + *, .h5 + *, h6 + *, .h6 + * {
 .form-input {
   outline: none;
   border: none;
-  border-radius: 12px;
+  border-radius: 8px;
   padding: 14px 20px;
 }
 
@@ -2299,7 +2301,7 @@ h4 + *, .h4 + *, h5 + *, .h5 + *, h6 + *, .h6 + * {
 
 .item {
   border: 1px solid #dce0e1;
-  border-radius: 20px;
+  border-radius: 12px;
   padding: 20px 40px;
 }
 
@@ -2341,6 +2343,7 @@ h4 + *, .h4 + *, h5 + *, .h5 + *, h6 + *, .h6 + * {
   align-content: space-between;
   height: 100%;
   background-color: #fff;
+  padding: 24px 30px;
 }
 
 .item_programm .item__title {
