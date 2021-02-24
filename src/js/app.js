@@ -252,8 +252,8 @@ $(document).ready(() =>{
       overlayColor: "rgba(0, 0, 0, 0.7)",
       onOpening: function() {
         $("input.phone").inputmask({
-          mask: "8 999 999 99 99",
-          placeholder: " ",
+          mask: "+9 999 999 99 99",
+          placeholder: "",
           showMaskOnHover: true,
           onincomplete: function(){ 
               $(this).closest("form").addClass('error-phone'); 

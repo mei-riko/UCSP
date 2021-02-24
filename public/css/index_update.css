@@ -1205,7 +1205,7 @@ h4 + *, .h4 + *, h5 + *, .h5 + *, h6 + *, .h6 + * {
 }
 
 .header__top .header__navbar .header__link {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 300;
   color: #747779;
 }
@@ -2044,7 +2044,7 @@ h4 + *, .h4 + *, h5 + *, .h5 + *, h6 + *, .h6 + * {
 .btn {
   outline: none;
   border: none;
-  border-radius: 8px;
+  border-radius: 6px;
   padding: 16px 20px;
   text-transform: uppercase;
   text-align: center;
@@ -2213,7 +2213,7 @@ h4 + *, .h4 + *, h5 + *, .h5 + *, h6 + *, .h6 + * {
 .form-input {
   outline: none;
   border: none;
-  border-radius: 8px;
+  border-radius: 6px;
   padding: 14px 20px;
 }
 
@@ -2301,7 +2301,7 @@ h4 + *, .h4 + *, h5 + *, .h5 + *, h6 + *, .h6 + * {
 
 .item {
   border: 1px solid #dce0e1;
-  border-radius: 12px;
+  border-radius: 8px;
   padding: 20px 40px;
 }
 

@@ -26,6 +26,10 @@
     &__span{
         color: $text-grey;
     }
+    &__link{
+        color: $text-grey;
+        text-decoration: underline;
+    }
 }
 
 .breadcrumbs-section{
