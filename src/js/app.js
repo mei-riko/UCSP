@@ -1,104 +1,121 @@
 import $ from 'jquery'
-$(document).ready(() =>{
-  let saleCount = 0;
-  let saleType = 0;
-  let saleAll = 0;
-  let priceAll = 0;
+
+// Dropdown Navigation
+function DropdownNav(){
+  $(".dropdown#dropdown").removeClass("active");
+  $(".header .header__main .header__navbar#dropdownNav .header__link.active").removeClass("active");
+  $(".dropdown#dropdown .dropdown__nav.active").removeClass("active");
+}
+
+let saleType = 0;
+let saleAll = 0;
+let priceAll = 0;
+const reducer = (accumulator, currentValue) => accumulator + currentValue;
+// Total Cost
+function totalResult(priceValue,saleValue){
+  let totalCost = $("#total-cost");
+  let sale = $("#sale");
+  let saleBtn = $("#saleBtn");
+  let totalCostSale = $("#total-sale");
+
+  totalCost.html( priceValue );
+  sale.html( saleValue );
+  saleBtn.html( saleValue );
   
-  // Total Cost
-  function totalResult(priceValue,saleValue){
-    let totalCost = $("#total-cost");
-    let sale = $("#sale");
-    let saleBtn = $("#saleBtn");
-    let totalCostSale = $("#total-sale");
+  let saleCost = priceValue*(1 - saleValue/100);
+  totalCostSale.html( saleCost.toFixed(0) );
+}
+// Total Sale
+function saleTotal(){
+  saleAll = 0;
 
-    totalCost.html( priceValue );
-    sale.html( saleValue );
-    saleBtn.html( saleValue );
-    
-    let saleCost = priceValue*(1 - saleValue/100);
-    totalCostSale.html( saleCost.toFixed(2) );
+  let saleCount = [];
+  let saleCountPoll = 0;
+
+  // How many programm 
+  if ( $(".poll__row").length > 2){ 
+    saleType = 5; 
+  }else{
+    saleType = 0;
   }
-  // Total Sale
-  function saleTotal(){
-    saleAll = 0
+  // How many people
+  $(".poll__row").each( function(i, elem){
+    let count = $(elem).find(".poll__input").val();
 
-    let saleCountPoll = 0;
-    // How many programm 
-    if ( $(".poll__row").length > 2){ saleType = 5; }else{ saleType = 0; }
+    if( count < 5){
+      saleCountPoll = 0;
+    }else if( count >= 5 && count < 10 ){
+      saleCountPoll = 10;
+    }else if( count >= 10 ){
+      saleCountPoll = 15;
+    }
+    // console.log( i + ':: saleCountPoll: ' + saleCountPoll + ':: saleCount: ' + saleCount);
+    saleCount[i] = saleCountPoll;
+  });
 
-    // How many people
-    $(".poll__row").each( function(i, elem){
-      let count = $(elem).find(".poll__input").val();
+  saleAll = Math.round(saleCount.reduce(reducer)) + saleType;
+  // console.log( saleAll );
+}
+// Total Price
+function priceTotal(){
+  priceAll = 0;
+  $(".poll__row").each(function(i, element){
+    priceAll = priceAll + $(element).find("option:selected").val()*$(element).find(".poll__input").val();
+  });
+}
+// Remove Price
+function removePrice( row ){
+  // parent row
+  let poll = row.closest(".poll__row");
+  // select option
+  let price = row.find("option:selected").val() ;
+  // how many courses
+  // let count = poll.find(".poll__input").val();
+  // remove price
+  poll.find(".poll__programm-price").html( price );
 
-      if( count >= 5 && count < 10 ){
-        saleCountPoll = 10;
-      }else{
-        if ( count >= 10) { saleCountPoll = 15; } else{ saleCountPoll = 0; }
-      }
-      if ( saleCountPoll > saleCount ){ saleCount = saleCountPoll; }
-    });
-
-    saleAll = saleCount + saleType;
-    console.log( saleAll );
+  // show a
+  if ( price === "0" ){
+    $(".poll__btn").removeClass("active");
+  }else{
+    $(".poll__btn").addClass("active");
   }
-  // Total Price
-  function priceTotal(){
-    priceAll = 0;
+
+  priceTotal();
+  saleTotal();
+  totalResult(priceAll, saleAll);
+}
+// Remove Count
+function removeCount( row ){    
+  let poll = row.closest(".poll__row");
+  let price = poll.find("option:selected").val() ;
+  let count = poll.find(".poll__input").val();
+
+  let priceAll = 0;
+
+  if ( $(".poll__row").length > 1){
     $(".poll__row").each(function(i, element){
       priceAll = priceAll + $(element).find("option:selected").val()*$(element).find(".poll__input").val();
     });
-  }
-  // Remove Price
-  function removePrice( row ){
-    // parent row
-    let poll = row.closest(".poll__row");
-    // select option
-    let price = row.find("option:selected").val() ;
-    // how many courses
-    let count = poll.find(".poll__input").val();
-    // remove price
-    poll.find(".poll__programm-price").html( price );
+  }else{
+    priceAll = price*count;
+  }  
 
-    // show a
-    if ( price === "0" ){
-      $(".poll__btn").removeClass("active");
-    }else{
-      $(".poll__btn").addClass("active");
-    }
+  priceTotal();
+  saleTotal();
+  totalResult(priceAll, saleAll);
+}
 
-    priceTotal();
-    saleTotal();
-    totalResult(priceAll, saleAll);
-  }
-  // Remove Count
-  function removeCount( row ){
-    let poll = row.closest(".poll__row");
-    let price = poll.find("option:selected").val() ;
-    let count = poll.find(".poll__input").val();
-
-    let priceAll = 0;
-
-    if ( $(".poll__row").length > 1){
-      $(".poll__row").each(function(i, element){
-        priceAll = priceAll + $(element).find("option:selected").val()*$(element).find(".poll__input").val();
-      });
-    }else{
-      priceAll = price*count;
-    }  
-
-    priceTotal();
-    saleTotal();
-    totalResult(priceAll, saleAll);
-  }
+$(function() { 
   // Poll Select Change
-  $(".poll .poll__row .poll__select").on("change", function(){
+  $(document).on('change', '.poll .poll__row .poll__select', function(e){
     removePrice( $(this) );
   });
   // Poll Input Change
-  $(".poll .poll__row .poll__input").on("change", function(){
+  $(document).on('change', '.poll .poll__row .poll__input', function(e){
     removeCount( $(this) );
   });
+
   // Add Programm
   var addRowId = 2;
   $("#addRow").on("click", function(){
@@ -107,19 +124,12 @@ $(document).ready(() =>{
     $("#row-" + addRowId).find(".poll__input").val( 1 );
     $("<div class='poll__delete' data-id='row-"+ addRowId +"'>x</div>").appendTo("#row-" + addRowId);
     addRowId = addRowId + 1;
+
     // UpdateSale
     priceTotal();
     saleTotal();
     totalResult(priceAll, saleAll);
 
-    // Poll Select Change
-    $(".poll .poll__row .poll__select").on("change", function(){
-      removePrice( $(this) );
-    });
-    // Poll Input Change
-    $(".poll .poll__row .poll__input").on("change", function(){
-      removeCount( $(this) );
-    });
     // Delete Programm
     $(".poll__delete").on("click", function(){
       let rowId = $(this).data("id");
@@ -136,29 +146,11 @@ $(document).ready(() =>{
     $(".form-step").slideToggle();
   });
 
-  // Dropdown Navigation
-  function DropdownNav(){
-    $(".dropdown#dropdown").removeClass("active");
-    $(".header .header__main .header__navbar#dropdownNav .header__link.active").removeClass("active");
-    $(".dropdown#dropdown .dropdown__nav.active").removeClass("active");
-  }
   // Header Nav On Desktop Screen
   var constantNav = 0;
   if ( $(window).width() > 991 ){
     constantNav = 1;
   }
-  // Hide Navigation on Mobile
-  $(window).resize(function(){
-    if ( $(window).width() > 991 ){
-      constantNav = 1;
-      $(".navbar-toggler").removeClass("active");
-      $(".header .header__content").removeClass("active");
-      $("body").attr("style", "");
-    }else{
-      constantNav = 0;
-    }
-  });
-
   $(".header .header__main .header__navbar#dropdownNav .header__link").hover(function(){
     let link = $(this);
     let href = link.data("href");
@@ -230,21 +222,6 @@ $(document).ready(() =>{
     $(".header").addClass("sticky-menu");
     $(".header").fadeIn();
   }
-  // Fixed header on scroll
-  $(window).scroll(function () {
-    if ( $(".header").length > 0 && $(".content_header").length > 0){
-      if ($(window).scrollTop() > 300 && $(window).width() > 991 ) {
-        $(".content_header").addClass("sticky");
-        $(".header").addClass("sticky-menu");
-        $(".header").fadeIn();
-      } else if ($(window).scrollTop() < 50 ) {
-        $(".content_header").removeClass("sticky");
-        $(".header").css("display", "");
-        $(".header").removeClass("sticky-menu");
-      }
-    }
-  });
-
   //IziModal
   if ($(".modal").length > 0) {
     $(".modal").iziModal({
@@ -429,4 +406,31 @@ $(document).ready(() =>{
   $(".header-stock .header-stock__icon").on("click", function(){
     $(this).parent().toggleClass("header-stock--hidden");
   })
+});
+
+// Hide Navigation on Mobile
+$(window).on('resize', function(){
+  if ( $(window).width() > 991 ){
+    constantNav = 1;
+    $(".navbar-toggler").removeClass("active");
+    $(".header .header__content").removeClass("active");
+    $("body").attr("style", "");
+  }else{
+    constantNav = 0;
+  }
+});
+
+// Fixed header on scroll
+$(window).on('scroll', function () {
+  if ( $(".header").length > 0 && $(".content_header").length > 0){
+    if ($(window).scrollTop() > 300 && $(window).width() > 991 ) {
+      $(".content_header").addClass("sticky");
+      $(".header").addClass("sticky-menu");
+      $(".header").fadeIn();
+    } else if ($(window).scrollTop() < 50 ) {
+      $(".content_header").removeClass("sticky");
+      $(".header").css("display", "");
+      $(".header").removeClass("sticky-menu");
+    }
+  }
 });
